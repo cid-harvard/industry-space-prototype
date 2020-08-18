@@ -1,10 +1,12 @@
 import React from 'react'
-
-import { ExampleComponent } from 'industry-space-prototype'
-import 'industry-space-prototype/dist/index.css'
+import CanvasIndustrySpaceCustom from './components/CanvasIndustrySpaceCustom';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+      <CanvasIndustrySpaceCustom />
+    </div>
+  );
 }
 
 export default App
