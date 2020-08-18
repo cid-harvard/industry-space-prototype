@@ -4,7 +4,9 @@ import raw from 'raw.macro';
 
 const data = JSON.parse(raw('../data/industry-space.json'));
 
-const createForceGraph = (root, data) => {
+const createForceGraph = (rootEl, data) => {
+  const root = d3.select(rootEl);
+
   const radius = 3;
 
   const height = window.innerHeight;
@@ -53,7 +55,42 @@ const createForceGraph = (root, data) => {
       simulationUpdate();
     }
 
-    d3.select(canvas).call(d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed))
+    let hoveredNode = undefined;
+    
+    d3.select(canvas)
+      .call(d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed))
+      .on('mousemove', function() {
+        hoveredNode = dragsubject();
+        simulationUpdate();
+      })
+      .on('click', function() {
+        const node = dragsubject();
+        if (node) {
+          alert('Clicked ' + node.id);
+        }
+      })
+
+
+
+    function dragsubject() {
+      const x = transform.invertX(d3.event.x);
+      const y = transform.invertY(d3.event.y);
+      for (let i = tempData.nodes.length - 1; i >= 0; --i) {
+        const node = tempData.nodes[i];
+        let nodeX = xScale(node.graphics.x);
+        let nodeY = yScale(node.graphics.y);
+        const dx = x - nodeX;
+        const dy = y - nodeY;
+
+        if (dx * dx + dy * dy < radius * radius) {
+
+          nodeX =  transform.applyX(nodeX);
+          nodeY = transform.applyY(nodeY);
+
+          return node;
+        }
+      }
+    }
 
     simulation.nodes(tempData.nodes)
               .on("tick", simulationUpdate);
@@ -63,7 +100,9 @@ const createForceGraph = (root, data) => {
 
 
 
-    function simulationUpdate(){
+    function simulationUpdate() {
+      const hoveredId = hoveredNode && hoveredNode.id ? hoveredNode.id : undefined;
+
       context.save();
 
       context.clearRect(0, 0, width, height);
@@ -74,7 +113,8 @@ const createForceGraph = (root, data) => {
         context.beginPath();
         context.moveTo(xScale(d.source.graphics.x), yScale(d.source.graphics.y));
         context.lineTo(xScale(d.target.graphics.x), yScale(d.target.graphics.y));
-        context.strokeStyle = 'rgba(0, 0, 0, 0.1)'
+        context.strokeStyle = hoveredId === d.source.id || hoveredId === d.target.id
+          ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.04)';
         context.stroke();
       });
 
@@ -86,7 +126,20 @@ const createForceGraph = (root, data) => {
         context.fill();
       });
 
-        context.restore();
+      if (hoveredNode) {
+        rootEl.style.cursor = 'pointer';
+        context.beginPath();
+        context.arc(xScale(hoveredNode.graphics.x), yScale(hoveredNode.graphics.y), radius, 0, 2 * Math.PI, true);
+        console.log(hoveredNode)
+        context.fillStyle = hoveredNode.color
+        context.fill();
+        context.strokeStyle = 'black';
+        context.stroke();
+      } else {
+        rootEl.style.cursor = 'move';
+      }
+
+      context.restore();
     }
   }
 
@@ -97,11 +150,10 @@ export default () => {
   const rootNodeRef = useRef(null);
 
   useEffect(() => {
-    let svgNode = null;
+    let rootEl = null;
     if (rootNodeRef && rootNodeRef.current) {
-      svgNode = rootNodeRef.current;
-      const svg = d3.select(svgNode);
-      createForceGraph(svg, data);
+      rootEl = rootNodeRef.current;
+      createForceGraph(rootEl, data);
     }
   }, [rootNodeRef]);
 
