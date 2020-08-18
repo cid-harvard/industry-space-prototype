@@ -1,6 +1,7 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import * as d3 from 'd3';
 import raw from 'raw.macro';
+import debounce from 'lodash/debounce';
 
 const data = JSON.parse(raw('../data/industry-space.json'));
 
@@ -130,7 +131,6 @@ const createForceGraph = (rootEl, data) => {
         rootEl.style.cursor = 'pointer';
         context.beginPath();
         context.arc(xScale(hoveredNode.graphics.x), yScale(hoveredNode.graphics.y), radius, 0, 2 * Math.PI, true);
-        console.log(hoveredNode)
         context.fillStyle = hoveredNode.color
         context.fill();
         context.strokeStyle = 'black';
@@ -142,12 +142,29 @@ const createForceGraph = (rootEl, data) => {
       context.restore();
     }
   }
-
-
 }
 
 export default () => {
   const rootNodeRef = useRef(null);
+
+
+  const [windowDimensions, setWindowDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const updateWindowDimensions = debounce(() => {
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }, 500);
+    window.addEventListener('resize', updateWindowDimensions);
+    return () => {
+      window.removeEventListener('resize', updateWindowDimensions);
+    };
+  }, []);
 
   useEffect(() => {
     let rootEl = null;
@@ -155,7 +172,12 @@ export default () => {
       rootEl = rootNodeRef.current;
       createForceGraph(rootEl, data);
     }
-  }, [rootNodeRef]);
+    return (() => {
+      if (rootEl) {
+        rootEl.innerHTML = '';
+      }
+    })
+  }, [rootNodeRef, windowDimensions]);
 
   return (
     <div ref={rootNodeRef} width={500} height={500} />
