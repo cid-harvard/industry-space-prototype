@@ -79,22 +79,22 @@ const createForceGraph = (root, data) => {
 
 
   function dragstarted() {
-    // if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-    // d3.event.subject.fx = transform.invertX(d3.event.x);
-    // d3.event.subject.fy = transform.invertY(d3.event.y);
-    console.log(d3.event)
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d3.event.subject.fx = transform.invertX(d3.event.x);
+    d3.event.subject.fy = transform.invertY(d3.event.y);
+    // console.log(d3.event)
   }
 
   function dragged() {
-    // d3.event.subject.fx = transform.invertX(d3.event.x);
-    // d3.event.subject.fy = transform.invertY(d3.event.y);
+    d3.event.subject.fx = transform.invertX(d3.event.x);
+    d3.event.subject.fy = transform.invertY(d3.event.y);
 
   }
 
   function dragended() {
-    // if (!d3.event.active) simulation.alphaTarget(0);
-    // d3.event.subject.fx = null;
-    // d3.event.subject.fy = null;
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d3.event.subject.fx = null;
+    d3.event.subject.fy = null;
   }
 
     simulation.nodes(tempData.nodes)

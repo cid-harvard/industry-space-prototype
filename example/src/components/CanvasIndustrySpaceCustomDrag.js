@@ -3,33 +3,59 @@ import * as d3 from 'd3';
 import raw from 'raw.macro';
 import debounce from 'lodash/debounce';
 
-const data = JSON.parse(raw('../data/industry-space-custom-3-clean.json'));
+const output = {nodes: [], edges: []};
+
+let data = JSON.parse(raw('../data/industry-space-custom-3.json'));
+data = {
+  nodes: data.nodes.map(n => {
+    const node = {
+      id: n.id,
+      graphics: n.graphics,
+      naics2d: n.naics2d,
+      color: n.color,
+    }
+    output.nodes.push({...node})
+    return node;
+  }),
+  edges: data.edges.map(e => {
+    const edge = {
+      id: e.id,
+      source: e.source.id,
+      target: e.target.id,
+      value: e.value,
+      proximity: e.proximity,
+    }
+    output.edges.push({...edge})
+    return edge;
+  })
+}
+console.log(output)
 
 const createForceGraph = (rootEl, data) => {
   const root = d3.select(rootEl);
 
-  const radius = 5;
+  const radius = 15;
 
   const height = window.innerHeight;
   const width =  window.innerWidth;
 
-  const allXValues = [];
-  const allYValues = [];
-  data.nodes.forEach(({graphics: {x, y}}) => {
-    allXValues.push(x);
-    allYValues.push(y);
-  });
+  // const allXValues = [];
+  // const allYValues = [];
+  // data.nodes.forEach(({graphics: {x, y}}) => {
+  //   allXValues.push(x);
+  //   allYValues.push(y);
+  // });
 
-  const xRange = d3.extent(allXValues);
-  const yRange = d3.extent(allYValues);
+  // const xRange = d3.extent(allXValues);
+  // const yRange = d3.extent(allYValues);
 
-  const xScale = d3.scaleLinear()
-    .domain(xRange)
-    .range([ 0 + 100, width - 100 ]);
+  // const  = d3.scaleLinear()
+  //   .domain(xRange)
+  //   .range([ 0 + 100, width - 100 ]);
 
-  const yScale = d3.scaleLinear()
-    .domain(yRange)
-    .range([ height - 100, 0 + 100]);
+  // const  = d3.scaleLinear()
+  //   .domain(yRange)
+  //   .range([ height - 100, 0 + 100]);
 
 
 
@@ -57,6 +83,7 @@ const createForceGraph = (rootEl, data) => {
     }
 
     let hoveredNode = undefined;
+    let selectedNode = undefined;
     
     d3.select(canvas)
       .call(d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed))
@@ -67,7 +94,19 @@ const createForceGraph = (rootEl, data) => {
       .on('click', function() {
         const node = dragsubject();
         if (node) {
-          alert('Clicked ' + node.id);
+          selectedNode = node;
+        } else {
+          if (selectedNode) {
+            const index = tempData.nodes.findIndex(({id}) => id === selectedNode.id);
+            if (index !== -1) {
+
+              const x = transform.invertX(d3.event.x);
+              const y = transform.invertY(d3.event.y);
+              tempData.nodes[index].graphics.x = x;
+              tempData.nodes[index].graphics.y = y;
+            }
+          }
+          selectedNode = undefined;
         }
       })
 
@@ -78,8 +117,8 @@ const createForceGraph = (rootEl, data) => {
       const y = transform.invertY(d3.event.y);
       for (let i = tempData.nodes.length - 1; i >= 0; --i) {
         const node = tempData.nodes[i];
-        let nodeX = xScale(node.graphics.x);
-        let nodeY = yScale(node.graphics.y);
+        let nodeX = (node.graphics.x);
+        let nodeY = (node.graphics.y);
         const dx = x - nodeX;
         const dy = y - nodeY;
 
@@ -112,8 +151,8 @@ const createForceGraph = (rootEl, data) => {
 
       tempData.edges.forEach(function(d) {
         context.beginPath();
-        context.moveTo(xScale(d.source.graphics.x), yScale(d.source.graphics.y));
-        context.lineTo(xScale(d.target.graphics.x), yScale(d.target.graphics.y));
+        context.moveTo((d.source.graphics.x), (d.source.graphics.y));
+        context.lineTo((d.target.graphics.x), (d.target.graphics.y));
         context.strokeStyle = hoveredId === d.source.id || hoveredId === d.target.id
           ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.04)';
         context.stroke();
@@ -122,7 +161,7 @@ const createForceGraph = (rootEl, data) => {
       // Draw the nodes
       tempData.nodes.forEach(function(d, i) {
         context.beginPath();
-        context.arc(xScale(d.graphics.x), yScale(d.graphics.y), radius, 0, 2 * Math.PI, true);
+        context.arc((d.graphics.x), (d.graphics.y), radius, 0, 2 * Math.PI, true);
         context.fillStyle = d.color
         context.fill();
       });
@@ -130,13 +169,23 @@ const createForceGraph = (rootEl, data) => {
       if (hoveredNode) {
         rootEl.style.cursor = 'pointer';
         context.beginPath();
-        context.arc(xScale(hoveredNode.graphics.x), yScale(hoveredNode.graphics.y), radius, 0, 2 * Math.PI, true);
+        context.arc((hoveredNode.graphics.x), (hoveredNode.graphics.y), radius, 0, 2 * Math.PI, true);
         context.fillStyle = hoveredNode.color
         context.fill();
         context.strokeStyle = 'black';
         context.stroke();
       } else {
         rootEl.style.cursor = 'move';
+      }
+
+      if (selectedNode) {
+        rootEl.style.cursor = 'pointer';
+        context.beginPath();
+        context.arc((selectedNode.graphics.x), (selectedNode.graphics.y), radius, 0, 2 * Math.PI, true);
+        context.fillStyle = selectedNode.color
+        context.fill();
+        context.strokeStyle = 'black';
+        context.stroke();
       }
 
       context.restore();
