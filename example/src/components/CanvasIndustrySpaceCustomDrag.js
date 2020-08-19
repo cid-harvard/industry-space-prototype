@@ -189,6 +189,7 @@ const createForceGraph = (rootEl, data) => {
       }
 
       context.restore();
+      // console.log(tempData)
     }
   }
 }

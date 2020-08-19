@@ -13,6 +13,11 @@ const createForceGraph = (rootEl, data) => {
   const height = window.innerHeight;
   const width =  window.innerWidth;
 
+  const smallerSize = width < height ? width : height;
+  const padding = smallerSize * 0.05;
+  const widthMargin = (width - smallerSize) / 2;
+  const heightMargin = (height - (smallerSize * 0.9)) / 2;
+
   const allXValues = [];
   const allYValues = [];
   data.nodes.forEach(({graphics: {x, y}}) => {
@@ -25,11 +30,11 @@ const createForceGraph = (rootEl, data) => {
 
   const xScale = d3.scaleLinear()
     .domain(xRange)
-    .range([ 0 + 100, width - 100 ]);
+    .range([0 + padding + widthMargin, width - padding - widthMargin]);
 
   const yScale = d3.scaleLinear()
     .domain(yRange)
-    .range([ height - 100, 0 + 100]);
+    .range([ height - padding - heightMargin, 0 + padding + heightMargin]);
 
 
 
