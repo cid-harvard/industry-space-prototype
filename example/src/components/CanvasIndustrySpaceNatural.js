@@ -3,9 +3,7 @@ import * as d3 from 'd3';
 import raw from 'raw.macro';
 import debounce from 'lodash/debounce';
 
-
-const data0 = JSON.parse(raw('../data/industry-space.json'));
-const data1 = JSON.parse(raw('../data/industry-space-custom-3-clean.json'));
+const data = JSON.parse(raw('../data/industry-space.json'));
 
 const createForceGraph = (rootEl, data) => {
   const root = d3.select(rootEl);
@@ -49,8 +47,11 @@ const createForceGraph = (rootEl, data) => {
 
   const simulation = d3.forceSimulation()
                 .force("center", d3.forceCenter(width / 2, height / 2))
-                .force("charge", d3.forceManyBody().strength(-50))
-                .force("link", d3.forceLink().strength(1).id(function(d) { return d.id; }))
+                .force("charge", d3.forceManyBody().strength(-25))
+                .force("collision", d3.forceCollide(20))
+                .force("link", d3.forceLink().strength(d => parseFloat(d.proximity) * 1.5).id(function(d) { return d.id; }))
+                .velocityDecay(0.15)
+
 
   let transform = d3.zoomIdentity;
 
@@ -85,8 +86,8 @@ const createForceGraph = (rootEl, data) => {
       const y = transform.invertY(d3.event.y);
       for (let i = tempData.nodes.length - 1; i >= 0; --i) {
         const node = tempData.nodes[i];
-        let nodeX = xScale(node.graphics.x);
-        let nodeY = yScale(node.graphics.y);
+        let nodeX = xScale(node.x);
+        let nodeY = yScale(node.y);
         const dx = x - nodeX;
         const dy = y - nodeY;
 
@@ -119,17 +120,17 @@ const createForceGraph = (rootEl, data) => {
 
       tempData.edges.forEach(function(d) {
         context.beginPath();
-        context.moveTo(xScale(d.source.graphics.x), yScale(d.source.graphics.y));
-        context.lineTo(xScale(d.target.graphics.x), yScale(d.target.graphics.y));
+        context.moveTo(xScale(d.source.x), yScale(d.source.y));
+        context.lineTo(xScale(d.target.x), yScale(d.target.y));
         context.strokeStyle = hoveredId === d.source.id || hoveredId === d.target.id
-          ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.04)';
+          ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.08)';
         context.stroke();
       });
 
       // Draw the nodes
       tempData.nodes.forEach(function(d, i) {
         context.beginPath();
-        context.arc(xScale(d.graphics.x), yScale(d.graphics.y), radius, 0, 2 * Math.PI, true);
+        context.arc(xScale(d.x), yScale(d.y), radius, 0, 2 * Math.PI, true);
         context.fillStyle = d.color
         context.fill();
       });
@@ -137,7 +138,7 @@ const createForceGraph = (rootEl, data) => {
       if (hoveredNode) {
         rootEl.style.cursor = 'pointer';
         context.beginPath();
-        context.arc(xScale(hoveredNode.graphics.x), yScale(hoveredNode.graphics.y), radius, 0, 2 * Math.PI, true);
+        context.arc(xScale(hoveredNode.x), yScale(hoveredNode.y), radius, 0, 2 * Math.PI, true);
         context.fillStyle = hoveredNode.color
         context.fill();
         context.strokeStyle = 'black';
@@ -160,8 +161,6 @@ export default () => {
     height: window.innerHeight,
   });
 
-  const [dataset, setDataset] = useState(0)
-
   useEffect(() => {
     const updateWindowDimensions = debounce(() => {
       setWindowDimensions({
@@ -179,7 +178,6 @@ export default () => {
     let rootEl = null;
     if (rootNodeRef && rootNodeRef.current) {
       rootEl = rootNodeRef.current;
-      const data = dataset ? data1 : data0;
       createForceGraph(rootEl, data);
     }
     return (() => {
@@ -187,14 +185,9 @@ export default () => {
         rootEl.innerHTML = '';
       }
     })
-  }, [rootNodeRef, windowDimensions, dataset]);
+  }, [rootNodeRef, windowDimensions]);
 
   return (
-    <div>
-      <button onClick={() => setDataset(v => v ? 0 : 1)}>
-        {dataset ? 'Switch to Original Layout' : 'Switch to No Overlap Layout'}
-      </button>
-      <div ref={rootNodeRef} />
-    </div>
+    <div ref={rootNodeRef} width={500} height={500} />
   );
 }
