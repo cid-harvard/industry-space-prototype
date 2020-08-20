@@ -191,7 +191,10 @@ export default () => {
 
   return (
     <div>
-      <button onClick={() => setDataset(v => v ? 0 : 1)}>
+      <button 
+        style={{position: 'fixed'}}
+        onClick={() => setDataset(v => v ? 0 : 1)}
+      >
         {dataset ? 'Switch to Original Layout' : 'Switch to No Overlap Layout'}
       </button>
       <div ref={rootNodeRef} />
