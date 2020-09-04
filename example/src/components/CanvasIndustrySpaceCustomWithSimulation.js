@@ -1,14 +1,13 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import * as d3 from 'd3';
 import raw from 'raw.macro';
-import debounce from 'lodash/debounce';
+
+const minExpectedScreenSize = 1020;
 
 const data = JSON.parse(raw('../data/industry-space-with-start-positions.json'));
 
 const createForceGraph = (rootEl, data) => {
   const root = d3.select(rootEl);
-
-  // const radius = 5;
 
   const height = window.innerHeight;
   const width =  window.innerWidth;
@@ -27,8 +26,13 @@ const createForceGraph = (rootEl, data) => {
     allYValues.push(y);
   });
 
+  const radiusAdjuster = smallerSize / minExpectedScreenSize;
+
   data.nodes = data.nodes.map(n => {
-    return {...n, radius: (Math.random() + 0.5) * 5}
+    let radius = Math.random() * 8;
+    radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
+    // const radius = 5;
+    return {...n, radius}
   })
 
   const xRange = d3.extent(allXValues);
@@ -50,12 +54,12 @@ const createForceGraph = (rootEl, data) => {
   const context = canvas.getContext('2d');
 
   const simulation = d3.forceSimulation()
-                .force("center", d3.forceCenter(rangeHeight / 10, rangeHeight / 10))
-                .force("charge", d3.forceManyBody().strength(-5))
+                .force("center", d3.forceCenter(rangeWidth / 10, rangeHeight / 10))
+                .force("charge", d3.forceManyBody().strength(-6.5))
                 .force("collision", d3.forceCollide().radius(function(d) {
-                  return d.radius * 4;
+                  return d.radius * 5 ;
                 }))
-                .force("link", d3.forceLink().strength(d => parseFloat(d.proximity) * 1.5).id(function(d) { return d.id; }))
+                .force("link", d3.forceLink().strength(d => parseFloat(d.proximity)).id(function(d) { return d.id; }))
                 // .velocityDecay(0.3)
 
 
@@ -70,18 +74,34 @@ const createForceGraph = (rootEl, data) => {
       simulationUpdate();
     }
 
+    const zoom = d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed);
+
     let hoveredNode = undefined;
     
-    d3.select(canvas)
-      .call(d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed))
+    const canvasEl = d3.select(canvas);
+    canvasEl
+      .call(zoom)
       .on('mousemove', function() {
         hoveredNode = dragsubject();
         simulationUpdate();
       })
-      .on('click', function() {
+      .on('click', function(event) {
         const node = dragsubject();
         if (node) {
-          alert('Clicked ' + node.id);
+          // alert('Clicked ' + node.id);
+          // const x0 = xScale(node.x);
+          // const x1 = xScale(node.x + 20);
+          // const y0 = yScale(node.y);
+          // const y1 = yScale(node.y + 20);
+          // context.clearRect(0, 0, width, height);
+          // context.translate(transform.x, transform.y);
+          // context.scale(transform.k, transform.k);
+          // context.transition().duration(750).call(
+          //   zoom.transform,
+          //   d3.zoomIdentity
+          //     .translate(width / 10, height / 10)
+          //     .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / (rangeWidth / 10), (y1 - y0) / (rangeHeight / 10))))
+          // );
         }
       })
 
@@ -160,25 +180,6 @@ const createForceGraph = (rootEl, data) => {
 
 export default () => {
   const rootNodeRef = useRef(null);
-
-
-  const [windowDimensions, setWindowDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  useEffect(() => {
-    const updateWindowDimensions = debounce(() => {
-      setWindowDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }, 500);
-    window.addEventListener('resize', updateWindowDimensions);
-    return () => {
-      window.removeEventListener('resize', updateWindowDimensions);
-    };
-  }, []);
 
   useEffect(() => {
     let rootEl = null;
