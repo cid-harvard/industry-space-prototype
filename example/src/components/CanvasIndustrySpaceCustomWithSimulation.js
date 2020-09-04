@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import * as d3 from 'd3';
 import raw from 'raw.macro';
+import * as polished from 'polished';
 
 const minExpectedScreenSize = 1020;
 
@@ -83,6 +84,7 @@ const createForceGraph = (rootEl, data) => {
     const zoom = d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed);
 
     let hoveredNode = undefined;
+    let highlightedNode = undefined;
     
     const canvasEl = d3.select(canvas);
     canvasEl
@@ -94,22 +96,8 @@ const createForceGraph = (rootEl, data) => {
       .on('click', function(event) {
         console.log(tempData);
         const node = dragsubject();
-        if (node) {
-          // alert('Clicked ' + node.id);
-          // const x0 = xScale(node.x);
-          // const x1 = xScale(node.x + 20);
-          // const y0 = yScale(node.y);
-          // const y1 = yScale(node.y + 20);
-          // context.clearRect(0, 0, width, height);
-          // context.translate(transform.x, transform.y);
-          // context.scale(transform.k, transform.k);
-          // context.transition().duration(750).call(
-          //   zoom.transform,
-          //   d3.zoomIdentity
-          //     .translate(width / 10, height / 10)
-          //     .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / (rangeWidth / 10), (y1 - y0) / (rangeHeight / 10))))
-          // );
-        }
+        highlightedNode = node;
+        simulationUpdate();
       })
 
 
@@ -144,6 +132,10 @@ const createForceGraph = (rootEl, data) => {
 
     function simulationUpdate() {
       const hoveredId = hoveredNode && hoveredNode.id ? hoveredNode.id : undefined;
+      const highlightedId = highlightedNode && highlightedNode.id ? highlightedNode.id : undefined;
+      const linkedEdges = tempData.edges.filter(({source, target}) =>
+          source.id === hoveredId || target.id === hoveredId ||
+          source.id === highlightedId || target.id === highlightedId)
 
       context.save();
 
@@ -155,8 +147,11 @@ const createForceGraph = (rootEl, data) => {
         context.beginPath();
         context.moveTo(xScale(d.source.x), yScale(d.source.y));
         context.lineTo(xScale(d.target.x), yScale(d.target.y));
-        context.strokeStyle = hoveredId === d.source.id || hoveredId === d.target.id
-          ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0.08)';
+        if (highlightedId) {
+          context.strokeStyle = '#f9f9f9';
+        } else {
+          context.strokeStyle = '#e6e6e6';
+        }
         context.stroke();
       });
 
@@ -164,9 +159,37 @@ const createForceGraph = (rootEl, data) => {
       tempData.nodes.forEach(function(d, i) {
         context.beginPath();
         context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-        context.fillStyle = d.color
+        context.fillStyle = highlightedId === undefined ? d.color : polished.setLightness(0.91, d.color);
         context.fill();
       });
+
+      const linkedNodeIds = [];
+      linkedEdges.forEach(function(d) {
+        if (!linkedNodeIds.includes(d.source.id)) {
+          linkedNodeIds.push(d.source.id);
+        }
+        if (!linkedNodeIds.includes(d.target.id)) {
+          linkedNodeIds.push(d.target.id);
+        }
+        context.beginPath();
+        context.moveTo(xScale(d.source.x), yScale(d.source.y));
+        context.lineTo(xScale(d.target.x), yScale(d.target.y));
+        context.strokeStyle = '#afafaf';
+        context.stroke();
+      });
+
+      linkedNodeIds.forEach(function(nodeId, i) {
+        const d = tempData.nodes.find(({id}) => id === nodeId);
+        if (d) {
+          context.beginPath();
+          context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
+          context.fillStyle = d.color;
+          context.fill();
+          context.strokeStyle = '#afafaf';
+          context.stroke();
+        }
+      });
+
 
       if (hoveredNode) {
         rootEl.style.cursor = 'pointer';
@@ -178,6 +201,14 @@ const createForceGraph = (rootEl, data) => {
         context.stroke();
       } else {
         rootEl.style.cursor = 'move';
+      }
+      if (highlightedNode) {
+        context.beginPath();
+        context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), highlightedNode.radius, 0, 2 * Math.PI, true);
+        context.fillStyle = highlightedNode.color
+        context.fill();
+        context.strokeStyle = 'black';
+        context.stroke();
       }
 
       context.restore();
