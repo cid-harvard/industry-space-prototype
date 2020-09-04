@@ -94,9 +94,37 @@ const createForceGraph = (rootEl, data) => {
         simulationUpdate();
       })
       .on('click', function(event) {
-        console.log(tempData);
         const node = dragsubject();
         highlightedNode = node;
+        if (node) {
+          const edges = tempData.edges.filter(({source, target}) => source.id === node.id || target.id === node.id)
+          const allEdgeXValues = [];
+          const allEdgeYValues = [];
+          edges.forEach(({source, target}) => {
+            allEdgeXValues.push(xScale(source.x));
+            allEdgeXValues.push(xScale(target.x));
+            allEdgeYValues.push(yScale(source.y));
+            allEdgeYValues.push(yScale(target.y));
+          });
+
+          const xBounds = d3.extent(allEdgeXValues);
+          const yBounds = d3.extent(allEdgeYValues);
+          const bounds = [
+            [xBounds[0], yBounds[0]],
+            [xBounds[1], yBounds[1]],
+          ];
+          const dx = bounds[1][0] - bounds[0][0];
+          const dy = bounds[1][1] - bounds[0][1];
+          const x = (bounds[0][0] + bounds[1][0]) / 2;
+          const y = (bounds[0][1] + bounds[1][1]) / 2;
+          const scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / rangeWidth, dy / rangeHeight)));
+          const translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+          canvasEl.transition()
+              .duration(500)
+              .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
+
+        }
         simulationUpdate();
       })
 
@@ -165,11 +193,11 @@ const createForceGraph = (rootEl, data) => {
 
       const linkedNodeIds = [];
       linkedEdges.forEach(function(d) {
-        if (!linkedNodeIds.includes(d.source.id)) {
-          linkedNodeIds.push(d.source.id);
+        if (!linkedNodeIds.includes(({id}) => d.source.id)) {
+          linkedNodeIds.push(d.source);
         }
-        if (!linkedNodeIds.includes(d.target.id)) {
-          linkedNodeIds.push(d.target.id);
+        if (!linkedNodeIds.includes(({id}) => d.target.id)) {
+          linkedNodeIds.push(d.target);
         }
         context.beginPath();
         context.moveTo(xScale(d.source.x), yScale(d.source.y));
@@ -178,8 +206,7 @@ const createForceGraph = (rootEl, data) => {
         context.stroke();
       });
 
-      linkedNodeIds.forEach(function(nodeId, i) {
-        const d = tempData.nodes.find(({id}) => id === nodeId);
+      linkedNodeIds.forEach(function(d, i) {
         if (d) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
