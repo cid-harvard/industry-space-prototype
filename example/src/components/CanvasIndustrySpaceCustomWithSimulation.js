@@ -4,7 +4,8 @@ import raw from 'raw.macro';
 
 const minExpectedScreenSize = 1020;
 
-const data = JSON.parse(raw('../data/industry-space-with-start-positions.json'));
+// const data = JSON.parse(raw('../data/industry-space-with-start-positions.json'));
+const data = JSON.parse(raw('../data/industry-space-no-overlap.json'));
 
 const createForceGraph = (rootEl, data) => {
   const root = d3.select(rootEl);
@@ -31,7 +32,7 @@ const createForceGraph = (rootEl, data) => {
   data.nodes = data.nodes.map(n => {
     let radius = Math.random() * 6;
     radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
-    // const radius = 2;
+    // const radius = 3;
     return {...n, radius}
   })
 
@@ -53,6 +54,7 @@ const createForceGraph = (rootEl, data) => {
 
   const context = canvas.getContext('2d');
 
+
   const simulation = d3.forceSimulation()
                 .force("center", d3.forceCenter(rangeWidth / 10, rangeHeight / 10))
                 .force("charge", d3.forceManyBody().strength(-6.5))
@@ -61,7 +63,11 @@ const createForceGraph = (rootEl, data) => {
                 }))
                 .force("link", d3.forceLink().strength(d => parseFloat(d.proximity)).id(function(d) { return d.id; }))
                 .velocityDecay(0.8)
-
+  let k = 0;
+  while ((simulation.alpha() > 1e-2) && (k < 150)) {
+      simulation.tick();
+      k = k + 1;
+  }
 
   let transform = d3.zoomIdentity;
 
@@ -86,6 +92,7 @@ const createForceGraph = (rootEl, data) => {
         simulationUpdate();
       })
       .on('click', function(event) {
+        console.log(tempData);
         const node = dragsubject();
         if (node) {
           // alert('Clicked ' + node.id);
