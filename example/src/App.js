@@ -1,10 +1,10 @@
 import React from 'react'
-import CanvasIndustrySpaceCustom from './components/CanvasIndustrySpaceCustom';
+import CanvasIndustrySpace from './components/CanvasIndustrySpaceCustomWithSimulation';
 
 const App = () => {
   return (
     <div>
-      <CanvasIndustrySpaceCustom />
+      <CanvasIndustrySpace />
     </div>
   );
 }
