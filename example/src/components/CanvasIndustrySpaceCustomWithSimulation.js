@@ -29,7 +29,7 @@ const createForceGraph = (rootEl, data) => {
   const radiusAdjuster = smallerSize / minExpectedScreenSize;
 
   data.nodes = data.nodes.map(n => {
-    let radius = Math.random() * 8;
+    let radius = Math.random() * 6;
     radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
     // const radius = 5;
     return {...n, radius}
@@ -57,10 +57,10 @@ const createForceGraph = (rootEl, data) => {
                 .force("center", d3.forceCenter(rangeWidth / 10, rangeHeight / 10))
                 .force("charge", d3.forceManyBody().strength(-6.5))
                 .force("collision", d3.forceCollide().radius(function(d) {
-                  return d.radius * 5 ;
+                  return d.radius * 5;
                 }))
                 .force("link", d3.forceLink().strength(d => parseFloat(d.proximity)).id(function(d) { return d.id; }))
-                // .velocityDecay(0.3)
+                .velocityDecay(0.8)
 
 
   let transform = d3.zoomIdentity;
@@ -195,6 +195,8 @@ export default () => {
   }, [rootNodeRef]);
 
   return (
-    <div ref={rootNodeRef} />
+    <div>
+      <div ref={rootNodeRef} />
+    </div>
   );
 }
