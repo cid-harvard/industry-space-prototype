@@ -6,6 +6,9 @@ import {
 } from 'react-router-dom';
 import IndustrySpaceNetwork from './pages/IndustrySpaceNetwork';
 import IndustrySpaceNetworkNoLines from './pages/IndustrySpaceNetworkNoLines';
+import IndustrySpaceUMap from './pages/IndustrySpaceUMap';
+import IndustrySpaceUMapWithLines from './pages/IndustrySpaceUMapWithLines';
+import Landing from './pages/Landing';
 
 const App = () => {
 
@@ -13,9 +16,11 @@ const App = () => {
     <div>
       <Router>
           <Switch>
-              <Route exact path={'/'} component={IndustrySpaceNetwork} />
-              <Route exact path={'/u-map'} component={IndustrySpaceNetworkNoLines} />
-            <Route component={IndustrySpaceNetwork} />
+            <Route exact path={'/original'} component={IndustrySpaceNetwork} />
+            <Route exact path={'/no-edges'} component={IndustrySpaceNetworkNoLines} />
+            <Route exact path={'/u-map'} component={IndustrySpaceUMap} />
+            <Route exact path={'/u-map-lines'} component={IndustrySpaceUMapWithLines} />
+            <Route component={Landing} />
           </Switch>
         </Router>
     </div>

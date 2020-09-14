@@ -1,0 +1,6290 @@
+[
+  {
+    "initial_x": 2.2820396,
+    "initial_y": 0.0018910654,
+    "id": 424990,
+    "label": "424990 Other Miscellaneous Nondurable Goods Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.7555513,
+    "initial_y": -2.5149367,
+    "id": 561499,
+    "label": "561499 All Other Business Support Services"
+  },
+  {
+    "initial_x": -3.2304785,
+    "initial_y": -3.3744226,
+    "id": 531210,
+    "label": "531210 Offices of Real Estate Agents and Brokers"
+  },
+  {
+    "initial_x": -2.8162398,
+    "initial_y": -2.9046295,
+    "id": 541611,
+    "label": "541611 Administrative Management and General Management Consulting Services"
+  },
+  {
+    "initial_x": -0.9992964,
+    "initial_y": 5.21057,
+    "id": 236117,
+    "label": "236117 New Housing For-Sale Builders"
+  },
+  {
+    "initial_x": 2.0194776,
+    "initial_y": -0.11562568,
+    "id": 453998,
+    "label": "453998 All Other Miscellaneous Store Retailers (except Tobacco Stores)"
+  },
+  {
+    "initial_x": -1.2446884,
+    "initial_y": 5.4397316,
+    "id": 238990,
+    "label": "238990 All Other Specialty Trade Contractors"
+  },
+  {
+    "initial_x": -0.9238697,
+    "initial_y": 5.1867676,
+    "id": 237990,
+    "label": "237990 Other Heavy and Civil Engineering Construction"
+  },
+  {
+    "initial_x": 2.8231833,
+    "initial_y": -1.3935112,
+    "id": 722511,
+    "label": "722511 Full-Service Restaurants"
+  },
+  {
+    "initial_x": -1.0101025,
+    "initial_y": 5.242685,
+    "id": 236220,
+    "label": "236220 Commercial and Institutional Building Construction"
+  },
+  {
+    "initial_x": -2.0723662,
+    "initial_y": -2.4344046,
+    "id": 541330,
+    "label": "541330 Engineering Services"
+  },
+  {
+    "initial_x": -0.8182608,
+    "initial_y": -0.2770611,
+    "id": 238210,
+    "label": "238210 Electrical Contractors and Other Wiring Installation Contractors"
+  },
+  {
+    "initial_x": -0.9854135,
+    "initial_y": 5.2553453,
+    "id": 236116,
+    "label": "236116 New Multifamily Housing Construction (except For-Sale Builders)"
+  },
+  {
+    "initial_x": 1.7661256,
+    "initial_y": -3.2685246,
+    "id": 488999,
+    "label": "488999 All Other Support Activities for Transportation"
+  },
+  {
+    "initial_x": 0.7989831,
+    "initial_y": 0.54412204,
+    "id": 423390,
+    "label": "423390 Other Construction Material Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.2140692,
+    "initial_y": 5.5141115,
+    "id": 238220,
+    "label": "238220 Plumbing, Heating, and Air-Conditioning Contractors"
+  },
+  {
+    "initial_x": -0.9828447,
+    "initial_y": 5.2457843,
+    "id": 237310,
+    "label": "237310 Highway, Street, and Bridge Construction"
+  },
+  {
+    "initial_x": -1.2268631,
+    "initial_y": -0.88720804,
+    "id": 541512,
+    "label": "541512 Computer Systems Design Services"
+  },
+  {
+    "initial_x": -0.34736744,
+    "initial_y": -3.1588461,
+    "id": 531190,
+    "label": "531190 Lessors of Other Real Estate Property"
+  },
+  {
+    "initial_x": -1.686953,
+    "initial_y": -1.6971844,
+    "id": 541810,
+    "label": "541810 Advertising Agencies"
+  },
+  {
+    "initial_x": -2.3332357,
+    "initial_y": -2.3663228,
+    "id": 541310,
+    "label": "541310 Architectural Services"
+  },
+  {
+    "initial_x": 1.7850921,
+    "initial_y": -3.297461,
+    "id": 484121,
+    "label": "484121 General Freight Trucking, Long-Distance, Truckload"
+  },
+  {
+    "initial_x": 0.29296443,
+    "initial_y": 0.47106007,
+    "id": 423990,
+    "label": "423990 Other Miscellaneous Durable Goods Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.95156157,
+    "initial_y": 5.194507,
+    "id": 236115,
+    "label": "236115 New Single-Family Housing Construction (except For-Sale Builders)"
+  },
+  {
+    "initial_x": 2.8480117,
+    "initial_y": -0.73608845,
+    "id": 445110,
+    "label": "445110 Supermarkets and Other Grocery (except Convenience) Stores"
+  },
+  {
+    "initial_x": 0.27981642,
+    "initial_y": 0.19562861,
+    "id": 423830,
+    "label": "423830 Industrial Machinery and Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.1166048,
+    "initial_y": -4.2241683,
+    "id": 611699,
+    "label": "611699 All Other Miscellaneous Schools and Instruction"
+  },
+  {
+    "initial_x": -1.3014882,
+    "initial_y": -0.775121,
+    "id": 541511,
+    "label": "541511 Custom Computer Programming Services"
+  },
+  {
+    "initial_x": 6.4511065,
+    "initial_y": 0.47612163,
+    "id": 111998,
+    "label": "111998 All Other Miscellaneous Crop Farming"
+  },
+  {
+    "initial_x": 1.1652055,
+    "initial_y": -1.2380767,
+    "id": 423110,
+    "label": "423110 Automobile and Other Motor Vehicle Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.9080675,
+    "initial_y": -0.7511748,
+    "id": 445299,
+    "label": "445299 All Other Specialty Food Stores"
+  },
+  {
+    "initial_x": 0.59530383,
+    "initial_y": 0.3734588,
+    "id": 238130,
+    "label": "238130 Framing Contractors"
+  },
+  {
+    "initial_x": 0.38106474,
+    "initial_y": -3.411868,
+    "id": 722410,
+    "label": "722410 Drinking Places (Alcoholic Beverages)"
+  },
+  {
+    "initial_x": 2.0727863,
+    "initial_y": -0.053662524,
+    "id": 442299,
+    "label": "442299 All Other Home Furnishings Stores"
+  },
+  {
+    "initial_x": -1.3477728,
+    "initial_y": 5.4557967,
+    "id": 238310,
+    "label": "238310 Drywall and Insulation Contractors"
+  },
+  {
+    "initial_x": -0.967485,
+    "initial_y": 5.2579656,
+    "id": 238910,
+    "label": "238910 Site Preparation Contractors"
+  },
+  {
+    "initial_x": -1.9682212,
+    "initial_y": -3.1144464,
+    "id": 812990,
+    "label": "812990 All Other Personal Services"
+  },
+  {
+    "initial_x": 2.5080042,
+    "initial_y": -0.4007751,
+    "id": 452319,
+    "label": "452319 All Other General Merchandise Stores"
+  },
+  {
+    "initial_x": -1.2675345,
+    "initial_y": 5.523089,
+    "id": 238320,
+    "label": "238320 Painting and Wall Covering Contractors"
+  },
+  {
+    "initial_x": -0.9834675,
+    "initial_y": 5.265356,
+    "id": 237110,
+    "label": "237110 Water and Sewer Line and Related Structures Construction"
+  },
+  {
+    "initial_x": -3.3916934,
+    "initial_y": -1.5784382,
+    "id": 561720,
+    "label": "561720 Janitorial Services"
+  },
+  {
+    "initial_x": -1.6599492,
+    "initial_y": -2.6619735,
+    "id": 541990,
+    "label": "541990 All Other Professional, Scientific, and Technical Services"
+  },
+  {
+    "initial_x": -2.1534762,
+    "initial_y": -3.2023997,
+    "id": 541219,
+    "label": "541219 Other Accounting Services"
+  },
+  {
+    "initial_x": -3.4894817,
+    "initial_y": -3.6959753,
+    "id": 551112,
+    "label": "551112 Offices of Other Holding Companies"
+  },
+  {
+    "initial_x": -3.5360892,
+    "initial_y": 3.767698,
+    "id": 811412,
+    "label": "811412 Appliance Repair and Maintenance"
+  },
+  {
+    "initial_x": 1.7360849,
+    "initial_y": -3.3699567,
+    "id": 484110,
+    "label": "484110 General Freight Trucking, Local"
+  },
+  {
+    "initial_x": -3.4889178,
+    "initial_y": -3.744472,
+    "id": 522110,
+    "label": "522110 Commercial Banking"
+  },
+  {
+    "initial_x": 2.6659396,
+    "initial_y": -0.46285322,
+    "id": 454390,
+    "label": "454390 Other Direct Selling Establishments"
+  },
+  {
+    "initial_x": 2.1433966,
+    "initial_y": 0.42202896,
+    "id": 448140,
+    "label": "448140 Family Clothing Stores"
+  },
+  {
+    "initial_x": -0.82748127,
+    "initial_y": 0.57844764,
+    "id": 323111,
+    "label": "323111 Commercial Printing (except Screen and Books)"
+  },
+  {
+    "initial_x": 3.9209394,
+    "initial_y": -0.62031347,
+    "id": 424490,
+    "label": "424490 Other Grocery and Related Products Merchant Wholesalers"
+  },
+  {
+    "initial_x": -3.3113213,
+    "initial_y": -3.6102152,
+    "id": 522298,
+    "label": "522298 All Other Nondepository Credit Intermediation"
+  },
+  {
+    "initial_x": 1.2262387,
+    "initial_y": -1.2509832,
+    "id": 811111,
+    "label": "811111 General Automotive Repair"
+  },
+  {
+    "initial_x": -0.9101975,
+    "initial_y": -0.64154965,
+    "id": 443142,
+    "label": "443142 Electronics Stores"
+  },
+  {
+    "initial_x": -2.40249,
+    "initial_y": -3.4689753,
+    "id": 561110,
+    "label": "561110 Office Administrative Services"
+  },
+  {
+    "initial_x": 0.3380493,
+    "initial_y": 0.5356747,
+    "id": 423220,
+    "label": "423220 Home Furnishing Merchant Wholesalers"
+  },
+  {
+    "initial_x": 0.24163121,
+    "initial_y": 0.40314913,
+    "id": 423840,
+    "label": "423840 Industrial Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.3140383,
+    "initial_y": -0.16332823,
+    "id": 454110,
+    "label": "454110 Electronic Shopping and Mail-Order Houses"
+  },
+  {
+    "initial_x": 1.2500428,
+    "initial_y": -1.2298326,
+    "id": 441110,
+    "label": "441110 New Car Dealers"
+  },
+  {
+    "initial_x": -2.7235024,
+    "initial_y": -2.7960274,
+    "id": 541820,
+    "label": "541820 Public Relations Agencies"
+  },
+  {
+    "initial_x": -1.1292683,
+    "initial_y": -0.8377655,
+    "id": 518210,
+    "label": "518210 Data Processing, Hosting, and Related Services"
+  },
+  {
+    "initial_x": 1.4296277,
+    "initial_y": 0.5430451,
+    "id": 444130,
+    "label": "444130 Hardware Stores"
+  },
+  {
+    "initial_x": 0.26499492,
+    "initial_y": -3.565968,
+    "id": 721110,
+    "label": "721110 Hotels (except Casino Hotels) and Motels"
+  },
+  {
+    "initial_x": -0.3712541,
+    "initial_y": -5.177219,
+    "id": 812112,
+    "label": "812112 Beauty Salons"
+  },
+  {
+    "initial_x": -2.3756163,
+    "initial_y": -2.8629658,
+    "id": 522320,
+    "label": "522320 Financial Transactions Processing, Reserve, and Clearinghouse Activities"
+  },
+  {
+    "initial_x": -0.19061126,
+    "initial_y": -3.4089992,
+    "id": 711219,
+    "label": "711219 Other Spectator Sports"
+  },
+  {
+    "initial_x": 1.2620331,
+    "initial_y": -1.2338452,
+    "id": 811118,
+    "label": "811118 Other Automotive Mechanical and Electrical Repair and Maintenance"
+  },
+  {
+    "initial_x": -3.020657,
+    "initial_y": -3.155334,
+    "id": 524126,
+    "label": "524126 Direct Property and Casualty Insurance Carriers"
+  },
+  {
+    "initial_x": -3.5918345,
+    "initial_y": -3.7692633,
+    "id": 523930,
+    "label": "523930 Investment Advice"
+  },
+  {
+    "initial_x": -0.67613,
+    "initial_y": -4.861665,
+    "id": 561311,
+    "label": "561311 Employment Placement Agencies"
+  },
+  {
+    "initial_x": -3.3343568,
+    "initial_y": -0.95349365,
+    "id": 221118,
+    "label": "221118 Other Electric Power Generation"
+  },
+  {
+    "initial_x": -1.2678927,
+    "initial_y": -5.183999,
+    "id": 624190,
+    "label": "624190 Other Individual and Family Services"
+  },
+  {
+    "initial_x": 0.72964704,
+    "initial_y": 0.33696848,
+    "id": 424690,
+    "label": "424690 Other Chemical and Allied Products Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.8445355,
+    "initial_y": -3.2566226,
+    "id": 493120,
+    "label": "493120 Refrigerated Warehousing and Storage"
+  },
+  {
+    "initial_x": 0.12258794,
+    "initial_y": 0.58141994,
+    "id": 424210,
+    "label": "424210 Drugs and Druggists' Sundries Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.577253,
+    "initial_y": -5.4181213,
+    "id": 446110,
+    "label": "446110 Pharmacies and Drug Stores"
+  },
+  {
+    "initial_x": -1.0497018,
+    "initial_y": -5.506107,
+    "id": 621999,
+    "label": "621999 All Other Miscellaneous Ambulatory Health Care Services"
+  },
+  {
+    "initial_x": -0.6682095,
+    "initial_y": -0.46315387,
+    "id": 443141,
+    "label": "443141 Household Appliance Stores"
+  },
+  {
+    "initial_x": 0.22109057,
+    "initial_y": 0.33618927,
+    "id": 423620,
+    "label": "423620 Household Appliances, Electric Housewares, and Consumer Electronics Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.71243376,
+    "initial_y": -5.5881376,
+    "id": 621111,
+    "label": "621111 Offices of Physicians (except Mental Health Specialists)"
+  },
+  {
+    "initial_x": 0.1525184,
+    "initial_y": -1.5051144,
+    "id": 532490,
+    "label": "532490 Other Commercial and Industrial Machinery and Equipment Rental and Leasing"
+  },
+  {
+    "initial_x": 1.296044,
+    "initial_y": -1.282057,
+    "id": 441310,
+    "label": "441310 Automotive Parts and Accessories Stores"
+  },
+  {
+    "initial_x": -2.7550778,
+    "initial_y": -3.6755571,
+    "id": 524210,
+    "label": "524210 Insurance Agencies and Brokerages"
+  },
+  {
+    "initial_x": -1.3422402,
+    "initial_y": 5.364057,
+    "id": 238160,
+    "label": "238160 Roofing Contractors"
+  },
+  {
+    "initial_x": -2.7980742,
+    "initial_y": -2.9741478,
+    "id": 541211,
+    "label": "541211 Offices of Certified Public Accountants"
+  },
+  {
+    "initial_x": -2.3460414,
+    "initial_y": -3.2745852,
+    "id": 541618,
+    "label": "541618 Other Management Consulting Services"
+  },
+  {
+    "initial_x": -0.5365716,
+    "initial_y": 1.7719826,
+    "id": 339999,
+    "label": "339999 All Other Miscellaneous Manufacturing"
+  },
+  {
+    "initial_x": 1.7991766,
+    "initial_y": -3.181893,
+    "id": 488510,
+    "label": "488510 Freight Transportation Arrangement"
+  },
+  {
+    "initial_x": -2.6510508,
+    "initial_y": 4.047207,
+    "id": 332312,
+    "label": "332312 Fabricated Structural Metal Manufacturing"
+  },
+  {
+    "initial_x": 1.2147498,
+    "initial_y": -1.1656091,
+    "id": 423120,
+    "label": "423120 Motor Vehicle Supplies and New Parts Merchant Wholesalers"
+  },
+  {
+    "initial_x": -3.0890055,
+    "initial_y": -3.2578723,
+    "id": 531312,
+    "label": "531312 Nonresidential Property Managers"
+  },
+  {
+    "initial_x": 1.6073034,
+    "initial_y": 0.5077532,
+    "id": 442110,
+    "label": "442110 Furniture Stores"
+  },
+  {
+    "initial_x": -3.1520352,
+    "initial_y": -3.3698459,
+    "id": 237210,
+    "label": "237210 Land Subdivision"
+  },
+  {
+    "initial_x": -1.0129707,
+    "initial_y": -0.7333034,
+    "id": 423430,
+    "label": "423430 Computer and Computer Peripheral Equipment and Software Merchant Wholesalers"
+  },
+  {
+    "initial_x": 6.3303823,
+    "initial_y": 0.42243785,
+    "id": 112990,
+    "label": "112990 All Other Animal Production"
+  },
+  {
+    "initial_x": 1.5085628,
+    "initial_y": -3.3820567,
+    "id": 561510,
+    "label": "561510 Travel Agencies"
+  },
+  {
+    "initial_x": 2.1239874,
+    "initial_y": 0.33965918,
+    "id": 448150,
+    "label": "448150 Clothing Accessories Stores"
+  },
+  {
+    "initial_x": 1.7014885,
+    "initial_y": -3.327127,
+    "id": 561520,
+    "label": "561520 Tour Operators"
+  },
+  {
+    "initial_x": -1.7384453,
+    "initial_y": -2.4395971,
+    "id": 561990,
+    "label": "561990 All Other Support Services"
+  },
+  {
+    "initial_x": -3.168323,
+    "initial_y": -3.4859507,
+    "id": 531110,
+    "label": "531110 Lessors of Residential Buildings and Dwellings"
+  },
+  {
+    "initial_x": 3.907585,
+    "initial_y": -0.59113127,
+    "id": 424410,
+    "label": "424410 General Line Grocery Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.1507472,
+    "initial_y": 5.5825763,
+    "id": 238140,
+    "label": "238140 Masonry Contractors"
+  },
+  {
+    "initial_x": 0.30248392,
+    "initial_y": 0.49384332,
+    "id": 423210,
+    "label": "423210 Furniture Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.2190322,
+    "initial_y": 5.560687,
+    "id": 238330,
+    "label": "238330 Flooring Contractors"
+  },
+  {
+    "initial_x": -1.1417243,
+    "initial_y": -0.8576366,
+    "id": 511210,
+    "label": "511210 Software Publishers"
+  },
+  {
+    "initial_x": -1.312926,
+    "initial_y": 5.4149942,
+    "id": 238290,
+    "label": "238290 Other Building Equipment Contractors"
+  },
+  {
+    "initial_x": 0.4665034,
+    "initial_y": 0.23797293,
+    "id": 423720,
+    "label": "423720 Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.05724978,
+    "initial_y": 0.060722,
+    "id": 423690,
+    "label": "423690 Other Electronic Parts and Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.6689119,
+    "initial_y": -2.9487329,
+    "id": 488320,
+    "label": "488320 Marine Cargo Handling"
+  },
+  {
+    "initial_x": -0.20092174,
+    "initial_y": -3.2370932,
+    "id": 711410,
+    "label": "711410 Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures"
+  },
+  {
+    "initial_x": 0.8260586,
+    "initial_y": 0.4260418,
+    "id": 423930,
+    "label": "423930 Recyclable Material Merchant Wholesalers"
+  },
+  {
+    "initial_x": 0.16578533,
+    "initial_y": 0.21499422,
+    "id": 423610,
+    "label": "423610 Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": 6.700467,
+    "initial_y": 0.3548995,
+    "id": 111199,
+    "label": "111199 All Other Grain Farming"
+  },
+  {
+    "initial_x": -2.5291054,
+    "initial_y": 4.104326,
+    "id": 332999,
+    "label": "332999 All Other Miscellaneous Fabricated Metal Product Manufacturing"
+  },
+  {
+    "initial_x": -2.2318606,
+    "initial_y": -2.8645282,
+    "id": 711190,
+    "label": "711190 Other Performing Arts Companies"
+  },
+  {
+    "initial_x": 2.1383135,
+    "initial_y": 0.37393162,
+    "id": 448210,
+    "label": "448210 Shoe Stores"
+  },
+  {
+    "initial_x": -0.88791895,
+    "initial_y": -5.6698484,
+    "id": 621399,
+    "label": "621399 Offices of All Other Miscellaneous Health Practitioners"
+  },
+  {
+    "initial_x": 0.84340805,
+    "initial_y": 0.20683709,
+    "id": 424510,
+    "label": "424510 Grain and Field Bean Merchant Wholesalers"
+  },
+  {
+    "initial_x": -2.0691752,
+    "initial_y": -2.6306705,
+    "id": 541910,
+    "label": "541910 Marketing Research and Public Opinion Polling"
+  },
+  {
+    "initial_x": 3.8519228,
+    "initial_y": -0.50202,
+    "id": 424480,
+    "label": "424480 Fresh Fruit and Vegetable Merchant Wholesalers"
+  },
+  {
+    "initial_x": 3.4708147,
+    "initial_y": -0.93921775,
+    "id": 445310,
+    "label": "445310 Beer, Wine, and Liquor Stores"
+  },
+  {
+    "initial_x": -1.711219,
+    "initial_y": -1.4895535,
+    "id": 541430,
+    "label": "541430 Graphic Design Services"
+  },
+  {
+    "initial_x": -0.5820108,
+    "initial_y": 2.3502007,
+    "id": 326199,
+    "label": "326199 All Other Plastics Product Manufacturing"
+  },
+  {
+    "initial_x": -1.1412941,
+    "initial_y": -4.445177,
+    "id": 611110,
+    "label": "611110 Elementary and Secondary Schools"
+  },
+  {
+    "initial_x": 1.9982132,
+    "initial_y": 0.7084627,
+    "id": 424310,
+    "label": "424310 Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers"
+  },
+  {
+    "initial_x": -2.313365,
+    "initial_y": -2.3502629,
+    "id": 213112,
+    "label": "213112 Support Activities for Oil and Gas Operations"
+  },
+  {
+    "initial_x": -0.14233996,
+    "initial_y": -3.3935502,
+    "id": 713940,
+    "label": "713940 Fitness and Recreational Sports Centers"
+  },
+  {
+    "initial_x": 1.613329,
+    "initial_y": -3.499886,
+    "id": 485999,
+    "label": "485999 All Other Transit and Ground Passenger Transportation"
+  },
+  {
+    "initial_x": -3.3580604,
+    "initial_y": -3.642396,
+    "id": 523999,
+    "label": "523999 Miscellaneous Financial Investment Activities"
+  },
+  {
+    "initial_x": 7.001598,
+    "initial_y": -0.18790507,
+    "id": 111219,
+    "label": "111219 Other Vegetable (except Potato) and Melon Farming"
+  },
+  {
+    "initial_x": 1.2690904,
+    "initial_y": 0.656674,
+    "id": 444110,
+    "label": "444110 Home Centers"
+  },
+  {
+    "initial_x": 1.9494545,
+    "initial_y": 0.4891837,
+    "id": 451130,
+    "label": "451130 Sewing, Needlework, and Piece Goods Stores"
+  },
+  {
+    "initial_x": -3.9877975,
+    "initial_y": 3.4468198,
+    "id": 333999,
+    "label": "333999 All Other Miscellaneous General Purpose Machinery Manufacturing"
+  },
+  {
+    "initial_x": 2.9482906,
+    "initial_y": -0.6514683,
+    "id": 445230,
+    "label": "445230 Fruit and Vegetable Markets"
+  },
+  {
+    "initial_x": -0.86224186,
+    "initial_y": 0.37903523,
+    "id": 511199,
+    "label": "511199 All Other Publishers"
+  },
+  {
+    "initial_x": 1.0087337,
+    "initial_y": 0.12858443,
+    "id": 424720,
+    "label": "424720 Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals)"
+  },
+  {
+    "initial_x": -2.0930166,
+    "initial_y": -3.2025013,
+    "id": 541110,
+    "label": "541110 Offices of Lawyers"
+  },
+  {
+    "initial_x": 1.4041489,
+    "initial_y": -1.4036539,
+    "id": 811198,
+    "label": "811198 All Other Automotive Repair and Maintenance"
+  },
+  {
+    "initial_x": 6.2838407,
+    "initial_y": -0.17242186,
+    "id": 115112,
+    "label": "115112 Soil Preparation, Planting, and Cultivating"
+  },
+  {
+    "initial_x": -0.9784482,
+    "initial_y": -0.7149577,
+    "id": 423420,
+    "label": "423420 Office Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.9424791,
+    "initial_y": 0.6497529,
+    "id": 424320,
+    "label": "424320 Men's and Boys' Clothing and Furnishings Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.7729906,
+    "initial_y": -1.4854282,
+    "id": 541890,
+    "label": "541890 Other Services Related to Advertising"
+  },
+  {
+    "initial_x": 1.0323983,
+    "initial_y": -1.5748274,
+    "id": 451110,
+    "label": "451110 Sporting Goods Stores"
+  },
+  {
+    "initial_x": 3.7276487,
+    "initial_y": -0.37984642,
+    "id": 424590,
+    "label": "424590 Other Farm Product Raw Material Merchant Wholesalers"
+  },
+  {
+    "initial_x": 3.8505905,
+    "initial_y": -0.48239318,
+    "id": 424460,
+    "label": "424460 Fish and Seafood Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.0279408,
+    "initial_y": 2.2501469,
+    "id": 313110,
+    "label": "313110 Fiber, Yarn, and Thread Mills"
+  },
+  {
+    "initial_x": 4.790693,
+    "initial_y": -1.7700229,
+    "id": 311999,
+    "label": "311999 All Other Miscellaneous Food Manufacturing"
+  },
+  {
+    "initial_x": 2.0422404,
+    "initial_y": 1.9977847,
+    "id": 315220,
+    "label": "315220 Men’s and Boys’ Cut and Sew Apparel Manufacturing"
+  },
+  {
+    "initial_x": -0.8986605,
+    "initial_y": -5.582298,
+    "id": 621498,
+    "label": "621498 All Other Outpatient Care Centers"
+  },
+  {
+    "initial_x": -0.2063401,
+    "initial_y": -5.093232,
+    "id": 812111,
+    "label": "812111 Barber Shops"
+  },
+  {
+    "initial_x": -1.4358529,
+    "initial_y": -4.884264,
+    "id": 541380,
+    "label": "541380 Testing Laboratories"
+  },
+  {
+    "initial_x": -1.1148835,
+    "initial_y": 5.1943674,
+    "id": 331110,
+    "label": "331110 Iron and Steel Mills and Ferroalloy Manufacturing"
+  },
+  {
+    "initial_x": -1.0837691,
+    "initial_y": -0.9883718,
+    "id": 517919,
+    "label": "517919 All Other Telecommunications"
+  },
+  {
+    "initial_x": 6.058007,
+    "initial_y": -0.05495017,
+    "id": 115310,
+    "label": "115310 Support Activities for Forestry"
+  },
+  {
+    "initial_x": 4.593463,
+    "initial_y": -1.1635747,
+    "id": 445210,
+    "label": "445210 Meat Markets"
+  },
+  {
+    "initial_x": 0.6546711,
+    "initial_y": 0.47812608,
+    "id": 423510,
+    "label": "423510 Metal Service Centers and Other Metal Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.842452,
+    "initial_y": -0.5102297,
+    "id": 811219,
+    "label": "811219 Other Electronic and Precision Equipment Repair and Maintenance"
+  },
+  {
+    "initial_x": 4.6444283,
+    "initial_y": -1.8623722,
+    "id": 311812,
+    "label": "311812 Commercial Bakeries"
+  },
+  {
+    "initial_x": -3.554473,
+    "initial_y": -1.3124782,
+    "id": 562219,
+    "label": "562219 Other Nonhazardous Waste Treatment and Disposal"
+  },
+  {
+    "initial_x": 1.3654749,
+    "initial_y": -1.3253757,
+    "id": 811121,
+    "label": "811121 Automotive Body, Paint, and Interior Repair and Maintenance"
+  },
+  {
+    "initial_x": 3.0337293,
+    "initial_y": -0.91138875,
+    "id": 311811,
+    "label": "311811 Retail Bakeries"
+  },
+  {
+    "initial_x": 2.0419967,
+    "initial_y": -0.35810623,
+    "id": 451211,
+    "label": "451211 Book Stores"
+  },
+  {
+    "initial_x": -1.6884643,
+    "initial_y": -0.28444633,
+    "id": 339112,
+    "label": "339112 Surgical and Medical Instrument Manufacturing"
+  },
+  {
+    "initial_x": 2.0618157,
+    "initial_y": 1.9754105,
+    "id": 315240,
+    "label": "315240 Women’s, Girls’, and Infants’ Cut and Sew Apparel Manufacturing"
+  },
+  {
+    "initial_x": 2.9057088,
+    "initial_y": 4.2948823,
+    "id": 321999,
+    "label": "321999 All Other Miscellaneous Wood Product Manufacturing"
+  },
+  {
+    "initial_x": -0.6890931,
+    "initial_y": 4.9640813,
+    "id": 213114,
+    "label": "213114 Support Activities for Metal Mining"
+  },
+  {
+    "initial_x": -1.9417939,
+    "initial_y": -4.3660693,
+    "id": 813410,
+    "label": "813410 Civic and Social Organizations"
+  },
+  {
+    "initial_x": 2.7534285,
+    "initial_y": 4.1507573,
+    "id": 321918,
+    "label": "321918 Other Millwork (including Flooring)"
+  },
+  {
+    "initial_x": 6.2284293,
+    "initial_y": -0.12259297,
+    "id": 541320,
+    "label": "541320 Landscape Architectural Services"
+  },
+  {
+    "initial_x": 0.76742804,
+    "initial_y": -1.7182266,
+    "id": 532111,
+    "label": "532111 Passenger Car Rental"
+  },
+  {
+    "initial_x": -1.891856,
+    "initial_y": -4.3949957,
+    "id": 813990,
+    "label": "813990 Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)"
+  },
+  {
+    "initial_x": -1.3366596,
+    "initial_y": 5.401842,
+    "id": 336390,
+    "label": "336390 Other Motor Vehicle Parts Manufacturing"
+  },
+  {
+    "initial_x": -2.0813231,
+    "initial_y": -2.4775324,
+    "id": 541720,
+    "label": "541720 Research and Development in the Social Sciences and Humanities"
+  },
+  {
+    "initial_x": -2.017725,
+    "initial_y": -2.528371,
+    "id": 541715,
+    "label": "541715 Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)"
+  },
+  {
+    "initial_x": -1.6263405,
+    "initial_y": -1.460059,
+    "id": 541922,
+    "label": "541922 Commercial Photography"
+  },
+  {
+    "initial_x": 6.5243464,
+    "initial_y": 0.36177194,
+    "id": 111140,
+    "label": "111140 Wheat Farming"
+  },
+  {
+    "initial_x": 5.9885445,
+    "initial_y": -0.057697788,
+    "id": 113110,
+    "label": "113110 Timber Tract Operations"
+  },
+  {
+    "initial_x": 1.2129625,
+    "initial_y": -1.1987576,
+    "id": 441228,
+    "label": "441228 Motorcycle, ATV, and All Other Motor Vehicle Dealers"
+  },
+  {
+    "initial_x": -3.2121587,
+    "initial_y": -3.7104275,
+    "id": 523120,
+    "label": "523120 Securities Brokerage"
+  },
+  {
+    "initial_x": -0.88922787,
+    "initial_y": 0.60414356,
+    "id": 323120,
+    "label": "323120 Support Activities for Printing"
+  },
+  {
+    "initial_x": -1.3576691,
+    "initial_y": 5.160362,
+    "id": 238120,
+    "label": "238120 Structural Steel and Precast Concrete Contractors"
+  },
+  {
+    "initial_x": -2.9470258,
+    "initial_y": 1.4978353,
+    "id": 335999,
+    "label": "335999 All Other Miscellaneous Electrical Equipment and Component Manufacturing"
+  },
+  {
+    "initial_x": 2.0830765,
+    "initial_y": 0.6210982,
+    "id": 424330,
+    "label": "424330 Women's, Children's, and Infants' Clothing and Accessories Merchant Wholesalers"
+  },
+  {
+    "initial_x": 0.28654656,
+    "initial_y": -1.4862624,
+    "id": 532412,
+    "label": "532412 Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing"
+  },
+  {
+    "initial_x": 3.5182362,
+    "initial_y": -0.19190589,
+    "id": 424910,
+    "label": "424910 Farm Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.58033967,
+    "initial_y": -2.959736,
+    "id": 711510,
+    "label": "711510 Independent Artists, Writers, and Performers"
+  },
+  {
+    "initial_x": 6.215379,
+    "initial_y": 0.397527,
+    "id": 115210,
+    "label": "115210 Support Activities for Animal Production"
+  },
+  {
+    "initial_x": 1.8725122,
+    "initial_y": -3.2244945,
+    "id": 488991,
+    "label": "488991 Packing and Crating"
+  },
+  {
+    "initial_x": 1.3262978,
+    "initial_y": -0.8687088,
+    "id": 447190,
+    "label": "447190 Other Gasoline Stations"
+  },
+  {
+    "initial_x": -3.4388235,
+    "initial_y": -3.7125163,
+    "id": 523991,
+    "label": "523991 Trust, Fiduciary, and Custody Activities"
+  },
+  {
+    "initial_x": -0.74244,
+    "initial_y": 0.4780618,
+    "id": 337127,
+    "label": "337127 Institutional Furniture Manufacturing"
+  },
+  {
+    "initial_x": 2.1072416,
+    "initial_y": 0.32916108,
+    "id": 448320,
+    "label": "448320 Luggage and Leather Goods Stores"
+  },
+  {
+    "initial_x": -2.710072,
+    "initial_y": 4.0263605,
+    "id": 332510,
+    "label": "332510 Hardware Manufacturing"
+  },
+  {
+    "initial_x": 0.33002222,
+    "initial_y": -3.4817905,
+    "id": 721310,
+    "label": "721310 Rooming and Boarding Houses, Dormitories, and Workers' Camps"
+  },
+  {
+    "initial_x": 1.9739343,
+    "initial_y": -3.0107017,
+    "id": 493110,
+    "label": "493110 General Warehousing and Storage"
+  },
+  {
+    "initial_x": -0.8308655,
+    "initial_y": 0.49258137,
+    "id": 511110,
+    "label": "511110 Newspaper Publishers"
+  },
+  {
+    "initial_x": 0.70743525,
+    "initial_y": 0.42238414,
+    "id": 423520,
+    "label": "423520 Coal and Other Mineral and Ore Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.1583756,
+    "initial_y": -4.370994,
+    "id": 611310,
+    "label": "611310 Colleges, Universities, and Professional Schools"
+  },
+  {
+    "initial_x": -1.0359805,
+    "initial_y": -0.7477308,
+    "id": 811212,
+    "label": "811212 Computer and Office Machine Repair and Maintenance"
+  },
+  {
+    "initial_x": 1.468928,
+    "initial_y": 0.42664996,
+    "id": 453110,
+    "label": "453110 Florists"
+  },
+  {
+    "initial_x": -0.78504956,
+    "initial_y": 0.46132585,
+    "id": 511130,
+    "label": "511130 Book Publishers"
+  },
+  {
+    "initial_x": 1.3517587,
+    "initial_y": -0.30470675,
+    "id": 454310,
+    "label": "454310 Fuel Dealers"
+  },
+  {
+    "initial_x": -1.2542123,
+    "initial_y": -1.4924968,
+    "id": 512110,
+    "label": "512110 Motion Picture and Video Production"
+  },
+  {
+    "initial_x": -1.2004097,
+    "initial_y": 5.4779487,
+    "id": 339930,
+    "label": "339930 Doll, Toy, and Game Manufacturing"
+  },
+  {
+    "initial_x": 1.9971185,
+    "initial_y": -0.36693376,
+    "id": 453210,
+    "label": "453210 Office Supplies and Stationery Stores"
+  },
+  {
+    "initial_x": 1.868337,
+    "initial_y": -0.100990266,
+    "id": 453310,
+    "label": "453310 Used Merchandise Stores"
+  },
+  {
+    "initial_x": 1.9508799,
+    "initial_y": -0.14203817,
+    "id": 453220,
+    "label": "453220 Gift, Novelty, and Souvenir Stores"
+  },
+  {
+    "initial_x": 2.1282153,
+    "initial_y": 3.9529855,
+    "id": 337122,
+    "label": "337122 Nonupholstered Wood Household Furniture Manufacturing"
+  },
+  {
+    "initial_x": 3.896116,
+    "initial_y": -0.51643395,
+    "id": 424470,
+    "label": "424470 Meat and Meat Product Merchant Wholesalers"
+  },
+  {
+    "initial_x": 0.9014932,
+    "initial_y": 0.80696684,
+    "id": 423310,
+    "label": "423310 Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.6116726,
+    "initial_y": 0.089206845,
+    "id": 448310,
+    "label": "448310 Jewelry Stores"
+  },
+  {
+    "initial_x": 1.4320291,
+    "initial_y": 0.14223687,
+    "id": 339910,
+    "label": "339910 Jewelry and Silverware Manufacturing"
+  },
+  {
+    "initial_x": 6.4112573,
+    "initial_y": 0.52599233,
+    "id": 112120,
+    "label": "112120 Dairy Cattle and Milk Production"
+  },
+  {
+    "initial_x": 1.4987348,
+    "initial_y": -3.5585213,
+    "id": 485310,
+    "label": "485310 Taxi Service"
+  },
+  {
+    "initial_x": 7.080739,
+    "initial_y": -0.037331898,
+    "id": 111332,
+    "label": "111332 Grape Vineyards"
+  },
+  {
+    "initial_x": 1.3794951,
+    "initial_y": -1.2754544,
+    "id": 316210,
+    "label": "316210 Footwear Manufacturing"
+  },
+  {
+    "initial_x": -2.7684076,
+    "initial_y": 4.073613,
+    "id": 332812,
+    "label": "332812 Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers"
+  },
+  {
+    "initial_x": 3.919383,
+    "initial_y": -0.550865,
+    "id": 424430,
+    "label": "424430 Dairy Product (except Dried or Canned) Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.5166163,
+    "initial_y": -0.7934581,
+    "id": 453991,
+    "label": "453991 Tobacco Stores"
+  },
+  {
+    "initial_x": -1.1690606,
+    "initial_y": -1.0774993,
+    "id": 512199,
+    "label": "512199 Other Motion Picture and Video Industries"
+  },
+  {
+    "initial_x": 0.49929985,
+    "initial_y": 0.11426955,
+    "id": 423820,
+    "label": "423820 Farm and Garden Machinery and Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.9227812,
+    "initial_y": 4.268444,
+    "id": 113310,
+    "label": "113310 Logging"
+  },
+  {
+    "initial_x": 6.4049215,
+    "initial_y": 0.1003862,
+    "id": 115114,
+    "label": "115114 Postharvest Crop Activities (except Cotton Ginning)"
+  },
+  {
+    "initial_x": -3.4213412,
+    "initial_y": -3.6029804,
+    "id": 523910,
+    "label": "523910 Miscellaneous Intermediation"
+  },
+  {
+    "initial_x": 0.6044672,
+    "initial_y": 0.42841634,
+    "id": 424950,
+    "label": "424950 Paint, Varnish, and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.4934797,
+    "initial_y": -0.30914342,
+    "id": 452210,
+    "label": "452210 Department Stores"
+  },
+  {
+    "initial_x": 6.783552,
+    "initial_y": -0.32301423,
+    "id": 111421,
+    "label": "111421 Nursery and Tree Production"
+  },
+  {
+    "initial_x": -1.2840596,
+    "initial_y": -4.8182635,
+    "id": 813319,
+    "label": "813319 Other Social Advocacy Organizations"
+  },
+  {
+    "initial_x": -0.7608334,
+    "initial_y": -5.6341367,
+    "id": 621210,
+    "label": "621210 Offices of Dentists"
+  },
+  {
+    "initial_x": 1.6026561,
+    "initial_y": -3.4886801,
+    "id": 485111,
+    "label": "485111 Mixed Mode Transit Systems"
+  },
+  {
+    "initial_x": 1.1820992,
+    "initial_y": -1.3130078,
+    "id": 441120,
+    "label": "441120 Used Car Dealers"
+  },
+  {
+    "initial_x": 3.9396968,
+    "initial_y": -0.6319317,
+    "id": 424450,
+    "label": "424450 Confectionery Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.6606859,
+    "initial_y": -3.4349754,
+    "id": 561320,
+    "label": "561320 Temporary Help Services"
+  },
+  {
+    "initial_x": -1.9701272,
+    "initial_y": -4.467782,
+    "id": 813110,
+    "label": "813110 Religious Organizations"
+  },
+  {
+    "initial_x": 1.5980797,
+    "initial_y": -3.4913056,
+    "id": 485210,
+    "label": "485210 Interurban and Rural Bus Transportation"
+  },
+  {
+    "initial_x": 2.013118,
+    "initial_y": 1.9401996,
+    "id": 315990,
+    "label": "315990 Apparel Accessories and Other Apparel Manufacturing"
+  },
+  {
+    "initial_x": -1.2477264,
+    "initial_y": -0.9478641,
+    "id": 519190,
+    "label": "519190 All Other Information Services"
+  },
+  {
+    "initial_x": 2.0184057,
+    "initial_y": 0.6168926,
+    "id": 424340,
+    "label": "424340 Footwear Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.2267064,
+    "initial_y": -4.9099207,
+    "id": 623990,
+    "label": "623990 Other Residential Care Facilities"
+  },
+  {
+    "initial_x": -3.9185781,
+    "initial_y": 3.5012546,
+    "id": 333249,
+    "label": "333249 Other Industrial Machinery Manufacturing"
+  },
+  {
+    "initial_x": -1.1362286,
+    "initial_y": 5.4559345,
+    "id": 238340,
+    "label": "238340 Tile and Terrazzo Contractors"
+  },
+  {
+    "initial_x": -3.2121902,
+    "initial_y": -3.4380007,
+    "id": 523130,
+    "label": "523130 Commodity Contracts Dealing"
+  },
+  {
+    "initial_x": -1.9097253,
+    "initial_y": -4.4392004,
+    "id": 813910,
+    "label": "813910 Business Associations"
+  },
+  {
+    "initial_x": -1.1553091,
+    "initial_y": -4.378349,
+    "id": 611519,
+    "label": "611519 Other Technical and Trade Schools"
+  },
+  {
+    "initial_x": -1.5866239,
+    "initial_y": -1.5627862,
+    "id": 541921,
+    "label": "541921 Photography Studios, Portrait"
+  },
+  {
+    "initial_x": 2.1928442,
+    "initial_y": 0.42739233,
+    "id": 448120,
+    "label": "448120 Women's Clothing Stores"
+  },
+  {
+    "initial_x": 2.888981,
+    "initial_y": -0.8206985,
+    "id": 445292,
+    "label": "445292 Confectionery and Nut Stores"
+  },
+  {
+    "initial_x": 2.2186277,
+    "initial_y": 0.4533538,
+    "id": 448110,
+    "label": "448110 Men's Clothing Stores"
+  },
+  {
+    "initial_x": 2.0623653,
+    "initial_y": -0.19169775,
+    "id": 451120,
+    "label": "451120 Hobby, Toy, and Game Stores"
+  },
+  {
+    "initial_x": 1.5565603,
+    "initial_y": 0.60292107,
+    "id": 442210,
+    "label": "442210 Floor Covering Stores"
+  },
+  {
+    "initial_x": -1.0174447,
+    "initial_y": -5.530708,
+    "id": 622110,
+    "label": "622110 General Medical and Surgical Hospitals"
+  },
+  {
+    "initial_x": 1.601765,
+    "initial_y": -0.070677884,
+    "id": 444220,
+    "label": "444220 Nursery, Garden Center, and Farm Supply Stores"
+  },
+  {
+    "initial_x": 0.011634368,
+    "initial_y": -3.3926952,
+    "id": 611620,
+    "label": "611620 Sports and Recreation Instruction"
+  },
+  {
+    "initial_x": -0.891874,
+    "initial_y": -2.4175832,
+    "id": 811490,
+    "label": "811490 Other Personal and Household Goods Repair and Maintenance"
+  },
+  {
+    "initial_x": -0.12468394,
+    "initial_y": -3.38199,
+    "id": 713990,
+    "label": "713990 All Other Amusement and Recreation Industries"
+  },
+  {
+    "initial_x": -1.183783,
+    "initial_y": -1.2117345,
+    "id": 517911,
+    "label": "517911 Telecommunications Resellers"
+  },
+  {
+    "initial_x": -0.48677742,
+    "initial_y": -2.669668,
+    "id": 532210,
+    "label": "532210 Consumer Electronics and Appliances Rental"
+  },
+  {
+    "initial_x": 1.5106342,
+    "initial_y": 0.55633146,
+    "id": 444120,
+    "label": "444120 Paint and Wallpaper Stores"
+  },
+  {
+    "initial_x": 4.0617,
+    "initial_y": -1.0341228,
+    "id": 424820,
+    "label": "424820 Wine and Distilled Alcoholic Beverage Merchant Wholesalers"
+  },
+  {
+    "initial_x": 6.3208537,
+    "initial_y": -0.19102448,
+    "id": 561730,
+    "label": "561730 Landscaping Services"
+  },
+  {
+    "initial_x": 1.7794914,
+    "initial_y": -3.1031225,
+    "id": 492110,
+    "label": "492110 Couriers and Express Delivery Services"
+  },
+  {
+    "initial_x": 2.8964365,
+    "initial_y": 4.275127,
+    "id": 321113,
+    "label": "321113 Sawmills"
+  },
+  {
+    "initial_x": -0.8446716,
+    "initial_y": 0.3718563,
+    "id": 511120,
+    "label": "511120 Periodical Publishers"
+  },
+  {
+    "initial_x": -0.2682564,
+    "initial_y": -5.1949997,
+    "id": 446120,
+    "label": "446120 Cosmetics, Beauty Supplies, and Perfume Stores"
+  },
+  {
+    "initial_x": 4.195409,
+    "initial_y": -1.2126735,
+    "id": 312140,
+    "label": "312140 Distilleries"
+  },
+  {
+    "initial_x": -2.4726179,
+    "initial_y": -5.396492,
+    "id": 921190,
+    "label": "921190 Other General Government Support"
+  },
+  {
+    "initial_x": 6.057659,
+    "initial_y": -0.14987136,
+    "id": 115116,
+    "label": "115116 Farm Management Services"
+  },
+  {
+    "initial_x": -0.54737157,
+    "initial_y": -2.8493452,
+    "id": 711310,
+    "label": "711310 Promoters of Performing Arts, Sports, and Similar Events with Facilities"
+  },
+  {
+    "initial_x": -0.99269,
+    "initial_y": 5.232176,
+    "id": 238110,
+    "label": "238110 Poured Concrete Foundation and Structure Contractors"
+  },
+  {
+    "initial_x": 0.44463056,
+    "initial_y": 0.09569089,
+    "id": 423810,
+    "label": "423810 Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.9589807,
+    "initial_y": 2.2195697,
+    "id": 314999,
+    "label": "314999 All Other Miscellaneous Textile Product Mills"
+  },
+  {
+    "initial_x": -1.1705126,
+    "initial_y": -1.0880433,
+    "id": 533110,
+    "label": "533110 Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)"
+  },
+  {
+    "initial_x": -2.088337,
+    "initial_y": -2.4599261,
+    "id": 541690,
+    "label": "541690 Other Scientific and Technical Consulting Services"
+  },
+  {
+    "initial_x": -2.7103772,
+    "initial_y": 3.9114437,
+    "id": 332313,
+    "label": "332313 Plate Work Manufacturing"
+  },
+  {
+    "initial_x": -1.2292563,
+    "initial_y": -4.7480016,
+    "id": 624410,
+    "label": "624410 Child Day Care Services"
+  },
+  {
+    "initial_x": -3.3142288,
+    "initial_y": -0.98849785,
+    "id": 221210,
+    "label": "221210 Natural Gas Distribution"
+  },
+  {
+    "initial_x": -1.831649,
+    "initial_y": -3.0511515,
+    "id": 561613,
+    "label": "561613 Armored Car Services"
+  },
+  {
+    "initial_x": 4.4550667,
+    "initial_y": -1.8933352,
+    "id": 311821,
+    "label": "311821 Cookie and Cracker Manufacturing"
+  },
+  {
+    "initial_x": -1.4849238,
+    "initial_y": 0.5553336,
+    "id": 423450,
+    "label": "423450 Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.63997,
+    "initial_y": -2.6107495,
+    "id": 541930,
+    "label": "541930 Translation and Interpretation Services"
+  },
+  {
+    "initial_x": -2.5435913,
+    "initial_y": 4.120306,
+    "id": 332321,
+    "label": "332321 Metal Window and Door Manufacturing"
+  },
+  {
+    "initial_x": -2.8584926,
+    "initial_y": 1.2872531,
+    "id": 334419,
+    "label": "334419 Other Electronic Component Manufacturing"
+  },
+  {
+    "initial_x": -0.82022774,
+    "initial_y": -5.5828075,
+    "id": 541940,
+    "label": "541940 Veterinary Services"
+  },
+  {
+    "initial_x": 2.013877,
+    "initial_y": 2.2647254,
+    "id": 313210,
+    "label": "313210 Broadwoven Fabric Mills"
+  },
+  {
+    "initial_x": 6.988211,
+    "initial_y": -0.0940017,
+    "id": 111339,
+    "label": "111339 Other Noncitrus Fruit Farming"
+  },
+  {
+    "initial_x": 0.35547465,
+    "initial_y": 0.15377103,
+    "id": 423860,
+    "label": "423860 Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers"
+  },
+  {
+    "initial_x": -2.7088351,
+    "initial_y": 3.8119388,
+    "id": 332322,
+    "label": "332322 Sheet Metal Work Manufacturing"
+  },
+  {
+    "initial_x": 1.7143536,
+    "initial_y": -3.3570647,
+    "id": 488490,
+    "label": "488490 Other Support Activities for Road Transportation"
+  },
+  {
+    "initial_x": -3.4928622,
+    "initial_y": 3.751824,
+    "id": 811310,
+    "label": "811310 Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance"
+  },
+  {
+    "initial_x": 1.2945939,
+    "initial_y": 0.21877041,
+    "id": 423940,
+    "label": "423940 Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers"
+  },
+  {
+    "initial_x": 0.5228761,
+    "initial_y": 0.39701086,
+    "id": 423710,
+    "label": "423710 Hardware Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.3612763,
+    "initial_y": -2.622202,
+    "id": 483211,
+    "label": "483211 Inland Water Freight Transportation"
+  },
+  {
+    "initial_x": 4.8118167,
+    "initial_y": -1.3580873,
+    "id": 311611,
+    "label": "311611 Animal (except Poultry) Slaughtering"
+  },
+  {
+    "initial_x": -1.359434,
+    "initial_y": 5.5308223,
+    "id": 238150,
+    "label": "238150 Glass and Glazing Contractors"
+  },
+  {
+    "initial_x": 0.030684607,
+    "initial_y": 2.94064,
+    "id": 325998,
+    "label": "325998 All Other Miscellaneous Chemical Product and Preparation Manufacturing"
+  },
+  {
+    "initial_x": 0.2667403,
+    "initial_y": 3.2720716,
+    "id": 325180,
+    "label": "325180 Other Basic Inorganic Chemical Manufacturing"
+  },
+  {
+    "initial_x": -3.3481019,
+    "initial_y": -3.4591138,
+    "id": 525990,
+    "label": "525990 Other Financial Vehicles"
+  },
+  {
+    "initial_x": 2.09963,
+    "initial_y": 3.9707456,
+    "id": 337211,
+    "label": "337211 Wood Office Furniture Manufacturing"
+  },
+  {
+    "initial_x": 6.3079505,
+    "initial_y": -0.11451082,
+    "id": 115115,
+    "label": "115115 Farm Labor Contractors and Crew Leaders"
+  },
+  {
+    "initial_x": 0.15987936,
+    "initial_y": 0.3932766,
+    "id": 423440,
+    "label": "423440 Other Commercial Equipment Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.3359131,
+    "initial_y": -4.5862093,
+    "id": 624310,
+    "label": "624310 Vocational Rehabilitation Services"
+  },
+  {
+    "initial_x": -2.841449,
+    "initial_y": 1.0981333,
+    "id": 333318,
+    "label": "333318 Other Commercial and Service Industry Machinery Manufacturing"
+  },
+  {
+    "initial_x": -0.33680558,
+    "initial_y": -5.301171,
+    "id": 446199,
+    "label": "446199 All Other Health and Personal Care Stores"
+  },
+  {
+    "initial_x": -2.3412948,
+    "initial_y": -3.038128,
+    "id": 561611,
+    "label": "561611 Investigation Services"
+  },
+  {
+    "initial_x": -3.6574838,
+    "initial_y": 3.6520555,
+    "id": 811411,
+    "label": "811411 Home and Garden Equipment Repair and Maintenance"
+  },
+  {
+    "initial_x": 6.4049587,
+    "initial_y": 0.6190768,
+    "id": 112210,
+    "label": "112210 Hog and Pig Farming"
+  },
+  {
+    "initial_x": -0.7833467,
+    "initial_y": 3.5762558,
+    "id": 327120,
+    "label": "327120 Clay Building Material and Refractories Manufacturing"
+  },
+  {
+    "initial_x": -3.3772855,
+    "initial_y": -3.5021627,
+    "id": 525910,
+    "label": "525910 Open-End Investment Funds"
+  },
+  {
+    "initial_x": 0.7037602,
+    "initial_y": -1.6525625,
+    "id": 532120,
+    "label": "532120 Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing"
+  },
+  {
+    "initial_x": 4.8370805,
+    "initial_y": -1.4547856,
+    "id": 311612,
+    "label": "311612 Meat Processed from Carcasses"
+  },
+  {
+    "initial_x": -3.8813171,
+    "initial_y": 3.450289,
+    "id": 332216,
+    "label": "332216 Saw Blade and Handtool Manufacturing"
+  },
+  {
+    "initial_x": 6.454506,
+    "initial_y": 0.49419203,
+    "id": 112410,
+    "label": "112410 Sheep Farming"
+  },
+  {
+    "initial_x": -2.4691448,
+    "initial_y": 1.2363088,
+    "id": 334519,
+    "label": "334519 Other Measuring and Controlling Device Manufacturing"
+  },
+  {
+    "initial_x": 4.78133,
+    "initial_y": -1.9387232,
+    "id": 311421,
+    "label": "311421 Fruit and Vegetable Canning"
+  },
+  {
+    "initial_x": -3.5340862,
+    "initial_y": -1.2962259,
+    "id": 221320,
+    "label": "221320 Sewage Treatment Facilities"
+  },
+  {
+    "initial_x": -1.1219788,
+    "initial_y": -5.3425736,
+    "id": 623110,
+    "label": "623110 Nursing Care Facilities (Skilled Nursing Facilities)"
+  },
+  {
+    "initial_x": -0.8174085,
+    "initial_y": -0.53064513,
+    "id": 811211,
+    "label": "811211 Consumer Electronics Repair and Maintenance"
+  },
+  {
+    "initial_x": 2.1512864,
+    "initial_y": 0.39959854,
+    "id": 448130,
+    "label": "448130 Children's and Infants' Clothing Stores"
+  },
+  {
+    "initial_x": -0.7004007,
+    "initial_y": 3.730168,
+    "id": 327390,
+    "label": "327390 Other Concrete Product Manufacturing"
+  },
+  {
+    "initial_x": -2.849572,
+    "initial_y": 1.002686,
+    "id": 334111,
+    "label": "334111 Electronic Computer Manufacturing"
+  },
+  {
+    "initial_x": -0.19476336,
+    "initial_y": -3.204563,
+    "id": 531120,
+    "label": "531120 Lessors of Nonresidential Buildings (except Miniwarehouses)"
+  },
+  {
+    "initial_x": -0.89503676,
+    "initial_y": -2.3860483,
+    "id": 812320,
+    "label": "812320 Drycleaning and Laundry Services (except Coin-Operated)"
+  },
+  {
+    "initial_x": -2.4260244,
+    "initial_y": -5.3558874,
+    "id": 921110,
+    "label": "921110 Executive Offices"
+  },
+  {
+    "initial_x": -3.8897545,
+    "initial_y": 3.4436884,
+    "id": 333517,
+    "label": "333517 Machine Tool Manufacturing"
+  },
+  {
+    "initial_x": -1.4388444,
+    "initial_y": 5.2147765,
+    "id": 336611,
+    "label": "336611 Ship Building and Repairing"
+  },
+  {
+    "initial_x": -0.051823176,
+    "initial_y": 4.2576375,
+    "id": 212319,
+    "label": "212319 Other Crushed and Broken Stone Mining and Quarrying"
+  },
+  {
+    "initial_x": 0.19985852,
+    "initial_y": 2.5775878,
+    "id": 325412,
+    "label": "325412 Pharmaceutical Preparation Manufacturing"
+  },
+  {
+    "initial_x": 3.9636183,
+    "initial_y": -0.86586607,
+    "id": 424940,
+    "label": "424940 Tobacco and Tobacco Product Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.2697021,
+    "initial_y": 5.359279,
+    "id": 236118,
+    "label": "236118 Residential Remodelers"
+  },
+  {
+    "initial_x": -2.9035573,
+    "initial_y": 1.3962301,
+    "id": 335312,
+    "label": "335312 Motor and Generator Manufacturing"
+  },
+  {
+    "initial_x": 2.8349686,
+    "initial_y": -1.2606823,
+    "id": 722513,
+    "label": "722513 Limited-Service Restaurants"
+  },
+  {
+    "initial_x": 2.8756535,
+    "initial_y": 4.256611,
+    "id": 321920,
+    "label": "321920 Wood Container and Pallet Manufacturing"
+  },
+  {
+    "initial_x": -2.022317,
+    "initial_y": -4.3659773,
+    "id": 813930,
+    "label": "813930 Labor Unions and Similar Labor Organizations"
+  },
+  {
+    "initial_x": 0.34642226,
+    "initial_y": 0.3505741,
+    "id": 423910,
+    "label": "423910 Sporting and Recreational Goods and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.95737666,
+    "initial_y": 5.201619,
+    "id": 236210,
+    "label": "236210 Industrial Building Construction"
+  },
+  {
+    "initial_x": 0.033460476,
+    "initial_y": 0.40797025,
+    "id": 423490,
+    "label": "423490 Other Professional Equipment and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.6714398,
+    "initial_y": -1.7830021,
+    "id": 541860,
+    "label": "541860 Direct Mail Advertising"
+  },
+  {
+    "initial_x": 2.1515496,
+    "initial_y": -0.57829106,
+    "id": 451212,
+    "label": "451212 News Dealers and Newsstands"
+  },
+  {
+    "initial_x": -0.59431034,
+    "initial_y": 3.7279298,
+    "id": 327991,
+    "label": "327991 Cut Stone and Stone Product Manufacturing"
+  },
+  {
+    "initial_x": -2.7675426,
+    "initial_y": 3.8707066,
+    "id": 332111,
+    "label": "332111 Iron and Steel Forging"
+  },
+  {
+    "initial_x": 6.4729757,
+    "initial_y": 0.5317435,
+    "id": 112112,
+    "label": "112112 Cattle Feedlots"
+  },
+  {
+    "initial_x": -0.075944506,
+    "initial_y": 0.5492462,
+    "id": 424120,
+    "label": "424120 Stationery and Office Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.7229492,
+    "initial_y": 1.2761422,
+    "id": 322299,
+    "label": "322299 All Other Converted Paper Product Manufacturing"
+  },
+  {
+    "initial_x": -2.1734295,
+    "initial_y": -3.2771094,
+    "id": 541213,
+    "label": "541213 Tax Preparation Services"
+  },
+  {
+    "initial_x": -2.4642572,
+    "initial_y": -5.407991,
+    "id": 921120,
+    "label": "921120 Legislative Bodies"
+  },
+  {
+    "initial_x": -1.882193,
+    "initial_y": -4.460719,
+    "id": 813920,
+    "label": "813920 Professional Organizations"
+  },
+  {
+    "initial_x": -1.498995,
+    "initial_y": -1.6169837,
+    "id": 519110,
+    "label": "519110 News Syndicates"
+  },
+  {
+    "initial_x": 1.4367342,
+    "initial_y": -1.3866786,
+    "id": 811192,
+    "label": "811192 Car Washes"
+  },
+  {
+    "initial_x": -0.98362404,
+    "initial_y": 0.38539708,
+    "id": 334614,
+    "label": "334614 Software and Other Prerecorded Compact Disc, Tape, and Record Reproducing"
+  },
+  {
+    "initial_x": 5.1339946,
+    "initial_y": -1.0611743,
+    "id": 311710,
+    "label": "311710 Seafood Product Preparation and Packaging"
+  },
+  {
+    "initial_x": -3.5239177,
+    "initial_y": -3.799248,
+    "id": 522120,
+    "label": "522120 Savings Institutions"
+  },
+  {
+    "initial_x": 1.4279709,
+    "initial_y": -2.671689,
+    "id": 483212,
+    "label": "483212 Inland Water Passenger Transportation"
+  },
+  {
+    "initial_x": 1.9405481,
+    "initial_y": 2.2036939,
+    "id": 313310,
+    "label": "313310 Textile and Fabric Finishing Mills"
+  },
+  {
+    "initial_x": 0.21554855,
+    "initial_y": 0.38556913,
+    "id": 423850,
+    "label": "423850 Service Establishment Equipment and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -3.4275646,
+    "initial_y": -1.1989511,
+    "id": 221310,
+    "label": "221310 Water Supply and Irrigation Systems"
+  },
+  {
+    "initial_x": -1.7196373,
+    "initial_y": -2.3225803,
+    "id": 541410,
+    "label": "541410 Interior Design Services"
+  },
+  {
+    "initial_x": -0.22445193,
+    "initial_y": 4.201632,
+    "id": 212321,
+    "label": "212321 Construction Sand and Gravel Mining"
+  },
+  {
+    "initial_x": -0.34872508,
+    "initial_y": -5.016589,
+    "id": 812199,
+    "label": "812199 Other Personal Care Services"
+  },
+  {
+    "initial_x": 0.8104789,
+    "initial_y": 1.0999063,
+    "id": 423320,
+    "label": "423320 Brick, Stone, and Related Construction Material Merchant Wholesalers"
+  },
+  {
+    "initial_x": -2.7455192,
+    "initial_y": -3.9237661,
+    "id": 524128,
+    "label": "524128 Other Direct Insurance (except Life, Health, and Medical) Carriers"
+  },
+  {
+    "initial_x": -2.1242008,
+    "initial_y": -2.4010198,
+    "id": 541370,
+    "label": "541370 Surveying and Mapping (except Geophysical) Services"
+  },
+  {
+    "initial_x": -1.1137894,
+    "initial_y": -4.4800835,
+    "id": 922140,
+    "label": "922140 Correctional Institutions"
+  },
+  {
+    "initial_x": -2.9014616,
+    "initial_y": 1.4183403,
+    "id": 335313,
+    "label": "335313 Switchgear and Switchboard Apparatus Manufacturing"
+  },
+  {
+    "initial_x": 1.8107715,
+    "initial_y": 1.8574657,
+    "id": 316998,
+    "label": "316998 All Other Leather Good and Allied Product Manufacturing"
+  },
+  {
+    "initial_x": 3.5771105,
+    "initial_y": -0.19548982,
+    "id": 424930,
+    "label": "424930 Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": 6.832448,
+    "initial_y": 0.52683884,
+    "id": 111150,
+    "label": "111150 Corn Farming"
+  },
+  {
+    "initial_x": 2.08045,
+    "initial_y": 1.9853603,
+    "id": 315190,
+    "label": "315190 Other Apparel Knitting Mills"
+  },
+  {
+    "initial_x": -3.9532776,
+    "initial_y": 3.4381332,
+    "id": 333519,
+    "label": "333519 Rolling Mill and Other Metalworking Machinery Manufacturing"
+  },
+  {
+    "initial_x": 2.0110188,
+    "initial_y": 1.9794265,
+    "id": 315280,
+    "label": "315280 Other Cut and Sew Apparel Manufacturing"
+  },
+  {
+    "initial_x": 0.3622027,
+    "initial_y": -3.4800532,
+    "id": 721199,
+    "label": "721199 All Other Traveler Accommodation"
+  },
+  {
+    "initial_x": -1.5722183,
+    "initial_y": 0.0608267,
+    "id": 446130,
+    "label": "446130 Optical Goods Stores"
+  },
+  {
+    "initial_x": -0.10202084,
+    "initial_y": 0.6323783,
+    "id": 424130,
+    "label": "424130 Industrial and Personal Service Paper Merchant Wholesalers"
+  },
+  {
+    "initial_x": -1.6712999,
+    "initial_y": -2.9602113,
+    "id": 561621,
+    "label": "561621 Security Systems Services (except Locksmiths)"
+  },
+  {
+    "initial_x": 2.6022916,
+    "initial_y": -0.82516295,
+    "id": 445120,
+    "label": "445120 Convenience Stores"
+  },
+  {
+    "initial_x": 6.492064,
+    "initial_y": 0.5042832,
+    "id": 112111,
+    "label": "112111 Beef Cattle Ranching and Farming"
+  },
+  {
+    "initial_x": 0.23074426,
+    "initial_y": 2.9088457,
+    "id": 325199,
+    "label": "325199 All Other Basic Organic Chemical Manufacturing"
+  },
+  {
+    "initial_x": 2.853931,
+    "initial_y": 4.2410135,
+    "id": 321214,
+    "label": "321214 Truss Manufacturing"
+  },
+  {
+    "initial_x": -1.1625131,
+    "initial_y": -4.33167,
+    "id": 611210,
+    "label": "611210 Junior Colleges"
+  },
+  {
+    "initial_x": 4.304974,
+    "initial_y": -1.3708944,
+    "id": 312111,
+    "label": "312111 Soft Drink Manufacturing"
+  },
+  {
+    "initial_x": 4.010883,
+    "initial_y": -0.98445946,
+    "id": 424810,
+    "label": "424810 Beer and Ale Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.3610774,
+    "initial_y": -2.5645852,
+    "id": 481219,
+    "label": "481219 Other Nonscheduled Air Transportation"
+  },
+  {
+    "initial_x": 2.114655,
+    "initial_y": 3.9609876,
+    "id": 337125,
+    "label": "337125 Household Furniture (except Wood and Metal) Manufacturing"
+  },
+  {
+    "initial_x": -1.5955237,
+    "initial_y": -2.421933,
+    "id": 561920,
+    "label": "561920 Convention and Trade Show Organizers"
+  },
+  {
+    "initial_x": -3.363695,
+    "initial_y": -3.6767545,
+    "id": 522390,
+    "label": "522390 Other Activities Related to Credit Intermediation"
+  },
+  {
+    "initial_x": 1.5930179,
+    "initial_y": -3.4462285,
+    "id": 482111,
+    "label": "482111 Line-Haul Railroads"
+  },
+  {
+    "initial_x": 6.9719057,
+    "initial_y": -0.10885879,
+    "id": 111336,
+    "label": "111336 Fruit and Tree Nut Combination Farming"
+  },
+  {
+    "initial_x": 2.1972568,
+    "initial_y": 0.5079752,
+    "id": 448190,
+    "label": "448190 Other Clothing Stores"
+  },
+  {
+    "initial_x": -4.1409783,
+    "initial_y": 3.1465564,
+    "id": 333111,
+    "label": "333111 Farm Machinery and Equipment Manufacturing"
+  },
+  {
+    "initial_x": 0.24927321,
+    "initial_y": 2.7933462,
+    "id": 325620,
+    "label": "325620 Toilet Preparation Manufacturing"
+  },
+  {
+    "initial_x": 0.3427639,
+    "initial_y": -3.449129,
+    "id": 721211,
+    "label": "721211 RV (Recreational Vehicle) Parks and Campgrounds"
+  },
+  {
+    "initial_x": 0.9731971,
+    "initial_y": 0.095555335,
+    "id": 424710,
+    "label": "424710 Petroleum Bulk Stations and Terminals"
+  },
+  {
+    "initial_x": -4.2697606,
+    "initial_y": 2.4430377,
+    "id": 336111,
+    "label": "336111 Automobile Manufacturing"
+  },
+  {
+    "initial_x": 5.0085926,
+    "initial_y": -1.7674897,
+    "id": 311211,
+    "label": "311211 Flour Milling"
+  },
+  {
+    "initial_x": -2.7423658,
+    "initial_y": 3.868746,
+    "id": 332119,
+    "label": "332119 Metal Crown, Closure, and Other Metal Stamping (except Automotive)"
+  },
+  {
+    "initial_x": -1.5525687,
+    "initial_y": -1.361563,
+    "id": 812921,
+    "label": "812921 Photofinishing Laboratories (except One-Hour)"
+  },
+  {
+    "initial_x": 6.75108,
+    "initial_y": 0.40840942,
+    "id": 111110,
+    "label": "111110 Soybean Farming"
+  },
+  {
+    "initial_x": 2.8476682,
+    "initial_y": -1.3838859,
+    "id": 722320,
+    "label": "722320 Caterers"
+  },
+  {
+    "initial_x": -0.84474653,
+    "initial_y": -0.62159956,
+    "id": 811430,
+    "label": "811430 Footwear and Leather Goods Repair"
+  },
+  {
+    "initial_x": -0.20696892,
+    "initial_y": 4.1959743,
+    "id": 212311,
+    "label": "212311 Dimension Stone Mining and Quarrying"
+  },
+  {
+    "initial_x": -2.864783,
+    "initial_y": 1.0763714,
+    "id": 334118,
+    "label": "334118 Computer Terminal and Other Computer Peripheral Equipment Manufacturing"
+  },
+  {
+    "initial_x": -2.536957,
+    "initial_y": 3.612792,
+    "id": 331221,
+    "label": "331221 Rolled Steel Shape Manufacturing"
+  },
+  {
+    "initial_x": 4.205632,
+    "initial_y": -1.2387667,
+    "id": 312130,
+    "label": "312130 Wineries"
+  },
+  {
+    "initial_x": -0.61540014,
+    "initial_y": 2.3375552,
+    "id": 326299,
+    "label": "326299 All Other Rubber Product Manufacturing"
+  },
+  {
+    "initial_x": -1.0595772,
+    "initial_y": 5.2205076,
+    "id": 237130,
+    "label": "237130 Power and Communication Line and Related Structures Construction"
+  },
+  {
+    "initial_x": -2.7299852,
+    "initial_y": -3.9252563,
+    "id": 524113,
+    "label": "524113 Direct Life Insurance Carriers"
+  },
+  {
+    "initial_x": -3.543466,
+    "initial_y": -3.7149994,
+    "id": 522291,
+    "label": "522291 Consumer Lending"
+  },
+  {
+    "initial_x": 3.6599855,
+    "initial_y": -0.28328964,
+    "id": 424520,
+    "label": "424520 Livestock Merchant Wholesalers"
+  },
+  {
+    "initial_x": 5.1247683,
+    "initial_y": -1.5241449,
+    "id": 311119,
+    "label": "311119 Other Animal Food Manufacturing"
+  },
+  {
+    "initial_x": -2.8715045,
+    "initial_y": 1.2267212,
+    "id": 334290,
+    "label": "334290 Other Communications Equipment Manufacturing"
+  },
+  {
+    "initial_x": 5.0137906,
+    "initial_y": -1.6737856,
+    "id": 311225,
+    "label": "311225 Fats and Oils Refining and Blending"
+  },
+  {
+    "initial_x": -0.40412,
+    "initial_y": -3.38003,
+    "id": 712110,
+    "label": "712110 Museums"
+  },
+  {
+    "initial_x": -0.13016005,
+    "initial_y": -3.2832177,
+    "id": 713110,
+    "label": "713110 Amusement and Theme Parks"
+  },
+  {
+    "initial_x": -1.3856488,
+    "initial_y": -3.1735659,
+    "id": 812210,
+    "label": "812210 Funeral Homes and Funeral Services"
+  },
+  {
+    "initial_x": -2.848272,
+    "initial_y": 2.3152852,
+    "id": 423730,
+    "label": "423730 Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.7335179,
+    "initial_y": 3.231557,
+    "id": 327110,
+    "label": "327110 Pottery, Ceramics, and Plumbing Fixture Manufacturing"
+  },
+  {
+    "initial_x": 5.722724,
+    "initial_y": -0.09182776,
+    "id": 114111,
+    "label": "114111 Finfish Fishing"
+  },
+  {
+    "initial_x": -0.052066766,
+    "initial_y": 2.9389098,
+    "id": 325510,
+    "label": "325510 Paint and Coating Manufacturing"
+  },
+  {
+    "initial_x": 1.2700777,
+    "initial_y": 0.71262825,
+    "id": 444190,
+    "label": "444190 Other Building Material Dealers"
+  },
+  {
+    "initial_x": -1.2982166,
+    "initial_y": 2.8628144,
+    "id": 327215,
+    "label": "327215 Glass Product Manufacturing Made of Purchased Glass"
+  },
+  {
+    "initial_x": 5.903638,
+    "initial_y": -0.011475986,
+    "id": 113210,
+    "label": "113210 Forest Nurseries and Gathering of Forest Products"
+  },
+  {
+    "initial_x": -0.27452737,
+    "initial_y": 1.9001828,
+    "id": 339920,
+    "label": "339920 Sporting and Athletic Goods Manufacturing"
+  },
+  {
+    "initial_x": -0.35657692,
+    "initial_y": -3.346356,
+    "id": 611610,
+    "label": "611610 Fine Arts Schools"
+  },
+  {
+    "initial_x": -2.1136816,
+    "initial_y": -3.0185244,
+    "id": 561492,
+    "label": "561492 Court Reporting and Stenotype Services"
+  },
+  {
+    "initial_x": 0.08580385,
+    "initial_y": -3.1359923,
+    "id": 713120,
+    "label": "713120 Amusement Arcades"
+  },
+  {
+    "initial_x": -0.6839295,
+    "initial_y": 3.6997523,
+    "id": 327999,
+    "label": "327999 All Other Miscellaneous Nonmetallic Mineral Product Manufacturing"
+  },
+  {
+    "initial_x": -3.0350206,
+    "initial_y": 2.076432,
+    "id": 333415,
+    "label": "333415 Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing"
+  },
+  {
+    "initial_x": -1.0231861,
+    "initial_y": -1.5851427,
+    "id": 512120,
+    "label": "512120 Motion Picture and Video Distribution"
+  },
+  {
+    "initial_x": -2.6846638,
+    "initial_y": -3.925141,
+    "id": 524114,
+    "label": "524114 Direct Health and Medical Insurance Carriers"
+  },
+  {
+    "initial_x": -0.6353661,
+    "initial_y": 3.7653325,
+    "id": 327320,
+    "label": "327320 Ready-Mix Concrete Manufacturing"
+  },
+  {
+    "initial_x": -1.3482077,
+    "initial_y": 3.0010679,
+    "id": 327211,
+    "label": "327211 Flat Glass Manufacturing"
+  },
+  {
+    "initial_x": 2.1310558,
+    "initial_y": 3.8966377,
+    "id": 811420,
+    "label": "811420 Reupholstery and Furniture Repair"
+  },
+  {
+    "initial_x": -0.9587955,
+    "initial_y": -1.0628976,
+    "id": 491110,
+    "label": "491110 Postal Service"
+  },
+  {
+    "initial_x": -0.71455336,
+    "initial_y": 2.4081535,
+    "id": 424610,
+    "label": "424610 Plastics Materials and Basic Forms and Shapes Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.7322157,
+    "initial_y": 1.3408056,
+    "id": 322121,
+    "label": "322121 Paper (except Newsprint) Mills"
+  },
+  {
+    "initial_x": -1.1934214,
+    "initial_y": -0.80854464,
+    "id": 541519,
+    "label": "541519 Other Computer Related Services"
+  },
+  {
+    "initial_x": 5.83797,
+    "initial_y": -0.025293581,
+    "id": 112519,
+    "label": "112519 Other Aquaculture"
+  },
+  {
+    "initial_x": -1.1407241,
+    "initial_y": -5.2922754,
+    "id": 623312,
+    "label": "623312 Assisted Living Facilities for the Elderly"
+  },
+  {
+    "initial_x": -1.2634596,
+    "initial_y": -2.586889,
+    "id": 561710,
+    "label": "561710 Exterminating and Pest Control Services"
+  },
+  {
+    "initial_x": -2.750489,
+    "initial_y": 3.8879368,
+    "id": 332813,
+    "label": "332813 Electroplating, Plating, Polishing, Anodizing, and Coloring"
+  },
+  {
+    "initial_x": -0.6449508,
+    "initial_y": 2.4829216,
+    "id": 325211,
+    "label": "325211 Plastics Material and Resin Manufacturing"
+  },
+  {
+    "initial_x": 3.7488184,
+    "initial_y": -0.40707192,
+    "id": 453910,
+    "label": "453910 Pet and Pet Supplies Stores"
+  },
+  {
+    "initial_x": 4.717293,
+    "initial_y": -1.8131851,
+    "id": 311824,
+    "label": "311824 Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour"
+  },
+  {
+    "initial_x": 4.861816,
+    "initial_y": -1.3830646,
+    "id": 311615,
+    "label": "311615 Poultry Processing"
+  },
+  {
+    "initial_x": 0.24830487,
+    "initial_y": 2.8182876,
+    "id": 325611,
+    "label": "325611 Soap and Other Detergent Manufacturing"
+  },
+  {
+    "initial_x": -1.7342753,
+    "initial_y": -1.5027694,
+    "id": 541840,
+    "label": "541840 Media Representatives"
+  },
+  {
+    "initial_x": 1.336811,
+    "initial_y": -2.611374,
+    "id": 483111,
+    "label": "483111 Deep Sea Freight Transportation"
+  },
+  {
+    "initial_x": 1.2443879,
+    "initial_y": -1.1119397,
+    "id": 423130,
+    "label": "423130 Tire and Tube Merchant Wholesalers"
+  },
+  {
+    "initial_x": 1.7884139,
+    "initial_y": 1.9633398,
+    "id": 316110,
+    "label": "316110 Leather and Hide Tanning and Finishing"
+  },
+  {
+    "initial_x": -2.3182576,
+    "initial_y": 3.4131768,
+    "id": 331410,
+    "label": "331410 Nonferrous Metal (except Aluminum) Smelting and Refining"
+  },
+  {
+    "initial_x": -1.1940049,
+    "initial_y": -0.8573048,
+    "id": 541513,
+    "label": "541513 Computer Facilities Management Services"
+  },
+  {
+    "initial_x": -2.9436033,
+    "initial_y": 3.578339,
+    "id": 332618,
+    "label": "332618 Other Fabricated Wire Product Manufacturing"
+  },
+  {
+    "initial_x": -4.137116,
+    "initial_y": 3.1828163,
+    "id": 333120,
+    "label": "333120 Construction Machinery Manufacturing"
+  },
+  {
+    "initial_x": -1.686905,
+    "initial_y": 0.5934253,
+    "id": 339114,
+    "label": "339114 Dental Equipment and Supplies Manufacturing"
+  },
+  {
+    "initial_x": -1.7922431,
+    "initial_y": -1.4935502,
+    "id": 541613,
+    "label": "541613 Marketing Consulting Services"
+  },
+  {
+    "initial_x": -0.44309175,
+    "initial_y": -3.420611,
+    "id": 519120,
+    "label": "519120 Libraries and Archives"
+  },
+  {
+    "initial_x": 4.815732,
+    "initial_y": -1.5397301,
+    "id": 311513,
+    "label": "311513 Cheese Manufacturing"
+  },
+  {
+    "initial_x": 5.760345,
+    "initial_y": -0.120572805,
+    "id": 112511,
+    "label": "112511 Finfish Farming and Fish Hatcheries"
+  },
+  {
+    "initial_x": -1.1968797,
+    "initial_y": -1.0478888,
+    "id": 517311,
+    "label": "517311 Wired Telecommunications Carriers"
+  },
+  {
+    "initial_x": -0.87633437,
+    "initial_y": -5.5313745,
+    "id": 621340,
+    "label": "621340 Offices of Physical, Occupational and Speech Therapists, and Audiologists"
+  },
+  {
+    "initial_x": 1.4156238,
+    "initial_y": -2.6621423,
+    "id": 483113,
+    "label": "483113 Coastal and Great Lakes Freight Transportation"
+  },
+  {
+    "initial_x": 1.5272812,
+    "initial_y": -3.4531636,
+    "id": 485510,
+    "label": "485510 Charter Bus Industry"
+  },
+  {
+    "initial_x": -0.7973201,
+    "initial_y": 0.9917055,
+    "id": 322230,
+    "label": "322230 Stationery Product Manufacturing"
+  },
+  {
+    "initial_x": -3.4838665,
+    "initial_y": -1.3541485,
+    "id": 562998,
+    "label": "562998 All Other Miscellaneous Waste Management Services"
+  },
+  {
+    "initial_x": 2.8451111,
+    "initial_y": -1.3312933,
+    "id": 722514,
+    "label": "722514 Cafeterias, Grill Buffets, and Buffets"
+  },
+  {
+    "initial_x": 0.45668247,
+    "initial_y": -3.543734,
+    "id": 561599,
+    "label": "561599 All Other Travel Arrangement and Reservation Services"
+  },
+  {
+    "initial_x": -0.2852291,
+    "initial_y": 0.5343008,
+    "id": 424920,
+    "label": "424920 Book, Periodical, and Newspaper Merchant Wholesalers"
+  },
+  {
+    "initial_x": -2.4349623,
+    "initial_y": -5.383255,
+    "id": 923120,
+    "label": "923120 Administration of Public Health Programs"
+  },
+  {
+    "initial_x": -1.137869,
+    "initial_y": -1.6425121,
+    "id": 512250,
+    "label": "512250 Record Production and Distribution"
+  },
+  {
+    "initial_x": -2.7682025,
+    "initial_y": 1.7542025,
+    "id": 335220,
+    "label": "335220 Major Household Appliance Manufacturing"
+  },
+  {
+    "initial_x": 2.829921,
+    "initial_y": 4.2119813,
+    "id": 321212,
+    "label": "321212 Softwood Veneer and Plywood Manufacturing"
+  },
+  {
+    "initial_x": -0.53857917,
+    "initial_y": -1.6485248,
+    "id": 451140,
+    "label": "451140 Musical Instrument and Supplies Stores"
+  },
+  {
+    "initial_x": -2.4974656,
+    "initial_y": 1.1944836,
+    "id": 334511,
+    "label": "334511 Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing"
+  },
+  {
+    "initial_x": -4.1164346,
+    "initial_y": 3.0243988,
+    "id": 333618,
+    "label": "333618 Other Engine Equipment Manufacturing"
+  },
+  {
+    "initial_x": -1.8191864,
+    "initial_y": -1.403549,
+    "id": 541850,
+    "label": "541850 Outdoor Advertising"
+  },
+  {
+    "initial_x": 1.9027004,
+    "initial_y": -3.1625912,
+    "id": 484210,
+    "label": "484210 Used Household and Office Goods Moving"
+  },
+  {
+    "initial_x": 2.2442532,
+    "initial_y": 3.984194,
+    "id": 337110,
+    "label": "337110 Wood Kitchen Cabinet and Countertop Manufacturing"
+  },
+  {
+    "initial_x": -0.6397407,
+    "initial_y": 3.7413557,
+    "id": 327310,
+    "label": "327310 Cement Manufacturing"
+  },
+  {
+    "initial_x": -0.5269902,
+    "initial_y": 2.2695334,
+    "id": 326211,
+    "label": "326211 Tire Manufacturing (except Retreading)"
+  },
+  {
+    "initial_x": -0.8298731,
+    "initial_y": -5.647022,
+    "id": 622310,
+    "label": "622310 Specialty (except Psychiatric and Substance Abuse) Hospitals"
+  },
+  {
+    "initial_x": -0.6854217,
+    "initial_y": 3.7078,
+    "id": 327331,
+    "label": "327331 Concrete Block and Brick Manufacturing"
+  },
+  {
+    "initial_x": -2.5720587,
+    "initial_y": 1.7163706,
+    "id": 335129,
+    "label": "335129 Other Lighting Equipment Manufacturing"
+  },
+  {
+    "initial_x": -2.147604,
+    "initial_y": -3.3229012,
+    "id": 541199,
+    "label": "541199 All Other Legal Services"
+  },
+  {
+    "initial_x": 6.3759084,
+    "initial_y": 0.50125426,
+    "id": 112340,
+    "label": "112340 Poultry Hatcheries"
+  },
+  {
+    "initial_x": 0.1811056,
+    "initial_y": 0.46866226,
+    "id": 423920,
+    "label": "423920 Toy and Hobby Goods and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": 2.0065207,
+    "initial_y": 2.3738642,
+    "id": 314120,
+    "label": "314120 Curtain and Linen Mills"
+  },
+  {
+    "initial_x": 4.2827897,
+    "initial_y": -1.3589596,
+    "id": 312120,
+    "label": "312120 Breweries"
+  },
+  {
+    "initial_x": 0.29512918,
+    "initial_y": 2.6924992,
+    "id": 325411,
+    "label": "325411 Medicinal and Botanical Manufacturing"
+  },
+  {
+    "initial_x": 0.25608888,
+    "initial_y": 3.8019574,
+    "id": 211120,
+    "label": "211120 Crude Petroleum Extraction"
+  },
+  {
+    "initial_x": 1.4498696,
+    "initial_y": -2.777151,
+    "id": 488119,
+    "label": "488119 Other Airport Operations"
+  },
+  {
+    "initial_x": 1.3645856,
+    "initial_y": -2.100606,
+    "id": 812930,
+    "label": "812930 Parking Lots and Garages"
+  },
+  {
+    "initial_x": 4.661634,
+    "initial_y": -1.9052751,
+    "id": 311351,
+    "label": "311351 Chocolate and Confectionery Manufacturing from Cacao Beans"
+  },
+  {
+    "initial_x": 1.4028254,
+    "initial_y": -2.725367,
+    "id": 481111,
+    "label": "481111 Scheduled Passenger Air Transportation"
+  },
+  {
+    "initial_x": -3.2655127,
+    "initial_y": -3.7139916,
+    "id": 523210,
+    "label": "523210 Securities and Commodity Exchanges"
+  },
+  {
+    "initial_x": -3.014796,
+    "initial_y": -3.7266593,
+    "id": 541191,
+    "label": "541191 Title Abstract and Settlement Offices"
+  },
+  {
+    "initial_x": -3.4877632,
+    "initial_y": -3.7413485,
+    "id": 522310,
+    "label": "522310 Mortgage and Nonmortgage Loan Brokers"
+  },
+  {
+    "initial_x": 7.057526,
+    "initial_y": -0.09852549,
+    "id": 111334,
+    "label": "111334 Berry (except Strawberry) Farming"
+  },
+  {
+    "initial_x": -0.96834266,
+    "initial_y": -5.4124928,
+    "id": 621610,
+    "label": "621610 Home Health Care Services"
+  },
+  {
+    "initial_x": -0.6105565,
+    "initial_y": -2.8954706,
+    "id": 711110,
+    "label": "711110 Theater Companies and Dinner Theaters"
+  },
+  {
+    "initial_x": -1.2585254,
+    "initial_y": 2.9022162,
+    "id": 327212,
+    "label": "327212 Other Pressed and Blown Glass and Glassware Manufacturing"
+  },
+  {
+    "initial_x": -1.5832435,
+    "initial_y": -2.9023142,
+    "id": 561612,
+    "label": "561612 Security Guards and Patrol Services"
+  },
+  {
+    "initial_x": -2.7754626,
+    "initial_y": 3.7986314,
+    "id": 332215,
+    "label": "332215 Metal Kitchen Cookware, Utensil, Cutlery, and Flatware (except Precious) Manufacturing"
+  },
+  {
+    "initial_x": 1.9871358,
+    "initial_y": 2.1849844,
+    "id": 313240,
+    "label": "313240 Knit Fabric Mills"
+  },
+  {
+    "initial_x": -1.4095874,
+    "initial_y": 0.9630648,
+    "id": 339950,
+    "label": "339950 Sign Manufacturing"
+  },
+  {
+    "initial_x": -3.825561,
+    "initial_y": 3.2656887,
+    "id": 333241,
+    "label": "333241 Food Product Machinery Manufacturing"
+  },
+  {
+    "initial_x": -0.20217639,
+    "initial_y": 0.6607945,
+    "id": 424110,
+    "label": "424110 Printing and Writing Paper Merchant Wholesalers"
+  },
+  {
+    "initial_x": -0.7730219,
+    "initial_y": 1.3783716,
+    "id": 322130,
+    "label": "322130 Paperboard Mills"
+  },
+  {
+    "initial_x": -1.1550654,
+    "initial_y": -1.0465457,
+    "id": 517312,
+    "label": "517312 Wireless Telecommunications Carriers (except Satellite)"
+  },
+  {
+    "initial_x": 0.3166672,
+    "initial_y": 3.4603932,
+    "id": 324110,
+    "label": "324110 Petroleum Refineries"
+  },
+  {
+    "initial_x": -0.68230724,
+    "initial_y": 1.496137,
+    "id": 322220,
+    "label": "322220 Paper Bag and Coated and Treated Paper Manufacturing"
+  },
+  {
+    "initial_x": -1.2642645,
+    "initial_y": -2.5946736,
+    "id": 561790,
+    "label": "561790 Other Services to Buildings and Dwellings"
+  },
+  {
+    "initial_x": 7.0854626,
+    "initial_y": -0.08994667,
+    "id": 111320,
+    "label": "111320 Citrus (except Orange) Groves"
+  },
+  {
+    "initial_x": 1.8094416,
+    "initial_y": -3.133311,
+    "id": 488210,
+    "label": "488210 Support Activities for Rail Transportation"
+  },
+  {
+    "initial_x": 0.09943962,
+    "initial_y": 4.1457076,
+    "id": 212299,
+    "label": "212299 All Other Metal Ore Mining"
+  },
+  {
+    "initial_x": -0.9031093,
+    "initial_y": -5.667043,
+    "id": 621511,
+    "label": "621511 Medical Laboratories"
+  },
+  {
+    "initial_x": -1.2029202,
+    "initial_y": -4.408379,
+    "id": 611630,
+    "label": "611630 Language Schools"
+  },
+  {
+    "initial_x": -3.416868,
+    "initial_y": -1.1577402,
+    "id": 486210,
+    "label": "486210 Pipeline Transportation of Natural Gas"
+  },
+  {
+    "initial_x": -0.038378723,
+    "initial_y": -1.7428733,
+    "id": 532281,
+    "label": "532281 Formal Wear and Costume Rental"
+  },
+  {
+    "initial_x": 5.8602986,
+    "initial_y": 0.029348815,
+    "id": 114210,
+    "label": "114210 Hunting and Trapping"
+  },
+  {
+    "initial_x": -1.1630262,
+    "initial_y": -1.4571203,
+    "id": 515111,
+    "label": "515111 Radio Networks"
+  },
+  {
+    "initial_x": -3.050608,
+    "initial_y": 2.6162202,
+    "id": 333414,
+    "label": "333414 Heating Equipment (except Warm Air Furnaces) Manufacturing"
+  },
+  {
+    "initial_x": 7.0671716,
+    "initial_y": 0.3539593,
+    "id": 111160,
+    "label": "111160 Rice Farming"
+  },
+  {
+    "initial_x": -2.3921936,
+    "initial_y": -5.1499467,
+    "id": 921130,
+    "label": "921130 Public Finance Activities"
+  },
+  {
+    "initial_x": -2.2044702,
+    "initial_y": -5.2506456,
+    "id": 923130,
+    "label": "923130 Administration of Human Resource Programs (except Education, Public Health, and Veterans' Affairs Programs)"
+  },
+  {
+    "initial_x": 0.404796,
+    "initial_y": 2.8052168,
+    "id": 325311,
+    "label": "325311 Nitrogenous Fertilizer Manufacturing"
+  },
+  {
+    "initial_x": 4.0739822,
+    "initial_y": -1.098899,
+    "id": 562920,
+    "label": "562920 Materials Recovery Facilities"
+  },
+  {
+    "initial_x": 1.5274343,
+    "initial_y": -1.4436945,
+    "id": 441320,
+    "label": "441320 Tire Dealers"
+  },
+  {
+    "initial_x": -1.8662736,
+    "initial_y": -2.5425236,
+    "id": 561210,
+    "label": "561210 Facilities Support Services"
+  },
+  {
+    "initial_x": -2.8376238,
+    "initial_y": 1.7341384,
+    "id": 335210,
+    "label": "335210 Small Electrical Appliance Manufacturing"
+  },
+  {
+    "initial_x": -0.66047543,
+    "initial_y": 3.7028737,
+    "id": 327420,
+    "label": "327420 Gypsum Product Manufacturing"
+  },
+  {
+    "initial_x": -3.014919,
+    "initial_y": 3.5108447,
+    "id": 332722,
+    "label": "332722 Bolt, Nut, Screw, Rivet, and Washer Manufacturing"
+  },
+  {
+    "initial_x": 3.9169128,
+    "initial_y": -0.55830085,
+    "id": 424420,
+    "label": "424420 Packaged Frozen Food Merchant Wholesalers"
+  },
+  {
+    "initial_x": -3.5376608,
+    "initial_y": 3.1023262,
+    "id": 333514,
+    "label": "333514 Special Die and Tool, Die Set, Jig, and Fixture Manufacturing"
+  },
+  {
+    "initial_x": 1.2575165,
+    "initial_y": -1.2100867,
+    "id": 423140,
+    "label": "423140 Motor Vehicle Parts (Used) Merchant Wholesalers"
+  },
+  {
+    "initial_x": 4.6344385,
+    "initial_y": -2.0144887,
+    "id": 311920,
+    "label": "311920 Coffee and Tea Manufacturing"
+  },
+  {
+    "initial_x": -0.014108797,
+    "initial_y": -1.6316575,
+    "id": 532289,
+    "label": "532289 All Other Consumer Goods Rental"
+  },
+  {
+    "initial_x": 2.2405725,
+    "initial_y": -0.8120079,
+    "id": 713290,
+    "label": "713290 Other Gambling Industries"
+  },
+  {
+    "initial_x": -2.4824939,
+    "initial_y": -5.35907,
+    "id": 926110,
+    "label": "926110 Administration of General Economic Programs"
+  },
+  {
+    "initial_x": -1.0234084,
+    "initial_y": -2.4746256,
+    "id": 812332,
+    "label": "812332 Industrial Launderers"
+  },
+  {
+    "initial_x": -2.9038067,
+    "initial_y": 1.4840868,
+    "id": 335931,
+    "label": "335931 Current-Carrying Wiring Device Manufacturing"
+  },
+  {
+    "initial_x": -1.2792,
+    "initial_y": 5.3698387,
+    "id": 237120,
+    "label": "237120 Oil and Gas Pipeline and Related Structures Construction"
+  },
+  {
+    "initial_x": -2.0976872,
+    "initial_y": 0.863189,
+    "id": 335912,
+    "label": "335912 Primary Battery Manufacturing"
+  },
+  {
+    "initial_x": -2.2594767,
+    "initial_y": -3.1432183,
+    "id": 561440,
+    "label": "561440 Collection Agencies"
+  },
+  {
+    "initial_x": -2.4287052,
+    "initial_y": 3.5897598,
+    "id": 331524,
+    "label": "331524 Aluminum Foundries (except Die-Casting)"
+  },
+  {
+    "initial_x": -0.43937847,
+    "initial_y": 4.0811615,
+    "id": 212399,
+    "label": "212399 All Other Nonmetallic Mineral Mining"
+  },
+  {
+    "initial_x": 6.338702,
+    "initial_y": 0.54340607,
+    "id": 112390,
+    "label": "112390 Other Poultry Production"
+  },
+  {
+    "initial_x": -1.1844115,
+    "initial_y": -1.4515442,
+    "id": 515120,
+    "label": "515120 Television Broadcasting"
+  },
+  {
+    "initial_x": -0.64346063,
+    "initial_y": 2.3760765,
+    "id": 325212,
+    "label": "325212 Synthetic Rubber Manufacturing"
+  },
+  {
+    "initial_x": -3.475575,
+    "initial_y": -3.553815,
+    "id": 523920,
+    "label": "523920 Portfolio Management"
+  },
+  {
+    "initial_x": -1.2372365,
+    "initial_y": -4.4408593,
+    "id": 611710,
+    "label": "611710 Educational Support Services"
+  },
+  {
+    "initial_x": -0.7889262,
+    "initial_y": 0.4214362,
+    "id": 323117,
+    "label": "323117 Books Printing"
+  },
+  {
+    "initial_x": 4.673105,
+    "initial_y": -1.7604997,
+    "id": 311520,
+    "label": "311520 Ice Cream and Frozen Dessert Manufacturing"
+  },
+  {
+    "initial_x": -1.758297,
+    "initial_y": 0.6292321,
+    "id": 339113,
+    "label": "339113 Surgical Appliance and Supplies Manufacturing"
+  },
+  {
+    "initial_x": 2.5524096,
+    "initial_y": -0.676228,
+    "id": 454210,
+    "label": "454210 Vending Machine Operators"
+  },
+  {
+    "initial_x": -4.1211033,
+    "initial_y": 3.2085707,
+    "id": 333131,
+    "label": "333131 Mining Machinery and Equipment Manufacturing"
+  },
+  {
+    "initial_x": -1.6326025,
+    "initial_y": 5.0739074,
+    "id": 238190,
+    "label": "238190 Other Foundation, Structure, and Building Exterior Contractors"
+  },
+  {
+    "initial_x": -1.1991032,
+    "initial_y": -4.5288825,
+    "id": 611410,
+    "label": "611410 Business and Secretarial Schools"
+  },
+  {
+    "initial_x": -3.4266922,
+    "initial_y": -3.4825478,
+    "id": 551111,
+    "label": "551111 Offices of Bank Holding Companies"
+  },
+  {
+    "initial_x": 0.7286444,
+    "initial_y": 1.0202193,
+    "id": 423330,
+    "label": "423330 Roofing, Siding, and Insulation Material Merchant Wholesalers"
+  },
+  {
+    "initial_x": 6.2665253,
+    "initial_y": 0.45000973,
+    "id": 112920,
+    "label": "112920 Horses and Other Equine Production"
+  },
+  {
+    "initial_x": -2.896975,
+    "initial_y": 3.6637917,
+    "id": 332439,
+    "label": "332439 Other Metal Container Manufacturing"
+  },
+  {
+    "initial_x": -2.526505,
+    "initial_y": -3.379682,
+    "id": 814110,
+    "label": "814110 Private Households"
+  },
+  {
+    "initial_x": -0.7102522,
+    "initial_y": 1.443038,
+    "id": 322211,
+    "label": "322211 Corrugated and Solid Fiber Box Manufacturing"
+  },
+  {
+    "initial_x": 0.60448885,
+    "initial_y": -1.6597298,
+    "id": 522220,
+    "label": "522220 Sales Financing"
+  },
+  {
+    "initial_x": -2.4677706,
+    "initial_y": 3.5013177,
+    "id": 331513,
+    "label": "331513 Steel Foundries (except Investment)"
+  },
+  {
+    "initial_x": 4.629365,
+    "initial_y": -0.99289143,
+    "id": 445220,
+    "label": "445220 Fish and Seafood Markets"
+  },
+  {
+    "initial_x": 2.2397497,
+    "initial_y": 3.8687057,
+    "id": 238350,
+    "label": "238350 Finish Carpentry Contractors"
+  },
+  {
+    "initial_x": 4.75069,
+    "initial_y": -1.9582833,
+    "id": 311340,
+    "label": "311340 Nonchocolate Confectionery Manufacturing"
+  },
+  {
+    "initial_x": -2.6149657,
+    "initial_y": 4.1157217,
+    "id": 332323,
+    "label": "332323 Ornamental and Architectural Metal Work Manufacturing"
+  },
+  {
+    "initial_x": -3.7454023,
+    "initial_y": 2.8915405,
+    "id": 333914,
+    "label": "333914 Measuring, Dispensing, and Other Pumping Equipment Manufacturing"
+  },
+  {
+    "initial_x": -0.15645164,
+    "initial_y": 0.44814223,
+    "id": 423410,
+    "label": "423410 Photographic Equipment and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -4.1048746,
+    "initial_y": 3.2062411,
+    "id": 333923,
+    "label": "333923 Overhead Traveling Crane, Hoist, and Monorail System Manufacturing"
+  },
+  {
+    "initial_x": -1.8131598,
+    "initial_y": 0.63952374,
+    "id": 333314,
+    "label": "333314 Optical Instrument and Lens Manufacturing"
+  },
+  {
+    "initial_x": -0.57101977,
+    "initial_y": 1.2812272,
+    "id": 561910,
+    "label": "561910 Packaging and Labeling Services"
+  },
+  {
+    "initial_x": -3.5131617,
+    "initial_y": -1.295143,
+    "id": 562211,
+    "label": "562211 Hazardous Waste Treatment and Disposal"
+  },
+  {
+    "initial_x": -2.7903798,
+    "initial_y": 1.10281,
+    "id": 334310,
+    "label": "334310 Audio and Video Equipment Manufacturing"
+  },
+  {
+    "initial_x": 1.1339313,
+    "initial_y": -2.2233222,
+    "id": 336612,
+    "label": "336612 Boat Building"
+  },
+  {
+    "initial_x": -2.8969145,
+    "initial_y": 3.466567,
+    "id": 331210,
+    "label": "331210 Iron and Steel Pipe and Tube Manufacturing from Purchased Steel"
+  },
+  {
+    "initial_x": 4.839156,
+    "initial_y": -1.645406,
+    "id": 311514,
+    "label": "311514 Dry, Condensed, and Evaporated Dairy Product Manufacturing"
+  },
+  {
+    "initial_x": 1.1199521,
+    "initial_y": -1.9348305,
+    "id": 441222,
+    "label": "441222 Boat Dealers"
+  },
+  {
+    "initial_x": -2.4936717,
+    "initial_y": 3.4902213,
+    "id": 331511,
+    "label": "331511 Iron Foundries"
+  },
+  {
+    "initial_x": -4.1998405,
+    "initial_y": 2.3077302,
+    "id": 336991,
+    "label": "336991 Motorcycle, Bicycle, and Parts Manufacturing"
+  },
+  {
+    "initial_x": 0.15703338,
+    "initial_y": 4.0626874,
+    "id": 212111,
+    "label": "212111 Bituminous Coal and Lignite Surface Mining"
+  },
+  {
+    "initial_x": 4.726734,
+    "initial_y": -1.6644235,
+    "id": 311511,
+    "label": "311511 Fluid Milk Manufacturing"
+  },
+  {
+    "initial_x": 3.9203775,
+    "initial_y": -0.4867823,
+    "id": 424440,
+    "label": "424440 Poultry and Poultry Product Merchant Wholesalers"
+  },
+  {
+    "initial_x": 7.0097017,
+    "initial_y": 0.34065795,
+    "id": 111991,
+    "label": "111991 Sugar Beet Farming"
+  },
+  {
+    "initial_x": -3.9514368,
+    "initial_y": 3.0637422,
+    "id": 333611,
+    "label": "333611 Turbine and Turbine Generator Set Units Manufacturing"
+  },
+  {
+    "initial_x": -2.857852,
+    "initial_y": 1.6038734,
+    "id": 333994,
+    "label": "333994 Industrial Process Furnace and Oven Manufacturing"
+  },
+  {
+    "initial_x": 1.9951717,
+    "initial_y": 2.3182175,
+    "id": 314110,
+    "label": "314110 Carpet and Rug Mills"
+  },
+  {
+    "initial_x": 1.9868792,
+    "initial_y": -2.955823,
+    "id": 493190,
+    "label": "493190 Other Warehousing and Storage"
+  },
+  {
+    "initial_x": -3.3396604,
+    "initial_y": -0.9920032,
+    "id": 221330,
+    "label": "221330 Steam and Air-Conditioning Supply"
+  },
+  {
+    "initial_x": 4.3572083,
+    "initial_y": -1.8494805,
+    "id": 445291,
+    "label": "445291 Baked Goods Stores"
+  },
+  {
+    "initial_x": -2.516101,
+    "initial_y": 1.1931726,
+    "id": 334513,
+    "label": "334513 Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables"
+  },
+  {
+    "initial_x": -1.212503,
+    "initial_y": -4.0687494,
+    "id": 611420,
+    "label": "611420 Computer Training"
+  },
+  {
+    "initial_x": 2.0722897,
+    "initial_y": 3.8257983,
+    "id": 337910,
+    "label": "337910 Mattress Manufacturing"
+  },
+  {
+    "initial_x": -2.9670098,
+    "initial_y": 2.1099453,
+    "id": 334512,
+    "label": "334512 Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use"
+  },
+  {
+    "initial_x": -2.8793316,
+    "initial_y": 1.2102714,
+    "id": 334220,
+    "label": "334220 Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing"
+  },
+  {
+    "initial_x": 2.0708942,
+    "initial_y": 2.09883,
+    "id": 315110,
+    "label": "315110 Hosiery and Sock Mills"
+  },
+  {
+    "initial_x": 2.133314,
+    "initial_y": 3.8964386,
+    "id": 337121,
+    "label": "337121 Upholstered Household Furniture Manufacturing"
+  },
+  {
+    "initial_x": -1.4672738,
+    "initial_y": 5.310288,
+    "id": 238390,
+    "label": "238390 Other Building Finishing Contractors"
+  },
+  {
+    "initial_x": 0.10073161,
+    "initial_y": 4.2161307,
+    "id": 212230,
+    "label": "212230 Copper, Nickel, Lead, and Zinc Mining"
+  },
+  {
+    "initial_x": -2.0126266,
+    "initial_y": -2.431523,
+    "id": 541620,
+    "label": "541620 Environmental Consulting Services"
+  },
+  {
+    "initial_x": -1.2444814,
+    "initial_y": -0.89051044,
+    "id": 519130,
+    "label": "519130 Internet Publishing and Broadcasting and Web Search Portals"
+  },
+  {
+    "initial_x": -3.4211652,
+    "initial_y": 2.8235114,
+    "id": 332911,
+    "label": "332911 Industrial Valve Manufacturing"
+  },
+  {
+    "initial_x": -1.5774728,
+    "initial_y": -3.5505445,
+    "id": 541612,
+    "label": "541612 Human Resources Consulting Services"
+  },
+  {
+    "initial_x": -3.4266138,
+    "initial_y": -1.4893342,
+    "id": 924110,
+    "label": "924110 Administration of Air and Water Resource and Solid Waste Management Programs"
+  },
+  {
+    "initial_x": -1.1445367,
+    "initial_y": -1.4893433,
+    "id": 512131,
+    "label": "512131 Motion Picture Theaters (except Drive-Ins)"
+  },
+  {
+    "initial_x": -2.5253744,
+    "initial_y": 4.1670227,
+    "id": 332311,
+    "label": "332311 Prefabricated Metal Building and Component Manufacturing"
+  },
+  {
+    "initial_x": 6.628647,
+    "initial_y": -0.22550137,
+    "id": 111422,
+    "label": "111422 Floriculture Production"
+  },
+  {
+    "initial_x": -2.8160896,
+    "initial_y": 1.4646943,
+    "id": 335311,
+    "label": "335311 Power, Distribution, and Specialty Transformer Manufacturing"
+  },
+  {
+    "initial_x": -1.7895969,
+    "initial_y": 0.7109352,
+    "id": 334517,
+    "label": "334517 Irradiation Apparatus Manufacturing"
+  },
+  {
+    "initial_x": 0.26659754,
+    "initial_y": 2.7299042,
+    "id": 325612,
+    "label": "325612 Polish and Other Sanitation Good Manufacturing"
+  },
+  {
+    "initial_x": -4.301757,
+    "initial_y": 2.4757433,
+    "id": 336214,
+    "label": "336214 Travel Trailer and Camper Manufacturing"
+  },
+  {
+    "initial_x": 2.9087577,
+    "initial_y": 4.293901,
+    "id": 321211,
+    "label": "321211 Hardwood Veneer and Plywood Manufacturing"
+  },
+  {
+    "initial_x": 7.0113406,
+    "initial_y": 0.32747132,
+    "id": 111910,
+    "label": "111910 Tobacco Farming"
+  },
+  {
+    "initial_x": -0.6635693,
+    "initial_y": -2.7455313,
+    "id": 541490,
+    "label": "541490 Other Specialized Design Services"
+  },
+  {
+    "initial_x": -2.5172946,
+    "initial_y": 1.7095584,
+    "id": 335110,
+    "label": "335110 Electric Lamp Bulb and Part Manufacturing"
+  },
+  {
+    "initial_x": -0.29211956,
+    "initial_y": -1.3931121,
+    "id": 532420,
+    "label": "532420 Office Machinery and Equipment Rental and Leasing"
+  },
+  {
+    "initial_x": -2.8364177,
+    "initial_y": 3.8319638,
+    "id": 332811,
+    "label": "332811 Metal Heat Treating"
+  },
+  {
+    "initial_x": -0.023494922,
+    "initial_y": -3.2271888,
+    "id": 713910,
+    "label": "713910 Golf Courses and Country Clubs"
+  },
+  {
+    "initial_x": -2.8216102,
+    "initial_y": -3.8807049,
+    "id": 525120,
+    "label": "525120 Health and Welfare Funds"
+  },
+  {
+    "initial_x": -0.7865568,
+    "initial_y": -5.5390935,
+    "id": 621320,
+    "label": "621320 Offices of Optometrists"
+  },
+  {
+    "initial_x": -0.6464305,
+    "initial_y": 3.773922,
+    "id": 327992,
+    "label": "327992 Ground or Treated Mineral and Earth Manufacturing"
+  },
+  {
+    "initial_x": -2.3212793,
+    "initial_y": -5.2508903,
+    "id": 922160,
+    "label": "922160 Fire Protection"
+  },
+  {
+    "initial_x": -3.0373483,
+    "initial_y": 3.550313,
+    "id": 332721,
+    "label": "332721 Precision Turned Product Manufacturing"
+  },
+  {
+    "initial_x": 0.32626626,
+    "initial_y": 2.8731802,
+    "id": 325320,
+    "label": "325320 Pesticide and Other Agricultural Chemical Manufacturing"
+  },
+  {
+    "initial_x": 1.6828065,
+    "initial_y": -2.7779832,
+    "id": 486990,
+    "label": "486990 All Other Pipeline Transportation"
+  },
+  {
+    "initial_x": -2.3028996,
+    "initial_y": 3.406961,
+    "id": 331492,
+    "label": "331492 Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum)"
+  },
+  {
+    "initial_x": -0.48216254,
+    "initial_y": -2.930204,
+    "id": 711320,
+    "label": "711320 Promoters of Performing Arts, Sports, and Similar Events without Facilities"
+  },
+  {
+    "initial_x": 0.34064963,
+    "initial_y": 3.2582283,
+    "id": 325120,
+    "label": "325120 Industrial Gas Manufacturing"
+  },
+  {
+    "initial_x": 1.037269,
+    "initial_y": -1.27734,
+    "id": 441210,
+    "label": "441210 Recreational Vehicle Dealers"
+  },
+  {
+    "initial_x": -2.418746,
+    "initial_y": 3.4935632,
+    "id": 331529,
+    "label": "331529 Other Nonferrous Metal Foundries (except Die-Casting)"
+  },
+  {
+    "initial_x": -0.9054522,
+    "initial_y": 2.3269448,
+    "id": 326113,
+    "label": "326113 Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing"
+  },
+  {
+    "initial_x": -3.5688293,
+    "initial_y": 3.5474632,
+    "id": 332710,
+    "label": "332710 Machine Shops"
+  },
+  {
+    "initial_x": -1.5380203,
+    "initial_y": 0.28935975,
+    "id": 333316,
+    "label": "333316 Photographic and Photocopying Equipment Manufacturing"
+  },
+  {
+    "initial_x": -4.042163,
+    "initial_y": 3.3619165,
+    "id": 333991,
+    "label": "333991 Power-Driven Handtool Manufacturing"
+  },
+  {
+    "initial_x": -2.8191745,
+    "initial_y": 1.5062643,
+    "id": 331222,
+    "label": "331222 Steel Wire Drawing"
+  },
+  {
+    "initial_x": 4.8338685,
+    "initial_y": -2.1123226,
+    "id": 311411,
+    "label": "311411 Frozen Fruit, Juice, and Vegetable Manufacturing"
+  },
+  {
+    "initial_x": -0.123595916,
+    "initial_y": 0.4518218,
+    "id": 423460,
+    "label": "423460 Ophthalmic Goods Merchant Wholesalers"
+  },
+  {
+    "initial_x": -3.9667552,
+    "initial_y": 3.056878,
+    "id": 332112,
+    "label": "332112 Nonferrous Forging"
+  },
+  {
+    "initial_x": 7.052852,
+    "initial_y": -0.0600657,
+    "id": 111335,
+    "label": "111335 Tree Nut Farming"
+  },
+  {
+    "initial_x": -0.76611024,
+    "initial_y": -5.554702,
+    "id": 621310,
+    "label": "621310 Offices of Chiropractors"
+  },
+  {
+    "initial_x": -3.8209918,
+    "initial_y": 3.1391852,
+    "id": 333613,
+    "label": "333613 Mechanical Power Transmission Equipment Manufacturing"
+  },
+  {
+    "initial_x": -2.8764734,
+    "initial_y": 1.2561857,
+    "id": 334418,
+    "label": "334418 Printed Circuit Assembly (Electronic Assembly) Manufacturing"
+  },
+  {
+    "initial_x": 1.5167884,
+    "initial_y": -1.5112133,
+    "id": 488410,
+    "label": "488410 Motor Vehicle Towing"
+  },
+  {
+    "initial_x": 1.8197569,
+    "initial_y": -3.160775,
+    "id": 561439,
+    "label": "561439 Other Business Service Centers (including Copy Shops)"
+  },
+  {
+    "initial_x": -1.9661115,
+    "initial_y": -3.1610398,
+    "id": 561410,
+    "label": "561410 Document Preparation Services"
+  },
+  {
+    "initial_x": 5.112809,
+    "initial_y": -1.5455108,
+    "id": 311111,
+    "label": "311111 Dog and Cat Food Manufacturing"
+  },
+  {
+    "initial_x": 0.4645817,
+    "initial_y": -2.6499598,
+    "id": 532284,
+    "label": "532284 Recreational Goods Rental"
+  },
+  {
+    "initial_x": -3.5183117,
+    "initial_y": -3.8032694,
+    "id": 521110,
+    "label": "521110 Monetary Authorities-Central Bank"
+  },
+  {
+    "initial_x": -4.147896,
+    "initial_y": 2.4836707,
+    "id": 336510,
+    "label": "336510 Railroad Rolling Stock Manufacturing"
+  },
+  {
+    "initial_x": 0.08169322,
+    "initial_y": -3.1591449,
+    "id": 713950,
+    "label": "713950 Bowling Centers"
+  },
+  {
+    "initial_x": -2.831273,
+    "initial_y": 3.67981,
+    "id": 332431,
+    "label": "332431 Metal Can Manufacturing"
+  },
+  {
+    "initial_x": -0.36223474,
+    "initial_y": -3.7946095,
+    "id": 812910,
+    "label": "812910 Pet Care (except Veterinary) Services"
+  },
+  {
+    "initial_x": 6.4321437,
+    "initial_y": 0.47922057,
+    "id": 112320,
+    "label": "112320 Broilers and Other Meat Type Chicken Production"
+  },
+  {
+    "initial_x": -0.7313747,
+    "initial_y": -1.6327946,
+    "id": 339992,
+    "label": "339992 Musical Instrument Manufacturing"
+  },
+  {
+    "initial_x": -0.7498276,
+    "initial_y": 1.4154017,
+    "id": 322291,
+    "label": "322291 Sanitary Paper Product Manufacturing"
+  },
+  {
+    "initial_x": -3.502837,
+    "initial_y": -3.5736794,
+    "id": 522293,
+    "label": "522293 International Trade Financing"
+  },
+  {
+    "initial_x": -2.8413146,
+    "initial_y": 2.2640176,
+    "id": 423740,
+    "label": "423740 Refrigeration Equipment and Supplies Merchant Wholesalers"
+  },
+  {
+    "initial_x": -2.4463668,
+    "initial_y": -5.3736224,
+    "id": 923110,
+    "label": "923110 Administration of Education Programs"
+  },
+  {
+    "initial_x": -4.264783,
+    "initial_y": 2.3859937,
+    "id": 336999,
+    "label": "336999 All Other Transportation Equipment Manufacturing"
+  },
+  {
+    "initial_x": -4.050258,
+    "initial_y": 3.083715,
+    "id": 333921,
+    "label": "333921 Elevator and Moving Stairway Manufacturing"
+  },
+  {
+    "initial_x": -0.96343094,
+    "initial_y": -2.4043856,
+    "id": 561740,
+    "label": "561740 Carpet and Upholstery Cleaning Services"
+  },
+  {
+    "initial_x": -2.3725326,
+    "initial_y": 3.3950665,
+    "id": 331313,
+    "label": "331313 Alumina Refining and Primary Aluminum Production"
+  },
+  {
+    "initial_x": -0.78394526,
+    "initial_y": 1.459464,
+    "id": 322219,
+    "label": "322219 Other Paperboard Container Manufacturing"
+  },
+  {
+    "initial_x": 0.029920785,
+    "initial_y": 4.2052245,
+    "id": 213113,
+    "label": "213113 Support Activities for Coal Mining"
+  },
+  {
+    "initial_x": -3.7839806,
+    "initial_y": 3.2750995,
+    "id": 333515,
+    "label": "333515 Cutting Tool and Machine Tool Accessory Manufacturing"
+  },
+  {
+    "initial_x": -2.6398077,
+    "initial_y": 1.2604182,
+    "id": 335314,
+    "label": "335314 Relay and Industrial Control Manufacturing"
+  },
+  {
+    "initial_x": -1.7467756,
+    "initial_y": -2.4145288,
+    "id": 541420,
+    "label": "541420 Industrial Design Services"
+  },
+  {
+    "initial_x": 0.17436759,
+    "initial_y": 2.8897316,
+    "id": 325130,
+    "label": "325130 Synthetic Dye and Pigment Manufacturing"
+  },
+  {
+    "initial_x": -1.052973,
+    "initial_y": -5.4904037,
+    "id": 621330,
+    "label": "621330 Offices of Mental Health Practitioners (except Physicians)"
+  },
+  {
+    "initial_x": 2.717808,
+    "initial_y": 4.116366,
+    "id": 321992,
+    "label": "321992 Prefabricated Wood Building Manufacturing"
+  },
+  {
+    "initial_x": 2.9287057,
+    "initial_y": 4.3125815,
+    "id": 321114,
+    "label": "321114 Wood Preservation"
+  },
+  {
+    "initial_x": -0.08594196,
+    "initial_y": -3.2938182,
+    "id": 711212,
+    "label": "711212 Racetracks"
+  },
+  {
+    "initial_x": 1.8413211,
+    "initial_y": -3.1927614,
+    "id": 484220,
+    "label": "484220 Specialized Freight (except Used Goods) Trucking, Local"
+  },
+  {
+    "initial_x": -2.9389927,
+    "initial_y": 1.501934,
+    "id": 336320,
+    "label": "336320 Motor Vehicle Electrical and Electronic Equipment Manufacturing"
+  },
+  {
+    "initial_x": 2.21148,
+    "initial_y": 3.9493434,
+    "id": 337124,
+    "label": "337124 Metal Household Furniture Manufacturing"
+  },
+  {
+    "initial_x": -1.1599094,
+    "initial_y": -5.4206905,
+    "id": 621420,
+    "label": "621420 Outpatient Mental Health and Substance Abuse Centers"
+  },
+  {
+    "initial_x": -0.42818803,
+    "initial_y": -1.6526285,
+    "id": 532282,
+    "label": "532282 Video Tape and Disc Rental"
+  },
+  {
+    "initial_x": 6.2555766,
+    "initial_y": -0.17272979,
+    "id": 115113,
+    "label": "115113 Crop Harvesting, Primarily by Machine"
+  },
+  {
+    "initial_x": 1.0857494,
+    "initial_y": -1.1814252,
+    "id": 453930,
+    "label": "453930 Manufactured (Mobile) Home Dealers"
+  },
+  {
+    "initial_x": 2.8857698,
+    "initial_y": -1.3625697,
+    "id": 722330,
+    "label": "722330 Mobile Food Services"
+  },
+  {
+    "initial_x": 1.8991182,
+    "initial_y": 2.1707554,
+    "id": 313220,
+    "label": "313220 Narrow Fabric Mills and Schiffli Machine Embroidery"
+  },
+  {
+    "initial_x": -0.033868648,
+    "initial_y": 2.8673654,
+    "id": 325520,
+    "label": "325520 Adhesive Manufacturing"
+  },
+  {
+    "initial_x": 1.7140843,
+    "initial_y": 0.7991999,
+    "id": 442291,
+    "label": "442291 Window Treatment Stores"
+  },
+  {
+    "initial_x": -2.833683,
+    "initial_y": 1.289812,
+    "id": 334413,
+    "label": "334413 Semiconductor and Related Device Manufacturing"
+  },
+  {
+    "initial_x": 1.962379,
+    "initial_y": 2.256261,
+    "id": 314994,
+    "label": "314994 Rope, Cordage, Twine, Tire Cord, and Tire Fabric Mills"
+  },
+  {
+    "initial_x": -1.1322908,
+    "initial_y": -5.4874425,
+    "id": 622210,
+    "label": "622210 Psychiatric and Substance Abuse Hospitals"
+  },
+  {
+    "initial_x": -0.8570022,
+    "initial_y": 2.415368,
+    "id": 326150,
+    "label": "326150 Urethane and Other Foam Product (except Polystyrene) Manufacturing"
+  },
+  {
+    "initial_x": -1.3696793,
+    "initial_y": -5.067937,
+    "id": 624120,
+    "label": "624120 Services for the Elderly and Persons with Disabilities"
+  },
+  {
+    "initial_x": 4.7835236,
+    "initial_y": -1.9190743,
+    "id": 311314,
+    "label": "311314 Cane Sugar Manufacturing"
+  },
+  {
+    "initial_x": 1.3675714,
+    "initial_y": -2.095037,
+    "id": 488330,
+    "label": "488330 Navigational Services to Shipping"
+  },
+  {
+    "initial_x": 4.662911,
+    "initial_y": -1.7583865,
+    "id": 311991,
+    "label": "311991 Perishable Prepared Food Manufacturing"
+  },
+  {
+    "initial_x": 7.0055614,
+    "initial_y": 0.043777112,
+    "id": 111211,
+    "label": "111211 Potato Farming"
+  },
+  {
+    "initial_x": 4.774082,
+    "initial_y": -2.1341345,
+    "id": 311941,
+    "label": "311941 Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing"
+  },
+  {
+    "initial_x": 0.3289304,
+    "initial_y": -3.4458504,
+    "id": 721191,
+    "label": "721191 Bed-and-Breakfast Inns"
+  },
+  {
+    "initial_x": -3.3072243,
+    "initial_y": -3.8633206,
+    "id": 813211,
+    "label": "813211 Grantmaking Foundations"
+  },
+  {
+    "initial_x": 0.11559911,
+    "initial_y": 4.1931605,
+    "id": 212210,
+    "label": "212210 Iron Ore Mining"
+  },
+  {
+    "initial_x": -3.4476724,
+    "initial_y": -1.3583468,
+    "id": 562991,
+    "label": "562991 Septic Tank and Related Services"
+  },
+  {
+    "initial_x": 1.0622628,
+    "initial_y": -2.8981142,
+    "id": 611692,
+    "label": "611692 Automobile Driving Schools"
+  },
+  {
+    "initial_x": -2.497855,
+    "initial_y": 1.1813414,
+    "id": 334515,
+    "label": "334515 Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals"
+  },
+  {
+    "initial_x": -4.0989966,
+    "initial_y": 3.0959806,
+    "id": 333922,
+    "label": "333922 Conveyor and Conveying Equipment Manufacturing"
+  },
+  {
+    "initial_x": -3.1015174,
+    "initial_y": 2.4007137,
+    "id": 333413,
+    "label": "333413 Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing"
+  },
+  {
+    "initial_x": -2.1887805,
+    "initial_y": -5.0552435,
+    "id": 928120,
+    "label": "928120 International Affairs"
+  },
+  {
+    "initial_x": 0.29115224,
+    "initial_y": 3.5823295,
+    "id": 324199,
+    "label": "324199 All Other Petroleum and Coal Products Manufacturing"
+  },
+  {
+    "initial_x": -3.548876,
+    "initial_y": 2.901765,
+    "id": 336370,
+    "label": "336370 Motor Vehicle Metal Stamping"
+  },
+  {
+    "initial_x": 1.2122256,
+    "initial_y": -2.5559607,
+    "id": 532411,
+    "label": "532411 Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing"
+  },
+  {
+    "initial_x": -0.61278313,
+    "initial_y": 2.4007788,
+    "id": 339991,
+    "label": "339991 Gasket, Packing, and Sealing Device Manufacturing"
+  },
+  {
+    "initial_x": 1.2550162,
+    "initial_y": -0.3146985,
+    "id": 444210,
+    "label": "444210 Outdoor Power Equipment Stores"
+  },
+  {
+    "initial_x": -1.394119,
+    "initial_y": -4.974218,
+    "id": 624110,
+    "label": "624110 Child and Youth Services"
+  },
+  {
+    "initial_x": -2.821997,
+    "initial_y": 1.8594303,
+    "id": 331420,
+    "label": "331420 Copper Rolling, Drawing, Extruding, and Alloying"
+  },
+  {
+    "initial_x": -2.8259768,
+    "initial_y": 1.4083185,
+    "id": 334416,
+    "label": "334416 Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing"
+  },
+  {
+    "initial_x": -0.8422956,
+    "initial_y": 1.2814478,
+    "id": 339940,
+    "label": "339940 Office Supplies (except Paper) Manufacturing"
+  },
+  {
+    "initial_x": -2.952492,
+    "initial_y": 2.7306542,
+    "id": 332913,
+    "label": "332913 Plumbing Fixture Fitting and Trim Manufacturing"
+  },
+  {
+    "initial_x": -0.35920522,
+    "initial_y": -5.2129006,
+    "id": 446191,
+    "label": "446191 Food (Health) Supplement Stores"
+  },
+  {
+    "initial_x": -0.99227625,
+    "initial_y": 1.7144396,
+    "id": 339993,
+    "label": "339993 Fastener, Button, Needle, and Pin Manufacturing"
+  },
+  {
+    "initial_x": 0.16371006,
+    "initial_y": 2.9137897,
+    "id": 325194,
+    "label": "325194 Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing"
+  },
+  {
+    "initial_x": -0.05814213,
+    "initial_y": -3.4801497,
+    "id": 721214,
+    "label": "721214 Recreational and Vacation Camps (except Campgrounds)"
+  },
+  {
+    "initial_x": 1.8822187,
+    "initial_y": 2.159335,
+    "id": 314910,
+    "label": "314910 Textile Bag and Canvas Mills"
+  },
+  {
+    "initial_x": -0.050554547,
+    "initial_y": 4.2523355,
+    "id": 213115,
+    "label": "213115 Support Activities for Nonmetallic Minerals (except Fuels) Mining"
+  },
+  {
+    "initial_x": -0.72529656,
+    "initial_y": 1.3675904,
+    "id": 322110,
+    "label": "322110 Pulp Mills"
+  },
+  {
+    "initial_x": -2.4115448,
+    "initial_y": 3.4328797,
+    "id": 331318,
+    "label": "331318 Other Aluminum Rolling, Drawing, and Extruding"
+  },
+  {
+    "initial_x": -2.934785,
+    "initial_y": 3.9971778,
+    "id": 561622,
+    "label": "561622 Locksmiths"
+  },
+  {
+    "initial_x": -0.42944747,
+    "initial_y": 4.0541487,
+    "id": 212312,
+    "label": "212312 Crushed and Broken Limestone Mining and Quarrying"
+  },
+  {
+    "initial_x": -2.2836647,
+    "initial_y": -5.2490005,
+    "id": 922120,
+    "label": "922120 Police Protection"
+  },
+  {
+    "initial_x": -3.2771206,
+    "initial_y": -1.0120496,
+    "id": 221122,
+    "label": "221122 Electric Power Distribution"
+  },
+  {
+    "initial_x": 4.792824,
+    "initial_y": -2.1354148,
+    "id": 311423,
+    "label": "311423 Dried and Dehydrated Food Manufacturing"
+  },
+  {
+    "initial_x": -0.8424333,
+    "initial_y": -5.660397,
+    "id": 621112,
+    "label": "621112 Offices of Physicians, Mental Health Specialists"
+  },
+  {
+    "initial_x": -1.3107815,
+    "initial_y": 0.28411067,
+    "id": 334613,
+    "label": "334613 Blank Magnetic and Optical Recording Media Manufacturing"
+  },
+  {
+    "initial_x": -1.1435138,
+    "initial_y": -1.1700126,
+    "id": 515210,
+    "label": "515210 Cable and Other Subscription Programming"
+  },
+  {
+    "initial_x": -1.1566113,
+    "initial_y": -5.32509,
+    "id": 623311,
+    "label": "623311 Continuing Care Retirement Communities"
+  },
+  {
+    "initial_x": -3.4637086,
+    "initial_y": -1.3646189,
+    "id": 562212,
+    "label": "562212 Solid Waste Landfill"
+  },
+  {
+    "initial_x": 2.1441674,
+    "initial_y": 3.975722,
+    "id": 337214,
+    "label": "337214 Office Furniture (except Wood) Manufacturing"
+  },
+  {
+    "initial_x": 5.7317824,
+    "initial_y": -0.1148279,
+    "id": 114119,
+    "label": "114119 Other Marine Fishing"
+  },
+  {
+    "initial_x": -1.0202168,
+    "initial_y": -0.776703,
+    "id": 811213,
+    "label": "811213 Communication Equipment Repair and Maintenance"
+  },
+  {
+    "initial_x": 4.7697206,
+    "initial_y": -2.0049157,
+    "id": 311422,
+    "label": "311422 Specialty Canning"
+  },
+  {
+    "initial_x": 1.8783623,
+    "initial_y": 2.0113935,
+    "id": 316992,
+    "label": "316992 Women's Handbag and Purse Manufacturing"
+  },
+  {
+    "initial_x": 2.7561836,
+    "initial_y": 4.1627283,
+    "id": 321991,
+    "label": "321991 Manufactured Home (Mobile Home) Manufacturing"
+  },
+  {
+    "initial_x": -2.9374616,
+    "initial_y": 1.2751777,
+    "id": 334210,
+    "label": "334210 Telephone Apparatus Manufacturing"
+  },
+  {
+    "initial_x": -0.94661605,
+    "initial_y": 2.3596244,
+    "id": 326121,
+    "label": "326121 Unlaminated Plastics Profile Shape Manufacturing"
+  },
+  {
+    "initial_x": 1.5843065,
+    "initial_y": -1.5702354,
+    "id": 811112,
+    "label": "811112 Automotive Exhaust System Repair"
+  },
+  {
+    "initial_x": 7.0040827,
+    "initial_y": 0.34695145,
+    "id": 111920,
+    "label": "111920 Cotton Farming"
+  },
+  {
+    "initial_x": -4.2462564,
+    "initial_y": 2.656981,
+    "id": 333924,
+    "label": "333924 Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing"
+  },
+  {
+    "initial_x": -1.0440966,
+    "initial_y": 2.4274943,
+    "id": 326191,
+    "label": "326191 Plastics Plumbing Fixture Manufacturing"
+  },
+  {
+    "initial_x": 0.25480953,
+    "initial_y": 2.9444864,
+    "id": 325220,
+    "label": "325220 Artificial and Synthetic Fibers and Filaments Manufacturing"
+  },
+  {
+    "initial_x": 2.102947,
+    "initial_y": 4.0124726,
+    "id": 337215,
+    "label": "337215 Showcase, Partition, Shelving, and Locker Manufacturing"
+  },
+  {
+    "initial_x": 4.350544,
+    "initial_y": -1.296823,
+    "id": 312230,
+    "label": "312230 Tobacco Manufacturing"
+  },
+  {
+    "initial_x": -0.75511575,
+    "initial_y": 3.5840673,
+    "id": 327910,
+    "label": "327910 Abrasive Product Manufacturing"
+  },
+  {
+    "initial_x": -2.3630238,
+    "initial_y": -5.2845635,
+    "id": 928110,
+    "label": "928110 National Security"
+  },
+  {
+    "initial_x": 4.35209,
+    "initial_y": -1.4622071,
+    "id": 311213,
+    "label": "311213 Malt Manufacturing"
+  },
+  {
+    "initial_x": 1.8226413,
+    "initial_y": -3.0751064,
+    "id": 484230,
+    "label": "484230 Specialized Freight (except Used Goods) Trucking, Long-Distance"
+  },
+  {
+    "initial_x": -1.3298451,
+    "initial_y": -1.2566547,
+    "id": 561421,
+    "label": "561421 Telephone Answering Services"
+  },
+  {
+    "initial_x": -1.0087103,
+    "initial_y": 0.86103165,
+    "id": 333244,
+    "label": "333244 Printing Machinery and Equipment Manufacturing"
+  },
+  {
+    "initial_x": -2.4530551,
+    "initial_y": -5.3501873,
+    "id": 926130,
+    "label": "926130 Regulation and Administration of Communications, Electric, Gas, and Other Utilities"
+  },
+  {
+    "initial_x": -3.9057558,
+    "initial_y": 2.9467723,
+    "id": 333612,
+    "label": "333612 Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing"
+  },
+  {
+    "initial_x": -2.686203,
+    "initial_y": -3.7787294,
+    "id": 524298,
+    "label": "524298 All Other Insurance Related Activities"
+  },
+  {
+    "initial_x": -3.5108397,
+    "initial_y": -3.782864,
+    "id": 522130,
+    "label": "522130 Credit Unions"
+  },
+  {
+    "initial_x": -0.46556577,
+    "initial_y": -3.5315762,
+    "id": 712130,
+    "label": "712130 Zoos and Botanical Gardens"
+  },
+  {
+    "initial_x": -2.6398146,
+    "initial_y": -3.5297549,
+    "id": 524291,
+    "label": "524291 Claims Adjusting"
+  },
+  {
+    "initial_x": -4.01121,
+    "initial_y": 2.1689482,
+    "id": 332994,
+    "label": "332994 Small Arms, Ordnance, and Ordnance Accessories Manufacturing"
+  },
+  {
+    "initial_x": -1.8548645,
+    "initial_y": 0.72894126,
+    "id": 334510,
+    "label": "334510 Electromedical and Electrotherapeutic Apparatus Manufacturing"
+  },
+  {
+    "initial_x": -0.6761829,
+    "initial_y": 2.3721132,
+    "id": 326220,
+    "label": "326220 Rubber and Plastics Hoses and Belting Manufacturing"
+  },
+  {
+    "initial_x": 1.1473919,
+    "initial_y": -2.425865,
+    "id": 713930,
+    "label": "713930 Marinas"
+  },
+  {
+    "initial_x": -1.0217344,
+    "initial_y": 2.3963535,
+    "id": 326122,
+    "label": "326122 Plastics Pipe and Pipe Fitting Manufacturing"
+  },
+  {
+    "initial_x": 6.8687367,
+    "initial_y": 0.3250687,
+    "id": 111130,
+    "label": "111130 Dry Pea and Bean Farming"
+  },
+  {
+    "initial_x": -2.1130064,
+    "initial_y": -2.4920354,
+    "id": 541714,
+    "label": "541714 Research and Development in Biotechnology (except Nanobiotechnology)"
+  },
+  {
+    "initial_x": 6.8741875,
+    "initial_y": -0.20605122,
+    "id": 111419,
+    "label": "111419 Other Food Crops Grown Under Cover"
+  },
+  {
+    "initial_x": -2.3985736,
+    "initial_y": 3.4023278,
+    "id": 331491,
+    "label": "331491 Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding"
+  },
+  {
+    "initial_x": -4.0189166,
+    "initial_y": 2.0002816,
+    "id": 336411,
+    "label": "336411 Aircraft Manufacturing"
+  },
+  {
+    "initial_x": 6.7291183,
+    "initial_y": 0.42699125,
+    "id": 111940,
+    "label": "111940 Hay Farming"
+  },
+  {
+    "initial_x": -0.35963744,
+    "initial_y": 4.1217937,
+    "id": 212322,
+    "label": "212322 Industrial Sand Mining"
+  },
+  {
+    "initial_x": 0.17123634,
+    "initial_y": 4.2401514,
+    "id": 212221,
+    "label": "212221 Gold Ore Mining"
+  },
+  {
+    "initial_x": 5.03257,
+    "initial_y": -1.790296,
+    "id": 311212,
+    "label": "311212 Rice Milling"
+  },
+  {
+    "initial_x": -0.66221154,
+    "initial_y": 1.6039491,
+    "id": 339994,
+    "label": "339994 Broom, Brush, and Mop Manufacturing"
+  },
+  {
+    "initial_x": 4.7716784,
+    "initial_y": -2.0566864,
+    "id": 311942,
+    "label": "311942 Spice and Extract Manufacturing"
+  },
+  {
+    "initial_x": 0.75291467,
+    "initial_y": -1.6011187,
+    "id": 532112,
+    "label": "532112 Passenger Car Leasing"
+  },
+  {
+    "initial_x": -2.2340415,
+    "initial_y": -3.421441,
+    "id": 541120,
+    "label": "541120 Offices of Notaries"
+  },
+  {
+    "initial_x": 2.107301,
+    "initial_y": -2.8584652,
+    "id": 493130,
+    "label": "493130 Farm Product Warehousing and Storage"
+  },
+  {
+    "initial_x": -2.3028545,
+    "initial_y": -5.178802,
+    "id": 922110,
+    "label": "922110 Courts"
+  },
+  {
+    "initial_x": -0.12093678,
+    "initial_y": 4.2228527,
+    "id": 212393,
+    "label": "212393 Other Chemical and Fertilizer Mineral Mining"
+  },
+  {
+    "initial_x": 4.9992146,
+    "initial_y": -1.7288058,
+    "id": 311221,
+    "label": "311221 Wet Corn Milling"
+  },
+  {
+    "initial_x": 1.5767243,
+    "initial_y": -1.5005758,
+    "id": 811122,
+    "label": "811122 Automotive Glass Replacement Shops"
+  },
+  {
+    "initial_x": 2.9805598,
+    "initial_y": 4.3653913,
+    "id": 321912,
+    "label": "321912 Cut Stock, Resawing Lumber, and Planing"
+  },
+  {
+    "initial_x": 4.771693,
+    "initial_y": -1.8752446,
+    "id": 311919,
+    "label": "311919 Other Snack Food Manufacturing"
+  },
+  {
+    "initial_x": 0.124169804,
+    "initial_y": -1.5401821,
+    "id": 532310,
+    "label": "532310 General Rental Centers"
+  },
+  {
+    "initial_x": 1.7750188,
+    "initial_y": 2.0862098,
+    "id": 323113,
+    "label": "323113 Commercial Screen Printing"
+  },
+  {
+    "initial_x": -3.6450024,
+    "initial_y": 2.970291,
+    "id": 333996,
+    "label": "333996 Fluid Power Pump and Motor Manufacturing"
+  },
+  {
+    "initial_x": -1.6436322,
+    "initial_y": 0.49237636,
+    "id": 339115,
+    "label": "339115 Ophthalmic Goods Manufacturing"
+  },
+  {
+    "initial_x": 5.0844703,
+    "initial_y": -1.5346084,
+    "id": 311613,
+    "label": "311613 Rendering and Meat Byproduct Processing"
+  },
+  {
+    "initial_x": -0.8533948,
+    "initial_y": -2.3867483,
+    "id": 812310,
+    "label": "812310 Coin-Operated Laundries and Drycleaners"
+  },
+  {
+    "initial_x": -2.8456664,
+    "initial_y": 1.567302,
+    "id": 335911,
+    "label": "335911 Storage Battery Manufacturing"
+  },
+  {
+    "initial_x": 4.775551,
+    "initial_y": -1.6230983,
+    "id": 311512,
+    "label": "311512 Creamery Butter Manufacturing"
+  },
+  {
+    "initial_x": -0.9570955,
+    "initial_y": 2.3860385,
+    "id": 326130,
+    "label": "326130 Laminated Plastics Plate, Sheet (except Packaging), and Shape Manufacturing"
+  },
+  {
+    "initial_x": -2.2249517,
+    "initial_y": -3.8200653,
+    "id": 812220,
+    "label": "812220 Cemeteries and Crematories"
+  },
+  {
+    "initial_x": 2.8765564,
+    "initial_y": -1.3580906,
+    "id": 722310,
+    "label": "722310 Food Service Contractors"
+  },
+  {
+    "initial_x": -2.2960603,
+    "initial_y": 1.0741881,
+    "id": 334516,
+    "label": "334516 Analytical Laboratory Instrument Manufacturing"
+  },
+  {
+    "initial_x": 0.27874184,
+    "initial_y": 3.3358517,
+    "id": 324191,
+    "label": "324191 Petroleum Lubricating Oil and Grease Manufacturing"
+  },
+  {
+    "initial_x": -2.4903965,
+    "initial_y": -4.1320477,
+    "id": 525110,
+    "label": "525110 Pension Funds"
+  },
+  {
+    "initial_x": 1.319805,
+    "initial_y": -3.423851,
+    "id": 485113,
+    "label": "485113 Bus and Other Motor Vehicle Transit Systems"
+  },
+  {
+    "initial_x": -0.6744457,
+    "initial_y": -3.1892016,
+    "id": 453920,
+    "label": "453920 Art Dealers"
+  },
+  {
+    "initial_x": -3.1531126,
+    "initial_y": 2.8932803,
+    "id": 332919,
+    "label": "332919 Other Metal Valve and Pipe Fitting Manufacturing"
+  },
+  {
+    "initial_x": -3.427663,
+    "initial_y": -1.3745878,
+    "id": 562910,
+    "label": "562910 Remediation Services"
+  },
+  {
+    "initial_x": 4.6931314,
+    "initial_y": -2.1382334,
+    "id": 311412,
+    "label": "311412 Frozen Specialty Food Manufacturing"
+  },
+  {
+    "initial_x": -3.5347605,
+    "initial_y": 2.9139404,
+    "id": 336310,
+    "label": "336310 Motor Vehicle Gasoline Engine and Engine Parts Manufacturing"
+  },
+  {
+    "initial_x": -0.8539283,
+    "initial_y": -2.3421168,
+    "id": 812331,
+    "label": "812331 Linen Supply"
+  },
+  {
+    "initial_x": -1.7199514,
+    "initial_y": 0.50728685,
+    "id": 339116,
+    "label": "339116 Dental Laboratories"
+  },
+  {
+    "initial_x": -3.8247304,
+    "initial_y": 3.2536135,
+    "id": 333243,
+    "label": "333243 Sawmill, Woodworking, and Paper Machinery Manufacturing"
+  },
+  {
+    "initial_x": -0.5989426,
+    "initial_y": 3.7498436,
+    "id": 327410,
+    "label": "327410 Lime Manufacturing"
+  },
+  {
+    "initial_x": -0.8936364,
+    "initial_y": -5.556953,
+    "id": 621491,
+    "label": "621491 HMO Medical Centers"
+  },
+  {
+    "initial_x": 1.9592857,
+    "initial_y": -2.882805,
+    "id": 531130,
+    "label": "531130 Lessors of Miniwarehouses and Self-Storage Units"
+  },
+  {
+    "initial_x": -4.1856713,
+    "initial_y": 2.6122139,
+    "id": 336211,
+    "label": "336211 Motor Vehicle Body Manufacturing"
+  },
+  {
+    "initial_x": -2.3459535,
+    "initial_y": -5.1743546,
+    "id": 922130,
+    "label": "922130 Legal Counsel and Prosecution"
+  },
+  {
+    "initial_x": -2.608611,
+    "initial_y": 1.6961176,
+    "id": 335121,
+    "label": "335121 Residential Electric Lighting Fixture Manufacturing"
+  },
+  {
+    "initial_x": -2.5538707,
+    "initial_y": 1.6566259,
+    "id": 335122,
+    "label": "335122 Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing"
+  },
+  {
+    "initial_x": 0.1367944,
+    "initial_y": 2.9727612,
+    "id": 325920,
+    "label": "325920 Explosives Manufacturing"
+  },
+  {
+    "initial_x": -3.5815187,
+    "initial_y": 2.8843937,
+    "id": 333912,
+    "label": "333912 Air and Gas Compressor Manufacturing"
+  },
+  {
+    "initial_x": -2.9320526,
+    "initial_y": -3.466695,
+    "id": 531320,
+    "label": "531320 Offices of Real Estate Appraisers"
+  },
+  {
+    "initial_x": -4.0187316,
+    "initial_y": 3.0941398,
+    "id": 333132,
+    "label": "333132 Oil and Gas Field Machinery and Equipment Manufacturing"
+  },
+  {
+    "initial_x": -0.3924325,
+    "initial_y": -5.2240076,
+    "id": 812113,
+    "label": "812113 Nail Salons"
+  },
+  {
+    "initial_x": 5.0859,
+    "initial_y": -1.7100321,
+    "id": 311224,
+    "label": "311224 Soybean and Other Oilseed Processing"
+  },
+  {
+    "initial_x": -2.2726493,
+    "initial_y": -5.1953335,
+    "id": 922190,
+    "label": "922190 Other Justice, Public Order, and Safety Activities"
+  },
+  {
+    "initial_x": 1.4743264,
+    "initial_y": -3.4193926,
+    "id": 485320,
+    "label": "485320 Limousine Service"
+  },
+  {
+    "initial_x": -1.6245137,
+    "initial_y": 0.4497687,
+    "id": 532283,
+    "label": "532283 Home Health Equipment Rental"
+  },
+  {
+    "initial_x": -2.5315716,
+    "initial_y": 1.1814704,
+    "id": 333997,
+    "label": "333997 Scale and Balance Manufacturing"
+  },
+  {
+    "initial_x": -3.72717,
+    "initial_y": 3.1975648,
+    "id": 333993,
+    "label": "333993 Packaging Machinery Manufacturing"
+  },
+  {
+    "initial_x": 2.1163933,
+    "initial_y": 3.2503188,
+    "id": 337920,
+    "label": "337920 Blind and Shade Manufacturing"
+  },
+  {
+    "initial_x": 1.4369582,
+    "initial_y": -3.4475887,
+    "id": 485410,
+    "label": "485410 School and Employee Bus Transportation"
+  },
+  {
+    "initial_x": -3.1877637,
+    "initial_y": 3.3143756,
+    "id": 332613,
+    "label": "332613 Spring Manufacturing"
+  },
+  {
+    "initial_x": -3.936405,
+    "initial_y": 2.0186884,
+    "id": 336413,
+    "label": "336413 Other Aircraft Parts and Auxiliary Equipment Manufacturing"
+  },
+  {
+    "initial_x": 1.5424763,
+    "initial_y": -1.5043899,
+    "id": 811113,
+    "label": "811113 Automotive Transmission Repair"
+  },
+  {
+    "initial_x": 1.9430721,
+    "initial_y": 2.2224033,
+    "id": 313230,
+    "label": "313230 Nonwoven Fabric Mills"
+  },
+  {
+    "initial_x": 0.23635101,
+    "initial_y": 3.7581902,
+    "id": 213111,
+    "label": "213111 Drilling Oil and Gas Wells"
+  },
+  {
+    "initial_x": -0.9201382,
+    "initial_y": 0.07813663,
+    "id": 511140,
+    "label": "511140 Directory and Mailing List Publishers"
+  },
+  {
+    "initial_x": -2.2161026,
+    "initial_y": -5.040865,
+    "id": 924120,
+    "label": "924120 Administration of Conservation Programs"
+  },
+  {
+    "initial_x": -2.8423681,
+    "initial_y": 1.4972792,
+    "id": 335932,
+    "label": "335932 Noncurrent-Carrying Wiring Device Manufacturing"
+  },
+  {
+    "initial_x": -2.3895566,
+    "initial_y": -5.2804294,
+    "id": 926150,
+    "label": "926150 Regulation, Licensing, and Inspection of Miscellaneous Commercial Sectors"
+  },
+  {
+    "initial_x": -2.4423711,
+    "initial_y": 3.4244165,
+    "id": 331523,
+    "label": "331523 Nonferrous Metal Die-Casting Foundries"
+  },
+  {
+    "initial_x": 0.45510373,
+    "initial_y": 2.9610417,
+    "id": 325314,
+    "label": "325314 Fertilizer (Mixing Only) Manufacturing"
+  },
+  {
+    "initial_x": -3.7022264,
+    "initial_y": 3.1774263,
+    "id": 333992,
+    "label": "333992 Welding and Soldering Equipment Manufacturing"
+  },
+  {
+    "initial_x": -3.013823,
+    "initial_y": 2.930648,
+    "id": 332996,
+    "label": "332996 Fabricated Pipe and Pipe Fitting Manufacturing"
+  },
+  {
+    "initial_x": 1.5658715,
+    "initial_y": -2.9839864,
+    "id": 541614,
+    "label": "541614 Process, Physical Distribution, and Logistics Consulting Services"
+  },
+  {
+    "initial_x": -2.92853,
+    "initial_y": 1.3249298,
+    "id": 334417,
+    "label": "334417 Electronic Connector Manufacturing"
+  },
+  {
+    "initial_x": -0.6484664,
+    "initial_y": 2.3587708,
+    "id": 326291,
+    "label": "326291 Rubber Product Manufacturing for Mechanical Use"
+  },
+  {
+    "initial_x": 2.9048264,
+    "initial_y": 4.2906194,
+    "id": 321219,
+    "label": "321219 Reconstituted Wood Product Manufacturing"
+  },
+  {
+    "initial_x": 1.3883077,
+    "initial_y": -2.89336,
+    "id": 481112,
+    "label": "481112 Scheduled Freight Air Transportation"
+  },
+  {
+    "initial_x": -0.323575,
+    "initial_y": 4.1886244,
+    "id": 212313,
+    "label": "212313 Crushed and Broken Granite Mining and Quarrying"
+  },
+  {
+    "initial_x": -0.5665487,
+    "initial_y": 3.7555997,
+    "id": 324121,
+    "label": "324121 Asphalt Paving Mixture and Block Manufacturing"
+  },
+  {
+    "initial_x": -3.3409467,
+    "initial_y": -3.6226516,
+    "id": 523110,
+    "label": "523110 Investment Banking and Securities Dealing"
+  },
+  {
+    "initial_x": -2.3073075,
+    "initial_y": -3.147399,
+    "id": 561450,
+    "label": "561450 Credit Bureaus"
+  },
+  {
+    "initial_x": 5.6951995,
+    "initial_y": -0.1433543,
+    "id": 114112,
+    "label": "114112 Shellfish Fishing"
+  },
+  {
+    "initial_x": -2.398966,
+    "initial_y": -5.3380995,
+    "id": 926120,
+    "label": "926120 Regulation and Administration of Transportation Programs"
+  },
+  {
+    "initial_x": -3.6416,
+    "initial_y": 2.955631,
+    "id": 332991,
+    "label": "332991 Ball and Roller Bearing Manufacturing"
+  },
+  {
+    "initial_x": -2.4459846,
+    "initial_y": 3.4105206,
+    "id": 331315,
+    "label": "331315 Aluminum Sheet, Plate, and Foil Manufacturing"
+  },
+  {
+    "initial_x": -0.700881,
+    "initial_y": -5.4822607,
+    "id": 621391,
+    "label": "621391 Offices of Podiatrists"
+  },
+  {
+    "initial_x": 2.0507636,
+    "initial_y": 1.9861227,
+    "id": 315210,
+    "label": "315210 Cut and Sew Apparel Contractors"
+  },
+  {
+    "initial_x": 2.3957028,
+    "initial_y": 3.8227625,
+    "id": 321911,
+    "label": "321911 Wood Window and Door Manufacturing"
+  },
+  {
+    "initial_x": -3.109813,
+    "initial_y": -3.523847,
+    "id": 531390,
+    "label": "531390 Other Activities Related to Real Estate"
+  },
+  {
+    "initial_x": -0.80927217,
+    "initial_y": 1.6282384,
+    "id": 322212,
+    "label": "322212 Folding Paperboard Box Manufacturing"
+  },
+  {
+    "initial_x": -1.2529066,
+    "initial_y": -5.202227,
+    "id": 623220,
+    "label": "623220 Residential Mental Health and Substance Abuse Facilities"
+  },
+  {
+    "initial_x": 1.3844321,
+    "initial_y": -2.573761,
+    "id": 483112,
+    "label": "483112 Deep Sea Passenger Transportation"
+  },
+  {
+    "initial_x": -4.1316385,
+    "initial_y": 2.933419,
+    "id": 333112,
+    "label": "333112 Lawn and Garden Tractor and Home Lawn and Garden Equipment Manufacturing"
+  },
+  {
+    "initial_x": -4.0069437,
+    "initial_y": 2.0557349,
+    "id": 336414,
+    "label": "336414 Guided Missile and Space Vehicle Manufacturing"
+  },
+  {
+    "initial_x": -1.8031598,
+    "initial_y": -4.324041,
+    "id": 813940,
+    "label": "813940 Political Organizations"
+  },
+  {
+    "initial_x": 0.22900842,
+    "initial_y": 2.548573,
+    "id": 325414,
+    "label": "325414 Biological Product (except Diagnostic) Manufacturing"
+  },
+  {
+    "initial_x": -2.4550333,
+    "initial_y": 1.222838,
+    "id": 334514,
+    "label": "334514 Totalizing Fluid Meter and Counting Device Manufacturing"
+  },
+  {
+    "initial_x": -1.0787003,
+    "initial_y": -1.6050801,
+    "id": 512191,
+    "label": "512191 Teleproduction and Other Postproduction Services"
+  },
+  {
+    "initial_x": -0.86705667,
+    "initial_y": 0.61005163,
+    "id": 511191,
+    "label": "511191 Greeting Card Publishers"
+  },
+  {
+    "initial_x": -0.23643464,
+    "initial_y": 4.22623,
+    "id": 212325,
+    "label": "212325 Clay and Ceramic and Refractory Minerals Mining"
+  },
+  {
+    "initial_x": -0.92418504,
+    "initial_y": 2.3147533,
+    "id": 326160,
+    "label": "326160 Plastics Bottle Manufacturing"
+  },
+  {
+    "initial_x": 6.4298606,
+    "initial_y": 0.4788742,
+    "id": 112310,
+    "label": "112310 Chicken Egg Production"
+  },
+  {
+    "initial_x": -0.2578337,
+    "initial_y": 4.191807,
+    "id": 212324,
+    "label": "212324 Kaolin and Ball Clay Mining"
+  },
+  {
+    "initial_x": -3.4982603,
+    "initial_y": 2.9270353,
+    "id": 332912,
+    "label": "332912 Fluid Power Valve and Hose Fitting Manufacturing"
+  },
+  {
+    "initial_x": -1.2076647,
+    "initial_y": -5.6167507,
+    "id": 621910,
+    "label": "621910 Ambulance Services"
+  },
+  {
+    "initial_x": -1.937946,
+    "initial_y": -2.3862615,
+    "id": 541350,
+    "label": "541350 Building Inspection Services"
+  },
+  {
+    "initial_x": 1.847797,
+    "initial_y": -3.0754755,
+    "id": 492210,
+    "label": "492210 Local Messengers and Local Delivery"
+  },
+  {
+    "initial_x": 1.1808531,
+    "initial_y": -2.503576,
+    "id": 488390,
+    "label": "488390 Other Support Activities for Water Transportation"
+  },
+  {
+    "initial_x": -1.1381571,
+    "initial_y": 2.792712,
+    "id": 327213,
+    "label": "327213 Glass Container Manufacturing"
+  },
+  {
+    "initial_x": 0.028909678,
+    "initial_y": 2.8790689,
+    "id": 325910,
+    "label": "325910 Printing Ink Manufacturing"
+  },
+  {
+    "initial_x": 0.2015906,
+    "initial_y": 2.9136853,
+    "id": 325613,
+    "label": "325613 Surface Active Agent Manufacturing"
+  },
+  {
+    "initial_x": 4.7416177,
+    "initial_y": -2.1305554,
+    "id": 311930,
+    "label": "311930 Flavoring Syrup and Concentrate Manufacturing"
+  },
+  {
+    "initial_x": -0.91946816,
+    "initial_y": 1.5899795,
+    "id": 339995,
+    "label": "339995 Burial Casket Manufacturing"
+  },
+  {
+    "initial_x": -4.256604,
+    "initial_y": 2.5163505,
+    "id": 336212,
+    "label": "336212 Truck Trailer Manufacturing"
+  },
+  {
+    "initial_x": 0.3197728,
+    "initial_y": 2.9694097,
+    "id": 325312,
+    "label": "325312 Phosphatic Fertilizer Manufacturing"
+  },
+  {
+    "initial_x": -1.361183,
+    "initial_y": 5.3627195,
+    "id": 238170,
+    "label": "238170 Siding Contractors"
+  },
+  {
+    "initial_x": 1.0006274,
+    "initial_y": -2.6361308,
+    "id": 488190,
+    "label": "488190 Other Support Activities for Air Transportation"
+  },
+  {
+    "initial_x": 2.119979,
+    "initial_y": 3.994373,
+    "id": 337212,
+    "label": "337212 Custom Architectural Woodwork and Millwork Manufacturing"
+  },
+  {
+    "initial_x": -3.469594,
+    "initial_y": -3.74178,
+    "id": 522292,
+    "label": "522292 Real Estate Credit"
+  },
+  {
+    "initial_x": 5.108884,
+    "initial_y": -1.7636199,
+    "id": 311230,
+    "label": "311230 Breakfast Cereal Manufacturing"
+  },
+  {
+    "initial_x": 1.1698337,
+    "initial_y": -2.7364788,
+    "id": 481211,
+    "label": "481211 Nonscheduled Chartered Passenger Air Transportation"
+  },
+  {
+    "initial_x": -0.56243646,
+    "initial_y": 3.4966304,
+    "id": 324122,
+    "label": "324122 Asphalt Shingle and Coating Materials Manufacturing"
+  },
+  {
+    "initial_x": -1.5801228,
+    "initial_y": -3.6525939,
+    "id": 561312,
+    "label": "561312 Executive Search Services"
+  },
+  {
+    "initial_x": -0.70849526,
+    "initial_y": -2.9465091,
+    "id": 711130,
+    "label": "711130 Musical Groups and Artists"
+  },
+  {
+    "initial_x": 5.77708,
+    "initial_y": -0.68017244,
+    "id": 115111,
+    "label": "115111 Cotton Ginning"
+  },
+  {
+    "initial_x": -1.6348612,
+    "initial_y": -1.4604993,
+    "id": 561422,
+    "label": "561422 Telemarketing Bureaus and Other Contact Centers"
+  },
+  {
+    "initial_x": 1.8355343,
+    "initial_y": 2.1870248,
+    "id": 313320,
+    "label": "313320 Fabric Coating Mills"
+  },
+  {
+    "initial_x": 4.6709604,
+    "initial_y": -2.1015413,
+    "id": 312113,
+    "label": "312113 Ice Manufacturing"
+  },
+  {
+    "initial_x": -3.3553443,
+    "initial_y": -3.6292138,
+    "id": 525920,
+    "label": "525920 Trusts, Estates, and Agency Accounts"
+  },
+  {
+    "initial_x": -3.6225798,
+    "initial_y": 2.892879,
+    "id": 333995,
+    "label": "333995 Fluid Power Cylinder and Actuator Manufacturing"
+  },
+  {
+    "initial_x": -0.66695917,
+    "initial_y": -3.3077643,
+    "id": 712190,
+    "label": "712190 Nature Parks and Other Similar Institutions"
+  },
+  {
+    "initial_x": -0.9605056,
+    "initial_y": 2.4573534,
+    "id": 325991,
+    "label": "325991 Custom Compounding of Purchased Resins"
+  },
+  {
+    "initial_x": 0.25620708,
+    "initial_y": 3.7281635,
+    "id": 211130,
+    "label": "211130 Natural Gas Extraction"
+  },
+  {
+    "initial_x": -3.0742276,
+    "initial_y": 2.7385364,
+    "id": 332410,
+    "label": "332410 Power Boiler and Heat Exchanger Manufacturing"
+  },
+  {
+    "initial_x": -2.5224497,
+    "initial_y": -5.359186,
+    "id": 926140,
+    "label": "926140 Regulation of Agricultural Marketing and Commodities"
+  },
+  {
+    "initial_x": -2.465208,
+    "initial_y": -5.320376,
+    "id": 925120,
+    "label": "925120 Administration of Urban Planning and Community and Rural Development"
+  },
+  {
+    "initial_x": -3.599349,
+    "initial_y": 2.8627808,
+    "id": 336350,
+    "label": "336350 Motor Vehicle Transmission and Power Train Parts Manufacturing"
+  },
+  {
+    "initial_x": -2.7711601,
+    "initial_y": -3.9200552,
+    "id": 524127,
+    "label": "524127 Direct Title Insurance Carriers"
+  },
+  {
+    "initial_x": 6.389989,
+    "initial_y": 0.5061103,
+    "id": 112930,
+    "label": "112930 Fur-Bearing Animal and Rabbit Production"
+  },
+  {
+    "initial_x": 1.9185327,
+    "initial_y": -2.867474,
+    "id": 561431,
+    "label": "561431 Private Mail Centers"
+  },
+  {
+    "initial_x": 4.8378415,
+    "initial_y": -1.9916744,
+    "id": 311911,
+    "label": "311911 Roasted Nuts and Peanut Butter Manufacturing"
+  },
+  {
+    "initial_x": 1.6552508,
+    "initial_y": -1.626382,
+    "id": 811191,
+    "label": "811191 Automotive Oil Change and Lubrication Shops"
+  },
+  {
+    "initial_x": -2.9388883,
+    "initial_y": 1.1745052,
+    "id": 334112,
+    "label": "334112 Computer Storage Device Manufacturing"
+  },
+  {
+    "initial_x": 4.604127,
+    "initial_y": -2.1246247,
+    "id": 312112,
+    "label": "312112 Bottled Water Manufacturing"
+  },
+  {
+    "initial_x": -2.538608,
+    "initial_y": 1.9518952,
+    "id": 335991,
+    "label": "335991 Carbon and Graphite Product Manufacturing"
+  },
+  {
+    "initial_x": -0.88373065,
+    "initial_y": 2.1418364,
+    "id": 326112,
+    "label": "326112 Plastics Packaging Film and Sheet (including Laminated) Manufacturing"
+  },
+  {
+    "initial_x": -1.829796,
+    "initial_y": -1.4342091,
+    "id": 541870,
+    "label": "541870 Advertising Material Distribution Services"
+  },
+  {
+    "initial_x": 0.29823646,
+    "initial_y": 3.2662103,
+    "id": 325110,
+    "label": "325110 Petrochemical Manufacturing"
+  },
+  {
+    "initial_x": -1.3244562,
+    "initial_y": -5.079542,
+    "id": 624230,
+    "label": "624230 Emergency and Other Relief Services"
+  },
+  {
+    "initial_x": 1.4789019,
+    "initial_y": -1.5779779,
+    "id": 561491,
+    "label": "561491 Repossession Services"
+  },
+  {
+    "initial_x": 1.6764854,
+    "initial_y": -2.7570586,
+    "id": 486110,
+    "label": "486110 Pipeline Transportation of Crude Oil"
+  },
+  {
+    "initial_x": -1.7419605,
+    "initial_y": -3.480494,
+    "id": 541214,
+    "label": "541214 Payroll Services"
+  },
+  {
+    "initial_x": -3.9317722,
+    "initial_y": 2.0234451,
+    "id": 336412,
+    "label": "336412 Aircraft Engine and Engine Parts Manufacturing"
+  },
+  {
+    "initial_x": 0.38556534,
+    "initial_y": -2.9422474,
+    "id": 722515,
+    "label": "722515 Snack and Nonalcoholic Beverage Bars"
+  },
+  {
+    "initial_x": 0.08103128,
+    "initial_y": 4.180703,
+    "id": 212112,
+    "label": "212112 Bituminous Coal Underground Mining"
+  },
+  {
+    "initial_x": 7.0695853,
+    "initial_y": 0.3141004,
+    "id": 111930,
+    "label": "111930 Sugarcane Farming"
+  },
+  {
+    "initial_x": -0.97530067,
+    "initial_y": -1.703433,
+    "id": 512240,
+    "label": "512240 Sound Recording Studios"
+  },
+  {
+    "initial_x": 4.8509235,
+    "initial_y": -2.0384748,
+    "id": 311313,
+    "label": "311313 Beet Sugar Manufacturing"
+  },
+  {
+    "initial_x": -3.273188,
+    "initial_y": 1.6970673,
+    "id": 333242,
+    "label": "333242 Semiconductor Machinery Manufacturing"
+  },
+  {
+    "initial_x": 6.593308,
+    "initial_y": 0.43446693,
+    "id": 112330,
+    "label": "112330 Turkey Production"
+  },
+  {
+    "initial_x": -3.4057379,
+    "initial_y": 2.6558695,
+    "id": 333511,
+    "label": "333511 Industrial Mold Manufacturing"
+  },
+  {
+    "initial_x": -0.5573605,
+    "initial_y": -5.1349297,
+    "id": 611511,
+    "label": "611511 Cosmetology and Barber Schools"
+  },
+  {
+    "initial_x": -0.9734792,
+    "initial_y": -5.5393963,
+    "id": 621991,
+    "label": "621991 Blood and Organ Banks"
+  },
+  {
+    "initial_x": -1.2743436,
+    "initial_y": -5.590411,
+    "id": 923140,
+    "label": "923140 Administration of Veterans' Affairs"
+  },
+  {
+    "initial_x": -1.5839443,
+    "initial_y": -4.4115186,
+    "id": 813312,
+    "label": "813312 Environment, Conservation and Wildlife Organizations"
+  },
+  {
+    "initial_x": -0.80779153,
+    "initial_y": 2.988318,
+    "id": 327993,
+    "label": "327993 Mineral Wool Manufacturing"
+  },
+  {
+    "initial_x": -0.9929886,
+    "initial_y": -1.6922954,
+    "id": 512132,
+    "label": "512132 Drive-In Motion Picture Theaters"
+  },
+  {
+    "initial_x": -2.9438262,
+    "initial_y": 1.4879484,
+    "id": 335921,
+    "label": "335921 Fiber Optic Cable Manufacturing"
+  },
+  {
+    "initial_x": -1.08328,
+    "initial_y": -5.5749645,
+    "id": 621410,
+    "label": "621410 Family Planning Centers"
+  },
+  {
+    "initial_x": -1.9431564,
+    "initial_y": -2.3920534,
+    "id": 541340,
+    "label": "541340 Drafting Services"
+  },
+  {
+    "initial_x": -3.0391345,
+    "initial_y": 2.9426458,
+    "id": 332420,
+    "label": "332420 Metal Tank (Heavy Gauge) Manufacturing"
+  },
+  {
+    "initial_x": 4.7144046,
+    "initial_y": -2.0439224,
+    "id": 311813,
+    "label": "311813 Frozen Cakes, Pies, and Other Pastries Manufacturing"
+  },
+  {
+    "initial_x": -1.5744331,
+    "initial_y": -4.30515,
+    "id": 561591,
+    "label": "561591 Convention and Visitors Bureaus"
+  },
+  {
+    "initial_x": -3.8550627,
+    "initial_y": 2.6655025,
+    "id": 336360,
+    "label": "336360 Motor Vehicle Seating and Interior Trim Manufacturing"
+  },
+  {
+    "initial_x": -2.4360373,
+    "initial_y": -4.206767,
+    "id": 531311,
+    "label": "531311 Residential Property Managers"
+  },
+  {
+    "initial_x": -2.2010183,
+    "initial_y": -5.2418385,
+    "id": 922150,
+    "label": "922150 Parole Offices and Probation Offices"
+  },
+  {
+    "initial_x": -1.0832658,
+    "initial_y": -1.7537649,
+    "id": 512290,
+    "label": "512290 Other Sound Recording Industries"
+  },
+  {
+    "initial_x": 1.006453,
+    "initial_y": -2.7215528,
+    "id": 611512,
+    "label": "611512 Flight Training"
+  },
+  {
+    "initial_x": 0.1413189,
+    "initial_y": 4.1889086,
+    "id": 212291,
+    "label": "212291 Uranium-Radium-Vanadium Ore Mining"
+  },
+  {
+    "initial_x": -0.90223336,
+    "initial_y": 2.2137501,
+    "id": 326111,
+    "label": "326111 Plastics Bag and Pouch Manufacturing"
+  },
+  {
+    "initial_x": -3.4495344,
+    "initial_y": -1.4011269,
+    "id": 562111,
+    "label": "562111 Solid Waste Collection"
+  },
+  {
+    "initial_x": -1.2160065,
+    "initial_y": -4.441976,
+    "id": 611691,
+    "label": "611691 Exam Preparation and Tutoring"
+  },
+  {
+    "initial_x": -2.460719,
+    "initial_y": 3.4735153,
+    "id": 331512,
+    "label": "331512 Steel Investment Foundries"
+  },
+  {
+    "initial_x": 0.33607572,
+    "initial_y": -2.978665,
+    "id": 713210,
+    "label": "713210 Casinos (except Casino Hotels)"
+  },
+  {
+    "initial_x": -1.5983716,
+    "initial_y": -3.4485497,
+    "id": 561330,
+    "label": "561330 Professional Employer Organizations"
+  },
+  {
+    "initial_x": -1.0276508,
+    "initial_y": -5.650596,
+    "id": 621492,
+    "label": "621492 Kidney Dialysis Centers"
+  },
+  {
+    "initial_x": -1.3306149,
+    "initial_y": -5.2391696,
+    "id": 623210,
+    "label": "623210 Residential Intellectual and Developmental Disability Facilities"
+  },
+  {
+    "initial_x": -0.17841785,
+    "initial_y": -3.242675,
+    "id": 711211,
+    "label": "711211 Sports Teams and Clubs"
+  },
+  {
+    "initial_x": 6.8755274,
+    "initial_y": -0.16326624,
+    "id": 112910,
+    "label": "112910 Apiculture"
+  },
+  {
+    "initial_x": -2.3300278,
+    "initial_y": -5.1704817,
+    "id": 925110,
+    "label": "925110 Administration of Housing Programs"
+  },
+  {
+    "initial_x": 0.038457304,
+    "initial_y": 4.29569,
+    "id": 212222,
+    "label": "212222 Silver Ore Mining"
+  },
+  {
+    "initial_x": -0.78083825,
+    "initial_y": -2.8570676,
+    "id": 515112,
+    "label": "515112 Radio Stations"
+  },
+  {
+    "initial_x": -3.9231226,
+    "initial_y": 2.220131,
+    "id": 336992,
+    "label": "336992 Military Armored Vehicle, Tank, and Tank Component Manufacturing"
+  },
+  {
+    "initial_x": 6.9102025,
+    "initial_y": -0.15152337,
+    "id": 111331,
+    "label": "111331 Apple Orchards"
+  },
+  {
+    "initial_x": 0.61839503,
+    "initial_y": -3.0028973,
+    "id": 487990,
+    "label": "487990 Scenic and Sightseeing Transportation, Other"
+  },
+  {
+    "initial_x": 1.6000272,
+    "initial_y": -1.6077918,
+    "id": 326212,
+    "label": "326212 Tire Retreading"
+  },
+  {
+    "initial_x": 1.2595598,
+    "initial_y": -1.193402,
+    "id": 425120,
+    "label": "425120 Wholesale Trade Agents and Brokers"
+  },
+  {
+    "initial_x": 0.12679242,
+    "initial_y": 4.1525707,
+    "id": 212113,
+    "label": "212113 Anthracite Mining"
+  },
+  {
+    "initial_x": 6.889101,
+    "initial_y": 0.22402,
+    "id": 111120,
+    "label": "111120 Oilseed (except Soybean) Farming"
+  },
+  {
+    "initial_x": -2.9904053,
+    "initial_y": 1.4744171,
+    "id": 335929,
+    "label": "335929 Other Communication and Energy Wire Manufacturing"
+  },
+  {
+    "initial_x": 1.5691569,
+    "initial_y": -2.694251,
+    "id": 486910,
+    "label": "486910 Pipeline Transportation of Refined Petroleum Products"
+  },
+  {
+    "initial_x": 0.4498601,
+    "initial_y": -2.9929051,
+    "id": 721120,
+    "label": "721120 Casino Hotels"
+  },
+  {
+    "initial_x": -1.3040106,
+    "initial_y": 0.007600952,
+    "id": 325992,
+    "label": "325992 Photographic Film, Paper, Plate, and Chemical Manufacturing"
+  },
+  {
+    "initial_x": -1.2356982,
+    "initial_y": -5.4484305,
+    "id": 813212,
+    "label": "813212 Voluntary Health Organizations"
+  },
+  {
+    "initial_x": -1.0674119,
+    "initial_y": -5.5768447,
+    "id": 621512,
+    "label": "621512 Diagnostic Imaging Centers"
+  },
+  {
+    "initial_x": -1.8814472,
+    "initial_y": -1.4978491,
+    "id": 541830,
+    "label": "541830 Media Buying Agencies"
+  },
+  {
+    "initial_x": 6.9033456,
+    "initial_y": 0.18809305,
+    "id": 111992,
+    "label": "111992 Peanut Farming"
+  },
+  {
+    "initial_x": 1.1945579,
+    "initial_y": -3.190979,
+    "id": 485112,
+    "label": "485112 Commuter Rail Systems"
+  },
+  {
+    "initial_x": -3.1461291,
+    "initial_y": -1.2891895,
+    "id": 221121,
+    "label": "221121 Electric Bulk Power Transmission and Control"
+  },
+  {
+    "initial_x": -1.3668587,
+    "initial_y": -5.13131,
+    "id": 624221,
+    "label": "624221 Temporary Shelters"
+  },
+  {
+    "initial_x": 1.2098258,
+    "initial_y": -2.986979,
+    "id": 481212,
+    "label": "481212 Nonscheduled Chartered Freight Air Transportation"
+  },
+  {
+    "initial_x": -3.8879664,
+    "initial_y": 2.1409755,
+    "id": 332992,
+    "label": "332992 Small Arms Ammunition Manufacturing"
+  },
+  {
+    "initial_x": -4.204768,
+    "initial_y": 2.584595,
+    "id": 336120,
+    "label": "336120 Heavy Duty Truck Manufacturing"
+  },
+  {
+    "initial_x": -1.2420517,
+    "initial_y": -4.18133,
+    "id": 611430,
+    "label": "611430 Professional and Management Development Training"
+  },
+  {
+    "initial_x": -3.856903,
+    "initial_y": 2.116771,
+    "id": 332993,
+    "label": "332993 Ammunition (except Small Arms) Manufacturing"
+  },
+  {
+    "initial_x": 6.5869513,
+    "initial_y": 0.4079024,
+    "id": 112420,
+    "label": "112420 Goat Farming"
+  },
+  {
+    "initial_x": -0.09712957,
+    "initial_y": 4.2667994,
+    "id": 212391,
+    "label": "212391 Potash, Soda, and Borate Mineral Mining"
+  },
+  {
+    "initial_x": 1.1397669,
+    "initial_y": -3.3579323,
+    "id": 487110,
+    "label": "487110 Scenic and Sightseeing Transportation, Land"
+  },
+  {
+    "initial_x": -2.242088,
+    "initial_y": -5.2616663,
+    "id": 921140,
+    "label": "921140 Executive and Legislative Offices, Combined"
+  },
+  {
+    "initial_x": -3.6337552,
+    "initial_y": 2.7656522,
+    "id": 336340,
+    "label": "336340 Motor Vehicle Brake System Manufacturing"
+  },
+  {
+    "initial_x": -2.9148242,
+    "initial_y": 2.9193194,
+    "id": 327332,
+    "label": "327332 Concrete Pipe Manufacturing"
+  },
+  {
+    "initial_x": 0.94592136,
+    "initial_y": -2.8878675,
+    "id": 488310,
+    "label": "488310 Port and Harbor Operations"
+  },
+  {
+    "initial_x": -3.8486907,
+    "initial_y": 1.9699521,
+    "id": 336419,
+    "label": "336419 Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing"
+  },
+  {
+    "initial_x": -2.7060285,
+    "initial_y": -3.9714913,
+    "id": 524130,
+    "label": "524130 Reinsurance Carriers"
+  },
+  {
+    "initial_x": -3.3185732,
+    "initial_y": -3.5825124,
+    "id": 523140,
+    "label": "523140 Commodity Contracts Brokerage"
+  },
+  {
+    "initial_x": -3.4015508,
+    "initial_y": -1.4294596,
+    "id": 562112,
+    "label": "562112 Hazardous Waste Collection"
+  },
+  {
+    "initial_x": -3.6263616,
+    "initial_y": 2.761024,
+    "id": 336330,
+    "label": "336330 Motor Vehicle Steering and Suspension Components (except Spring) Manufacturing"
+  },
+  {
+    "initial_x": 6.94053,
+    "initial_y": -0.13086024,
+    "id": 111333,
+    "label": "111333 Strawberry Farming"
+  },
+  {
+    "initial_x": -1.5313786,
+    "initial_y": -4.331539,
+    "id": 712120,
+    "label": "712120 Historical Sites"
+  },
+  {
+    "initial_x": -0.9898911,
+    "initial_y": -1.7739004,
+    "id": 512230,
+    "label": "512230 Music Publishers"
+  },
+  {
+    "initial_x": -3.098678,
+    "initial_y": -1.2452531,
+    "id": 221115,
+    "label": "221115 Wind Electric Power Generation"
+  },
+  {
+    "initial_x": -1.187648,
+    "initial_y": -4.407252,
+    "id": 611513,
+    "label": "611513 Apprenticeship Training"
+  },
+  {
+    "initial_x": 0.8423974,
+    "initial_y": -3.1064968,
+    "id": 485119,
+    "label": "485119 Other Urban Transit Systems"
+  },
+  {
+    "initial_x": -0.82486534,
+    "initial_y": -5.4862714,
+    "id": 812191,
+    "label": "812191 Diet and Weight Reducing Centers"
+  },
+  {
+    "initial_x": -1.3876141,
+    "initial_y": -5.098577,
+    "id": 624210,
+    "label": "624210 Community Food Services"
+  },
+  {
+    "initial_x": 0.8166319,
+    "initial_y": -2.9889636,
+    "id": 487210,
+    "label": "487210 Scenic and Sightseeing Transportation, Water"
+  },
+  {
+    "initial_x": -2.5810683,
+    "initial_y": -3.856938,
+    "id": 524292,
+    "label": "524292 Third Party Administration of Insurance and Pension Funds"
+  },
+  {
+    "initial_x": -2.4971712,
+    "initial_y": -1.6597002,
+    "id": 927110,
+    "label": "927110 Space Research and Technology"
+  },
+  {
+    "initial_x": -2.0283933,
+    "initial_y": -2.3151932,
+    "id": 541360,
+    "label": "541360 Geophysical Surveying and Mapping Services"
+  },
+  {
+    "initial_x": 1.3442246,
+    "initial_y": -3.061252,
+    "id": 484122,
+    "label": "484122 General Freight Trucking, Long-Distance, Less Than Truckload"
+  },
+  {
+    "initial_x": 0.5572069,
+    "initial_y": -3.050906,
+    "id": 713920,
+    "label": "713920 Skiing Facilities"
+  },
+  {
+    "initial_x": -3.3511853,
+    "initial_y": -1.4447563,
+    "id": 562119,
+    "label": "562119 Other Waste Collection"
+  },
+  {
+    "initial_x": -2.7444334,
+    "initial_y": -1.6266398,
+    "id": 999990,
+    "label": "Unknown"
+  },
+  {
+    "initial_x": 6.907267,
+    "initial_y": -0.14183399,
+    "id": 111411,
+    "label": "111411 Mushroom Production"
+  },
+  {
+    "initial_x": -1.1131134,
+    "initial_y": -5.5277314,
+    "id": 621493,
+    "label": "621493 Freestanding Ambulatory Surgical and Emergency Centers"
+  },
+  {
+    "initial_x": 4.6901145,
+    "initial_y": -2.0873165,
+    "id": 311352,
+    "label": "311352 Confectionery Manufacturing from Purchased Chocolate"
+  },
+  {
+    "initial_x": 1.9227295,
+    "initial_y": -2.063183,
+    "id": 452311,
+    "label": "452311 Warehouse Clubs and Supercenters"
+  },
+  {
+    "initial_x": 2.8930283,
+    "initial_y": 4.278526,
+    "id": 321213,
+    "label": "321213 Engineered Wood Member (except Truss) Manufacturing"
+  },
+  {
+    "initial_x": -2.4554088,
+    "initial_y": 3.3392782,
+    "id": 331314,
+    "label": "331314 Secondary Smelting and Alloying of Aluminum"
+  },
+  {
+    "initial_x": -3.9173963,
+    "initial_y": 2.0116394,
+    "id": 336415,
+    "label": "336415 Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing"
+  },
+  {
+    "initial_x": 5.758377,
+    "initial_y": -0.100150615,
+    "id": 112512,
+    "label": "112512 Shellfish Farming"
+  },
+  {
+    "initial_x": 5.0450425,
+    "initial_y": -1.7683675,
+    "id": 325193,
+    "label": "325193 Ethyl Alcohol Manufacturing"
+  },
+  {
+    "initial_x": -4.2188683,
+    "initial_y": 2.551345,
+    "id": 336213,
+    "label": "336213 Motor Home Manufacturing"
+  },
+  {
+    "initial_x": -3.0709531,
+    "initial_y": 1.4129821,
+    "id": 334412,
+    "label": "334412 Bare Printed Circuit Board Manufacturing"
+  },
+  {
+    "initial_x": 4.641263,
+    "initial_y": -2.1087818,
+    "id": 311830,
+    "label": "311830 Tortilla Manufacturing"
+  },
+  {
+    "initial_x": -3.0175717,
+    "initial_y": -1.3541942,
+    "id": 221114,
+    "label": "221114 Solar Electric Power Generation"
+  },
+  {
+    "initial_x": -2.6081326,
+    "initial_y": -4.0503554,
+    "id": 525190,
+    "label": "525190 Other Insurance Funds"
+  },
+  {
+    "initial_x": -2.0384445,
+    "initial_y": -5.169963,
+    "id": 921150,
+    "label": "921150 American Indian and Alaska Native Tribal Governments"
+  },
+  {
+    "initial_x": -1.5810905,
+    "initial_y": -4.468063,
+    "id": 813219,
+    "label": "813219 Other Grantmaking and Giving Services"
+  },
+  {
+    "initial_x": -2.4529576,
+    "initial_y": -1.4113611,
+    "id": 517410,
+    "label": "517410 Satellite Telecommunications"
+  },
+  {
+    "initial_x": 1.7116477,
+    "initial_y": -2.0176332,
+    "id": 447110,
+    "label": "447110 Gasoline Stations with Convenience Stores"
+  },
+  {
+    "initial_x": 6.8737993,
+    "initial_y": -0.001134269,
+    "id": 111310,
+    "label": "111310 Orange Groves"
+  },
+  {
+    "initial_x": -3.0064352,
+    "initial_y": -1.4594915,
+    "id": 221111,
+    "label": "221111 Hydroelectric Power Generation"
+  },
+  {
+    "initial_x": -0.7484051,
+    "initial_y": -3.1329808,
+    "id": 711120,
+    "label": "711120 Dance Companies"
+  },
+  {
+    "initial_x": -1.5110216,
+    "initial_y": -4.910465,
+    "id": 624229,
+    "label": "624229 Other Community Housing Services"
+  },
+  {
+    "initial_x": 0.18419269,
+    "initial_y": 2.5094213,
+    "id": 325413,
+    "label": "325413 In-Vitro Diagnostic Substance Manufacturing"
+  },
+  {
+    "initial_x": -0.6921456,
+    "initial_y": 1.3100852,
+    "id": 322122,
+    "label": "322122 Newsprint Mills"
+  },
+  {
+    "initial_x": -0.9408972,
+    "initial_y": 2.2139971,
+    "id": 326140,
+    "label": "326140 Polystyrene Foam Product Manufacturing"
+  },
+  {
+    "initial_x": -0.08245626,
+    "initial_y": 4.226885,
+    "id": 212392,
+    "label": "212392 Phosphate Rock Mining"
+  },
+  {
+    "initial_x": -4.2625694,
+    "initial_y": 2.4702704,
+    "id": 336112,
+    "label": "336112 Light Truck and Utility Vehicle Manufacturing"
+  },
+  {
+    "initial_x": 0.9379338,
+    "initial_y": -2.6712778,
+    "id": 488111,
+    "label": "488111 Air Traffic Control"
+  },
+  {
+    "initial_x": -3.5049148,
+    "initial_y": 2.8002572,
+    "id": 332117,
+    "label": "332117 Powder Metallurgy Part Manufacturing"
+  },
+  {
+    "initial_x": -3.1965086,
+    "initial_y": 3.0855842,
+    "id": 332114,
+    "label": "332114 Custom Roll Forming"
+  },
+  {
+    "initial_x": -3.0273407,
+    "initial_y": -1.430877,
+    "id": 221112,
+    "label": "221112 Fossil Fuel Electric Power Generation"
+  },
+  {
+    "initial_x": -3.1334345,
+    "initial_y": -1.4806678,
+    "id": 562213,
+    "label": "562213 Solid Waste Combustors and Incinerators"
+  },
+  {
+    "initial_x": 1.176964,
+    "initial_y": -3.036034,
+    "id": 482112,
+    "label": "482112 Short Line Railroads"
+  },
+  {
+    "initial_x": -3.0571854,
+    "initial_y": -1.4641559,
+    "id": 221117,
+    "label": "221117 Biomass Electric Power Generation"
+  },
+  {
+    "initial_x": -3.038512,
+    "initial_y": -1.5774182,
+    "id": 221113,
+    "label": "221113 Nuclear Electric Power Generation"
+  },
+  {
+    "initial_x": -2.938008,
+    "initial_y": -1.7156196,
+    "id": 221116,
+    "label": "221116 Geothermal Electric Power Generation"
+  },
+  {
+    "initial_x": -2.8767889,
+    "initial_y": -1.8678354,
+    "id": 522294,
+    "label": "522294 Secondary Market Financing"
+  },
+  {
+    "initial_x": -2.916045,
+    "initial_y": -1.7568557,
+    "id": 522210,
+    "label": "522210 Credit Card Issuing"
+  }
+]
