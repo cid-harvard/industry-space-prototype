@@ -1,10 +1,23 @@
 import React from 'react'
-import CanvasIndustrySpace from './components/CanvasIndustrySpaceCustomWithSimulation';
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import IndustrySpaceNetwork from './pages/IndustrySpaceNetwork';
+import IndustrySpaceNetworkNoLines from './pages/IndustrySpaceNetworkNoLines';
 
 const App = () => {
+
   return (
     <div>
-      <CanvasIndustrySpace />
+      <Router>
+          <Switch>
+              <Route exact path={'/'} component={IndustrySpaceNetwork} />
+              <Route exact path={'/u-map'} component={IndustrySpaceNetworkNoLines} />
+            <Route component={IndustrySpaceNetwork} />
+          </Switch>
+        </Router>
     </div>
   );
 }
