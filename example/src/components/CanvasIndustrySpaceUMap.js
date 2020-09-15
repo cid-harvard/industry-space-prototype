@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import * as d3 from 'd3';
 import raw from 'raw.macro';
 import * as polished from 'polished';
+import sortBy from 'lodash/sortBy';
 
 const minExpectedScreenSize = 1020;
 
@@ -120,6 +121,8 @@ const createForceGraph = (rootEl, data) => {
 
     let hoveredNode = undefined;
     let highlightedNode = undefined;
+    let secondaryNodes = [];
+    let tertiaryNodes = [];
     
     const canvasEl = d3.select(canvas);
     canvasEl
@@ -129,18 +132,30 @@ const createForceGraph = (rootEl, data) => {
         simulationUpdate();
       })
       .on('click', function(event) {
-        console.log(data);
         const node = dragsubject();
         highlightedNode = node;
         if (node) {
-          const edges = tempData.edges.filter(({source, target}) => source.id === node.id || target.id === node.id)
+          const nodesSortedByDistance = sortBy(tempData.nodes, node2 => {
+            const a = node.x - node2.x;
+            const b = node.y - node2.y;
+            const c = Math.sqrt( a*a + b*b );
+            return c;
+          })
+          // nodes are adjusted by 1 to account for this node always being the closest
+          secondaryNodes = [...nodesSortedByDistance].slice(1,11);
+          tertiaryNodes = [...nodesSortedByDistance].slice(11,31);
+          // const edges = tempData.edges.filter(({source, target}) => source.id === node.id || target.id === node.id)
           const allEdgeXValues = [];
           const allEdgeYValues = [];
-          edges.forEach(({source, target}) => {
-            allEdgeXValues.push(xScale(source.x));
-            allEdgeXValues.push(xScale(target.x));
-            allEdgeYValues.push(yScale(source.y));
-            allEdgeYValues.push(yScale(target.y));
+          // edges.forEach(({source, target}) => {
+          //   allEdgeXValues.push(xScale(source.x));
+          //   allEdgeXValues.push(xScale(target.x));
+          //   allEdgeYValues.push(yScale(source.y));
+          //   allEdgeYValues.push(yScale(target.y));
+          // });
+          [...secondaryNodes, ...tertiaryNodes].forEach(n => {
+            allEdgeXValues.push(xScale(n.x));
+            allEdgeYValues.push(yScale(n.y));
           });
 
           const xBounds = d3.extent(allEdgeXValues);
@@ -195,11 +210,11 @@ const createForceGraph = (rootEl, data) => {
 
 
     function simulationUpdate() {
-      const hoveredId = hoveredNode && hoveredNode.id ? hoveredNode.id : undefined;
+      // const hoveredId = hoveredNode && hoveredNode.id ? hoveredNode.id : undefined;
       const highlightedId = highlightedNode && highlightedNode.id ? highlightedNode.id : undefined;
-      const linkedEdges = tempData.edges.filter(({source, target}) =>
-          source.id === hoveredId || target.id === hoveredId ||
-          source.id === highlightedId || target.id === highlightedId)
+      // const linkedEdges = tempData.edges.filter(({source, target}) =>
+      //     source.id === hoveredId || target.id === hoveredId ||
+      //     source.id === highlightedId || target.id === highlightedId)
 
       context.save();
 
@@ -223,35 +238,35 @@ const createForceGraph = (rootEl, data) => {
       tempData.nodes.forEach(function(d, i) {
         context.beginPath();
         context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-        context.fillStyle = highlightedId === undefined ? d.color : polished.setLightness(0.98, d.color);
+        context.fillStyle = highlightedId === undefined ? d.color : polished.rgba(d.color, 0.035);
         context.fill();
       });
 
-      const linkedNodeIds = [];
-      linkedEdges.forEach(function(d) {
-        if (!linkedNodeIds.includes(({id}) => d.source.id)) {
-          linkedNodeIds.push(d.source);
-        }
-        if (!linkedNodeIds.includes(({id}) => d.target.id)) {
-          linkedNodeIds.push(d.target);
-        }
-        // context.beginPath();
-        // context.moveTo(xScale(d.source.x), yScale(d.source.y));
-        // context.lineTo(xScale(d.target.x), yScale(d.target.y));
-        // context.strokeStyle = '#afafaf';
-        // context.stroke();
-      });
+      // const linkedNodeIds = [];
+      // linkedEdges.forEach(function(d) {
+      //   if (!linkedNodeIds.includes(({id}) => d.source.id)) {
+      //     linkedNodeIds.push(d.source);
+      //   }
+      //   if (!linkedNodeIds.includes(({id}) => d.target.id)) {
+      //     linkedNodeIds.push(d.target);
+      //   }
+      //   // context.beginPath();
+      //   // context.moveTo(xScale(d.source.x), yScale(d.source.y));
+      //   // context.lineTo(xScale(d.target.x), yScale(d.target.y));
+      //   // context.strokeStyle = '#afafaf';
+      //   // context.stroke();
+      // });
 
-      linkedNodeIds.forEach(function(d, i) {
-        if (d) {
-          context.beginPath();
-          context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = d.color;
-          context.fill();
-          context.strokeStyle = '#afafaf';
-          context.stroke();
-        }
-      });
+      // linkedNodeIds.forEach(function(d, i) {
+      //   if (d) {
+      //     context.beginPath();
+      //     context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
+      //     context.fillStyle = d.color;
+      //     context.fill();
+      //     context.strokeStyle = '#afafaf';
+      //     context.stroke();
+      //   }
+      // });
 
 
       if (hoveredNode) {
@@ -272,6 +287,22 @@ const createForceGraph = (rootEl, data) => {
         context.fill();
         context.strokeStyle = 'black';
         context.stroke();
+      }
+      if (secondaryNodes && secondaryNodes.length) {
+        secondaryNodes.forEach(function(d, i) {
+          context.beginPath();
+          context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
+          context.fillStyle = polished.rgba(d.color, 0.8);
+          context.fill();
+        });
+      }
+      if (tertiaryNodes && tertiaryNodes.length) {
+        tertiaryNodes.forEach(function(d, i) {
+          context.beginPath();
+          context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
+          context.fillStyle = polished.rgba(d.color, 0.2);
+          context.fill();
+        });
       }
 
       context.restore();
