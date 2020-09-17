@@ -71,7 +71,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       throw new Error('Parent out of range')
     }
     const {color} = colorMap.find(({id}) => id === topLevelParentId);
-    return {...n, radius, color}
+    return {...n, radius, color, parent: current}
   })
 
   const xRange = d3.extent(allXValues);

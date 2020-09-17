@@ -7,7 +7,7 @@ const Root = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  width: 400px;
+  width: 450px;
   padding: 1rem;
   font-family: 'OfficeCodeProWeb', monospace;
 `;
@@ -31,7 +31,7 @@ const NodeList = styled.div`
 
 const NodeListItem = styled.div`
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 180px 1fr 1fr;
   font-size: 0.8rem;
 
   &:hover {
@@ -52,8 +52,10 @@ const Cell = styled.div`
   align-items: center;
 `;
 
-const ProximityCell = styled(Cell)`
+const SectorCell = styled(Cell)`
   border-left: solid 1px #000;
+`;
+const ProximityCell = styled(Cell)`
   justify-content: flex-end;
 `;
 
@@ -85,7 +87,8 @@ const Table = (props) => {
   if (nodes) {
     const {selected, connected} = nodes;
     const title = selected.label.replace(selected.id, '');
-    const connectedNodes = connected.map(({id, label, proximity, color}) => {
+    const connectedNodes = connected.map(({id, label, proximity, color, parent}) => {
+      console.log(parent.name)
       const highlight = hovered && hovered.id === id;
       return (
         <NodeListItem
@@ -93,6 +96,7 @@ const Table = (props) => {
           style={{backgroundColor: highlight ? rgba(color, 0.4) : undefined}}
         >
           <Cell>{label.replace(id, '')}</Cell>
+          <SectorCell>{parent.name}</SectorCell>
           <ProximityCell>{proximity}</ProximityCell>
         </NodeListItem>
       );
@@ -107,7 +111,8 @@ const Table = (props) => {
           <NodeList>
             <TableTitle>
               <Cell>Industry Name</Cell>
-              <ProximityCell style={{border: 'none'}}>Proximity</ProximityCell>
+              <SectorCell style={{border: 'none'}}>Sector</SectorCell>
+              <ProximityCell>Proximity</ProximityCell>
             </TableTitle>
             {connectedNodes}
           </NodeList>
