@@ -5,20 +5,28 @@ import {rgba} from 'polished';
 const Root = styled.div`
   position: fixed;
   top: 0;
+  bottom: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.55);
   width: 400px;
-  height: 400px;
-  margin: 1rem;
+  padding: 1rem;
+  font-family: 'OfficeCodeProWeb', monospace;
+`;
+
+const Content = styled.div`
+  padding: 1rem;
+  box-sizing: border-box;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.45);
   display: grid;
   grid-template-rows: auto 1fr;
-  font-family: 'OfficeCodeProWeb', monospace;
-  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.55);
 `;
 
 const NodeList = styled.div`
+  margin-top: 1rem;
   overflow: auto;
+  position: relative;
 `;
 
 const NodeListItem = styled.div`
@@ -32,8 +40,10 @@ const NodeListItem = styled.div`
 `;
 
 const TableTitle = styled(NodeListItem)`
-  margin-top: 1rem;
   border-bottom: solid 1px black;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 `;
 
 const Cell = styled.div`
@@ -89,17 +99,19 @@ const Table = (props) => {
     })
     return (
       <Root>
+        <Content>
         <Title>
-          <Circle style={{backgroundColor: selected.color}} />
-          <div><Label>Selected industry:</Label> {title}</div>
-        </Title>
-        <NodeList>
-          <TableTitle>
-            <Cell>Industry Name</Cell>
-            <ProximityCell>Proximity</ProximityCell>
-          </TableTitle>
-          {connectedNodes}
-        </NodeList>
+            <Circle style={{backgroundColor: selected.color}} />
+            <div><Label>Selected industry:</Label> {title}</div>
+          </Title>
+          <NodeList>
+            <TableTitle>
+              <Cell>Industry Name</Cell>
+              <ProximityCell style={{border: 'none'}}>Proximity</ProximityCell>
+            </TableTitle>
+            {connectedNodes}
+          </NodeList>
+        </Content>
       </Root>
     );
   } else {
