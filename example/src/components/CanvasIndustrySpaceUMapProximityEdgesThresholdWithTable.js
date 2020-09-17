@@ -3,6 +3,24 @@ import * as d3 from 'd3';
 import raw from 'raw.macro';
 import * as polished from 'polished';
 import Table from './Table';
+import styled from 'styled-components';
+
+const Tooltip = styled.div`
+  position: fixed;
+  max-width: 100px;
+  font-family: 'OfficeCodeProWeb', monospace;
+  font-size: 0.75rem;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 1rem));
+  font-weight: 600;
+  color: black;
+  text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+`;
 
 const minExpectedScreenSize = 1020;
 
@@ -130,8 +148,8 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     canvasEl
       .call(zoom)
       .on('mousemove', function() {
-        hoveredNode = dragsubject();
-        setHovered(hoveredNode);
+        hoveredNode = dragsubject();        
+        setHovered({node: hoveredNode, coords: {x: d3.event.x, y: d3.event.y}});
         simulationUpdate();
       })
       .on('click', function(event) {
@@ -346,8 +364,17 @@ export default () => {
     })
   }, [rootNodeRef, setNodeList, setHovered]);
 
+  const tooltip = hovered && hovered.node ? (
+    <Tooltip
+      style={{top: hovered.coords.y, left: hovered.coords.x}}
+    >
+      {hovered.node.label.replace(hovered.node.id, '')}
+    </Tooltip>
+  ) : null
+
   return (
     <div>
+      {tooltip}
       <div ref={rootNodeRef} />
       <Table nodes={nodeList} hovered={hovered} />
     </div>

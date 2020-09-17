@@ -110,7 +110,7 @@ const Table = (props) => {
     const {selected, connected} = nodes;
     const title = selected.label.replace(selected.id, '');
     const connectedNodes = connected.map(({id, label, proximity, color, parent}, i) => {
-      const highlight = hovered && hovered.id === id;
+      const highlight = hovered && hovered.node && hovered.node.id === id;
       return (
         <NodeListItem
           $color={color}
