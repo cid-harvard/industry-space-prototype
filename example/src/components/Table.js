@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import styled from 'styled-components';
 import {rgba} from 'polished';
 
@@ -51,6 +51,9 @@ const Cell = styled.div`
   display: flex;
   align-items: center;
 `;
+const Rank = styled.strong`
+  margin-right: 0.7rem;
+`;
 
 const SectorCell = styled(Cell)`
   border-left: solid 1px #000;
@@ -64,6 +67,16 @@ const Title = styled.h1`
   font-weight: 400;
   margin: 0;
   display: flex;
+  align-items: center;
+`;
+
+const Empty = styled(Title)`
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.04);
+  text-align: center;
+  grid-row: 1 / -1;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -82,20 +95,33 @@ const Label = styled.span`
 
 const Table = (props) => {
   const {nodes, hovered} = props;
-  console.log(nodes);
-  console.log(hovered);
+  const highlightedRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (highlightedRef && highlightedRef.current && containerRef && containerRef.current && hovered !== undefined) {
+      const highlightedNode = highlightedRef.current;
+      const containerNode = containerRef.current;
+      containerNode.scrollTop = highlightedNode.offsetTop - highlightedNode.offsetHeight;
+    }
+  }, [highlightedRef, containerRef, hovered])
+
   if (nodes) {
     const {selected, connected} = nodes;
     const title = selected.label.replace(selected.id, '');
-    const connectedNodes = connected.map(({id, label, proximity, color, parent}) => {
-      console.log(parent.name)
+    const connectedNodes = connected.map(({id, label, proximity, color, parent}, i) => {
       const highlight = hovered && hovered.id === id;
       return (
         <NodeListItem
           $color={color}
           style={{backgroundColor: highlight ? rgba(color, 0.4) : undefined}}
+          ref={highlight ? highlightedRef : undefined}
+          key={id}
         >
-          <Cell>{label.replace(id, '')}</Cell>
+          <Cell>
+            <Rank>{i + 1}</Rank>
+            <div>{label.replace(id, '')}</div>
+          </Cell>
           <SectorCell>{parent.name}</SectorCell>
           <ProximityCell>{proximity}</ProximityCell>
         </NodeListItem>
@@ -108,7 +134,7 @@ const Table = (props) => {
             <Circle style={{backgroundColor: selected.color}} />
             <div><Label>Selected industry:</Label> {title}</div>
           </Title>
-          <NodeList>
+          <NodeList ref={containerRef}>
             <TableTitle>
               <Cell>Industry Name</Cell>
               <SectorCell style={{border: 'none'}}>Sector</SectorCell>
@@ -120,7 +146,13 @@ const Table = (props) => {
       </Root>
     );
   } else {
-    return null;
+    return (
+      <Root>
+        <Content>
+          <Empty>Click a node for more details</Empty>
+        </Content>
+      </Root>
+    );
   }
 }
 

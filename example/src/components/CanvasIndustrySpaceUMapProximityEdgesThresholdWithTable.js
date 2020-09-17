@@ -8,7 +8,7 @@ const minExpectedScreenSize = 1020;
 
 // const data = JSON.parse(raw('../data/industry-space-with-start-positions.json'));
 const data = JSON.parse(raw('../data/umap-custom-2.json'));
-const proximityNodes = JSON.parse(raw('../data/proximity.json'));
+const proximityNodes = JSON.parse(raw('../data/proximity-15.json'));
 const naicsData = JSON.parse(raw('../data/naics_2017.json'));
 
 const colorMap = [
@@ -27,7 +27,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
   const root = d3.select(rootEl);
 
   const height = window.innerHeight;
-  const width =  window.innerWidth;
+  const width =  window.innerWidth - 450;
 
   const smallerSize = width < height ? width : height;
   const padding = smallerSize * 0.1;
@@ -94,7 +94,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
 
   const simulation = d3.forceSimulation()
-                .force("center", d3.forceCenter(rangeWidth / 1.8, rangeHeight / 1.8))
+                .force("center", d3.forceCenter(rangeWidth / 1.3, rangeHeight / 1.8))
                 .force("charge", d3.forceManyBody().strength(-10))
                 .force("collision", d3.forceCollide().radius(function(d) {
                   return (d.radius * 1.25) * (minExpectedScreenSize / smallerSize);
@@ -125,7 +125,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     let primaryNodes = [];
     let secondaryNodes = [];
     let tertiaryNodes = [];
-    let quarternaryNodes = [];
     
     const canvasEl = d3.select(canvas);
     canvasEl
@@ -142,18 +141,15 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           primaryNodes = [];
           secondaryNodes = [];
           tertiaryNodes = [];
-          quarternaryNodes = [];
           proximityNodes[node.id].forEach(({trg, proximity}, i) => {
             const node2 = tempData.nodes.find(n => n.id === trg);
             if (node2) {
-              if (i < 8) {
+              if (i < 5) {
                 primaryNodes.push({...node2, proximity});
-              } else if (i < 24) {
+              } else if (i < 10) {
                 secondaryNodes.push({...node2, proximity});
-              } else if (i < 48) {
-                tertiaryNodes.push({...node2, proximity});
               } else {
-                quarternaryNodes.push({...node2, proximity});
+                tertiaryNodes.push({...node2, proximity});
               }
             }
           });
@@ -183,7 +179,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
           setNodeList({
             selected: node,
-            connected: [...primaryNodes, ...secondaryNodes, ...tertiaryNodes, ...quarternaryNodes],
+            connected: [...primaryNodes, ...secondaryNodes, ...tertiaryNodes],
           })
         } else {
           setNodeList(undefined);
@@ -323,14 +319,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
           context.fillStyle = polished.rgba(d.color, 0.3);
-          context.fill();
-        });
-      }
-      if (quarternaryNodes && quarternaryNodes.length) {
-        quarternaryNodes.forEach(function(d, i) {
-          context.beginPath();
-          context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = polished.rgba(d.color, 0.085);
           context.fill();
         });
       }
