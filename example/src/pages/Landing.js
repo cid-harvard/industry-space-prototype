@@ -10,6 +10,7 @@ const App = () => {
       <li><a href={'#/u-map-lines'}>Industry Space as <strong>UMap w/ Edges</strong></a></li>
       <li><a href={'#/u-map-edges-abs'}>Industry Space as <strong>UMap w/ Edges, Highlighted Based on <em>Value</em></strong></a></li>
       <li><a href={'#/u-map-edges-threshold'}>Industry Space as <strong>UMap w/ Edges, Highlighted based on <em>Threshold</em></strong></a></li>
+      <li><a href={'#/u-map-edges-threshold-table'}>Industry Space as <strong>UMap w/ Edges, Highlighted based on <em>Threshold</em> w/ Table</strong></a></li>
     </ul>
   );
 }
