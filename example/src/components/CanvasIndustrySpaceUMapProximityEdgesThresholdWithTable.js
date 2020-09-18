@@ -201,6 +201,9 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             connected: [...primaryNodes, ...secondaryNodes, ...tertiaryNodes],
           })
         } else {
+          primaryNodes = [];
+          secondaryNodes = [];
+          tertiaryNodes = [];
           setNodeList(undefined);
         }
         simulationUpdate();
@@ -272,13 +275,19 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.strokeStyle = 'black';
         context.stroke();
       }
+      let nodeCount = 1;
       if (primaryNodes && primaryNodes.length) {
         primaryNodes.forEach(function(d, i) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
           context.fillStyle = polished.rgba(d.color, 0.8);
-          context.fillStyle = polished.rgba(d.color, d.proximity * 100);
           context.fill();
+
+          context.textAlign = 'center';
+          context.textBaseline = 'middle';
+          context.font = `400 ${d.radius}px OfficeCodeProWeb`;
+          context.fillStyle = "white";
+          context.fillText(nodeCount++, xScale(d.x), yScale(d.y));
         });
       }
       if (secondaryNodes && secondaryNodes.length) {
@@ -286,8 +295,13 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
           context.fillStyle = polished.rgba(d.color, 0.5);
-          context.fillStyle = polished.rgba(d.color, d.proximity * 100);
           context.fill();
+
+          context.textAlign = 'center';
+          context.textBaseline = 'middle';
+          context.font = `400 ${d.radius}px OfficeCodeProWeb`;
+          context.fillStyle = "white";
+          context.fillText(nodeCount++, xScale(d.x), yScale(d.y));
         });
       }
       if (tertiaryNodes && tertiaryNodes.length) {
@@ -296,6 +310,12 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
           context.fillStyle = polished.rgba(d.color, 0.3);
           context.fill();
+
+          context.textAlign = 'center';
+          context.textBaseline = 'middle';
+          context.font = `400 ${d.radius}px OfficeCodeProWeb`;
+          context.fillStyle = "white";
+          context.fillText(nodeCount++, xScale(d.x), yScale(d.y));
         });
       }
 
@@ -303,7 +323,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     }
 
     const triggerSimulationUpdate = (node) => {
-      console.log(node);
       if (node) {
         highlightedNode = node;
         primaryNodes = [];
