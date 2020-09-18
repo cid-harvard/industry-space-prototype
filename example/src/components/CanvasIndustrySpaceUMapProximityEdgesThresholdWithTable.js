@@ -407,6 +407,9 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     }
     return {triggerSimulationUpdate, clearSelections};
   }
+  setTimeout(() => {
+    update.clearSelections();
+  }, 0)
 
   return update;
 }
