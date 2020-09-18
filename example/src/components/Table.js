@@ -36,6 +36,7 @@ const NodeListItem = styled.div`
 
   &:hover {
     ${({$color}) => $color ? 'background-color:' + rgba($color, 0.4) + ';' : ''}
+    cursor: pointer;
   }
 `;
 
@@ -94,7 +95,7 @@ const Label = styled.span`
 `;
 
 const Table = (props) => {
-  const {nodes, hovered} = props;
+  const {nodes, hovered, updateSimulation} = props;
   const highlightedRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -109,13 +110,16 @@ const Table = (props) => {
   if (nodes) {
     const {selected, connected} = nodes;
     const title = selected.label.replace(selected.id, '');
-    const connectedNodes = connected.map(({id, label, proximity, color, parent}, i) => {
+    const connectedNodes = connected.map((node, i) => {
+      const {id, label, proximity, color, parent} = node;
       const highlight = hovered && hovered.node && hovered.node.id === id;
+      const onClick = () => updateSimulation(node);
       return (
         <NodeListItem
           $color={color}
           style={{backgroundColor: highlight ? rgba(color, 0.4) : undefined}}
           ref={highlight ? highlightedRef : undefined}
+          onClick={onClick}
           key={id}
         >
           <Cell>

@@ -127,7 +127,14 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
   let transform = d3.zoomIdentity;
 
-  initGraph(data)
+
+  let hoveredNode = undefined;
+  let highlightedNode = undefined;
+  let primaryNodes = [];
+  let secondaryNodes = [];
+  let tertiaryNodes = [];
+
+  const update = initGraph(data);
 
   function initGraph(tempData){
 
@@ -137,12 +144,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     }
 
     const zoom = d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed);
-
-    let hoveredNode = undefined;
-    let highlightedNode = undefined;
-    let primaryNodes = [];
-    let secondaryNodes = [];
-    let tertiaryNodes = [];
     
     const canvasEl = d3.select(canvas);
     canvasEl
@@ -236,29 +237,13 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
 
     function simulationUpdate() {
-      // const hoveredId = hoveredNode && hoveredNode.id ? hoveredNode.id : undefined;
       const highlightedId = highlightedNode && highlightedNode.id ? highlightedNode.id : undefined;
-      // const linkedEdges = tempData.edges.filter(({source, target}) =>
-      //     source.id === hoveredId || target.id === hoveredId ||
-      //     source.id === highlightedId || target.id === highlightedId)
 
       context.save();
 
       context.clearRect(0, 0, width, height);
       context.translate(transform.x, transform.y);
       context.scale(transform.k, transform.k);
-
-      // tempData.edges.forEach(function(d) {
-      //   context.beginPath();
-      //   context.moveTo(xScale(d.source.x), yScale(d.source.y));
-      //   context.lineTo(xScale(d.target.x), yScale(d.target.y));
-      //   if (highlightedId) {
-      //     context.strokeStyle = '#f9f9f9';
-      //   } else {
-      //     context.strokeStyle = '#e6e6e6';
-      //   }
-      //   context.stroke();
-      // });
 
       // Draw the nodes
       tempData.nodes.forEach(function(d, i) {
@@ -267,33 +252,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.fillStyle = highlightedId === undefined ? d.color : polished.rgba(d.color, 0.035);
         context.fill();
       });
-
-      // const linkedNodeIds = [];
-      // linkedEdges.forEach(function(d) {
-      //   if (!linkedNodeIds.includes(({id}) => d.source.id)) {
-      //     linkedNodeIds.push(d.source);
-      //   }
-      //   if (!linkedNodeIds.includes(({id}) => d.target.id)) {
-      //     linkedNodeIds.push(d.target);
-      //   }
-      //   // context.beginPath();
-      //   // context.moveTo(xScale(d.source.x), yScale(d.source.y));
-      //   // context.lineTo(xScale(d.target.x), yScale(d.target.y));
-      //   // context.strokeStyle = '#afafaf';
-      //   // context.stroke();
-      // });
-
-      // linkedNodeIds.forEach(function(d, i) {
-      //   if (d) {
-      //     context.beginPath();
-      //     context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-      //     context.fillStyle = d.color;
-      //     context.fill();
-      //     context.strokeStyle = '#afafaf';
-      //     context.stroke();
-      //   }
-      // });
-
 
       if (hoveredNode) {
         rootEl.style.cursor = 'pointer';
@@ -343,26 +301,84 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
       context.restore();
     }
+
+    const triggerSimulationUpdate = () => (node) => {
+      console.log(node);
+      if (node) {
+        highlightedNode = node;
+        primaryNodes = [];
+        secondaryNodes = [];
+        tertiaryNodes = [];
+        proximityNodes[node.id].forEach(({trg, proximity}, i) => {
+          const node2 = tempData.nodes.find(n => n.id === trg);
+          if (node2) {
+            if (i < 5) {
+              primaryNodes.push({...node2, proximity});
+            } else if (i < 10) {
+              secondaryNodes.push({...node2, proximity});
+            } else {
+              tertiaryNodes.push({...node2, proximity});
+            }
+          }
+        });
+        const allEdgeXValues = [];
+        const allEdgeYValues = [];
+        [node, ...primaryNodes].forEach(n => {
+          allEdgeXValues.push(xScale(n.x));
+          allEdgeYValues.push(yScale(n.y));
+        });
+
+        const xBounds = d3.extent(allEdgeXValues);
+        const yBounds = d3.extent(allEdgeYValues);
+        const bounds = [
+          [xBounds[0], yBounds[0]],
+          [xBounds[1], yBounds[1]],
+        ];
+        const dx = bounds[1][0] - bounds[0][0];
+        const dy = bounds[1][1] - bounds[0][1];
+        const x = (bounds[0][0] + bounds[1][0]) / 2;
+        const y = (bounds[0][1] + bounds[1][1]) / 2;
+        const scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / rangeWidth, dy / rangeHeight)));
+        const translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+        canvasEl.transition()
+            .duration(500)
+            .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
+
+        setNodeList({
+          selected: node,
+          connected: [...primaryNodes, ...secondaryNodes, ...tertiaryNodes],
+        })
+      } else {
+        setNodeList(undefined);
+      }
+      simulationUpdate();
+    }
+    return triggerSimulationUpdate;
   }
+
+  return update;
 }
 
 export default () => {
   const rootNodeRef = useRef(null);
   const [nodeList, setNodeList] = useState(undefined);
   const [hovered, setHovered] = useState(undefined);
+  const [updateSimulation, setUpdateSimulation] = useState(undefined);
 
   useEffect(() => {
     let rootEl = null;
     if (rootNodeRef && rootNodeRef.current) {
       rootEl = rootNodeRef.current;
-      createForceGraph(rootEl, data, setNodeList, setHovered);
+      const triggerSimulationUpdate = createForceGraph(rootEl, data, setNodeList, setHovered);
+      setUpdateSimulation(triggerSimulationUpdate);
     }
     return (() => {
       if (rootEl) {
         rootEl.innerHTML = '';
       }
     })
-  }, [rootNodeRef, setNodeList, setHovered]);
+  }, [rootNodeRef, setNodeList, setHovered, setUpdateSimulation]);
 
   const tooltip = hovered && hovered.node ? (
     <Tooltip
@@ -376,7 +392,7 @@ export default () => {
     <div>
       {tooltip}
       <div ref={rootNodeRef} />
-      <Table nodes={nodeList} hovered={hovered} />
+      <Table nodes={nodeList} hovered={hovered} updateSimulation={updateSimulation} />
     </div>
   );
 }
