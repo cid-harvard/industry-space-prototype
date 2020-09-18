@@ -302,7 +302,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       context.restore();
     }
 
-    const triggerSimulationUpdate = () => (node) => {
+    const triggerSimulationUpdate = (node) => {
       console.log(node);
       if (node) {
         highlightedNode = node;
@@ -354,7 +354,39 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       }
       simulationUpdate();
     }
-    return triggerSimulationUpdate;
+    const clearSelections = () => {
+      const allEdgeXValues = [];
+      const allEdgeYValues = [];
+      tempData.nodes.forEach(n => {
+        allEdgeXValues.push(xScale(n.x));
+        allEdgeYValues.push(yScale(n.y));
+      });
+
+      const xBounds = d3.extent(allEdgeXValues);
+      const yBounds = d3.extent(allEdgeYValues);
+      const bounds = [
+        [xBounds[0], yBounds[0]],
+        [xBounds[1], yBounds[1]],
+      ];
+      const dx = bounds[1][0] - bounds[0][0];
+      const dy = bounds[1][1] - bounds[0][1];
+      const x = (bounds[0][0] + bounds[1][0]) / 2;
+      const y = (bounds[0][1] + bounds[1][1]) / 2;
+      const scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / rangeWidth, dy / rangeHeight)));
+      const translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+      canvasEl.transition()
+          .duration(500)
+          .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
+      hoveredNode = undefined;
+      highlightedNode = undefined;
+      primaryNodes = [];
+      secondaryNodes = [];
+      tertiaryNodes = [];
+      setNodeList(undefined);
+      simulationUpdate();
+    }
+    return {triggerSimulationUpdate, clearSelections};
   }
 
   return update;

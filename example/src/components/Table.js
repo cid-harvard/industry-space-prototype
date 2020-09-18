@@ -12,6 +12,18 @@ const Root = styled.div`
   font-family: 'OfficeCodeProWeb', monospace;
 `;
 
+const BackButton = styled.button`
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: 'OfficeCodeProWeb', monospace;
+  cursor: pointer;
+  padding: 1rem;
+`;
+
 const Content = styled.div`
   padding: 1rem;
   box-sizing: border-box;
@@ -113,7 +125,7 @@ const Table = (props) => {
     const connectedNodes = connected.map((node, i) => {
       const {id, label, proximity, color, parent} = node;
       const highlight = hovered && hovered.node && hovered.node.id === id;
-      const onClick = () => updateSimulation(node);
+      const onClick = () => updateSimulation ? updateSimulation.triggerSimulationUpdate(node) : null;
       return (
         <NodeListItem
           $color={color}
@@ -122,7 +134,9 @@ const Table = (props) => {
           onClick={onClick}
           key={id}
         >
-          <Cell>
+          <Cell
+            style={{borderLeft: `5px solid ${color}`}}
+          >
             <Rank>{i + 1}</Rank>
             <div>{label.replace(id, '')}</div>
           </Cell>
@@ -131,8 +145,10 @@ const Table = (props) => {
         </NodeListItem>
       );
     })
+    const onClear = () => updateSimulation ? updateSimulation.clearSelections() : null;
     return (
       <Root>
+        <BackButton onClick={onClear}>{'< Back to Industry Space'}</BackButton>
         <Content>
         <Title>
             <Circle style={{backgroundColor: selected.color}} />
