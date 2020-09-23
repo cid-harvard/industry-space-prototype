@@ -12,6 +12,7 @@ import IndustrySpaceUMapEdgesAbs from './pages/IndustrySpaceUMapEdgesAbs';
 import IndustrySpaceUMapEdgesThreshold from './pages/IndustrySpaceUMapEdgesThreshold';
 import IndustrySpaceUMapEdgesThresholdWithTable from './pages/IndustrySpaceUMapEdgesThresholdWithTable';
 import IndustrySpaceNetworkWithTable from './pages/IndustrySpaceNetworkWithTable';
+import IndustrySpaceNetworkNoEdgesWithTable from './pages/IndustrySpaceNetworkNoEdgesWithTable';
 import Landing from './pages/Landing';
 import './fonts/fonts.css';
 
@@ -29,6 +30,7 @@ const App = () => {
             <Route exact path={'/u-map-edges-threshold'} component={IndustrySpaceUMapEdgesThreshold} />
             <Route exact path={'/u-map-edges-threshold-table'} component={IndustrySpaceUMapEdgesThresholdWithTable} />
             <Route exact path={'/network-table'} component={IndustrySpaceNetworkWithTable} />
+            <Route exact path={'/network-no-edges-table'} component={IndustrySpaceNetworkNoEdgesWithTable} />
             <Route component={Landing} />
           </Switch>
         </Router>
