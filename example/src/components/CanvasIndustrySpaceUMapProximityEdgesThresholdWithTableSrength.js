@@ -26,7 +26,7 @@ const minExpectedScreenSize = 1020;
 
 // const data = JSON.parse(raw('../data/industry-space-with-start-positions.json'));
 const data = JSON.parse(raw('../data/umap-custom-2.json'));
-const proximityNodes = JSON.parse(raw('../data/proximity-15.json'));
+const proximityNodes = JSON.parse(raw('../data/proximity-min-max.json'));
 const naicsData = JSON.parse(raw('../data/naics_2017.json'));
 
 const colorMap = [
@@ -161,7 +161,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           proximityNodes[node.id].forEach(({trg, proximity}, i) => {
             const node2 = tempData.nodes.find(n => n.id === trg);
             if (node2) {
-              if (i < proximityNodes[node.id].length - 7) {
+              if (i < Math.floor((proximityNodes[node.id].length - 1) / 2)) {
                 primaryNodes.push({...node2, proximity});
               } else {
                 secondaryNodes.push({...node2, proximity});
@@ -311,9 +311,9 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         proximityNodes[node.id].forEach(({trg, proximity}, i) => {
           const node2 = tempData.nodes.find(n => n.id === trg);
           if (node2) {
-            if (i < proximityNodes[node.id].length - 7) {
+            if (i < Math.floor((proximityNodes[node.id].length - 1) / 2)) {
               primaryNodes.push({...node2, proximity});
-            } else if (i < 10) {
+            } else {
               secondaryNodes.push({...node2, proximity});
             }
           }

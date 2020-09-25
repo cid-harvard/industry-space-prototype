@@ -126,7 +126,7 @@ const Table = (props) => {
       const {id, label, color, parent} = node;
       const highlight = hovered && hovered.node && hovered.node.id === id;
       const onClick = () => updateSimulation ? updateSimulation.triggerSimulationUpdate(node) : null;
-      const strength = i < connected.length - 7 ? 'High' : 'Low';
+      const strength = i < Math.floor((connected.length - 1) / 2) ? 'High' : 'Low';
       return (
         <NodeListItem
           $color={color}
