@@ -14,6 +14,7 @@ const App = () => {
       <li><a href={'#/network-table'}>Industry Space as <strong>Network w/ Table</strong></a></li>
       <li><a href={'#/network-no-edges-table'}>Industry Space as <strong>Network w/o edges and w/ Table</strong></a></li>
       <li><a href={'#/u-map-edges-threshold-table-strength'}>Industry Space as <strong>UMap w/ Edges, Highlighted based on <em>Adjusted Threshold</em> w/ Updated Table</strong></a></li>
+      <li><a href={'#/u-map-clusters'}>Industry Space as <strong>UMap Clusters</strong></a></li>
     </ul>
   );
 }
