@@ -41,10 +41,10 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered, codeList) => {
   const height = window.innerHeight;
   const width =  window.innerWidth;
 
-  const smallerSize = width < height ? width : height;
-  const padding = smallerSize * 0.05;
-  const widthMargin = (width - smallerSize) / 2;
-  const heightMargin = (height - (smallerSize * 0.9)) / 2;
+  // const smallerSize = width < height ? width : height;
+  // const padding = smallerSize * 0.05;
+  // const widthMargin = (width - smallerSize) / 2;
+  // const heightMargin = (height - (smallerSize * 0.9)) / 2;
 
   const allXValues = [];
   const allYValues = [];
@@ -62,11 +62,13 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered, codeList) => {
 
   const xScale = d3.scaleLinear()
     .domain(xRange)
-    .range([0 + padding + widthMargin, width - padding - widthMargin]);
+    // .range([0 + padding + widthMargin, width - padding - widthMargin]);
+    .range([0 + (width * 0.05), width - (width * 0.05)]);
 
   const yScale = d3.scaleLinear()
     .domain(yRange)
-    .range([ 0 + padding + heightMargin, height - padding - heightMargin]);
+    // .range([ 0 + padding + heightMargin, height - padding - heightMargin]);
+    .range([ 0 + (height * 0.05), height - (height * 0.05)]);
 
 
 
