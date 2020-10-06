@@ -34,8 +34,9 @@ const BackButton = styled.button`
 `;
 
 const data = JSON.parse(raw('../data/product-space.json'));
+const highlightNodes = JSON.parse(raw('../data/product-space-saudi-nodes.json'));
 
-const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
+const createForceGraph = (rootEl, data, setNodeList, setHovered, keyName) => {
   const root = d3.select(rootEl);
 
   const height = window.innerHeight;
@@ -48,10 +49,14 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
   const allXValues = [];
   const allYValues = [];
-  data.nodes.forEach(({x, y}) => {
+  data.nodes = data.nodes.map((n) => {
+    const {x, y} = n;
     allXValues.push(x);
     allYValues.push(y);
+    const isIncluded = keyName ? highlightNodes[keyName].find(code => code === n.code) : true;
+    return {...n, fill: isIncluded ? n.color : 'white'}
   });
+  console.log(data.nodes)
 
   const xRange = d3.extent(allXValues);
   const yRange = d3.extent(allYValues);
@@ -212,7 +217,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.strokeStyle =  highlightedId === undefined ? '#6d6d6d' : polished.setLightness(0.9, "#6d6d6d");
         context.lineWidth = 2;
         context.stroke();
-        context.fillStyle = highlightedId === undefined ? d.color : polished.setLightness(0.9, d.color);
+        context.fillStyle = highlightedId === undefined ? d.fill : polished.setLightness(0.9, d.fill);
         context.fill();
       });
 
@@ -236,7 +241,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         if (d) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = d.color;
+          context.fillStyle = d.fill;
           context.fill();
           context.lineWidth = 2;
           context.strokeStyle = '#afafaf';
@@ -248,7 +253,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         rootEl.style.cursor = 'pointer';
         context.beginPath();
         context.arc(xScale(hoveredNode.x), yScale(hoveredNode.y), hoveredNode.radius, 0, 2 * Math.PI, true);
-        context.fillStyle = hoveredNode.color
+        context.fillStyle = hoveredNode.fill
         context.fill();
         context.lineWidth = 2;
         context.strokeStyle = 'black';
@@ -259,7 +264,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       if (highlightedNode) {
         context.beginPath();
         context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), highlightedNode.radius, 0, 2 * Math.PI, true);
-        context.fillStyle = highlightedNode.color
+        context.fillStyle = highlightedNode.fill
         context.fill();
         context.lineWidth = 2;
         context.strokeStyle = 'black';
@@ -270,7 +275,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         primaryNodes.forEach(function(d, i) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = d.color;
+          context.fillStyle = d.fill;
           context.fill();
           context.lineWidth = 2;
           context.strokeStyle =  hoveredNode && hoveredNode.id === d.id ? 'black' : '#6d6d6d';
@@ -385,7 +390,7 @@ const Root = styled.div`
   animation: ${fadeIn} 0.15s linear 1 forwards 0.4s;
 `;
 
-export default () => {
+export default ({keyName}) => {
   const rootNodeRef = useRef(null);
   const [hovered, setHovered] = useState(undefined);
   const [updateSimulation, setUpdateSimulation] = useState(undefined);
@@ -395,7 +400,8 @@ export default () => {
     let rootEl = null;
     if (rootNodeRef && rootNodeRef.current) {
       rootEl = rootNodeRef.current;
-      const triggerSimulationUpdate = createForceGraph(rootEl, data, setNodeList, setHovered);
+      console.log('build new with ' + keyName)
+      const triggerSimulationUpdate = createForceGraph(rootEl, data, setNodeList, setHovered, keyName);
       setUpdateSimulation(triggerSimulationUpdate);
     }
     return (() => {
@@ -403,7 +409,7 @@ export default () => {
         rootEl.innerHTML = '';
       }
     })
-  }, [rootNodeRef, setNodeList, setHovered, setUpdateSimulation]);
+  }, [rootNodeRef, setNodeList, setHovered, setUpdateSimulation, keyName]);
 
   const tooltip = hovered && hovered.node ? (
     <Tooltip

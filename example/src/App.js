@@ -18,6 +18,7 @@ import IndustrySpaceUMapEdgesThresholdWithTableStrengthNoSizing from './pages/In
 import IndustrySpaceClusters from './pages/IndustrySpaceClusters';
 import IndustrySpaceClustersNoSizing from './pages/IndustrySpaceClustersNoSizing';
 import ProductSpace from './pages/ProductSpace';
+import ProductSpaceSaudi from './pages/ProductSpaceSaudi';
 import Landing from './pages/Landing';
 import './fonts/fonts.css';
 
@@ -41,6 +42,7 @@ const App = () => {
             <Route exact path={'/u-map-edges-threshold-table-strength-no-sizing'} component={IndustrySpaceUMapEdgesThresholdWithTableStrengthNoSizing} />
             <Route exact path={'/u-map-clusters-no-sizing'} component={IndustrySpaceClustersNoSizing} />
             <Route exact path={'/product-space'} component={ProductSpace} />
+            <Route exact path={'/product-space-saudi'} component={ProductSpaceSaudi} />
             <Route component={Landing} />
           </Switch>
         </Router>
