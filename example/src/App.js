@@ -19,6 +19,7 @@ import IndustrySpaceClusters from './pages/IndustrySpaceClusters';
 import IndustrySpaceClustersNoSizing from './pages/IndustrySpaceClustersNoSizing';
 import ProductSpace from './pages/ProductSpace';
 import ProductSpaceSaudi from './pages/ProductSpaceSaudi';
+import ProductSpaceCustom from './pages/ProductSpaceCustomHighlighting';
 import Landing from './pages/Landing';
 import './fonts/fonts.css';
 
@@ -43,6 +44,7 @@ const App = () => {
             <Route exact path={'/u-map-clusters-no-sizing'} component={IndustrySpaceClustersNoSizing} />
             <Route exact path={'/product-space'} component={ProductSpace} />
             <Route exact path={'/product-space-saudi'} component={ProductSpaceSaudi} />
+            <Route exact path={'/product-space-custom'} component={ProductSpaceCustom} />
             <Route component={Landing} />
           </Switch>
         </Router>

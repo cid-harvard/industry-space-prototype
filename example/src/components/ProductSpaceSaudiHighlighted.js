@@ -34,8 +34,9 @@ const BackButton = styled.button`
 `;
 
 const data = JSON.parse(raw('../data/product-space.json'));
+const highlightNodes = JSON.parse(raw('../data/product-space-saudi-nodes.json'));
 
-const createForceGraph = (rootEl, data, setNodeList, setHovered, codeList) => {
+const createForceGraph = (rootEl, data, setNodeList, setHovered, keyName) => {
   const root = d3.select(rootEl);
 
   const height = window.innerHeight;
@@ -48,12 +49,11 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered, codeList) => {
 
   const allXValues = [];
   const allYValues = [];
-  
   data.nodes = data.nodes.map((n) => {
     const {x, y} = n;
     allXValues.push(x);
     allYValues.push(y);
-    const isIncluded = codeList && codeList.length ? codeList.find(code => code === n.code) : true;
+    const isIncluded = keyName ? highlightNodes[keyName].find(code => code === n.code) : true;
     return {...n, fill: isIncluded ? n.color : 'white'}
   });
 
@@ -389,7 +389,7 @@ const Root = styled.div`
   animation: ${fadeIn} 0.15s linear 1 forwards 0.4s;
 `;
 
-export default ({codeList}) => {
+export default ({keyName}) => {
   const rootNodeRef = useRef(null);
   const [hovered, setHovered] = useState(undefined);
   const [updateSimulation, setUpdateSimulation] = useState(undefined);
@@ -399,7 +399,7 @@ export default ({codeList}) => {
     let rootEl = null;
     if (rootNodeRef && rootNodeRef.current) {
       rootEl = rootNodeRef.current;
-      const triggerSimulationUpdate = createForceGraph(rootEl, data, setNodeList, setHovered, codeList);
+      const triggerSimulationUpdate = createForceGraph(rootEl, data, setNodeList, setHovered, keyName);
       setUpdateSimulation(triggerSimulationUpdate);
     }
     return (() => {
@@ -407,7 +407,7 @@ export default ({codeList}) => {
         rootEl.innerHTML = '';
       }
     })
-  }, [rootNodeRef, setNodeList, setHovered, setUpdateSimulation, codeList]);
+  }, [rootNodeRef, setNodeList, setHovered, setUpdateSimulation, keyName]);
 
   const tooltip = hovered && hovered.node ? (
     <Tooltip

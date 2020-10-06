@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import ProductSpace from '../components/ProductSpaceHighlighted';
+import ProductSpace from '../components/ProductSpaceSaudiHighlighted';
 import styled from 'styled-components';
 import DownloadSVGURL from './download.svg';
 
