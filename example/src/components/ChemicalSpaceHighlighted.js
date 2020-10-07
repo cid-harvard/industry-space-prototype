@@ -421,7 +421,7 @@ export default ({codeList}) => {
 
   const onClear = () => updateSimulation ? updateSimulation.clearSelections() : null;
   const backButton = nodeList ? (
-    <BackButton onClick={onClear}>{'< Back to Product Space'}</BackButton>
+    <BackButton onClick={onClear}>{'< Back to Chemical Space'}</BackButton>
   ) : null;
 
   return (
