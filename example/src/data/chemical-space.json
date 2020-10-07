@@ -1,0 +1,2066 @@
+{
+  "nodes": [
+    {
+      "id": 1012,
+      "code": "3002",
+      "x": 1318,
+      "y": 2232,
+      "color": "rgb(197, 123, 217)",
+      "radius": 6.948843060681458,
+      "label": "Serums and vaccines"
+    },
+    {
+      "id": 1697,
+      "code": "8479",
+      "x": 1420,
+      "y": 2168,
+      "color": "rgb(123, 162, 217)",
+      "radius": 6.2170649229404304,
+      "label": "Machines n.e.c."
+    },
+    {
+      "id": 881,
+      "code": "2601",
+      "x": 953,
+      "y": 2120,
+      "color": "rgb(187, 150, 138)",
+      "radius": 5.725900978983045,
+      "label": "Iron ores and concentrates"
+    },
+    {
+      "id": 1001,
+      "code": "2933",
+      "x": 1227,
+      "y": 1940,
+      "color": "rgb(197, 123, 217)",
+      "radius": 5.576769546139399,
+      "label": "Heterocyclic compounds with nitrogen hetero-atom(s) only"
+    },
+    {
+      "id": 1810,
+      "code": "9021",
+      "x": 1293,
+      "y": 2060,
+      "color": "rgb(123, 162, 217)",
+      "radius": 5.2903552353992715,
+      "label": "Orthopedic appliances"
+    },
+    {
+      "id": 970,
+      "code": "2902",
+      "x": 1417,
+      "y": 2018,
+      "color": "rgb(197, 123, 217)",
+      "radius": 5.2296702382530755,
+      "label": "Cyclic hydrocarbons"
+    },
+    {
+      "id": 1095,
+      "code": "3902",
+      "x": 1535,
+      "y": 2181,
+      "color": "rgb(197, 123, 217)",
+      "radius": 5.111328616109805,
+      "label": "Polymers of propylene"
+    },
+    {
+      "id": 1816,
+      "code": "9027",
+      "x": 1346,
+      "y": 2132,
+      "color": "rgb(123, 162, 217)",
+      "radius": 5.104666651867224,
+      "label": "Instruments for physical or chemical analysis"
+    },
+    {
+      "id": 1187,
+      "code": "4703",
+      "x": 1030,
+      "y": 2150,
+      "color": "#F5CF23",
+      "radius": 5.021336916543451,
+      "label": "Chemical woodpulp, soda or sulfate"
+    },
+    {
+      "id": 1453,
+      "code": "7110",
+      "x": 1058,
+      "y": 2028,
+      "color": "rgb(218, 180, 125)",
+      "radius": 4.935144918760013,
+      "label": "Platinum"
+    },
+    {
+      "id": 1480,
+      "code": "7219",
+      "x": 1429,
+      "y": 2116,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.926246198778869,
+      "label": "Flat-rolled products of stainless steel of a width > 600 mm"
+    },
+    {
+      "id": 1121,
+      "code": "4002",
+      "x": 1393,
+      "y": 2070,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.845999277618422,
+      "label": "Synthetic rubber"
+    },
+    {
+      "id": 1092,
+      "code": "3822",
+      "x": 1345,
+      "y": 2063,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.843401771714188,
+      "label": "Diagnostic or laboratory reagents"
+    },
+    {
+      "id": 1038,
+      "code": "3302",
+      "x": 1393,
+      "y": 2041,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.820284189747755,
+      "label": "Mixtures of odoriferous subtances"
+    },
+    {
+      "id": 1811,
+      "code": "9022",
+      "x": 1270,
+      "y": 2201,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.805439404756079,
+      "label": "X-ray machines"
+    },
+    {
+      "id": 1112,
+      "code": "3919",
+      "x": 1403,
+      "y": 2108,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.781774376329169,
+      "label": "Self-adhesive plastic sheets"
+    },
+    {
+      "id": 1645,
+      "code": "8427",
+      "x": 1378,
+      "y": 2184,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.761144335892124,
+      "label": "Fork-lift trucks"
+    },
+    {
+      "id": 1085,
+      "code": "3815",
+      "x": 1307,
+      "y": 2174,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.761011935675565,
+      "label": "Catalytic preparations"
+    },
+    {
+      "id": 990,
+      "code": "2922",
+      "x": 1204,
+      "y": 1828,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.76040635343665,
+      "label": "Oxygen-function amino-compounds"
+    },
+    {
+      "id": 1099,
+      "code": "3906",
+      "x": 1266,
+      "y": 2082,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.725396529332451,
+      "label": "Acrylic polymers"
+    },
+    {
+      "id": 1101,
+      "code": "3908",
+      "x": 1272,
+      "y": 2142,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.71607077460428,
+      "label": "Polyamides"
+    },
+    {
+      "id": 1002,
+      "code": "2934",
+      "x": 1107,
+      "y": 2028,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.714502109393489,
+      "label": "Nucleic acids and their salts"
+    },
+    {
+      "id": 1005,
+      "code": "2937",
+      "x": 1317,
+      "y": 2039,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.70931215323622,
+      "label": "Hormones"
+    },
+    {
+      "id": 985,
+      "code": "2917",
+      "x": 1141,
+      "y": 2098,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.70584361633472,
+      "label": "Polycarboxylic acids"
+    },
+    {
+      "id": 1016,
+      "code": "3006",
+      "x": 1352,
+      "y": 2223,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.699555353531533,
+      "label": "Pharmaceutical goods"
+    },
+    {
+      "id": 1027,
+      "code": "3206",
+      "x": 1482,
+      "y": 2183,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.698065141406081,
+      "label": "Other coloring matter"
+    },
+    {
+      "id": 977,
+      "code": "2909",
+      "x": 1318,
+      "y": 1954,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.696253535011504,
+      "label": "Ethers"
+    },
+    {
+      "id": 1025,
+      "code": "3204",
+      "x": 1134,
+      "y": 2146,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.676227617972415,
+      "label": "Synthetic organic coloring matter"
+    },
+    {
+      "id": 1036,
+      "code": "3215",
+      "x": 1328,
+      "y": 2104,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.673935734158238,
+      "label": "Ink"
+    },
+    {
+      "id": 1081,
+      "code": "3811",
+      "x": 1148,
+      "y": 2004,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.656870410197897,
+      "label": "Anti-knock"
+    },
+    {
+      "id": 984,
+      "code": "2916",
+      "x": 1195,
+      "y": 2236,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.644133517228824,
+      "label": "Unsaturated acyclic monocarboxylic acids"
+    },
+    {
+      "id": 971,
+      "code": "2903",
+      "x": 1219,
+      "y": 2048,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.643714436912705,
+      "label": "Halogenated derivatives of hydrocarbons"
+    },
+    {
+      "id": 989,
+      "code": "2921",
+      "x": 1201,
+      "y": 1953,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.632207004284021,
+      "label": "Amine-function compounds"
+    },
+    {
+      "id": 1046,
+      "code": "3403",
+      "x": 1330,
+      "y": 2169,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.631681048691377,
+      "label": "Lubricants"
+    },
+    {
+      "id": 1004,
+      "code": "2936",
+      "x": 1296,
+      "y": 2110,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.6254417877789376,
+      "label": "Vitamins"
+    },
+    {
+      "id": 1111,
+      "code": "3918",
+      "x": 1435,
+      "y": 2087,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.6212895993567,
+      "label": "Plastic floor coverings"
+    },
+    {
+      "id": 1003,
+      "code": "2935",
+      "x": 1200,
+      "y": 1989,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.619822148381991,
+      "label": "Sulfonamides"
+    },
+    {
+      "id": 791,
+      "code": "1519",
+      "x": 1061,
+      "y": 2215,
+      "color": "#F5CF23",
+      "radius": 4.618287293979037,
+      "label": "Stearic acid"
+    },
+    {
+      "id": 1742,
+      "code": "8539",
+      "x": 1505,
+      "y": 2089,
+      "color": "rgb(125, 218, 218)",
+      "radius": 4.615037318726806,
+      "label": "Electrical filament"
+    },
+    {
+      "id": 1000,
+      "code": "2932",
+      "x": 1228,
+      "y": 2018,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.611598207662278,
+      "label": "Heterocyclic compounds with oxygen hetero-atom(s) only"
+    },
+    {
+      "id": 1103,
+      "code": "3910",
+      "x": 1266,
+      "y": 2120,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.6082815125593095,
+      "label": "Silicones in primary forms"
+    },
+    {
+      "id": 953,
+      "code": "2836",
+      "x": 1138,
+      "y": 1952,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.608061550154132,
+      "label": "Carbonates"
+    },
+    {
+      "id": 1709,
+      "code": "8506",
+      "x": 1123,
+      "y": 2118,
+      "color": "rgb(125, 218, 218)",
+      "radius": 4.60317234574559,
+      "label": "Primary cells and primary batteries"
+    },
+    {
+      "id": 975,
+      "code": "2907",
+      "x": 1252,
+      "y": 2102,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.597439792560739,
+      "label": "Phenols, phenol-alcohols"
+    },
+    {
+      "id": 997,
+      "code": "2929",
+      "x": 1483,
+      "y": 2146,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.595914269529185,
+      "label": "Isocyanates"
+    },
+    {
+      "id": 1659,
+      "code": "8441",
+      "x": 1532,
+      "y": 2249,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.594638027358865,
+      "label": "Other machinery for making paper"
+    },
+    {
+      "id": 992,
+      "code": "2924",
+      "x": 1152,
+      "y": 1915,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.594583689723058,
+      "label": "Carboxyamide-function compounds"
+    },
+    {
+      "id": 999,
+      "code": "2931",
+      "x": 1149,
+      "y": 2045,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.593195572253459,
+      "label": "Other organo-inorganic compounds"
+    },
+    {
+      "id": 982,
+      "code": "2914",
+      "x": 1249,
+      "y": 2147,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5910272545012,
+      "label": "Ketones and quinones"
+    },
+    {
+      "id": 998,
+      "code": "2930",
+      "x": 1255,
+      "y": 2045,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.587878215793202,
+      "label": "Organo-sulfur compounds"
+    },
+    {
+      "id": 1070,
+      "code": "3707",
+      "x": 1194,
+      "y": 2065,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.587169150193536,
+      "label": "Chemical preparations for photographic uses"
+    },
+    {
+      "id": 1104,
+      "code": "3911",
+      "x": 1230,
+      "y": 2080,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.586465340895067,
+      "label": "Petroleum resins"
+    },
+    {
+      "id": 1601,
+      "code": "8209",
+      "x": 1485,
+      "y": 2102,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.586099963919464,
+      "label": "Articles for utensils, of cermet"
+    },
+    {
+      "id": 1460,
+      "code": "7117",
+      "x": 1113,
+      "y": 2235,
+      "color": "rgb(218, 180, 125)",
+      "radius": 4.5816106207997915,
+      "label": "Imitation jewelry"
+    },
+    {
+      "id": 994,
+      "code": "2926",
+      "x": 1440,
+      "y": 2029,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.581342350276285,
+      "label": "Nitrile-function compounds"
+    },
+    {
+      "id": 1418,
+      "code": "6909",
+      "x": 1108,
+      "y": 2065,
+      "color": "rgb(218, 180, 125)",
+      "radius": 4.581283711398885,
+      "label": "Ceramic wares for technical ware"
+    },
+    {
+      "id": 1587,
+      "code": "8108",
+      "x": 1248,
+      "y": 2225,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.578200883969893,
+      "label": "Titanium"
+    },
+    {
+      "id": 1105,
+      "code": "3912",
+      "x": 1371,
+      "y": 2110,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.570893795722422,
+      "label": "Cellulose n.e.c."
+    },
+    {
+      "id": 920,
+      "code": "2803",
+      "x": 1550,
+      "y": 2119,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5661837409195405,
+      "label": "Carbon"
+    },
+    {
+      "id": 1481,
+      "code": "7220",
+      "x": 1389,
+      "y": 2135,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.563323160387822,
+      "label": "Flat-rolled products of stainless steel of a width < 600 mm"
+    },
+    {
+      "id": 1098,
+      "code": "3905",
+      "x": 1132,
+      "y": 2169,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5602156059648955,
+      "label": "Polymers of vinyl acetate"
+    },
+    {
+      "id": 1082,
+      "code": "3812",
+      "x": 1120,
+      "y": 2259,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.559848350764995,
+      "label": "Stabilizers for rubber or plastic"
+    },
+    {
+      "id": 1064,
+      "code": "3701",
+      "x": 1231,
+      "y": 2126,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5578333152822825,
+      "label": "Photographic plates"
+    },
+    {
+      "id": 1028,
+      "code": "3207",
+      "x": 1273,
+      "y": 1995,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.556865005543055,
+      "label": "Prepared pigments"
+    },
+    {
+      "id": 1604,
+      "code": "8212",
+      "x": 1433,
+      "y": 2059,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.556096875077113,
+      "label": "Razors"
+    },
+    {
+      "id": 1186,
+      "code": "4702",
+      "x": 1036,
+      "y": 2106,
+      "color": "#F5CF23",
+      "radius": 4.55405815755815,
+      "label": "Chemical woodpulp, dissolving grade"
+    },
+    {
+      "id": 1573,
+      "code": "8001",
+      "x": 1195,
+      "y": 1775,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.553380059560465,
+      "label": "Unwrought tin"
+    },
+    {
+      "id": 1854,
+      "code": "9402",
+      "x": 1512,
+      "y": 2208,
+      "color": "rgb(125, 218, 161)",
+      "radius": 4.548151230229442,
+      "label": "Medical, dental or veterinary furniture"
+    },
+    {
+      "id": 1011,
+      "code": "3001",
+      "x": 1397,
+      "y": 1952,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.548044367331473,
+      "label": "Heparin for therapeutic use"
+    },
+    {
+      "id": 978,
+      "code": "2910",
+      "x": 1175,
+      "y": 2081,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.546055317593213,
+      "label": "Epoxides"
+    },
+    {
+      "id": 1464,
+      "code": "7203",
+      "x": 1002,
+      "y": 2136,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.544259708894001,
+      "label": "Ferrous products from the reduction of iron ore"
+    },
+    {
+      "id": 890,
+      "code": "2610",
+      "x": 1483,
+      "y": 2038,
+      "color": "rgb(187, 150, 138)",
+      "radius": 4.536643840304733,
+      "label": "Chromium ore"
+    },
+    {
+      "id": 1619,
+      "code": "8401",
+      "x": 1355,
+      "y": 1943,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.534667059136147,
+      "label": "Nuclear reactors and related equipment"
+    },
+    {
+      "id": 1540,
+      "code": "7505",
+      "x": 1455,
+      "y": 2260,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.53292506488931,
+      "label": "Nickel bars, wire etc."
+    },
+    {
+      "id": 1047,
+      "code": "3404",
+      "x": 1372,
+      "y": 1944,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.532781916645753,
+      "label": "Artificial and prepared waxes"
+    },
+    {
+      "id": 1280,
+      "code": "5504",
+      "x": 1051,
+      "y": 1975,
+      "color": "rgb(125, 218, 161)",
+      "radius": 4.532485698287747,
+      "label": "Artificial staple fibers, not processed for spinning"
+    },
+    {
+      "id": 944,
+      "code": "2827",
+      "x": 1165,
+      "y": 1990,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.53238662629271,
+      "label": "Chlorides, bromides, iodides etc."
+    },
+    {
+      "id": 1479,
+      "code": "7218",
+      "x": 1464,
+      "y": 2094,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.53202056485249,
+      "label": "Stainless steel in ingots"
+    },
+    {
+      "id": 766,
+      "code": "1214",
+      "x": 1316,
+      "y": 1806,
+      "color": "#F5CF23",
+      "radius": 4.531994439832208,
+      "label": "Forage products"
+    },
+    {
+      "id": 1634,
+      "code": "8416",
+      "x": 1513,
+      "y": 2258,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.530143763680923,
+      "label": "Furnace burners"
+    },
+    {
+      "id": 1072,
+      "code": "3802",
+      "x": 1111,
+      "y": 2197,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.53001927112425,
+      "label": "Activated carbon"
+    },
+    {
+      "id": 1813,
+      "code": "9024",
+      "x": 1474,
+      "y": 2227,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.528369531849443,
+      "label": "Machines for testing the mechanical properties of materials"
+    },
+    {
+      "id": 980,
+      "code": "2912",
+      "x": 1262,
+      "y": 2014,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.526209021404775,
+      "label": "Aldehydes"
+    },
+    {
+      "id": 1106,
+      "code": "3913",
+      "x": 1368,
+      "y": 2019,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.526135483916882,
+      "label": "Natural polymers"
+    },
+    {
+      "id": 974,
+      "code": "2906",
+      "x": 1178,
+      "y": 2014,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5261312808166405,
+      "label": "Cyclic alcohols"
+    },
+    {
+      "id": 894,
+      "code": "2614",
+      "x": 1478,
+      "y": 2071,
+      "color": "rgb(187, 150, 138)",
+      "radius": 4.525948902864124,
+      "label": "Titanium ore"
+    },
+    {
+      "id": 1087,
+      "code": "3817",
+      "x": 1447,
+      "y": 1936,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.525403951030966,
+      "label": "Mixed alkylbenzenes"
+    },
+    {
+      "id": 792,
+      "code": "1520",
+      "x": 1075,
+      "y": 2178,
+      "color": "#F5CF23",
+      "radius": 4.525381635085203,
+      "label": "Glycerol"
+    },
+    {
+      "id": 1091,
+      "code": "3821",
+      "x": 1330,
+      "y": 2082,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5245348603145565,
+      "label": "Prepared culture media for micro-organisms"
+    },
+    {
+      "id": 1727,
+      "code": "8524",
+      "x": 1376,
+      "y": 2149,
+      "color": "rgb(125, 218, 218)",
+      "radius": 4.524216694487821,
+      "label": "Tapes, cassettes, records and compact disks"
+    },
+    {
+      "id": 1154,
+      "code": "4301",
+      "x": 1540,
+      "y": 2071,
+      "color": "#F5CF23",
+      "radius": 4.523756571393058,
+      "label": "Other raw furskins"
+    },
+    {
+      "id": 1189,
+      "code": "4705",
+      "x": 1341,
+      "y": 1895,
+      "color": "#F5CF23",
+      "radius": 4.523322887641128,
+      "label": "Semichemical woodpulp"
+    },
+    {
+      "id": 1204,
+      "code": "4813",
+      "x": 1392,
+      "y": 2000,
+      "color": "#F5CF23",
+      "radius": 4.522046467312388,
+      "label": "Cigarette paper"
+    },
+    {
+      "id": 904,
+      "code": "2703",
+      "x": 1549,
+      "y": 2022,
+      "color": "rgb(187, 150, 138)",
+      "radius": 4.521475109054897,
+      "label": "Peat"
+    },
+    {
+      "id": 1425,
+      "code": "7002",
+      "x": 1212,
+      "y": 2116,
+      "color": "rgb(218, 180, 125)",
+      "radius": 4.52116094719331,
+      "label": "Glass balls"
+    },
+    {
+      "id": 1278,
+      "code": "5502",
+      "x": 1188,
+      "y": 2172,
+      "color": "rgb(125, 218, 161)",
+      "radius": 4.520837527208082,
+      "label": "Artificial filament tow"
+    },
+    {
+      "id": 1543,
+      "code": "7508",
+      "x": 1504,
+      "y": 2132,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.519846834607914,
+      "label": "Other articles of nickel"
+    },
+    {
+      "id": 895,
+      "code": "2615",
+      "x": 1508,
+      "y": 2050,
+      "color": "rgb(187, 150, 138)",
+      "radius": 4.519834580518559,
+      "label": "Zirconium ore"
+    },
+    {
+      "id": 1781,
+      "code": "8805",
+      "x": 1330,
+      "y": 1970,
+      "color": "rgb(141, 123, 216)",
+      "radius": 4.519774069080701,
+      "label": "Aircraft launching gear"
+    },
+    {
+      "id": 1694,
+      "code": "8476",
+      "x": 1512,
+      "y": 2160,
+      "color": "rgb(123, 162, 217)",
+      "radius": 4.5186116755182,
+      "label": "Automatic goods-vending machines"
+    },
+    {
+      "id": 857,
+      "code": "2507",
+      "x": 1155,
+      "y": 1846,
+      "color": "rgb(187, 150, 138)",
+      "radius": 4.518015492916995,
+      "label": "Kaolin"
+    },
+    {
+      "id": 1019,
+      "code": "3103",
+      "x": 1095,
+      "y": 2142,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.517920847423087,
+      "label": "Phosphatic fertilizers"
+    },
+    {
+      "id": 988,
+      "code": "2920",
+      "x": 1240,
+      "y": 1987,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5166547793896505,
+      "label": "Esters of other inorganic acids of nonmetals"
+    },
+    {
+      "id": 1065,
+      "code": "3702",
+      "x": 1186,
+      "y": 2118,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.51574454039708,
+      "label": "Photographic film in rolls"
+    },
+    {
+      "id": 1205,
+      "code": "4814",
+      "x": 1083,
+      "y": 1932,
+      "color": "#F5CF23",
+      "radius": 4.515435957443458,
+      "label": "Wallpaper"
+    },
+    {
+      "id": 1773,
+      "code": "8713",
+      "x": 1266,
+      "y": 1883,
+      "color": "rgb(141, 123, 216)",
+      "radius": 4.515148378049214,
+      "label": "Wheelchairs"
+    },
+    {
+      "id": 1107,
+      "code": "3914",
+      "x": 1531,
+      "y": 2163,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.514773037358554,
+      "label": "Ion-exchangers based on polymers"
+    },
+    {
+      "id": 1076,
+      "code": "3806",
+      "x": 1053,
+      "y": 2166,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.5139362573380675,
+      "label": "Rosin and resin acids"
+    },
+    {
+      "id": 993,
+      "code": "2925",
+      "x": 1245,
+      "y": 1957,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.513615248469251,
+      "label": "Carboxyimide-function compounds"
+    },
+    {
+      "id": 1541,
+      "code": "7506",
+      "x": 1273,
+      "y": 2169,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.512650614533748,
+      "label": "Nickel plates"
+    },
+    {
+      "id": 817,
+      "code": "2003",
+      "x": 1062,
+      "y": 2133,
+      "color": "#F5CF23",
+      "radius": 4.512617216408179,
+      "label": "Mushrooms, prepared or preserved"
+    },
+    {
+      "id": 939,
+      "code": "2822",
+      "x": 1016,
+      "y": 2022,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.512554267404466,
+      "label": "Cobalt oxides and hydroxides"
+    },
+    {
+      "id": 1200,
+      "code": "4809",
+      "x": 1293,
+      "y": 1883,
+      "color": "#F5CF23",
+      "radius": 4.50949785507981,
+      "label": "Carbon paper"
+    },
+    {
+      "id": 1542,
+      "code": "7507",
+      "x": 1368,
+      "y": 2208,
+      "color": "rgb(217, 123, 123)",
+      "radius": 4.5083855112044855,
+      "label": "Nickel tubes and pipes"
+    },
+    {
+      "id": 1066,
+      "code": "3703",
+      "x": 1216,
+      "y": 2166,
+      "color": "rgb(197, 123, 217)",
+      "radius": 4.503169395225036,
+      "label": "Photographic paper"
+    }
+  ],
+  "edges": [
+    {
+      "source": 971,
+      "strength": 0.59,
+      "target": 984
+    },
+    {
+      "source": 980,
+      "strength": 0.59,
+      "target": 1000
+    },
+    {
+      "source": 971,
+      "strength": 0.52,
+      "target": 998
+    },
+    {
+      "source": 971,
+      "strength": 0.53,
+      "target": 1064
+    },
+    {
+      "source": 982,
+      "strength": 0.55,
+      "target": 1000
+    },
+    {
+      "source": 980,
+      "strength": 0.54,
+      "target": 1046
+    },
+    {
+      "source": 980,
+      "strength": 0.49,
+      "target": 1773
+    },
+    {
+      "source": 971,
+      "strength": 0.52,
+      "target": 980
+    },
+    {
+      "source": 971,
+      "strength": 0.49,
+      "target": 982
+    },
+    {
+      "source": 982,
+      "strength": 0.57,
+      "target": 1098
+    },
+    {
+      "source": 982,
+      "strength": 0.76,
+      "target": 1046
+    },
+    {
+      "source": 998,
+      "strength": 0.5,
+      "target": 1000
+    },
+    {
+      "source": 982,
+      "strength": 0.47,
+      "target": 1709
+    },
+    {
+      "source": 998,
+      "strength": 0.64,
+      "target": 1003
+    },
+    {
+      "source": 998,
+      "strength": 0.7,
+      "target": 1001
+    },
+    {
+      "source": 998,
+      "strength": 0.69,
+      "target": 1046
+    },
+    {
+      "source": 998,
+      "strength": 0.67,
+      "target": 1036
+    },
+    {
+      "source": 982,
+      "strength": 0.57,
+      "target": 1101
+    },
+    {
+      "source": 982,
+      "strength": 0.61,
+      "target": 1036
+    },
+    {
+      "source": 982,
+      "strength": 0.57,
+      "target": 984
+    },
+    {
+      "source": 982,
+      "strength": 0.7,
+      "target": 998
+    },
+    {
+      "source": 982,
+      "strength": 0.53,
+      "target": 1025
+    },
+    {
+      "source": 982,
+      "strength": 0.58,
+      "target": 1004
+    },
+    {
+      "source": 1064,
+      "strength": 0.78,
+      "target": 1103
+    },
+    {
+      "source": 1064,
+      "strength": 0.67,
+      "target": 1811
+    },
+    {
+      "source": 975,
+      "strength": 0.64,
+      "target": 982
+    },
+    {
+      "source": 975,
+      "strength": 0.54,
+      "target": 998
+    },
+    {
+      "source": 975,
+      "strength": 0.56,
+      "target": 1099
+    },
+    {
+      "source": 975,
+      "strength": 0.48,
+      "target": 1481
+    },
+    {
+      "source": 975,
+      "strength": 0.67,
+      "target": 1697
+    },
+    {
+      "source": 998,
+      "strength": 0.54,
+      "target": 1101
+    },
+    {
+      "source": 1064,
+      "strength": 0.67,
+      "target": 1066
+    },
+    {
+      "source": 1064,
+      "strength": 0.76,
+      "target": 1070
+    },
+    {
+      "source": 1064,
+      "strength": 0.6,
+      "target": 1092
+    },
+    {
+      "source": 1064,
+      "strength": 0.67,
+      "target": 1099
+    },
+    {
+      "source": 1064,
+      "strength": 0.7,
+      "target": 1104
+    },
+    {
+      "source": 1064,
+      "strength": 0.53,
+      "target": 1278
+    },
+    {
+      "source": 1064,
+      "strength": 0.71,
+      "target": 1065
+    },
+    {
+      "source": 978,
+      "strength": 0.56,
+      "target": 1066
+    },
+    {
+      "source": 978,
+      "strength": 0.47,
+      "target": 1065
+    },
+    {
+      "source": 978,
+      "strength": 0.56,
+      "target": 1064
+    },
+    {
+      "source": 1697,
+      "strength": 0.64,
+      "target": 1813
+    },
+    {
+      "source": 1697,
+      "strength": 0.75,
+      "target": 1816
+    },
+    {
+      "source": 1481,
+      "strength": 0.58,
+      "target": 1645
+    },
+    {
+      "source": 1099,
+      "strength": 0.7,
+      "target": 1104
+    },
+    {
+      "source": 1099,
+      "strength": 0.67,
+      "target": 1645
+    },
+    {
+      "source": 1099,
+      "strength": 0.58,
+      "target": 1481
+    },
+    {
+      "source": 1099,
+      "strength": 0.67,
+      "target": 1103
+    },
+    {
+      "source": 1099,
+      "strength": 0.56,
+      "target": 1101
+    },
+    {
+      "source": 975,
+      "strength": 0.69,
+      "target": 1046
+    },
+    {
+      "source": 1070,
+      "strength": 0.63,
+      "target": 1811
+    },
+    {
+      "source": 1070,
+      "strength": 0.76,
+      "target": 1103
+    },
+    {
+      "source": 1066,
+      "strength": 0.67,
+      "target": 1811
+    },
+    {
+      "source": 1070,
+      "strength": 0.68,
+      "target": 1104
+    },
+    {
+      "source": 1066,
+      "strength": 0.42,
+      "target": 1587
+    },
+    {
+      "source": 1066,
+      "strength": 0.53,
+      "target": 1278
+    },
+    {
+      "source": 1066,
+      "strength": 0.63,
+      "target": 1541
+    },
+    {
+      "source": 1066,
+      "strength": 0.53,
+      "target": 1542
+    },
+    {
+      "source": 1066,
+      "strength": 0.67,
+      "target": 1103
+    },
+    {
+      "source": 1066,
+      "strength": 0.59,
+      "target": 1425
+    },
+    {
+      "source": 978,
+      "strength": 0.44,
+      "target": 1418
+    },
+    {
+      "source": 1066,
+      "strength": 0.63,
+      "target": 1070
+    },
+    {
+      "source": 978,
+      "strength": 0.44,
+      "target": 1811
+    },
+    {
+      "source": 978,
+      "strength": 0.56,
+      "target": 1103
+    },
+    {
+      "source": 978,
+      "strength": 0.63,
+      "target": 1070
+    },
+    {
+      "source": 978,
+      "strength": 0.58,
+      "target": 1099
+    },
+    {
+      "source": 1036,
+      "strength": 0.74,
+      "target": 1046
+    },
+    {
+      "source": 1000,
+      "strength": 0.5,
+      "target": 1046
+    },
+    {
+      "source": 1000,
+      "strength": 0.57,
+      "target": 1004
+    },
+    {
+      "source": 1000,
+      "strength": 0.61,
+      "target": 1003
+    },
+    {
+      "source": 1000,
+      "strength": 0.67,
+      "target": 1810
+    },
+    {
+      "source": 1046,
+      "strength": 0.48,
+      "target": 1481
+    },
+    {
+      "source": 1046,
+      "strength": 0.57,
+      "target": 1634
+    },
+    {
+      "source": 1046,
+      "strength": 0.56,
+      "target": 1645
+    },
+    {
+      "source": 1046,
+      "strength": 0.67,
+      "target": 1697
+    },
+    {
+      "source": 1046,
+      "strength": 0.59,
+      "target": 1092
+    },
+    {
+      "source": 1046,
+      "strength": 0.54,
+      "target": 1101
+    },
+    {
+      "source": 984,
+      "strength": 0.57,
+      "target": 1072
+    },
+    {
+      "source": 1027,
+      "strength": 0.37,
+      "target": 1543
+    },
+    {
+      "source": 1027,
+      "strength": 0.55,
+      "target": 1634
+    },
+    {
+      "source": 1046,
+      "strength": 0.62,
+      "target": 1091
+    },
+    {
+      "source": 1587,
+      "strength": 0.53,
+      "target": 1811
+    },
+    {
+      "source": 1542,
+      "strength": 0.63,
+      "target": 1811
+    },
+    {
+      "source": 1541,
+      "strength": 0.6,
+      "target": 1542
+    },
+    {
+      "source": 1103,
+      "strength": 0.47,
+      "target": 1425
+    },
+    {
+      "source": 1103,
+      "strength": 0.69,
+      "target": 1121
+    },
+    {
+      "source": 1103,
+      "strength": 0.7,
+      "target": 1104
+    },
+    {
+      "source": 1542,
+      "strength": 0.64,
+      "target": 1645
+    },
+    {
+      "source": 1542,
+      "strength": 0.5,
+      "target": 1587
+    },
+    {
+      "source": 1541,
+      "strength": 0.53,
+      "target": 1811
+    },
+    {
+      "source": 1645,
+      "strength": 0.7,
+      "target": 1697
+    },
+    {
+      "source": 1727,
+      "strength": 0.72,
+      "target": 1816
+    },
+    {
+      "source": 1813,
+      "strength": 0.59,
+      "target": 1816
+    },
+    {
+      "source": 1104,
+      "strength": 0.61,
+      "target": 1645
+    },
+    {
+      "source": 1103,
+      "strength": 0.53,
+      "target": 1541
+    },
+    {
+      "source": 1103,
+      "strength": 0.53,
+      "target": 1542
+    },
+    {
+      "source": 1103,
+      "strength": 0.58,
+      "target": 1645
+    },
+    {
+      "source": 1103,
+      "strength": 0.67,
+      "target": 1811
+    },
+    {
+      "source": 1091,
+      "strength": 0.54,
+      "target": 1816
+    },
+    {
+      "source": 1091,
+      "strength": 0.75,
+      "target": 1092
+    },
+    {
+      "source": 1645,
+      "strength": 0.67,
+      "target": 1811
+    },
+    {
+      "source": 1645,
+      "strength": 0.64,
+      "target": 1816
+    },
+    {
+      "source": 1091,
+      "strength": 0.53,
+      "target": 1810
+    },
+    {
+      "source": 1091,
+      "strength": 0.56,
+      "target": 1645
+    },
+    {
+      "source": 1005,
+      "strength": 0.84,
+      "target": 1810
+    },
+    {
+      "source": 1005,
+      "strength": 0.21,
+      "target": 1781
+    },
+    {
+      "source": 1005,
+      "strength": 0.74,
+      "target": 1816
+    },
+    {
+      "source": 1005,
+      "strength": 0.6,
+      "target": 1092
+    },
+    {
+      "source": 1810,
+      "strength": 0.7,
+      "target": 1816
+    },
+    {
+      "source": 1004,
+      "strength": 0.61,
+      "target": 1046
+    },
+    {
+      "source": 1003,
+      "strength": 0.55,
+      "target": 1810
+    },
+    {
+      "source": 1001,
+      "strength": 0.73,
+      "target": 1003
+    },
+    {
+      "source": 1092,
+      "strength": 0.7,
+      "target": 1645
+    },
+    {
+      "source": 1092,
+      "strength": 0.6,
+      "target": 1619
+    },
+    {
+      "source": 1092,
+      "strength": 0.67,
+      "target": 1816
+    },
+    {
+      "source": 1092,
+      "strength": 0.6,
+      "target": 1811
+    },
+    {
+      "source": 1092,
+      "strength": 0.7,
+      "target": 1727
+    },
+    {
+      "source": 1092,
+      "strength": 0.7,
+      "target": 1634
+    },
+    {
+      "source": 1092,
+      "strength": 0.75,
+      "target": 1105
+    },
+    {
+      "source": 1092,
+      "strength": 0.6,
+      "target": 1103
+    },
+    {
+      "source": 1634,
+      "strength": 0.57,
+      "target": 1659
+    },
+    {
+      "source": 1634,
+      "strength": 0.54,
+      "target": 1813
+    },
+    {
+      "source": 1634,
+      "strength": 0.53,
+      "target": 1727
+    },
+    {
+      "source": 988,
+      "strength": 0.48,
+      "target": 993
+    },
+    {
+      "source": 989,
+      "strength": 0.56,
+      "target": 1003
+    },
+    {
+      "source": 993,
+      "strength": 0.67,
+      "target": 998
+    },
+    {
+      "source": 988,
+      "strength": 0.46,
+      "target": 1003
+    },
+    {
+      "source": 989,
+      "strength": 0.62,
+      "target": 998
+    },
+    {
+      "source": 993,
+      "strength": 0.52,
+      "target": 1003
+    },
+    {
+      "source": 1046,
+      "strength": 0.64,
+      "target": 1099
+    },
+    {
+      "source": 1046,
+      "strength": 0.5,
+      "target": 1106
+    },
+    {
+      "source": 1046,
+      "strength": 0.47,
+      "target": 1204
+    },
+    {
+      "source": 1046,
+      "strength": 0.5,
+      "target": 1727
+    },
+    {
+      "source": 1046,
+      "strength": 0.53,
+      "target": 1810
+    },
+    {
+      "source": 1046,
+      "strength": 0.74,
+      "target": 1811
+    },
+    {
+      "source": 1046,
+      "strength": 0.5,
+      "target": 1813
+    },
+    {
+      "source": 1046,
+      "strength": 0.69,
+      "target": 1816
+    },
+    {
+      "source": 1105,
+      "strength": 0.5,
+      "target": 1112
+    },
+    {
+      "source": 1105,
+      "strength": 0.57,
+      "target": 1121
+    },
+    {
+      "source": 1105,
+      "strength": 0.64,
+      "target": 1645
+    },
+    {
+      "source": 1016,
+      "strength": 0.69,
+      "target": 1046
+    },
+    {
+      "source": 1016,
+      "strength": 0.58,
+      "target": 1634
+    },
+    {
+      "source": 1092,
+      "strength": 0.67,
+      "target": 1810
+    },
+    {
+      "source": 1012,
+      "strength": 0.62,
+      "target": 1046
+    },
+    {
+      "source": 1012,
+      "strength": 0.75,
+      "target": 1092
+    },
+    {
+      "source": 1012,
+      "strength": 0.61,
+      "target": 1810
+    },
+    {
+      "source": 1012,
+      "strength": 0.69,
+      "target": 1016
+    },
+    {
+      "source": 1012,
+      "strength": 0.62,
+      "target": 1101
+    },
+    {
+      "source": 1012,
+      "strength": 0.64,
+      "target": 1634
+    },
+    {
+      "source": 1085,
+      "strength": 0.65,
+      "target": 1103
+    },
+    {
+      "source": 1112,
+      "strength": 0.7,
+      "target": 1645
+    },
+    {
+      "source": 1112,
+      "strength": 0.54,
+      "target": 1634
+    },
+    {
+      "source": 1107,
+      "strength": 0.55,
+      "target": 1481
+    },
+    {
+      "source": 1121,
+      "strength": 0.41,
+      "target": 1604
+    },
+    {
+      "source": 1480,
+      "strength": 0.85,
+      "target": 1481
+    },
+    {
+      "source": 1480,
+      "strength": 0.46,
+      "target": 1645
+    },
+    {
+      "source": 881,
+      "strength": 0.5,
+      "target": 1464
+    },
+    {
+      "source": 857,
+      "strength": 0.35,
+      "target": 989
+    },
+    {
+      "source": 791,
+      "strength": 0.47,
+      "target": 792
+    },
+    {
+      "source": 792,
+      "strength": 0.43,
+      "target": 1072
+    },
+    {
+      "source": 792,
+      "strength": 0.35,
+      "target": 1076
+    },
+    {
+      "source": 1076,
+      "strength": 0.52,
+      "target": 1187
+    },
+    {
+      "source": 817,
+      "strength": 0.47,
+      "target": 1076
+    },
+    {
+      "source": 766,
+      "strength": 0.27,
+      "target": 1200
+    },
+    {
+      "source": 1659,
+      "strength": 0.49,
+      "target": 1854
+    },
+    {
+      "source": 1540,
+      "strength": 0.63,
+      "target": 1542
+    },
+    {
+      "source": 1540,
+      "strength": 0.6,
+      "target": 1813
+    },
+    {
+      "source": 1694,
+      "strength": 0.44,
+      "target": 1813
+    },
+    {
+      "source": 1601,
+      "strength": 0.67,
+      "target": 1697
+    },
+    {
+      "source": 1189,
+      "strength": 0.22,
+      "target": 1781
+    },
+    {
+      "source": 1186,
+      "strength": 0.64,
+      "target": 1187
+    },
+    {
+      "source": 1111,
+      "strength": 0.44,
+      "target": 1480
+    },
+    {
+      "source": 1038,
+      "strength": 0.62,
+      "target": 1046
+    },
+    {
+      "source": 1028,
+      "strength": 0.46,
+      "target": 1099
+    },
+    {
+      "source": 1028,
+      "strength": 0.62,
+      "target": 1200
+    },
+    {
+      "source": 1047,
+      "strength": 0.61,
+      "target": 1092
+    },
+    {
+      "source": 1002,
+      "strength": 0.51,
+      "target": 1453
+    },
+    {
+      "source": 999,
+      "strength": 0.53,
+      "target": 1070
+    },
+    {
+      "source": 1002,
+      "strength": 0.47,
+      "target": 1280
+    },
+    {
+      "source": 1019,
+      "strength": 0.22,
+      "target": 1098
+    },
+    {
+      "source": 1011,
+      "strength": 0.67,
+      "target": 1106
+    },
+    {
+      "source": 1081,
+      "strength": 0.53,
+      "target": 1205
+    },
+    {
+      "source": 1081,
+      "strength": 0.61,
+      "target": 1101
+    },
+    {
+      "source": 1187,
+      "strength": 0.33,
+      "target": 1464
+    },
+    {
+      "source": 944,
+      "strength": 0.54,
+      "target": 953
+    },
+    {
+      "source": 944,
+      "strength": 0.45,
+      "target": 971
+    },
+    {
+      "source": 939,
+      "strength": 0.37,
+      "target": 1453
+    },
+    {
+      "source": 997,
+      "strength": 0.48,
+      "target": 1697
+    },
+    {
+      "source": 994,
+      "strength": 0.67,
+      "target": 1121
+    },
+    {
+      "source": 999,
+      "strength": 0.5,
+      "target": 1002
+    },
+    {
+      "source": 997,
+      "strength": 0.57,
+      "target": 1742
+    },
+    {
+      "source": 990,
+      "strength": 0.76,
+      "target": 1001
+    },
+    {
+      "source": 985,
+      "strength": 0.43,
+      "target": 1103
+    },
+    {
+      "source": 992,
+      "strength": 0.54,
+      "target": 1003
+    },
+    {
+      "source": 990,
+      "strength": 0.4,
+      "target": 1573
+    },
+    {
+      "source": 970,
+      "strength": 0.49,
+      "target": 1121
+    },
+    {
+      "source": 970,
+      "strength": 0.37,
+      "target": 1087
+    },
+    {
+      "source": 977,
+      "strength": 0.48,
+      "target": 1099
+    },
+    {
+      "source": 974,
+      "strength": 0.54,
+      "target": 975
+    },
+    {
+      "source": 1154,
+      "strength": 0.38,
+      "target": 1854
+    },
+    {
+      "source": 904,
+      "strength": 0.44,
+      "target": 1154
+    },
+    {
+      "source": 1479,
+      "strength": 0.57,
+      "target": 1480
+    },
+    {
+      "source": 894,
+      "strength": 0.21,
+      "target": 1479
+    },
+    {
+      "source": 890,
+      "strength": 0.31,
+      "target": 894
+    },
+    {
+      "source": 894,
+      "strength": 0.4,
+      "target": 895
+    }
+  ]
+}
