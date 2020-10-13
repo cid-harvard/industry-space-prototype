@@ -33,7 +33,8 @@ const BackButton = styled.button`
   padding: 1rem;
 `;
 
-const data = JSON.parse(raw('../data/chemical-space.json'));
+const data = JSON.parse(raw('../data/product-space.json'));
+const chemData = JSON.parse(raw('../data/chemical-space.json'));
 
 const createForceGraph = (rootEl, data, setNodeList, setHovered, codeList) => {
   const root = d3.select(rootEl);
@@ -340,9 +341,10 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered, codeList) => {
     const clearSelections = () => {
       const allEdgeXValues = [];
       const allEdgeYValues = [];
-      tempData.nodes.forEach(n => {
-        allEdgeXValues.push(xScale(n.x));
-        allEdgeYValues.push(yScale(n.y));
+      chemData.nodes.forEach(n => {
+        const node = data.nodes.find(({id}) => id === n.id);
+        allEdgeXValues.push(xScale(node.x));
+        allEdgeYValues.push(yScale(node.y));
       });
 
       const xBounds = d3.extent(allEdgeXValues);
