@@ -38,8 +38,6 @@ const proximityScale = d3.scaleLinear()
     .domain(proximityRange)
     .range([0, 100]);
 
-console.log(allProximities.length);
-
 const colorMap = [
   { id: '0', color: '#A973BE' },
   { id: '1', color: '#F1866C' },

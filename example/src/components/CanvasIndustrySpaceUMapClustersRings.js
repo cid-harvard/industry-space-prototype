@@ -1,7 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import * as d3 from 'd3';
 import raw from 'raw.macro';
-import * as polished from 'polished';
 import Table from './PercentTable';
 import styled from 'styled-components';
 
@@ -70,12 +69,12 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     allYValues.push(y);
   });
 
-  const radiusAdjuster = smallerSize / minExpectedScreenSize;
+  // const radiusAdjuster = smallerSize / minExpectedScreenSize;
 
   data.nodes = data.nodes.map(n => {
-    let radius = Math.random() * 6;
-    radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
-    // const radius = 2.5;
+    // let radius = Math.random() * 6;
+    // radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
+    const radius = 2.5;
     const industry6Digit = naicsData.find(({code}) => n.id.toString() === code);
     if (!industry6Digit) {
       throw new Error('undefined industry');
@@ -99,7 +98,15 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       throw new Error('Parent out of range')
     }
     const {color} = colorMap.find(({id}) => id === topLevelParentId);
-    return {...n, radius, color, parent: current, label}
+    return {
+      ...n,
+      radius,
+      color,
+      parent: current,
+      label,
+      initial_x: n.x,
+      initial_y: n.y,
+    }
   })
 
   const xRange = d3.extent(allXValues);
@@ -153,7 +160,18 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     }
 
     const zoom = d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed);
-    
+
+    function drawPoint(r, currentPoint, totalPoints, centerX, centerY) {  
+
+      var theta = ((Math.PI*2) / totalPoints);
+      var angle = (theta * currentPoint);
+
+      const x = (r * Math.cos(angle) + centerX);
+      const y = (r * Math.sin(angle) + centerY);
+
+      return {x, y};
+    }
+
     const canvasEl = d3.select(canvas);
     canvasEl
       .call(zoom)
@@ -164,23 +182,37 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       })
       .on('click', function(event) {
         const node = dragsubject();
-        highlightedNode = node;
         if (node) {
+          highlightedNode = node;
           primaryNodes = [];
           secondaryNodes = [];
           proximityNodes[node.id].forEach(({trg, proximity}, i) => {
             const node2 = tempData.nodes.find(n => n.id === trg);
             if (node2) {
-              if (i < Math.floor((proximityNodes[node.id].length - 1) / 2)) {
-                primaryNodes.push({...node2, proximity});
+              const numPrimary = Math.floor((proximityNodes[node.id].length - 1) / 2);
+              const numSecondary = proximityNodes[node.id].length - numPrimary;
+              if (i < numPrimary) {
+                const newCoords = drawPoint(20, i, numPrimary, node.x, node.y)
+                node2.x = newCoords.x;
+                node2.y = newCoords.y;
+                primaryNodes.push({
+                  ...node2,
+                  proximity,
+                });
               } else {
-                secondaryNodes.push({...node2, proximity});
+                const newCoords = drawPoint(40, i, numSecondary, node.x, node.y)
+                node2.x = newCoords.x;
+                node2.y = newCoords.y;
+                secondaryNodes.push({
+                  ...node2,
+                  proximity,
+                });
               }
             }
           });
           const allEdgeXValues = [];
           const allEdgeYValues = [];
-          [node, ...primaryNodes].forEach(n => {
+          [...primaryNodes, ...secondaryNodes].forEach(n => {
             allEdgeXValues.push(xScale(n.x));
             allEdgeYValues.push(yScale(n.y));
           });
@@ -200,16 +232,20 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
           canvasEl.transition()
               .duration(500)
-              .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
+              .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale))
 
           setNodeList({
             selected: node,
             connected: [...primaryNodes, ...secondaryNodes],
           })
         } else {
-          primaryNodes = [];
-          secondaryNodes = [];
-          setNodeList(undefined);
+          // primaryNodes = [];
+          // secondaryNodes = [];
+          // setNodeList(undefined);
+          // tempData.nodes.forEach(n => {
+          //   n.x = n.initial_x;
+          //   n.y = n.initial_y;
+          // });
         }
         simulationUpdate();
       })
@@ -231,7 +267,13 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           nodeX =  transform.applyX(nodeX);
           nodeY = transform.applyY(nodeY);
 
-          return node;
+          if ((!primaryNodes.length && !secondaryNodes.length) ||
+                primaryNodes.find(n => n.id === node.id) ||
+                secondaryNodes.find(n => n.id === node.id)) {
+
+            return node;
+          }
+
         }
       }
     }
@@ -241,8 +283,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
     simulation.force("link")
               .links(tempData.edges);
-
-
 
     function simulationUpdate() {
       const highlightedId = highlightedNode && highlightedNode.id ? highlightedNode.id : undefined;
@@ -254,25 +294,17 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       context.scale(transform.k, transform.k);
 
       // Draw the nodes
-      tempData.nodes.forEach(function(d, i) {
-        context.beginPath();
-        context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-        context.fillStyle = highlightedId === undefined ? d.color : polished.rgba(d.color, 0.035);
-        context.fill();
-      });
-
-      if (hoveredNode) {
-        rootEl.style.cursor = 'pointer';
-        context.beginPath();
-        context.arc(xScale(hoveredNode.x), yScale(hoveredNode.y), hoveredNode.radius, 0, 2 * Math.PI, true);
-        context.fillStyle = hoveredNode.color
-        context.fill();
-        context.strokeStyle = 'black';
-        context.stroke();
-      } else {
-        rootEl.style.cursor = 'move';
-      }
       if (highlightedNode) {
+        context.beginPath();
+        context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), 19, 0, 2 * Math.PI, true);
+        context.strokeStyle = '#dfdfdf';
+        context.lineWidth = 0.2;
+        context.stroke();
+
+        context.beginPath();
+        context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), 37, 0, 2 * Math.PI, true);
+        context.stroke();
+
         context.beginPath();
         context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), highlightedNode.radius, 0, 2 * Math.PI, true);
         context.fillStyle = highlightedNode.color
@@ -281,33 +313,60 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.stroke();
       }
       let nodeCount = 1;
-      if (primaryNodes && primaryNodes.length) {
-        primaryNodes.forEach(function(d, i) {
+      if (!primaryNodes.length && !secondaryNodes.length) {
+        tempData.nodes.forEach(function(d, i) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = polished.rgba(d.color, 0.8);
+          context.fillStyle = d.color;
+          context.fill();
+        });
+      } else {
+        [...primaryNodes, ...secondaryNodes].forEach(function(d, i) {
+          const node = tempData.nodes.find(n => n.id === d.id);
+          context.beginPath();
+          context.arc(xScale(node.x), yScale(node.y), node.radius, 0, 2 * Math.PI, true);
+          context.fillStyle = node.color;
           context.fill();
 
           context.textAlign = 'center';
           context.textBaseline = 'middle';
-          context.font = `400 ${d.radius}px OfficeCodeProWeb`;
+          context.font = `400 ${node.radius}px OfficeCodeProWeb`;
           context.fillStyle = "white";
-          context.fillText(String.fromCharCode(64 + nodeCount++), xScale(d.x), yScale(d.y));
+          context.fillText(String.fromCharCode(64 + nodeCount++), xScale(node.x), yScale(node.y));
         });
       }
-      if (secondaryNodes && secondaryNodes.length) {
-        secondaryNodes.forEach(function(d, i) {
-          context.beginPath();
-          context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = polished.rgba(d.color, 0.35);
-          context.fill();
+      // if (primaryNodes.find(n => n.id === d.id)) {
+      //   context.beginPath();
+      //   context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
+      //   context.fillStyle = d.color;
+      //   context.fill();
 
-          context.textAlign = 'center';
-          context.textBaseline = 'middle';
-          context.font = `400 ${d.radius}px OfficeCodeProWeb`;
-          context.fillStyle = "white";
-          context.fillText(String.fromCharCode(64 + nodeCount++), xScale(d.x), yScale(d.y));
-        });
+      //   context.textAlign = 'center';
+      //   context.textBaseline = 'middle';
+      //   context.font = `400 ${d.radius}px OfficeCodeProWeb`;
+      //   context.fillStyle = "white";
+      //   context.fillText(String.fromCharCode(64 + nodeCount++), xScale(d.x), yScale(d.y));
+      // } else if (secondaryNodes.find(n => n.id === d.id)) {
+      //   context.beginPath();
+      //   context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
+      //   context.fillStyle = d.color;
+      //   context.fill();
+
+      //   context.textAlign = 'center';
+      //   context.textBaseline = 'middle';
+      //   context.font = `400 ${d.radius}px OfficeCodeProWeb`;
+      //   context.fillStyle = "white";
+      //   context.fillText(String.fromCharCode(64 + nodeCount++), xScale(d.x), yScale(d.y));
+      // }
+
+      if (hoveredNode && hoveredNode.id !== highlightedId) {
+        rootEl.style.cursor = 'pointer';
+        context.beginPath();
+        context.arc(xScale(hoveredNode.x), yScale(hoveredNode.y), hoveredNode.radius, 0, 2 * Math.PI, true);
+        context.strokeStyle = 'black';
+        context.stroke();
+      } else {
+        rootEl.style.cursor = 'move';
       }
 
       context.restore();
@@ -321,10 +380,24 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         proximityNodes[node.id].forEach(({trg, proximity}, i) => {
           const node2 = tempData.nodes.find(n => n.id === trg);
           if (node2) {
-            if (i < Math.floor((proximityNodes[node.id].length - 1) / 2)) {
-              primaryNodes.push({...node2, proximity});
+            const numPrimary = Math.floor((proximityNodes[node.id].length - 1) / 2);
+            const numSecondary = proximityNodes[node.id].length - numPrimary;
+            if (i < numPrimary) {
+              const newCoords = drawPoint(20, i, numPrimary, node.x, node.y)
+              node2.x = newCoords.x;
+              node2.y = newCoords.y;
+              primaryNodes.push({
+                ...node2,
+                proximity,
+              });
             } else {
-              secondaryNodes.push({...node2, proximity});
+              const newCoords = drawPoint(40, i, numSecondary, node.x, node.y)
+              node2.x = newCoords.x;
+              node2.y = newCoords.y;
+              secondaryNodes.push({
+                ...node2,
+                proximity,
+              });
             }
           }
         });
@@ -367,6 +440,8 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       tempData.nodes.forEach(n => {
         allEdgeXValues.push(xScale(n.x));
         allEdgeYValues.push(yScale(n.y));
+        n.x = n.initial_x;
+        n.y = n.initial_y;
       });
 
       const xBounds = d3.extent(allEdgeXValues);

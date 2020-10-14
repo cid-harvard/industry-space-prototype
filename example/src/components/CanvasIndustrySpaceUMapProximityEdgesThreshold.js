@@ -10,8 +10,6 @@ const data = JSON.parse(raw('../data/umap-custom-2.json'));
 const proximityNodes = JSON.parse(raw('../data/proximity.json'));
 const naicsData = JSON.parse(raw('../data/naics_2017.json'));
 
-console.log(proximityNodes);
-
 const colorMap = [
   { id: '0', color: '#A973BE' },
   { id: '1', color: '#F1866C' },
