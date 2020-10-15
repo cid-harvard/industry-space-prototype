@@ -22,6 +22,25 @@ const Tooltip = styled.div`
      1px 1px 0 #fff;
 `;
 
+function getLines(ctx, text, maxWidth) {
+    var words = text.split(" ");
+    var lines = [];
+    var currentLine = words[0];
+
+    for (var i = 1; i < words.length; i++) {
+        var word = words[i];
+        var width = ctx.measureText(currentLine + " " + word).width;
+        if (width < maxWidth) {
+            currentLine += " " + word;
+        } else {
+            lines.push(currentLine);
+            currentLine = word;
+        }
+    }
+    lines.push(currentLine);
+    return lines;
+}
+
 const minExpectedScreenSize = 1020;
 
 // const data = JSON.parse(raw('../data/industry-space-with-start-positions.json'));
@@ -211,7 +230,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
                 node2.new_y = newCoords.y;
                 const xDist = newCoords.x > node2.x ? newCoords.x - node2.x : node2.x - newCoords.x;
                 const yDist = newCoords.y > node2.y ? newCoords.y - node2.y : node2.y - newCoords.y;
-                console.log({xDist, yDist})
                 node2.x_interval = xDist / 20;
                 node2.y_interval = yDist / 20;
                 secondaryNodes.push({
@@ -275,14 +293,6 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             selected: node,
             connected: [...primaryNodes, ...secondaryNodes],
           })
-        } else {
-          // primaryNodes = [];
-          // secondaryNodes = [];
-          // setNodeList(undefined);
-          // tempData.nodes.forEach(n => {
-          //   n.x = n.initial_x;
-          //   n.y = n.initial_y;
-          // });
         }
         simulationUpdate();
       })
@@ -348,6 +358,15 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.fill();
         context.strokeStyle = 'black';
         context.stroke();
+
+
+        context.textAlign = 'center';
+        context.textBaseline = 'middle';
+        context.fillStyle = "#000";
+        context.font = `400 1.3px OfficeCodeProWeb`;
+        getLines(context, highlightedNode.label, 15).reverse().forEach((t, i) => {
+          context.fillText(t, xScale(highlightedNode.x), yScale(highlightedNode.y) - (2 * (i + 2)));
+        });
       }
       let nodeCount = 1;
       if (!primaryNodes.length && !secondaryNodes.length) {
@@ -370,31 +389,18 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           context.font = `400 ${node.radius}px OfficeCodeProWeb`;
           context.fillStyle = "white";
           context.fillText(String.fromCharCode(64 + nodeCount++), xScale(node.x), yScale(node.y));
+
+
+          if (!hoveredNode || hoveredNode.id !== d.id) {
+            context.fillStyle = "#000";
+            context.font = `400 1.3px OfficeCodeProWeb`;
+            const shortenedLabel = d.label.length <= 30 ? d.label : d.label.slice(0, 30) + '...'
+            getLines(context, shortenedLabel, 15).reverse().forEach((t, i) => {
+              context.fillText(t, xScale(node.x), yScale(node.y) - (2 * (i + 2)));
+            });
+          }
         });
       }
-      // if (primaryNodes.find(n => n.id === d.id)) {
-      //   context.beginPath();
-      //   context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-      //   context.fillStyle = d.color;
-      //   context.fill();
-
-      //   context.textAlign = 'center';
-      //   context.textBaseline = 'middle';
-      //   context.font = `400 ${d.radius}px OfficeCodeProWeb`;
-      //   context.fillStyle = "white";
-      //   context.fillText(String.fromCharCode(64 + nodeCount++), xScale(d.x), yScale(d.y));
-      // } else if (secondaryNodes.find(n => n.id === d.id)) {
-      //   context.beginPath();
-      //   context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-      //   context.fillStyle = d.color;
-      //   context.fill();
-
-      //   context.textAlign = 'center';
-      //   context.textBaseline = 'middle';
-      //   context.font = `400 ${d.radius}px OfficeCodeProWeb`;
-      //   context.fillStyle = "white";
-      //   context.fillText(String.fromCharCode(64 + nodeCount++), xScale(d.x), yScale(d.y));
-      // }
 
       if (hoveredNode && hoveredNode.id !== highlightedId) {
         rootEl.style.cursor = 'pointer';
@@ -421,16 +427,24 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             const numSecondary = proximityNodes[node.id].length - numPrimary;
             if (i < numPrimary) {
               const newCoords = drawPoint(20, i, numPrimary, node.x, node.y)
-              node2.x = newCoords.x;
-              node2.y = newCoords.y;
+              node2.new_x = newCoords.x;
+              node2.new_y = newCoords.y;
+              const xDist = newCoords.x > node2.x ? newCoords.x - node2.x : node2.x - newCoords.x;
+              const yDist = newCoords.y > node2.y ? newCoords.y - node2.y : node2.y - newCoords.y;
+              node2.x_interval = xDist / 20;
+              node2.y_interval = yDist / 20;
               primaryNodes.push({
                 ...node2,
                 proximity,
               });
             } else {
               const newCoords = drawPoint(40, i, numSecondary, node.x, node.y)
-              node2.x = newCoords.x;
-              node2.y = newCoords.y;
+              node2.new_x = newCoords.x;
+              node2.new_y = newCoords.y;
+              const xDist = newCoords.x > node2.x ? newCoords.x - node2.x : node2.x - newCoords.x;
+              const yDist = newCoords.y > node2.y ? newCoords.y - node2.y : node2.y - newCoords.y;
+              node2.x_interval = xDist / 20;
+              node2.y_interval = yDist / 20;
               secondaryNodes.push({
                 ...node2,
                 proximity,
@@ -440,9 +454,9 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         });
         const allEdgeXValues = [];
         const allEdgeYValues = [];
-        [node, ...primaryNodes].forEach(n => {
-          allEdgeXValues.push(xScale(n.x));
-          allEdgeYValues.push(yScale(n.y));
+        [...primaryNodes, ...secondaryNodes].forEach(n => {
+          allEdgeXValues.push(xScale(n.new_x));
+          allEdgeYValues.push(yScale(n.new_y));
         });
 
         const xBounds = d3.extent(allEdgeXValues);
@@ -462,6 +476,32 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             .duration(500)
             .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
 
+        const t = interval(function(elapsed) {
+          shouldTick = false;
+          [...primaryNodes, ...secondaryNodes].forEach(n => {
+            const currentNode = tempData.nodes.find(d => d.id === n.id);
+            if (Math.ceil(currentNode.x) === Math.ceil(currentNode.new_x)) {
+              currentNode.x = currentNode.new_x;
+            } else {
+              shouldTick = true;
+              currentNode.x = currentNode.x > currentNode.new_x
+                ? currentNode.x - currentNode.x_interval
+                : currentNode.x + currentNode.x_interval;
+            }
+            if (Math.ceil(currentNode.y) === Math.ceil(currentNode.new_y)) {
+              currentNode.y = currentNode.new_y;
+            } else {
+              shouldTick = true;
+              currentNode.y = currentNode.y > currentNode.new_y
+                ? currentNode.y - currentNode.y_interval
+                : currentNode.y + currentNode.y_interval;
+            }
+          });
+          simulationUpdate();
+          if (!shouldTick || elapsed > 350) {
+            t.stop()
+          };
+        }, 10);
         setNodeList({
           selected: node,
           connected: [...primaryNodes, ...secondaryNodes],
