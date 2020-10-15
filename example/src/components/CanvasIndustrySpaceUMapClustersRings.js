@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import raw from 'raw.macro';
 import Table from './PercentTable';
 import styled from 'styled-components';
+import {interval} from 'd3-timer';
 
 const Tooltip = styled.div`
   position: fixed;
@@ -149,6 +150,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
   let highlightedNode = undefined;
   let primaryNodes = [];
   let secondaryNodes = [];
+  let shouldTick = false;
 
   const update = initGraph(data);
 
@@ -193,16 +195,25 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
               const numSecondary = proximityNodes[node.id].length - numPrimary;
               if (i < numPrimary) {
                 const newCoords = drawPoint(20, i, numPrimary, node.x, node.y)
-                node2.x = newCoords.x;
-                node2.y = newCoords.y;
+                node2.new_x = newCoords.x;
+                node2.new_y = newCoords.y;
+                const xDist = newCoords.x > node2.x ? newCoords.x - node2.x : node2.x - newCoords.x;
+                const yDist = newCoords.y > node2.y ? newCoords.y - node2.y : node2.y - newCoords.y;
+                node2.x_interval = xDist / 20;
+                node2.y_interval = yDist / 20;
                 primaryNodes.push({
                   ...node2,
                   proximity,
                 });
               } else {
                 const newCoords = drawPoint(40, i, numSecondary, node.x, node.y)
-                node2.x = newCoords.x;
-                node2.y = newCoords.y;
+                node2.new_x = newCoords.x;
+                node2.new_y = newCoords.y;
+                const xDist = newCoords.x > node2.x ? newCoords.x - node2.x : node2.x - newCoords.x;
+                const yDist = newCoords.y > node2.y ? newCoords.y - node2.y : node2.y - newCoords.y;
+                console.log({xDist, yDist})
+                node2.x_interval = xDist / 20;
+                node2.y_interval = yDist / 20;
                 secondaryNodes.push({
                   ...node2,
                   proximity,
@@ -213,8 +224,8 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
           const allEdgeXValues = [];
           const allEdgeYValues = [];
           [...primaryNodes, ...secondaryNodes].forEach(n => {
-            allEdgeXValues.push(xScale(n.x));
-            allEdgeYValues.push(yScale(n.y));
+            allEdgeXValues.push(xScale(n.new_x));
+            allEdgeYValues.push(yScale(n.new_y));
           });
 
           const xBounds = d3.extent(allEdgeXValues);
@@ -234,6 +245,32 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
               .duration(500)
               .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale))
 
+          const t = interval(function(elapsed) {
+            shouldTick = false;
+            [...primaryNodes, ...secondaryNodes].forEach(n => {
+              const currentNode = tempData.nodes.find(d => d.id === n.id);
+              if (Math.ceil(currentNode.x) === Math.ceil(currentNode.new_x)) {
+                currentNode.x = currentNode.new_x;
+              } else {
+                shouldTick = true;
+                currentNode.x = currentNode.x > currentNode.new_x
+                  ? currentNode.x - currentNode.x_interval
+                  : currentNode.x + currentNode.x_interval;
+              }
+              if (Math.ceil(currentNode.y) === Math.ceil(currentNode.new_y)) {
+                currentNode.y = currentNode.new_y;
+              } else {
+                shouldTick = true;
+                currentNode.y = currentNode.y > currentNode.new_y
+                  ? currentNode.y - currentNode.y_interval
+                  : currentNode.y + currentNode.y_interval;
+              }
+            });
+            simulationUpdate();
+            if (!shouldTick || elapsed > 350) {
+              t.stop()
+            };
+          }, 10);
           setNodeList({
             selected: node,
             connected: [...primaryNodes, ...secondaryNodes],
