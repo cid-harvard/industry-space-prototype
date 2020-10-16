@@ -147,11 +147,15 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
   const context = canvas.getContext('2d');
 
+
   const simulation = d3.forceSimulation()
-                .force("center", d3.forceCenter(width / 2, height / 2))
-                .force("charge", d3.forceManyBody().strength(-50))
-                .force("link", d3.forceLink().strength(1).id(function(d) { return d.id; }))
-                .alphaDecay(1)
+                .force("center", d3.forceCenter(rangeWidth / 1.3, rangeHeight / 1.8))
+                .force("charge", d3.forceManyBody().strength(-10))
+                .force("collision", d3.forceCollide().radius(function(d) {
+                  return (d.radius * 1.25) * (minExpectedScreenSize / smallerSize);
+                }))
+                .force("link", d3.forceLink().strength(d => d.proximity).id(d => d.id))
+                .alphaDecay(0.99)
 
   let transform = d3.zoomIdentity;
 
@@ -188,9 +192,11 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     canvasEl
       .call(zoom)
       .on('mousemove', function() {
-        hoveredNode = dragsubject();        
-        setHovered({node: hoveredNode, coords: {x: d3.event.x, y: d3.event.y}});
-        simulationUpdate();
+        if (!shouldTick) {
+          hoveredNode = dragsubject();
+          setHovered({node: hoveredNode, coords: {x: d3.event.x, y: d3.event.y}});
+          simulationUpdate();
+        }
       })
       .on('click', function(event) {
         const node = dragsubject();
