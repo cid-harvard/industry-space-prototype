@@ -31,6 +31,11 @@ const App = () => {
       </li>
       <li>
         <a href={'#/u-map-clusters-rings'}>Industry Space as <strong>UMap Clusters w/ Ring Chart</strong></a>
+        <ul>
+          <li><a href={'#/u-map-clusters-rings-lines'}>Show Edges as <em>Lines</em></a></li>
+          <li><a href={'#/u-map-clusters-rings-opacity'}>Show Edges with <em>Opacity</em></a></li>
+          <li><a href={'#/u-map-clusters-rings-opacity-lines'}>Show Edges with <em>Lines &amp; Opacity</em></a></li>
+        </ul>
       </li>
     </ul>
   );
