@@ -147,20 +147,11 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
 
   const context = canvas.getContext('2d');
 
-
   const simulation = d3.forceSimulation()
-                .force("center", d3.forceCenter(rangeWidth / 1.3, rangeHeight / 1.8))
-                .force("charge", d3.forceManyBody().strength(-10))
-                .force("collision", d3.forceCollide().radius(function(d) {
-                  return (d.radius * 1.25) * (minExpectedScreenSize / smallerSize);
-                }))
-                .force("link", d3.forceLink().strength(d => d.proximity).id(d => d.id))
-                .velocityDecay(0.96)
-  let k = 0;
-  while ((simulation.alpha() > 1e-2) && (k < 150)) {
-      simulation.tick();
-      k = k + 1;
-  }
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("charge", d3.forceManyBody().strength(-50))
+                .force("link", d3.forceLink().strength(1).id(function(d) { return d.id; }))
+                .alphaDecay(1)
 
   let transform = d3.zoomIdentity;
 
@@ -343,13 +334,27 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
       // Draw the nodes
       if (highlightedNode) {
         context.beginPath();
-        context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), 19, 0, 2 * Math.PI, true);
+        context.arc(
+          xScale(highlightedNode.x),
+          yScale(highlightedNode.y),
+          20 / (minExpectedScreenSize / smallerSize),
+          0,
+          2 * Math.PI,
+          true
+        );
         context.strokeStyle = '#dfdfdf';
         context.lineWidth = 0.2;
         context.stroke();
 
         context.beginPath();
-        context.arc(xScale(highlightedNode.x), yScale(highlightedNode.y), 37, 0, 2 * Math.PI, true);
+        context.arc(
+          xScale(highlightedNode.x),
+          yScale(highlightedNode.y),
+          40 / (minExpectedScreenSize / smallerSize),
+          0,
+          2 * Math.PI,
+          true
+        );
         context.stroke();
 
         context.beginPath();
