@@ -290,6 +290,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             selected: node,
             connected: [...primaryNodes, ...secondaryNodes],
           })
+          setHovered({node: undefined, coords: {x: d3.event.x, y: d3.event.y}});
         }
         simulationUpdate();
       })
