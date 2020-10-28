@@ -35,6 +35,7 @@ const App = () => {
           <li><a href={'#/u-map-clusters-rings-lines'}>Show Edges as <em>Lines</em></a></li>
           <li><a href={'#/u-map-clusters-rings-opacity'}>Show Edges with <em>Opacity</em></a></li>
           <li><a href={'#/u-map-clusters-rings-opacity-lines'}>Show Edges with <em>Lines &amp; Opacity</em></a></li>
+          <li><a href={'#/u-map-clusters-rings-opacity-lines-rca'}>Show Edges with <em>Lines &amp; Opacity</em> <strong>and random RCA highlighting</strong></a></li>
         </ul>
       </li>
     </ul>
