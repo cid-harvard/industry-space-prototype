@@ -27,6 +27,7 @@ import IndustrySpaceClustersRingsEdgesLines from './pages/IndustrySpaceClustersR
 import IndustrySpaceClustersRingsEdgesOpacity from './pages/IndustrySpaceClustersRingsEdgesOpacity';
 import IndustrySpaceClustersRingsEdgesOpacityLines from './pages/IndustrySpaceClustersRingsEdgesOpacityLines';
 import IndustrySpaceClustersRingsEdgesOpacityLinesRCA from './pages/IndustrySpaceClustersRingsEdgesOpacityLinesRCA';
+import IndustrySpaceClustersRingsClusterColoring from './pages/IndustrySpaceClustersRingsClusterColoring';
 import Landing from './pages/Landing';
 import './fonts/fonts.css';
 
@@ -59,6 +60,7 @@ const App = () => {
             <Route exact path={'/product-space-custom'} component={ProductSpaceCustom} />
             <Route exact path={'/chemical-space'} component={ChemicalSpace} />
             <Route exact path={'/chemical-space-custom'} component={ChemicalSpaceCustomHighlighting} />
+            <Route exact path={'/u-map-clusters-rings-cluster-color'} component={IndustrySpaceClustersRingsClusterColoring} />
             <Route component={Landing} />
           </Switch>
         </Router>

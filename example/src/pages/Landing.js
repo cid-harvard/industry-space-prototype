@@ -38,6 +38,9 @@ const App = () => {
           <li><a href={'#/u-map-clusters-rings-opacity-lines-rca'}>Show Edges with <em>Lines &amp; Opacity</em> <strong>and random RCA highlighting</strong></a></li>
         </ul>
       </li>
+      <li>
+        <a href={'#/u-map-clusters-rings-cluster-color'}>Industry Space as <strong>UMap Clusters w/ Ring Chart</strong> and <strong>Colored by Cluster</strong></a>
+      </li>
     </ul>
   );
 }
