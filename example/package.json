@@ -10,7 +10,9 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@types/hull.js": "^1.0.0",
     "d3-timer": "^2.0.0",
+    "hull.js": "^1.0.1",
     "industry-space-prototype": "file:..",
     "lodash": "^4.17.20",
     "react": "file:../node_modules/react",
