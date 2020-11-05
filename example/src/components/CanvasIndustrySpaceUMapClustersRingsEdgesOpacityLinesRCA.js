@@ -635,6 +635,7 @@ export default () => {
       {tooltip}
       <div ref={rootNodeRef} />
       <Table
+        showPng={true}
         nodes={nodeList}
         hovered={hovered}
         updateSimulation={updateSimulation}

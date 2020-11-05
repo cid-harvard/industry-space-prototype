@@ -1,6 +1,8 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {rgba} from 'polished';
+import PNGLegend from '../IS_legend-01.png';
+import HowToReadPNG from '../IS_how-to-read-04.png';
 
 const Root = styled.div`
   position: fixed;
@@ -22,6 +24,18 @@ const BackButton = styled.button`
   font-family: 'OfficeCodeProWeb', monospace;
   cursor: pointer;
   padding: 1rem;
+`;
+
+const HowToReadButton = styled.button`
+  position: fixed;
+  left: 1rem;
+  top: 4rem;
+  background-color: transparent;
+  border: solid 1px #333;
+  font-size: 1rem;
+  font-family: 'OfficeCodeProWeb', monospace;
+  cursor: pointer;
+  padding: 0.5rem;
 `;
 
 const Content = styled.div`
@@ -106,10 +120,81 @@ const Label = styled.span`
   text-transform: uppercase;
 `;
 
+const EmptyImage = styled.div`
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / -1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  img {
+    max-width: 100%;
+    margin: auto;
+  }
+`;
+
+const ModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+`;
+
+const ModalBackdrop = styled.button`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
+const ModalContent = styled.div`
+  width: 950px;
+  padding: 1rem;
+  position: relative;
+  background-color: #fff;
+
+  img {
+    max-width: 100%;
+  }
+`;
+
+
+const CloseButton = styled.button`
+  border: none;
+  padding: 0.8rem;
+  background-color: transparent;
+  color: #999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 1.2rem
+`;
+
 const Table = (props) => {
-  const {nodes, hovered, updateSimulation, proximityScale} = props;
+  const {nodes, hovered, updateSimulation, proximityScale, showPng} = props;
   const highlightedRef = useRef(null);
   const containerRef = useRef(null);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const modal = modalOpen ? (
+    <ModalContainer>
+      <ModalBackdrop onClick={() => setModalOpen(false)} />
+      <ModalContent>
+        <img src={HowToReadPNG} alt={''} />
+        <CloseButton onClick={() => setModalOpen(false)}>
+          ×
+        </CloseButton>
+      </ModalContent>
+    </ModalContainer>
+  ) : null;
 
   useEffect(() => {
     if (highlightedRef && highlightedRef.current && containerRef && containerRef.current && hovered !== undefined) {
@@ -150,6 +235,7 @@ const Table = (props) => {
     return (
       <Root>
         <BackButton onClick={onClear}>{'< Back to Industry Space'}</BackButton>
+        <HowToReadButton onClick={() => setModalOpen(true)}>How to Read</HowToReadButton>
         <Content>
         <Title>
             <Circle style={{backgroundColor: selected.color}} />
@@ -164,14 +250,20 @@ const Table = (props) => {
             {connectedNodes}
           </NodeList>
         </Content>
+        {modal}
       </Root>
     );
   } else {
+    const emptyState = showPng ? (
+        <EmptyImage><img src={PNGLegend} alt={''} /></EmptyImage>
+    ) : <Empty>Click a node for more details</Empty>;
     return (
       <Root>
+        <HowToReadButton onClick={() => setModalOpen(true)}>How to Read</HowToReadButton>
         <Content>
-          <Empty>Click a node for more details</Empty>
+          {emptyState}
         </Content>
+        {modal}
       </Root>
     );
   }
