@@ -146,6 +146,8 @@ const ModalContainer = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 2000;
+  padding: 1rem;
+  box-sizing: border-box;
 `;
 
 const ModalBackdrop = styled.button`
@@ -157,7 +159,8 @@ const ModalBackdrop = styled.button`
 `;
 
 const ModalContent = styled.div`
-  width: 950px;
+  width: 100%;
+  max-width: 1200px;
   padding: 1rem;
   position: relative;
   background-color: #fff;
