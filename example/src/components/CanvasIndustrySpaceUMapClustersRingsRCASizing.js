@@ -4,7 +4,6 @@ import raw from 'raw.macro';
 import Table from './PercentTable';
 import styled from 'styled-components';
 import {interval} from 'd3-timer';
-import * as polished from 'polished';
 
 const Tooltip = styled.div`
   position: fixed;
@@ -90,13 +89,13 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     allYValues.push(y);
   });
 
-  // const radiusAdjuster = smallerSize / minExpectedScreenSize;
+  const radiusAdjuster = smallerSize / minExpectedScreenSize;
 
   let numberOfHighlightedNodes = 0;
   data.nodes = data.nodes.map((n, i) => {
-    // let radius = Math.random() * 6;
-    // radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
-    const radius = 2.5;
+    let radius = Math.random() * 6;
+    radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
+    // const radius = 2.5;
     const industry6Digit = naicsData.find(({code}) => n.id.toString() === code);
     if (!industry6Digit) {
       throw new Error('undefined industry');
@@ -387,7 +386,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.fillStyle = "#000";
         context.font = `400 1.3px OfficeCodeProWeb`;
         getLines(context, highlightedNode.label, 15).reverse().forEach((t, i) => {
-          context.fillText(t, xScale(highlightedNode.x), yScale(highlightedNode.y) - (2 * (i + 2)));
+          context.fillText(t, xScale(highlightedNode.x), yScale(highlightedNode.y + highlightedNode.radius / 2) - (2 * (i + 2)));
         });
       }
       let nodeCount = 1;
@@ -395,36 +394,9 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         tempData.nodes.forEach(function(d, i) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = !hoveredNode ||
-            (hoveredNode.id === d.id || proximityNodes[hoveredNode.id].find(n => n.trg === d.id))
-            ? d.color : polished.rgba(d.color, 0.125);
+          context.fillStyle = d.color;
           context.fill();
         });
-
-
-        if (hoveredNode) {
-          const linkedNodes = [hoveredNode];
-          proximityNodes[hoveredNode.id].forEach(function({trg}) {
-            const targetNode = tempData.nodes.find(({id}) => id === trg);
-            context.beginPath();
-            context.moveTo(xScale(hoveredNode.x), yScale(hoveredNode.y));
-            context.lineTo(xScale(targetNode.x), yScale(targetNode.y));
-            context.strokeStyle = '#afafaf';
-            context.stroke();
-            linkedNodes.push(targetNode);
-          });
-
-          linkedNodes.forEach(function(d, i) {
-            if (d) {
-              context.beginPath();
-              context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-              context.fillStyle = d.color;
-              context.fill();
-              context.strokeStyle = '#afafaf';
-              context.stroke();
-            }
-          });
-        }
       } else {
         [...primaryNodes, ...secondaryNodes].forEach(function(d, i) {
           const node = tempData.nodes.find(n => n.id === d.id);
@@ -445,7 +417,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             context.font = `400 1.3px OfficeCodeProWeb`;
             const shortenedLabel = d.label.length <= 30 ? d.label : d.label.slice(0, 30) + '...'
             getLines(context, shortenedLabel, 15).reverse().forEach((t, i) => {
-              context.fillText(t, xScale(node.x), yScale(node.y) - (2 * (i + 2)));
+              context.fillText(t, xScale(node.x), yScale(node.y + node.radius / 2) - (2 * (i + 2)));
             });
           }
         });
@@ -636,7 +608,6 @@ export default () => {
       <div ref={rootNodeRef} />
       <Table
         showPng={true}
-        showToggle={true}
         nodes={nodeList}
         hovered={hovered}
         updateSimulation={updateSimulation}

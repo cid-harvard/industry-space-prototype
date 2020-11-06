@@ -1,7 +1,8 @@
 import React, {useRef, useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {rgba} from 'polished';
-import PNGLegend from '../IS_legend-01.png';
+import PNGLegend1 from '../IS-Legends-01.png';
+import PNGLegend2 from '../IS-Legends-02.png';
 import HowToReadPNG from '../IS_how-to-read-04.png';
 
 const Root = styled.div`
@@ -43,7 +44,7 @@ const Content = styled.div`
   box-sizing: border-box;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.45);
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.55);
@@ -100,7 +101,6 @@ const Title = styled.h1`
 const Empty = styled(Title)`
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.04);
   text-align: center;
   grid-row: 1 / -1;
   justify-content: center;
@@ -123,10 +123,12 @@ const Label = styled.span`
 const EmptyImage = styled.div`
   width: 100%;
   height: 100%;
-  grid-row: 1 / -1;
+  grid-row: 3;
+  grid-column: 1 / -1;
   justify-content: center;
   align-items: center;
   display: flex;
+  margin: 2rem 0;
 
   img {
     max-width: 100%;
@@ -179,7 +181,7 @@ const CloseButton = styled.button`
 `;
 
 const Table = (props) => {
-  const {nodes, hovered, updateSimulation, proximityScale, showPng} = props;
+  const {nodes, hovered, updateSimulation, proximityScale, showToggle} = props;
   const highlightedRef = useRef(null);
   const containerRef = useRef(null);
   const [modalOpen, setModalOpen] = useState(false);
@@ -204,6 +206,7 @@ const Table = (props) => {
     }
   }, [highlightedRef, containerRef, hovered])
 
+  const imgSrc = showToggle ? PNGLegend2 : PNGLegend1;
   if (nodes) {
     const {selected, connected} = nodes;
     const title = selected.label.replace(selected.id, '');
@@ -237,7 +240,7 @@ const Table = (props) => {
         <BackButton onClick={onClear}>{'< Back to Industry Space'}</BackButton>
         <HowToReadButton onClick={() => setModalOpen(true)}>How to Read</HowToReadButton>
         <Content>
-        <Title>
+          <Title>
             <Circle style={{backgroundColor: selected.color}} />
             <div><Label>Selected industry:</Label> {title}</div>
           </Title>
@@ -249,19 +252,19 @@ const Table = (props) => {
             </TableTitle>
             {connectedNodes}
           </NodeList>
+          <EmptyImage><img src={imgSrc} alt={''} /></EmptyImage>
         </Content>
         {modal}
       </Root>
     );
   } else {
-    const emptyState = showPng ? (
-        <EmptyImage><img src={PNGLegend} alt={''} /></EmptyImage>
-    ) : <Empty>Click a node for more details</Empty>;
     return (
       <Root>
         <HowToReadButton onClick={() => setModalOpen(true)}>How to Read</HowToReadButton>
         <Content>
-          {emptyState}
+          <Empty>
+            <EmptyImage><img src={imgSrc} alt={''} /></EmptyImage>
+          </Empty>
         </Content>
         {modal}
       </Root>

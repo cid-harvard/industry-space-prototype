@@ -4,7 +4,6 @@ import raw from 'raw.macro';
 import Table from './PercentTable';
 import styled from 'styled-components';
 import {interval} from 'd3-timer';
-import * as polished from 'polished';
 
 const Tooltip = styled.div`
   position: fixed;
@@ -395,36 +394,9 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         tempData.nodes.forEach(function(d, i) {
           context.beginPath();
           context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-          context.fillStyle = !hoveredNode ||
-            (hoveredNode.id === d.id || proximityNodes[hoveredNode.id].find(n => n.trg === d.id))
-            ? d.color : polished.rgba(d.color, 0.125);
+          context.fillStyle = d.color;
           context.fill();
         });
-
-
-        if (hoveredNode) {
-          const linkedNodes = [hoveredNode];
-          proximityNodes[hoveredNode.id].forEach(function({trg}) {
-            const targetNode = tempData.nodes.find(({id}) => id === trg);
-            context.beginPath();
-            context.moveTo(xScale(hoveredNode.x), yScale(hoveredNode.y));
-            context.lineTo(xScale(targetNode.x), yScale(targetNode.y));
-            context.strokeStyle = '#afafaf';
-            context.stroke();
-            linkedNodes.push(targetNode);
-          });
-
-          linkedNodes.forEach(function(d, i) {
-            if (d) {
-              context.beginPath();
-              context.arc(xScale(d.x), yScale(d.y), d.radius, 0, 2 * Math.PI, true);
-              context.fillStyle = d.color;
-              context.fill();
-              context.strokeStyle = '#afafaf';
-              context.stroke();
-            }
-          });
-        }
       } else {
         [...primaryNodes, ...secondaryNodes].forEach(function(d, i) {
           const node = tempData.nodes.find(n => n.id === d.id);

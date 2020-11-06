@@ -90,13 +90,13 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
     allYValues.push(y);
   });
 
-  // const radiusAdjuster = smallerSize / minExpectedScreenSize;
+  const radiusAdjuster = smallerSize / minExpectedScreenSize;
 
   let numberOfHighlightedNodes = 0;
   data.nodes = data.nodes.map((n, i) => {
-    // let radius = Math.random() * 6;
-    // radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
-    const radius = 2.5;
+    let radius = Math.random() * 6;
+    radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
+    // const radius = 2.5;
     const industry6Digit = naicsData.find(({code}) => n.id.toString() === code);
     if (!industry6Digit) {
       throw new Error('undefined industry');
@@ -387,7 +387,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         context.fillStyle = "#000";
         context.font = `400 1.3px OfficeCodeProWeb`;
         getLines(context, highlightedNode.label, 15).reverse().forEach((t, i) => {
-          context.fillText(t, xScale(highlightedNode.x), yScale(highlightedNode.y) - (2 * (i + 2)));
+          context.fillText(t, xScale(highlightedNode.x), yScale(highlightedNode.y + highlightedNode.radius / 2) - (2 * (i + 2)));
         });
       }
       let nodeCount = 1;
@@ -445,7 +445,7 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
             context.font = `400 1.3px OfficeCodeProWeb`;
             const shortenedLabel = d.label.length <= 30 ? d.label : d.label.slice(0, 30) + '...'
             getLines(context, shortenedLabel, 15).reverse().forEach((t, i) => {
-              context.fillText(t, xScale(node.x), yScale(node.y) - (2 * (i + 2)));
+              context.fillText(t, xScale(node.x), yScale(node.y + node.radius / 2) - (2 * (i + 2)));
             });
           }
         });
@@ -636,7 +636,6 @@ export default () => {
       <div ref={rootNodeRef} />
       <Table
         showPng={true}
-        showToggle={true}
         nodes={nodeList}
         hovered={hovered}
         updateSimulation={updateSimulation}
