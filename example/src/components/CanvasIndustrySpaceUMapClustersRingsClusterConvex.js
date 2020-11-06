@@ -429,18 +429,20 @@ const createForceGraph = (rootEl, data, setNodeList, setHovered) => {
         }
       })
 
-      context.fillStyle = '#dfdfdf';
-      context.strokeStyle = '#dfdfdf';
+      context.fillStyle = '#efefef';
+      context.strokeStyle = '#efefef';
       const cornerRadius = 30;
       context.lineWidth = 6;
       convexMap.forEach(({coords}) => {
         context.beginPath(); // start a new path
+
         const points = hull(coords.map(([x, y]) => [xScale(x), yScale(y)]), 60)
                         .map(([x, y]) => ({x, y}));
         roundedPoly(context, points, cornerRadius);
         context.fill();
         context.stroke();
-        // const points = hull(coords.map(([x, y]) => [xScale(x), yScale(y)]), 85)
+
+        // const points = hull(coords.map(([x, y]) => [xScale(x), yScale(y)]), 70)
         // context.beginPath();
         // context.lineCap = 'round'
         // points.forEach((point, i) => {
