@@ -33,6 +33,7 @@ import IndustrySpaceClustersRingsRCA from './pages/IndustrySpaceClustersRingsRCA
 import IndustrySpaceClustersRingsRCASizing from './pages/IndustrySpaceClustersRingsRCASizing';
 import IndustrySpaceClustersRingsClusterConvex from './pages/IndustrySpaceClustersRingsClusterConvex';
 import IndustrySpaceClustersRingsClusterConvexLv2 from './pages/IndustrySpaceClustersRingsClusterConvexLv2';
+import IndustrySpaceClustersRingsClusterConvexLv3 from './pages/IndustrySpaceClustersRingsClusterConvexLv3';
 import Landing from './pages/Landing';
 import TestLanding from './pages/TestingLanding';
 import './fonts/fonts.css';
@@ -69,6 +70,7 @@ const App = () => {
             <Route exact path={'/u-map-clusters-rings-cluster-color'} component={IndustrySpaceClustersRingsClusterColoring} />
             <Route exact path={'/u-map-clusters-rings-cluster-hull'} component={IndustrySpaceClustersRingsClusterConvex} />
             <Route exact path={'/u-map-clusters-rings-cluster-hull-lv2'} component={IndustrySpaceClustersRingsClusterConvexLv2} />
+            <Route exact path={'/u-map-clusters-rings-cluster-hull-lv3'} component={IndustrySpaceClustersRingsClusterConvexLv3} />
 
             <Route exact path={'/test'} component={TestLanding} />
             <Route exact path={'/u-map-clusters-rings-opacity-lines-rca-sizing'} component={IndustrySpaceClustersRingsEdgesOpacityLinesRCASizing} />

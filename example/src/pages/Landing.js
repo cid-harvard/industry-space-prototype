@@ -47,6 +47,9 @@ const App = () => {
       <li>
         <a href={'#/u-map-clusters-rings-cluster-hull-lv2'}>Industry Space as <strong>UMap Clusters w/ Ring Chart</strong> and <strong>Cluster Shapes, Level 2 detail</strong></a>
       </li>
+      <li>
+        <a href={'#/u-map-clusters-rings-cluster-hull-lv3'}>Industry Space as <strong>UMap Clusters w/ Ring Chart</strong> and <strong>Cluster Shapes, Level 3 detail</strong></a>
+      </li>
     </ul>
   );
 }
