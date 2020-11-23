@@ -255,7 +255,6 @@ const Table = (props) => {
             </TableTitle>
             {connectedNodes}
           </NodeList>
-          <EmptyImage><img src={imgSrc} alt={''} /></EmptyImage>
         </Content>
         {modal}
       </Root>
