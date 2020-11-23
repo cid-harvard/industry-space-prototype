@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "./static/css/main.cb6505f5.chunk.css",
-    "main.js": "./static/js/main.f2014c32.chunk.js",
-    "main.js.map": "./static/js/main.f2014c32.chunk.js.map",
+    "main.js": "./static/js/main.ba4a7363.chunk.js",
+    "main.js.map": "./static/js/main.ba4a7363.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.e4ebba68.js",
     "runtime-main.js.map": "./static/js/runtime-main.e4ebba68.js.map",
     "static/js/2.3517e577.chunk.js": "./static/js/2.3517e577.chunk.js",
     "static/js/2.3517e577.chunk.js.map": "./static/js/2.3517e577.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.053547933e973322b181c7ccad8f05c3.js": "./precache-manifest.053547933e973322b181c7ccad8f05c3.js",
+    "precache-manifest.be01496305b962c3aa30063a1d1706ab.js": "./precache-manifest.be01496305b962c3aa30063a1d1706ab.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.cb6505f5.chunk.css.map": "./static/css/main.cb6505f5.chunk.css.map",
     "static/js/2.3517e577.chunk.js.LICENSE.txt": "./static/js/2.3517e577.chunk.js.LICENSE.txt",
-    "static/media/IS-Legends-01.png": "./static/media/IS-Legends-01.4a4160fd.png",
-    "static/media/IS-Legends-02.png": "./static/media/IS-Legends-02.a2d2b5d3.png",
+    "static/media/IS-Legends-01.png": "./static/media/IS-Legends-01.c6d7ff3f.png",
+    "static/media/IS-Legends-02.png": "./static/media/IS-Legends-02.c6d7ff3f.png",
     "static/media/IS_how-to-read-04.png": "./static/media/IS_how-to-read-04.aaacab25.png",
     "static/media/fonts.css": "./static/media/OfficeCodePro-RegularItalic.c8fd5a9a.woff2",
     "static/media/download.svg": "./static/media/download.02e9c647.svg",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.e4ebba68.js",
     "static/js/2.3517e577.chunk.js",
     "static/css/main.cb6505f5.chunk.css",
-    "static/js/main.f2014c32.chunk.js"
+    "static/js/main.ba4a7363.chunk.js"
   ]
 }
