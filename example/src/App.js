@@ -37,6 +37,7 @@ import IndustrySpaceClustersRingsClusterConvexLv3 from './pages/IndustrySpaceClu
 import IndustrySpaceClustersRingsClusterConvexLv1V2 from './pages/IndustrySpaceClustersRingsClusterConvexLv1V2';
 import Landing from './pages/Landing';
 import TestLanding from './pages/TestingLanding';
+import IndustrySpaceMap from './components/industrySpaceMap';
 import './fonts/fonts.css';
 
 const App = () => {
@@ -78,8 +79,7 @@ const App = () => {
             <Route exact path={'/u-map-clusters-rings-opacity-lines-rca-sizing'} component={IndustrySpaceClustersRingsEdgesOpacityLinesRCASizing} />
             <Route exact path={'/u-map-clusters-rings-rca'} component={IndustrySpaceClustersRingsRCA} />
             <Route exact path={'/u-map-clusters-rings-rca-sizing'} component={IndustrySpaceClustersRingsRCASizing} />
-
-
+            <Route exact path={'/industry-space-map'} component={IndustrySpaceMap} />
             <Route component={Landing} />
           </Switch>
         </Router>
