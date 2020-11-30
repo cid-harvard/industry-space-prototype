@@ -2,6 +2,19 @@ import React, {useRef, useEffect, useState} from 'react';
 import {useWindowSize, usePrevious} from 'react-use';
 import createChart from './chart';
 import baseData from './data';
+import styled from 'styled-components';
+
+const Root = styled.div`
+  .industry-node,
+  .industry-edge-node {
+    &:hover,
+    &.active {
+      cursor: pointer;
+      stroke: #333;
+      stroke-width: 0.5px;
+    }
+  }
+`;
 
 const IndustrySpaceMap = () => {
   const [chart, setChart] = useState(null);
@@ -20,7 +33,7 @@ const IndustrySpaceMap = () => {
   }, [chart, chartRef, dimensions, prevDimensions]);
 
   return (
-    <div ref={chartRef} />
+    <Root ref={chartRef} />
   );
 
 }

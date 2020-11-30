@@ -2,7 +2,7 @@ import raw from 'raw.macro';
 
 const {nodes} = JSON.parse(raw('../../data/umap-clusters-custom-2.json'));
 const naicsData = JSON.parse(raw('../../data/naics_2017.json'));
-// const proximityNodes = JSON.parse(raw('../../data/proximity-min-max.json'));
+const proximityNodes = JSON.parse(raw('../../data/proximity-min-max.json'));
 // const clusterMap = JSON.parse(raw('../../data/clusters-mapping-2.json'));
 
 const colorMap = [
@@ -57,14 +57,17 @@ data.nodes = nodes.map(n => {
   
   const {color} = colorMap.find(({id}) => id === topLevelParentId);
 
+  const edges = proximityNodes[n.id] && proximityNodes[n.id].length ? proximityNodes[n.id] : [];
+
   return {
     ...n,
     radius,
     color,
     parent: current,
     label,
-    // initial_x: n.x,
-    // initial_y: n.y,
+    edges,
+    initial_x: n.x,
+    initial_y: n.y,
   }
 })
 

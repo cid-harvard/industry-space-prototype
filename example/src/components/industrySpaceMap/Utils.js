@@ -14,3 +14,14 @@ export const getAspectRation = (aspect, actual, buffer) => {
     outerHeight: actual.h,
   }
 };
+
+export function drawPoint(r, currentPoint, totalPoints, centerX, centerY) {  
+
+  var theta = ((Math.PI*2) / totalPoints);
+  var angle = (theta * currentPoint);
+
+  const x = (r * Math.cos(angle) + centerX);
+  const y = (r * Math.sin(angle) + centerY);
+
+  return {x, y};
+}
