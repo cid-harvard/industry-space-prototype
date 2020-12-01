@@ -6,7 +6,9 @@ import styled from 'styled-components';
 
 const Root = styled.div`
   .industry-node,
-  .industry-edge-node {
+  .industry-edge-node,
+  .industry-continents,
+  .industry-countries {
     &:hover,
     &.active {
       cursor: pointer;

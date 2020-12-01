@@ -1,3 +1,5 @@
+import {extent} from 'd3-array';
+
 export const getAspectRation = (aspect, actual, buffer) => {
   const longerAspectSide = aspect.w > aspect.h ? 'width' : 'height';
   const smallerActualValue = (actual.w > actual.h ? actual.h : actual.w) - (buffer * 2);
@@ -24,4 +26,21 @@ export function drawPoint(r, currentPoint, totalPoints, centerX, centerY) {
   const y = (r * Math.sin(angle) + centerY);
 
   return {x, y};
+}
+
+export const getBounds = (xValues, yValues, innerWidth, innerHeight, outerWidth, outerHeight, maxZoom) => {
+  const xBounds = extent(xValues);
+  const yBounds = extent(yValues);
+  const bounds = [
+    [xBounds[0], yBounds[0]],
+    [xBounds[1], yBounds[1]],
+  ];
+  const dx = bounds[1][0] - bounds[0][0];
+  const dy = bounds[1][1] - bounds[0][1];
+  const x = (bounds[0][0] + bounds[1][0]) / 2;
+  const y = (bounds[0][1] + bounds[1][1]) / 2;
+  const scale = Math.max(1, Math.min(maxZoom, 0.9 / Math.max(dx / innerWidth, dy / innerHeight)));
+  const translate = [outerWidth / 2 - scale * x, outerHeight / 2 - scale * y];
+
+  return {translate, scale};
 }

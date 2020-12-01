@@ -1,9 +1,10 @@
 import raw from 'raw.macro';
+import hull from 'hull.js';
 
 const {nodes} = JSON.parse(raw('../../data/umap-clusters-custom-2.json'));
 const naicsData = JSON.parse(raw('../../data/naics_2017.json'));
 const proximityNodes = JSON.parse(raw('../../data/proximity-min-max.json'));
-// const clusterMap = JSON.parse(raw('../../data/clusters-mapping-2.json'));
+const clusterMap = JSON.parse(raw('../../data/clusters-mapping-2.json'));
 
 const colorMap = [
   { id: '0', color: '#A973BE' },
@@ -35,7 +36,6 @@ data.nodes = nodes.map(n => {
   const industry6Digit = naicsData.find(({code}) => n.id.toString() === code);
   if (!industry6Digit) {
     throw new Error('undefined industry');
-    
   }
   const naics_id = industry6Digit.naics_id;
   const label = industry6Digit.name;
@@ -68,6 +68,42 @@ data.nodes = nodes.map(n => {
     edges,
     initial_x: n.x,
     initial_y: n.y,
+  }
+})
+
+data.clusters = {continents: [], countries: []};
+
+clusterMap.forEach(({C1, C2, naics}) => {
+  let indexC1 = data.clusters.continents.findIndex(c => c.id === C1);
+  if (indexC1 === -1) {
+    indexC1 = data.clusters.continents.length;
+    data.clusters.continents[indexC1] = {id: C1, points: []};
+  }
+  let indexC2 = data.clusters.countries.findIndex(c => c.id === C2);
+  if (indexC2 === -1) {
+    indexC2 = data.clusters.countries.length;
+    data.clusters.countries[indexC2] = {id: C2, points: []};
+  }
+  const industry = data.nodes.find(n => n.id === naics);
+  if (industry) {
+    data.clusters.continents[indexC1].points.push([industry.x, industry.y]);
+    data.clusters.countries[indexC2].points.push([industry.x, industry.y]);
+  }
+})
+
+data.clusters.continents = data.clusters.continents.map(d => {
+  return {
+    ...d,
+    name: `Cluster ${d.id}`,
+    points: hull(d.points, 200),
+  }
+})
+
+data.clusters.countries = data.clusters.countries.map(d => {
+  return {
+    ...d,
+    name: `Cluster ${d.id}`,
+    points: hull(d.points, 200),
   }
 })
 
