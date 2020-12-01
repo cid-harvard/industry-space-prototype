@@ -6,14 +6,21 @@ import styled from 'styled-components';
 
 const Root = styled.div`
   .industry-node,
-  .industry-edge-node,
-  .industry-continents,
-  .industry-countries {
+  .industry-edge-node {
     &:hover,
     &.active {
       cursor: pointer;
       stroke: #333;
       stroke-width: 0.5px;
+    }
+  }
+
+
+  .industry-continents,
+  .industry-countries {
+    &:hover {
+      cursor: pointer;
+      stroke-width: 2px;
     }
   }
 `;

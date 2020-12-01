@@ -8,21 +8,28 @@ const maxZoom = 50;
 const innerRingRadius = 24;
 const outerRingRadius = 48;
 
-const maxContinentZoom = 2.5;
-const minCountryZoom = 1.85;
-const maxCountryZoom = 8;
-const minNodeZoom = 6.5;
-const maxNodeZoom = 8.5;
 const zoomScales = {
-  continent: d3.scaleLinear()
-    .domain([1, maxContinentZoom, minNodeZoom])
-    .range([1, 0.1, 0]),
-  countries: d3.scaleLinear()
-    .domain([minCountryZoom, maxContinentZoom, minNodeZoom, maxCountryZoom])
-    .range([0.5, 0.75, 0.1, 0]),
-  nodes: d3.scaleLinear()
-    .domain([minCountryZoom, minNodeZoom, maxNodeZoom])
-    .range([0, 0.95, 1]),
+  continent: {
+    fill: d3.scaleLinear()
+      .domain([1, 4])
+      .range([1, 0]),
+    stroke: d3.scaleLinear()
+      .domain([1, maxZoom])
+      .range([1, 1]),
+  },
+  countries: {
+    fill: d3.scaleLinear()
+      .domain([1.5, 2, 5, 6, 7, 8])
+      .range([0, 0.5, 0.75, 0.5, 0.1, 0]),
+    stroke: d3.scaleLinear()
+      .domain([1.2, 2, 5, 12, maxZoom])
+      .range([0, 0.5, 1, 0.75, 0.2]),
+  },
+  nodes: {
+    fill: d3.scaleLinear()
+      .domain([2, 2.55, 3.5])
+      .range([0, 0.75, 1]),
+  },
 }
 
 export default (rootEl, data, rootWidth, rootHeight) => {
@@ -101,7 +108,8 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         d[shape].map(([xCoord, yCoord]) =>
           [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
-      .attr("fill","#bfbfbf")
+      .attr("fill","rgba(208, 208, 208, 1)")
+      .attr("stroke","rgba(0, 0, 0, 1)")
       .style('opacity', 1)
       .on("click", zoomToShape);
 
@@ -113,9 +121,10 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         d[shape].map(([xCoord, yCoord]) =>
           [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
-      .attr("fill","#bfbfbf")
+      .attr("fill","rgba(208, 208, 208, 0)")
+      .attr("stroke","rgba(0, 0, 0, 0)")
       .style('pointer-events', 'none')
-      .style('opacity', 0)
+      .style('opacity', 1)
       .on("click", zoomToShape);
 
   const nodes = g.selectAll(".industry-node")
@@ -127,7 +136,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .attr("r", d => d.radius)
       .attr('fill', d => d.color)
       .style('pointer-events', 'none')
-      .style('opacity', '0')
+      .style('opacity', 0)
       .on("click", zoomToPoint);
 
   function zoomToPoint(d) {
@@ -234,21 +243,28 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       state.active.element
         .style('display', 'block')
     } else {
+
+      const nodeOpacity = zoomScales.nodes.fill(state.zoom)
+      console.log(nodeOpacity)
       nodes
         .each(d => d.adjustedCoords = undefined)
         .style('display', 'block')
-        .style('pointer-events', zoomScales.nodes(state.zoom) > 0.1 ? 'auto' : 'none')
-        .style('opacity', zoomScales.nodes(state.zoom))
+        .style('pointer-events', zoomScales.nodes.fill(state.zoom) > 0.025 ? 'auto' : 'none')
+        .style('opacity', nodeOpacity)
         .attr("cx", d => xScale(d.x) + margin.left )
         .attr("cy", d => yScale(d.y) + margin.top )
 
       continents
-        .style('pointer-events', zoomScales.continent(state.zoom) > 0.2 ? 'auto' : 'none')
-        .style('opacity', zoomScales.continent(state.zoom))
+        .style('pointer-events', zoomScales.continent.fill(state.zoom) > 0.1 ? 'auto' : 'none')
+        .attr("fill",`rgba(208, 208, 208, ${zoomScales.continent.fill(state.zoom)})`)
+        .attr("stroke",`rgba(0, 0, 0, ${zoomScales.continent.stroke(state.zoom)})`)
+        .style('opacity', 1)
 
       countries
-        .style('pointer-events', zoomScales.countries(state.zoom) > 0.3 ? 'auto' : 'none')
-        .style('opacity', zoomScales.countries(state.zoom))
+        .style('pointer-events', zoomScales.countries.fill(state.zoom) > 0.01 ? 'auto' : 'none')
+        .attr("fill",`rgba(208, 208, 208, ${zoomScales.countries.fill(state.zoom)})`)
+        .attr("stroke",`rgba(0, 0, 0, ${zoomScales.countries.stroke(state.zoom)})`)
+        .style('opacity', 1)
 
       outerRing
         .style('opacity', 0)
