@@ -74,13 +74,20 @@ data.nodes = nodes.map(n => {
 })
 
 const clusterColorMap = {
-  '4': '#A973BE',
-  '5': '#F1866C',
-  '9': '#FFC135',
-  '10': '#93CFD0',
-  '12': '#488098',
-  '13': '#77C898',
-  '14': '#6A6AAD',
+  // '4': '#A973BE',
+  // '5': '#F1866C',
+  // '9': '#FFC135',
+  // '10': '#93CFD0',
+  // '12': '#488098',
+  // '13': '#77C898',
+  // '14': '#6A6AAD',
+  '4': '#004c6d',
+  '5': '#2d6484',
+  '9': '#4c7c9b',
+  '10': '#6996b3',
+  '12': '#86b0cc',
+  '13': '#a3cbe5',
+  '14': '#c1e7ff',
 }
 
 data.clusters = {continents: [], countries: []};
@@ -111,6 +118,7 @@ data.clusters.continents = data.clusters.continents.map(d => {
     name: `Cluster ${d.id}`,
     convex: hull(d.points, 200),
     custom: custom.points,
+    center: custom.center,
   }
 })
 
@@ -121,6 +129,7 @@ data.clusters.countries = data.clusters.countries.map(d => {
     name: `Cluster ${d.id}`,
     convex: hull(d.points, 200),
     custom: custom.points,
+    center: custom.center,
   }
 })
 

@@ -44,3 +44,11 @@ export const getBounds = (xValues, yValues, innerWidth, innerHeight, outerWidth,
 
   return {translate, scale};
 }
+
+export const ellipsisText = (text, maxChar) => {
+  if (text.length < maxChar) {
+    return text;
+  } else {
+    return text.slice(0, maxChar) + '...';
+  }
+}

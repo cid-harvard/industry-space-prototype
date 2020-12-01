@@ -21,7 +21,8 @@
     "react-scripts": "file:../node_modules/react-scripts",
     "react-use": "^15.3.4",
     "styled-components": "^5.2.0",
-    "svgson": "^4.1.0"
+    "svgson": "^4.1.0",
+    "turf": "^7.0.0-alpha.1"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

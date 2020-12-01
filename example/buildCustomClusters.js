@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { parse } = require('svgson');
+const turf = require('turf');
 
 const clusterMapping = JSON.parse(fs.readFileSync('./src/data/cluster_node_convex_mapping.json'));
 const customClusterShapes = `
@@ -51,15 +52,20 @@ const customClusterShapes = `
 </svg>
 `;
 
-
 parse(customClusterShapes).then(json => {
   const countries = json.children[0].children.map(({attributes}, i) => {
     const points = attributes.points.trim().split(' ').map(point => point.split(',').map(coord => parseFloat(coord)));
-    return {...clusterMapping.countries[i], points}
+    const geojsonPoints = points.map(p => turf.point(p));
+    const geojsonFeatureCollection = turf.featureCollection([...geojsonPoints]);
+    const center = turf.centerOfMass(geojsonFeatureCollection);
+    return {...clusterMapping.countries[i], points, center: center.geometry.coordinates}
   });
   const continents = json.children[1].children.map(({attributes}, i) => {
     const points = attributes.points.trim().split(' ').map(point => point.split(',').map(coord => parseFloat(coord)));
-    return {...clusterMapping.continents[i], points}
+    const geojsonPoints = points.map(p => turf.point(p));
+    const geojsonFeatureCollection = turf.featureCollection([...geojsonPoints]);
+    const center = turf.centerOfMass(geojsonFeatureCollection);
+    return {...clusterMapping.continents[i], points, center: center.geometry.coordinates}
   });
   const viewBox = json.attributes.viewBox.trim().split(' ');
   const dimension = {
