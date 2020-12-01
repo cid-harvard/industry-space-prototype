@@ -1,6 +1,8 @@
 import * as d3 from 'd3';
 import {getAspectRation, drawPoint, getBounds} from './Utils';
 
+const shape = 'custom'; // convex || custom || points
+
 const minZoom = 0.75;
 const maxZoom = 50;
 const innerRingRadius = 24;
@@ -96,8 +98,8 @@ export default (rootEl, data, rootWidth, rootHeight) => {
     .enter().append("polygon")
       .attr("class", "industry-continents")
       .attr("points", d =>
-          d.points.map(([xCoord, yCoord]) =>
-              [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
+        d[shape].map(([xCoord, yCoord]) =>
+          [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
       .attr("fill","#bfbfbf")
       .style('opacity', 1)
@@ -108,8 +110,8 @@ export default (rootEl, data, rootWidth, rootHeight) => {
     .enter().append("polygon")
       .attr("class", "industry-countries")
       .attr("points", d =>
-          d.points.map(([xCoord, yCoord]) =>
-              [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
+        d[shape].map(([xCoord, yCoord]) =>
+          [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
       .attr("fill","#bfbfbf")
       .style('pointer-events', 'none')
@@ -161,7 +163,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
 
     const allXValues = [];
     const allYValues = [];
-    d.points.forEach(([xValue, yValue]) => {
+    d[shape].forEach(([xValue, yValue]) => {
       allXValues.push(xScale(xValue) + margin.left)
       allYValues.push(yScale(yValue) + margin.top)
     });
@@ -254,5 +256,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         .style('opacity', 0)
     }
   }
+
+  return {updateChart}
 
 }

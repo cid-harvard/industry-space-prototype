@@ -6,6 +6,8 @@ const naicsData = JSON.parse(raw('../../data/naics_2017.json'));
 const proximityNodes = JSON.parse(raw('../../data/proximity-min-max.json'));
 const clusterMap = JSON.parse(raw('../../data/clusters-mapping-2.json'));
 
+const customClusterShapes = JSON.parse(raw('../../data/custom_cluster_shapes.json'));
+
 const colorMap = [
   { id: '0', color: '#A973BE' },
   { id: '1', color: '#F1866C' },
@@ -91,20 +93,28 @@ clusterMap.forEach(({C1, C2, naics}) => {
   }
 })
 
+
 data.clusters.continents = data.clusters.continents.map(d => {
+  const custom = customClusterShapes.continents.find(c => c.id === d.id);
   return {
     ...d,
     name: `Cluster ${d.id}`,
-    points: hull(d.points, 200),
+    convex: hull(d.points, 200),
+    custom: custom.points,
   }
 })
 
 data.clusters.countries = data.clusters.countries.map(d => {
+  const custom = customClusterShapes.countries.find(c => c.id === d.id);
   return {
     ...d,
     name: `Cluster ${d.id}`,
-    points: hull(d.points, 200),
+    convex: hull(d.points, 200),
+    custom: custom.points,
   }
 })
+
+data.customViewbox = customClusterShapes.dimension;
+
 
 export default data;
