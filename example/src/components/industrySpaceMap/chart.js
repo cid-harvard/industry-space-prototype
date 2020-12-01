@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import {getAspectRation, drawPoint, getBounds} from './Utils';
+import {rgba, lighten} from 'polished';
 
 const shape = 'custom'; // convex || custom || points
 
@@ -11,7 +12,7 @@ const outerRingRadius = 48;
 const zoomScales = {
   continent: {
     fill: d3.scaleLinear()
-      .domain([1, 4])
+      .domain([1, 3])
       .range([1, 0]),
     stroke: d3.scaleLinear()
       .domain([1, maxZoom])
@@ -19,8 +20,8 @@ const zoomScales = {
   },
   countries: {
     fill: d3.scaleLinear()
-      .domain([1.5, 2, 5, 6, 7, 8])
-      .range([0, 0.5, 0.75, 0.5, 0.1, 0]),
+      .domain([1.5, 2, 3, 6, 7, 8])
+      .range([0, 0.5, 0.75, 0.3, 0.1, 0]),
     stroke: d3.scaleLinear()
       .domain([1.2, 2, 5, 12, maxZoom])
       .range([0, 0.5, 1, 0.75, 0.2]),
@@ -108,8 +109,9 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         d[shape].map(([xCoord, yCoord]) =>
           [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
-      .attr("fill","rgba(208, 208, 208, 1)")
-      .attr("stroke","rgba(0, 0, 0, 1)")
+      .attr("fill", d => rgba(d.color, 1))
+      .attr("stroke", d => rgba(lighten(0.25, d.color), 1))
+      // .attr("stroke","rgba(0, 0, 0, 1)")
       .style('opacity', 1)
       .on("click", zoomToShape);
 
@@ -121,8 +123,9 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         d[shape].map(([xCoord, yCoord]) =>
           [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
-      .attr("fill","rgba(208, 208, 208, 0)")
-      .attr("stroke","rgba(0, 0, 0, 0)")
+      .attr("fill", d => rgba(d.color, 0))
+      .attr("stroke", d => rgba(lighten(0.25, d.color), 0))
+      // .attr("stroke","rgba(0, 0, 0, 0)")
       .style('pointer-events', 'none')
       .style('opacity', 1)
       .on("click", zoomToShape);
@@ -256,14 +259,16 @@ export default (rootEl, data, rootWidth, rootHeight) => {
 
       continents
         .style('pointer-events', zoomScales.continent.fill(state.zoom) > 0.1 ? 'auto' : 'none')
-        .attr("fill",`rgba(208, 208, 208, ${zoomScales.continent.fill(state.zoom)})`)
-        .attr("stroke",`rgba(0, 0, 0, ${zoomScales.continent.stroke(state.zoom)})`)
+        .attr("fill", d => rgba(d.color, zoomScales.continent.fill(state.zoom)))
+        .attr("stroke", d => rgba(lighten(0.25, d.color), zoomScales.continent.stroke(state.zoom)))
+        // .attr("stroke",`rgba(0, 0, 0, ${zoomScales.continent.stroke(state.zoom)})`)
         .style('opacity', 1)
 
       countries
         .style('pointer-events', zoomScales.countries.fill(state.zoom) > 0.01 ? 'auto' : 'none')
-        .attr("fill",`rgba(208, 208, 208, ${zoomScales.countries.fill(state.zoom)})`)
-        .attr("stroke",`rgba(0, 0, 0, ${zoomScales.countries.stroke(state.zoom)})`)
+        .attr("fill", d => rgba(d.color, zoomScales.countries.fill(state.zoom)))
+        .attr("stroke", d => rgba(lighten(0.25, d.color), zoomScales.countries.stroke(state.zoom)))
+        // .attr("stroke",`rgba(0, 0, 0, ${zoomScales.countries.stroke(state.zoom)})`)
         .style('opacity', 1)
 
       outerRing

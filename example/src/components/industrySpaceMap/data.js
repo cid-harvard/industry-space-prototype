@@ -73,18 +73,28 @@ data.nodes = nodes.map(n => {
   }
 })
 
+const clusterColorMap = {
+  '4': '#A973BE',
+  '5': '#F1866C',
+  '9': '#FFC135',
+  '10': '#93CFD0',
+  '12': '#488098',
+  '13': '#77C898',
+  '14': '#6A6AAD',
+}
+
 data.clusters = {continents: [], countries: []};
 
 clusterMap.forEach(({C1, C2, naics}) => {
   let indexC1 = data.clusters.continents.findIndex(c => c.id === C1);
   if (indexC1 === -1) {
     indexC1 = data.clusters.continents.length;
-    data.clusters.continents[indexC1] = {id: C1, points: []};
+    data.clusters.continents[indexC1] = {id: C1, points: [], color: clusterColorMap[C1]};
   }
   let indexC2 = data.clusters.countries.findIndex(c => c.id === C2);
   if (indexC2 === -1) {
     indexC2 = data.clusters.countries.length;
-    data.clusters.countries[indexC2] = {id: C2, points: []};
+    data.clusters.countries[indexC2] = {id: C2, points: [], color: clusterColorMap[C1]};
   }
   const industry = data.nodes.find(n => n.id === naics);
   if (industry) {
