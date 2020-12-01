@@ -20,7 +20,7 @@ const zoomScales = {
   },
   countries: {
     fill: d3.scaleLinear()
-      .domain([1.5, 2, 3, 6, 7, 8])
+      .domain([1.5, 2, 3, 4, 7, 8])
       .range([0, 0.5, 0.75, 0.3, 0.1, 0]),
     stroke: d3.scaleLinear()
       .domain([1.2, 2, 5, 12, maxZoom])
@@ -41,6 +41,8 @@ export default (rootEl, data, rootWidth, rootHeight) => {
   const state = {
     zoom: 1,
     active: null,
+    hoveredShape: null,
+    hoveredNode: null,
   };
 
   const svg = d3.select(rootEl).append("svg")
@@ -81,6 +83,18 @@ export default (rootEl, data, rootWidth, rootHeight) => {
     updateChart();
   }
 
+  function setHoveredShape(datum) {
+    state.hoveredShape = datum;
+    updateChart();
+  }
+
+  function setHoveredNode(datum) {
+    state.hoveredNode = datum;
+    if (!state.active) {
+      updateChart();
+    }
+  }
+
   const outerRing = g.append('circle')
     .attr("class", "outer-ring")
     .attr("r", outerRingRadius)
@@ -110,10 +124,11 @@ export default (rootEl, data, rootWidth, rootHeight) => {
           [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
       .attr("fill", d => rgba(d.color, 1))
-      .attr("stroke", d => rgba(lighten(0.25, d.color), 1))
-      // .attr("stroke","rgba(0, 0, 0, 1)")
+      .attr("stroke", d => rgba('#efefef', 1))
       .style('opacity', 1)
-      .on("click", zoomToShape);
+      .on("click", zoomToShape)
+      .on("mouseenter", d => setHoveredShape(d))
+      .on("mouseleave", () => setHoveredShape(null))
 
   const countries = g.selectAll(".industry-countries")
     .data(data.clusters.countries)
@@ -124,11 +139,17 @@ export default (rootEl, data, rootWidth, rootHeight) => {
           [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ")
       )
       .attr("fill", d => rgba(d.color, 0))
-      .attr("stroke", d => rgba(lighten(0.25, d.color), 0))
-      // .attr("stroke","rgba(0, 0, 0, 0)")
+      .attr("stroke", d => rgba('#efefef', 0))
       .style('pointer-events', 'none')
       .style('opacity', 1)
-      .on("click", zoomToShape);
+      .on("click", zoomToShape)
+      .on("mouseenter", d => setHoveredShape(d))
+      .on("mouseleave", () => setHoveredShape(null))
+
+  const hoveredShape = g.append('polygon')
+    .attr('class', 'industry-cluster-hovered')
+    .style('display', 'none')
+    .style('pointer-events', 'none')
 
   const nodes = g.selectAll(".industry-node")
     .data(data.nodes)
@@ -140,7 +161,15 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .attr('fill', d => d.color)
       .style('pointer-events', 'none')
       .style('opacity', 0)
-      .on("click", zoomToPoint);
+      .on("click", zoomToPoint)
+      .on("mouseenter", d => setHoveredNode(d))
+      .on("mouseleave", () => setHoveredNode(null))
+
+
+  const hoveredNode = g.append('circle')
+    .attr('class', 'industry-node-hovered')
+    .style('display', 'none')
+    .style('pointer-events', 'none')
 
   function zoomToPoint(d) {
     if (state.active !== null && state.active.element.node() === this) {
@@ -230,6 +259,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         .style('pointer-events', 'auto')
         .style('opacity', 1)
         .style('display', d => d.id === state.active.datum.id || edgeData.find(e => e.id === d.id) ? 'block' : 'none')
+        .attr('fill', d => d.color)
         .transition()
         .duration(500)
         .attr("cx", d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
@@ -243,38 +273,76 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         .style('pointer-events', 'none')
         .style('opacity', 0)
 
+      hoveredShape
+        .style('display', 'none')
+
+      hoveredNode
+        .style('display', 'none')
+
       state.active.element
         .style('display', 'block')
     } else {
-
       const nodeOpacity = zoomScales.nodes.fill(state.zoom)
-      console.log(nodeOpacity)
       nodes
         .each(d => d.adjustedCoords = undefined)
         .style('display', 'block')
         .style('pointer-events', zoomScales.nodes.fill(state.zoom) > 0.025 ? 'auto' : 'none')
         .style('opacity', nodeOpacity)
+        .attr('fill', d => {
+          if (state.zoom < 3) {
+            return lighten(zoomScales.countries.fill(state.zoom) - 0.1, d.color);
+          } else if (state.zoom < 4) {
+            return lighten(zoomScales.countries.fill(state.zoom) - 0.3, d.color);
+          } else {
+            return d.color;
+          }
+        })
         .attr("cx", d => xScale(d.x) + margin.left )
         .attr("cy", d => yScale(d.y) + margin.top )
 
       continents
         .style('pointer-events', zoomScales.continent.fill(state.zoom) > 0.1 ? 'auto' : 'none')
         .attr("fill", d => rgba(d.color, zoomScales.continent.fill(state.zoom)))
-        .attr("stroke", d => rgba(lighten(0.25, d.color), zoomScales.continent.stroke(state.zoom)))
-        // .attr("stroke",`rgba(0, 0, 0, ${zoomScales.continent.stroke(state.zoom)})`)
+        .attr("stroke", d => rgba('#efefef', zoomScales.continent.stroke(state.zoom)))
         .style('opacity', 1)
 
       countries
         .style('pointer-events', zoomScales.countries.fill(state.zoom) > 0.01 ? 'auto' : 'none')
         .attr("fill", d => rgba(d.color, zoomScales.countries.fill(state.zoom)))
-        .attr("stroke", d => rgba(lighten(0.25, d.color), zoomScales.countries.stroke(state.zoom)))
-        // .attr("stroke",`rgba(0, 0, 0, ${zoomScales.countries.stroke(state.zoom)})`)
+        .attr("stroke", d => rgba('#efefef', zoomScales.countries.stroke(state.zoom)))
         .style('opacity', 1)
 
       outerRing
         .style('opacity', 0)
       innerRing
         .style('opacity', 0)
+
+      if (state.hoveredShape) {
+        hoveredShape
+          .attr("points", state.hoveredShape[shape].map(([xCoord, yCoord]) =>
+            [xScale(xCoord) + margin.left, yScale(yCoord) + margin.top].join(",")).join(" ") )
+          .attr("fill", 'none')
+          .attr("stroke", '#efefef')
+          .attr("stroke-width", 3)
+          .style('display', 'block')
+      } else {
+        hoveredShape
+          .style('display', 'none')
+      }
+      if (state.hoveredNode) {
+        hoveredNode
+          .attr("cx", xScale(state.hoveredNode.x) + margin.left )
+          .attr("cy", yScale(state.hoveredNode.y) + margin.top )
+          .attr("fill", state.hoveredNode.color)
+          .attr("r", state.hoveredNode.radius)
+          .attr("stroke", '#efefef')
+          .attr("stroke-width", 1)
+          .style('display', 'block')
+        console.log(hoveredNode)
+      } else {
+        hoveredNode
+          .style('display', 'none')
+      }
     }
   }
 

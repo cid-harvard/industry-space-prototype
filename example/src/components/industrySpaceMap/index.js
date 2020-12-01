@@ -11,7 +11,7 @@ const Root = styled.div`
     &.active {
       cursor: pointer;
       stroke: #333;
-      stroke-width: 0.5px;
+      stroke-width: 0.5;
     }
   }
 
@@ -20,7 +20,6 @@ const Root = styled.div`
   .industry-countries {
     &:hover {
       cursor: pointer;
-      stroke-width: 2px;
     }
   }
 `;
