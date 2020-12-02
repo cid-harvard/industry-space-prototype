@@ -42,7 +42,7 @@ const zoomScales = {
   },
 }
 
-export default (rootEl, data, rootWidth, rootHeight) => {
+export default (rootEl, data, rootWidth, rootHeight, backButton) => {
   const {
     width, height, outerWidth, outerHeight, margin,
   } = getAspectRation({w: 4, h: 3}, {w: rootWidth, h: rootHeight}, 20);
@@ -92,6 +92,28 @@ export default (rootEl, data, rootWidth, rootHeight) => {
     svg.call(zoom);
     updateChart();
   }
+
+  function softReset(d) {
+    if (state.active !== null) {
+      state.active.element.classed("active", false);
+    }
+    state.active = null;
+    clearActiveLabels();
+
+    const {translate, scale} = getBounds(
+      [xScale(d.x) + margin.left],
+      [yScale(d.y) + margin.top],
+      width, height, outerWidth, outerHeight, 7
+    );
+
+    svg.call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
+    // svg.call(zoom.transform, d3.zoomIdentity);
+    svg.call(zoom);
+    updateChart();
+  }
+
+  backButton.removeEventListener('click', reset);
+  backButton.addEventListener('click', reset);
 
   function setHoveredShape(datum) {
     state.hoveredShape = datum;
@@ -202,7 +224,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
 
   function zoomToPoint(d) {
     if (state.active !== null && state.active.element.node() === this) {
-      return reset();
+      return softReset(d);
     }
     svg.on(".zoom", null);
     clearActiveLabels();
@@ -348,6 +370,8 @@ export default (rootEl, data, rootWidth, rootHeight) => {
 
       state.active.element
         .style('display', 'block')
+
+       backButton.style.display = 'block';
     } else {
       const nodeOpacity = zoomScales.nodes.fill(state.zoom)
       nodes
@@ -394,6 +418,12 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       } else {
         nodeLabels
           .style("display", 'none')
+      }
+
+      if (state.zoom > 2) {
+       backButton.style.display = 'block';
+      } else {
+       backButton.style.display = 'none';
       }
 
       outerRing
