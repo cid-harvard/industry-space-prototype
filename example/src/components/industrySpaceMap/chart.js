@@ -165,7 +165,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("fill", d => rgba(d.color, 1))
       .attr("stroke", d => rgba('#efefef', 1))
       .style('opacity', 1)
-      .on("click", zoomToShape)
+      .on("click", d => zoomToShape(d, 3))
       .on("mouseenter", d => setHoveredShape(d))
       .on("mouseleave", () => setHoveredShape(null))
 
@@ -180,7 +180,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("fill", d => rgba(d.color, 0))
       .attr("stroke", d => rgba('#efefef', 0))
       .style('opacity', 1)
-      .on("click", zoomToShape)
+      .on("click", d => zoomToShape(d, 5))
       .on("mouseenter", d => setHoveredShape(d))
       .on("mouseleave", () => setHoveredShape(null))
 
@@ -288,7 +288,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
   }
 
-  function zoomToShape(d) {
+  function zoomToShape(d, maxZoom) {
 
     const allXValues = [];
     const allYValues = [];
@@ -297,7 +297,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       allYValues.push(yScale(yValue) + margin.top)
     });
 
-    const {translate, scale} = getBounds(allXValues, allYValues, width, height, outerWidth, outerHeight, 50);
+    const {translate, scale} = getBounds(allXValues, allYValues, outerWidth, outerHeight, outerWidth, outerHeight, maxZoom);
 
     svg.transition()
       .duration(300)
@@ -417,7 +417,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       nodes
         .each(d => d.adjustedCoords = undefined)
         .style('display', 'block')
-        .style('pointer-events', zoomScales.nodes.fill(state.zoom) > 0.2 ? 'auto' : 'none')
+        .style('pointer-events', zoomScales.nodes.fill(state.zoom) > 0.275 ? 'auto' : 'none')
         .style('opacity', nodeOpacity)
         .attr('fill', d => {
           if (state.zoom < 3) {
