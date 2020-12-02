@@ -1,5 +1,12 @@
 import * as d3 from 'd3';
-import {getAspectRation, drawPoint, getBounds, wrap} from './Utils';
+import {
+  getAspectRation,
+  drawPoint,
+  getBounds,
+  wrap,
+  intensityLegendClassName,
+  sectorLegendClassName,
+} from './Utils';
 import {rgba, lighten} from 'polished';
 import {getStandardTooltip} from './rapidTooltip';
 
@@ -39,12 +46,12 @@ const zoomScales = {
       .domain([2, 2.55, 3.5])
       .range([0, 0.75, 1]),
     label: d3.scaleLinear()
-      .domain([7, 8])
+      .domain([8, 9])
       .range([0, 1]),
   },
 }
 
-export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
+export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, legendEl) => {
   const {
     width, height, outerWidth, outerHeight, margin,
   } = getAspectRation({w: 4, h: 3}, {w: rootWidth, h: rootHeight}, 20);
@@ -53,6 +60,9 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
   const radiusAdjuster = smallerSize / minExpectedScreenSize;
   let radius = 2.5;
   radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
+
+  const sectorLegend = legendEl.querySelector('.' + sectorLegendClassName);
+  const intensityLegend = legendEl.querySelector('.' + intensityLegendClassName);
 
   const state = {
     zoom: 1,
@@ -396,7 +406,9 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
       state.active.element
         .style('display', 'block')
 
-       backButton.style.display = 'block';
+      backButton.style.display = 'block';
+      sectorLegend.style.display = 'block';
+      intensityLegend.style.display = 'none';
     } else {
       const nodeOpacity = zoomScales.nodes.fill(state.zoom)
       nodes
@@ -436,7 +448,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
         .style('opacity', zoomScales.countries.label(state.zoom))
         .style("display", 'block')
 
-      if (state.zoom > 7) {
+      if (state.zoom > 8) {
         nodeLabels
           .style('opacity', zoomScales.nodes.label(state.zoom))
           .style("display", 'block')
@@ -449,6 +461,14 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
        backButton.style.display = 'block';
       } else {
        backButton.style.display = 'none';
+      }
+
+      if (state.zoom > 3.5) {
+        sectorLegend.style.display = 'block';
+        intensityLegend.style.display = 'none';
+      } else {
+        sectorLegend.style.display = 'none';
+        intensityLegend.style.display = 'block';
       }
 
       outerRing

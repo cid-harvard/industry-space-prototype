@@ -3,6 +3,9 @@ import {
   outerRingRadius,
   innerRingRadius,
 } from './chart';
+import {
+  sectorLegendClassName,
+} from './Utils';
 
 const fontFamily = "monospace";
 
@@ -110,4 +113,28 @@ export const ChartContainer = styled.div`
       stroke-width: 0.6px;
     }
   }
+`;
+
+export const LegendContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing:  border-box;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+
+  .${sectorLegendClassName} {
+    display: none;
+  }
+`;
+
+export const LegendImage = styled.img`
+  width: 100%;
+  max-width: 800px;
 `;

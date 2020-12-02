@@ -1,6 +1,9 @@
 import {extent} from 'd3-array';
 import {select} from 'd3-selection';
 
+export const intensityLegendClassName = 'intensity-legend-class-name';
+export const sectorLegendClassName = 'sector-legend-class-name';
+
 export const getAspectRation = (aspect, actual, buffer) => {
   const longerAspectSide = aspect.w > aspect.h ? 'width' : 'height';
   const smallerActualValue = (actual.w > actual.h ? actual.h : actual.w) - (buffer * 2);
