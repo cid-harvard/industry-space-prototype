@@ -43,8 +43,8 @@ const zoomScales = {
   },
   nodes: {
     fill: d3.scaleLinear()
-      .domain([2, 2.55, 3.5])
-      .range([0, 0.75, 1]),
+      .domain([0, 2, 2.55, 3.5])
+      .range([0, 0.2, 0.75, 1]),
     label: d3.scaleLinear()
       .domain([8, 9])
       .range([0, 1]),
@@ -187,6 +187,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
     .attr('class', 'industry-cluster-hovered')
     .style('display', 'none')
 
+  const nodeOpacity = zoomScales.nodes.fill(state.zoom)
   const nodes = g.selectAll(".industry-node")
     .data(data.nodes)
     .enter().append("circle")
@@ -194,8 +195,8 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("cx", d => xScale(d.x) + margin.left )
       .attr("cy", d => yScale(d.y) + margin.top )
       .attr("r", radius)
-      .attr('fill', d => d.color)
-      .style('opacity', 0)
+      .attr('fill', d => '#fff')
+      .style('opacity', nodeOpacity)
       .on("click", zoomToPoint)
       .on('mousemove', d => {
         tooltipEl.innerHTML = getStandardTooltip({
@@ -414,10 +415,12 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       nodes
         .each(d => d.adjustedCoords = undefined)
         .style('display', 'block')
-        .style('pointer-events', zoomScales.nodes.fill(state.zoom) > 0.025 ? 'auto' : 'none')
+        .style('pointer-events', zoomScales.nodes.fill(state.zoom) > 0.2 ? 'auto' : 'none')
         .style('opacity', nodeOpacity)
         .attr('fill', d => {
           if (state.zoom < 3) {
+            return '#fff';
+          } else if (state.zoom < 3) {
             return lighten(zoomScales.countries.fill(state.zoom) - 0.1, d.color);
           } else if (state.zoom < 4) {
             return lighten(zoomScales.countries.fill(state.zoom) - 0.3, d.color);
