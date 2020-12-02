@@ -4,6 +4,7 @@ import {rgba, lighten} from 'polished';
 import {getStandardTooltip} from './rapidTooltip';
 
 const shape = 'custom'; // convex || custom || points
+const minExpectedScreenSize = 1020;
 
 const minZoom = 0.75;
 const maxZoom = 50;
@@ -47,6 +48,11 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
   const {
     width, height, outerWidth, outerHeight, margin,
   } = getAspectRation({w: 4, h: 3}, {w: rootWidth, h: rootHeight}, 20);
+
+  const smallerSize = width < height ? width : height;
+  const radiusAdjuster = smallerSize / minExpectedScreenSize;
+  let radius = 2.5;
+  radius = radius < 2.5 ? 2.5 * radiusAdjuster : radius * radiusAdjuster;
 
   const state = {
     zoom: 1,
@@ -177,7 +183,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
       .attr("class", "industry-node")
       .attr("cx", d => xScale(d.x) + margin.left )
       .attr("cy", d => yScale(d.y) + margin.top )
-      .attr("r", d => d.radius)
+      .attr("r", radius)
       .attr('fill', d => d.color)
       .style('opacity', 0)
       .on("click", zoomToPoint)
@@ -209,6 +215,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
       .attr("class", "industry-continents-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
+      .style('font-size', radius * 8)
       .text(d => d.name);
 
   const countryLabels = g.append("g")
@@ -221,6 +228,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
       .attr("class", "industry-countries-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
+      .style('font-size', radius * 5)
       .text(d => d.name);
 
   const nodeLabels = g.append("g")
@@ -232,9 +240,10 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
     .enter().append("text")
       .attr("class", "industry-nodes-label")
       .attr('x', d => xScale(d.x) + margin.left)
-      .attr('y', d => yScale(d.y) + margin.top + (d.radius * 1.3))
+      .attr('y', d => yScale(d.y) + margin.top + (radius * 1.45))
+      .style('font-size', radius * 0.5)
       .text(d => d.label)
-      .call(wrap, 14, 10);
+      .call(wrap, radius * 8, radius * 7);
 
 
   function zoomToPoint(d) {
@@ -351,9 +360,10 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
         .enter().append("text")
           .attr("class", "industry-ring-label")
           .attr('x', d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
-          .attr('y', d => d.adjustedCoords ? d.adjustedCoords.y + d.radius * 1.75 : yScale(d.y) + margin.top + d.radius * 1.75)
+          .attr('y', d => d.adjustedCoords ? d.adjustedCoords.y + radius * 2 : yScale(d.y) + margin.top + radius * 2)
+          .style('font-size', radius * 0.85)
           .text(d => d.label)
-          .call(wrap, 22, 20)
+          .call(wrap, radius * 12, radius * 9)
           .style('opacity', 0)
           .transition()
           .delay(600)
@@ -463,7 +473,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
           .attr("cx", xScale(state.hoveredNode.x) + margin.left )
           .attr("cy", yScale(state.hoveredNode.y) + margin.top )
           .attr("fill", state.hoveredNode.color)
-          .attr("r", state.hoveredNode.radius)
+          .attr("r", radius)
           .attr("stroke", state.zoom > 5 ? '#333' : '#efefef')
           .attr("stroke-width", 1)
           .style('display', 'block')

@@ -17,7 +17,6 @@ const IndustrySpaceMap = () => {
   const chartRef = useRef(null);
   const backButtonRef = useRef(null);
   const tooltipRef = useRef(null);
-  // const dimensions = useWindowSize();
     const [dimensions, setWindowDimensions] = useState({
       width: window.innerWidth,
       height: window.innerHeight,

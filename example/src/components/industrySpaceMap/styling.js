@@ -89,7 +89,6 @@ export const ChartContainer = styled.div`
     .industry-continents-label {
       stroke: #efefef;
       stroke-width: 2.5px;
-      font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
     }
@@ -97,7 +96,6 @@ export const ChartContainer = styled.div`
     .industry-countries-label {
       stroke: #efefef;
       stroke-width: 1px;
-      font-size: 8px;
       font-weight: 600;
       text-transform: uppercase;
     }
@@ -105,13 +103,11 @@ export const ChartContainer = styled.div`
     .industry-nodes-label {
       stroke: #fff;
       stroke-width: 0.1px;
-      font-size: 0.7px;
     }
 
     .industry-ring-label {
       stroke: #fff;
       stroke-width: 0.6px;
-      font-size: 1.5px;
     }
   }
 `;
