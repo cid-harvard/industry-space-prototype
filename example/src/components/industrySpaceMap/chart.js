@@ -125,6 +125,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
 
     svg.call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
     svg.call(zoom);
+    d.wasActive = true;
     updateChart();
   }
 
@@ -348,6 +349,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
         .style('display', d => d.id === state.active.datum.id || edgeData.find(e => e.id === d.id) ? 'block' : 'none')
         .attr('fill', d => d.color)
         .transition()
+        .ease(d3.easeCircleInOut)
         .duration(500)
         .attr("cx", d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
         .attr("cy", d => d.adjustedCoords ? d.adjustedCoords.y : yScale(d.y) + margin.top)
@@ -426,6 +428,16 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
             return lighten(zoomScales.countries.fill(state.zoom) - 0.3, d.color);
           } else {
             return d.color;
+          }
+        })
+        .transition()
+        .ease(d3.easeCircleInOut)
+        .duration(d => {
+          if (d.wasActive) {
+            d.wasActive = undefined;
+            return 0;
+          } else {
+            return 500;
           }
         })
         .attr("cx", d => xScale(d.x) + margin.left )
