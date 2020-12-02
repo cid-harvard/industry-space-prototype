@@ -1,13 +1,13 @@
 import * as d3 from 'd3';
-import {getAspectRation, drawPoint, getBounds, ellipsisText, wrap} from './Utils';
+import {getAspectRation, drawPoint, getBounds, wrap} from './Utils';
 import {rgba, lighten} from 'polished';
 
 const shape = 'custom'; // convex || custom || points
 
 const minZoom = 0.75;
 const maxZoom = 50;
-const innerRingRadius = 24;
-const outerRingRadius = 48;
+export const innerRingRadius = 24;
+export const outerRingRadius = 48;
 
 const zoomScales = {
   continent: {
@@ -111,23 +111,9 @@ export default (rootEl, data, rootWidth, rootHeight) => {
 
   const outerRing = g.append('circle')
     .attr("class", "outer-ring")
-    .attr("r", outerRingRadius)
-    .attr('fill', 'none')
-    .attr('stroke', '#bfbfbf')
-    .attr('stroke-width', 0.5)
-    .style('opacity', '0')
-    .style('pointer-events', 'none')
-
 
   const innerRing = g.append('circle')
     .attr("class", "inner-ring")
-    .attr("r", innerRingRadius)
-    .attr('fill', 'none')
-    .attr('stroke', '#bfbfbf')
-    .attr('stroke-width', 0.5)
-    .style('opacity', '0')
-    .style('pointer-events', 'none')
-
 
   const continents = g.selectAll(".industry-continents")
     .data(data.clusters.continents)
@@ -154,7 +140,6 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       )
       .attr("fill", d => rgba(d.color, 0))
       .attr("stroke", d => rgba('#efefef', 0))
-      .style('pointer-events', 'none')
       .style('opacity', 1)
       .on("click", zoomToShape)
       .on("mouseenter", d => setHoveredShape(d))
@@ -163,7 +148,6 @@ export default (rootEl, data, rootWidth, rootHeight) => {
   const hoveredShape = g.append('polygon')
     .attr('class', 'industry-cluster-hovered')
     .style('display', 'none')
-    .style('pointer-events', 'none')
 
   const nodes = g.selectAll(".industry-node")
     .data(data.nodes)
@@ -173,7 +157,6 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .attr("cy", d => yScale(d.y) + margin.top )
       .attr("r", d => d.radius)
       .attr('fill', d => d.color)
-      .style('pointer-events', 'none')
       .style('opacity', 0)
       .on("click", zoomToPoint)
       .on("mouseenter", d => setHoveredNode(d))
@@ -182,7 +165,6 @@ export default (rootEl, data, rootWidth, rootHeight) => {
   const hoveredNode = g.append('circle')
     .attr('class', 'industry-node-hovered')
     .style('display', 'none')
-    .style('pointer-events', 'none')
 
   const continentLabels = g.selectAll(".industry-continents-label")
     .data(data.clusters.continents)
@@ -190,21 +172,10 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .attr("class", "industry-continents-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
-      .attr('fill', '#444')
-      .attr('stroke', '#efefef')
-      .attr('stroke-width', '2.5px')
-      .attr('paint-order', 'stroke')
-      .attr('text-anchor', 'middle')
-      .style('font-family', "monospace")
-      .style('font-size', "14px")
-      .style('font-weight', "600")
-      .style('text-transform', "uppercase")
-      .style('pointer-events', 'none')
       .text(d => d.name);
 
   const countryLabels = g.append("g")
     .attr("class", "industry-countries-label-group")
-    .style('pointer-events', 'none')
     .style('display', 'none')
 
   countryLabels.selectAll(".industry-countries-label")
@@ -213,20 +184,10 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .attr("class", "industry-countries-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
-      .attr('fill', '#444')
-      .attr('stroke', '#efefef')
-      .attr('stroke-width', '1px')
-      .attr('paint-order', 'stroke')
-      .attr('text-anchor', 'middle')
-      .style('font-family', "monospace")
-      .style('font-size', "8px")
-      .style('font-weight', "600")
-      .style('text-transform', "uppercase")
       .text(d => d.name);
 
   const nodeLabels = g.append("g")
     .attr("class", "industry-nodes-label-group")
-    .style('pointer-events', 'none')
     .style('display', 'none')
 
   nodeLabels.selectAll(".industry-nodes-label")
@@ -235,14 +196,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .attr("class", "industry-nodes-label")
       .attr('x', d => xScale(d.x) + margin.left)
       .attr('y', d => yScale(d.y) + margin.top + (d.radius * 1.3))
-      .attr('fill', '#444')
-      .attr('stroke', '#fff')
-      .attr('stroke-width', '0.1px')
-      .attr('paint-order', 'stroke')
-      .attr('text-anchor', 'middle')
-      .style('font-family', "monospace")
-      .style('font-size', "0.7px")
-      .text(d => ellipsisText(d.label, 60))
+      .text(d => d.label)
       .call(wrap, 14, 10);
 
 
@@ -355,26 +309,18 @@ export default (rootEl, data, rootWidth, rootHeight) => {
               centerY,
             );
             d.adjustedCoords = adjustedCoords;
-            console.log(d)
           }
         })
         .enter().append("text")
           .attr("class", "industry-ring-label")
           .attr('x', d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
           .attr('y', d => d.adjustedCoords ? d.adjustedCoords.y + d.radius * 1.75 : yScale(d.y) + margin.top + d.radius * 1.75)
-          .attr('fill', '#444')
-          .attr('stroke', '#fff')
-          .attr('stroke-width', '0.6px')
-          .attr('paint-order', 'stroke')
-          .attr('text-anchor', 'middle')
-          .style('font-family', "monospace")
-          .style('font-size', "1.5px")
-          .text(d => ellipsisText(d.label, 60))
-          .call(wrap, 20, 20)
+          .text(d => d.label)
+          .call(wrap, 22, 20)
           .style('opacity', 0)
           .transition()
-          .delay(500)
-          .duration(500)
+          .delay(600)
+          .duration(300)
           .style('opacity', 1)
 
       continents
