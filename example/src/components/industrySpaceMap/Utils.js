@@ -1,4 +1,5 @@
 import {extent} from 'd3-array';
+import {select} from 'd3-selection';
 
 export const getAspectRation = (aspect, actual, buffer) => {
   const longerAspectSide = aspect.w > aspect.h ? 'width' : 'height';
@@ -51,4 +52,37 @@ export const ellipsisText = (text, maxChar) => {
   } else {
     return text.slice(0, maxChar) + '...';
   }
+}
+
+export function wrap(text, width, height) {
+  text.each(function() {
+    // @ts-ignore
+    const t = select(this);
+    // @ts-ignore
+    const words = t.text().split(/\s+/).reverse();
+    let word = words.pop();
+    let line = [];
+    let lineNumber = 0; //<-- 0!
+    const lineHeight = 1.2; // ems
+    const x = t.attr('x'); //<-- include the x!
+    const y = t.attr('y');
+    const dy = t.attr('dy') ? t.attr('dy') : 0; //<-- null check
+    let tspan = t.text(null).append('tspan').attr('x', x).attr('y', y).attr('dy', dy + 'em');
+    while (word !== undefined) {
+      line.push(word);
+      tspan.text(line.join(' '));
+      const node = tspan.node();
+      if (node && node.getComputedTextLength() > (width * 0.8)) {
+        line.pop();
+        tspan.text(line.join(' '));
+        line = [word];
+        // @ts-ignore
+        tspan = t.append('tspan').attr('x', x).attr('y', y).attr('dy', ++lineNumber * lineHeight + dy + 'em').text(word);
+      }
+      word = words.pop();
+    }
+    if (t.node().getBBox().width > width || t.node().getBBox().height > height * 0.8) {
+      t.attr('opacity', '0');
+    }
+  });
 }

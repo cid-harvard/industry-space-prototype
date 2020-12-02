@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import {getAspectRation, drawPoint, getBounds, ellipsisText} from './Utils';
+import {getAspectRation, drawPoint, getBounds, ellipsisText, wrap} from './Utils';
 import {rgba, lighten} from 'polished';
 
 const shape = 'custom'; // convex || custom || points
@@ -37,7 +37,7 @@ const zoomScales = {
       .domain([2, 2.55, 3.5])
       .range([0, 0.75, 1]),
     label: d3.scaleLinear()
-      .domain([9, 10])
+      .domain([7, 8])
       .range([0, 1]),
   },
 }
@@ -85,6 +85,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       state.active.element.classed("active", false);
     }
     state.active = null;
+    clearActiveLabels();
     svg.transition()
       .duration(300)
       .call(zoom.transform, d3.zoomIdentity);
@@ -102,6 +103,10 @@ export default (rootEl, data, rootWidth, rootHeight) => {
     if (!state.active) {
       updateChart();
     }
+  }
+
+  function clearActiveLabels() {
+    g.selectAll('.industry-ring-label').remove();
   }
 
   const outerRing = g.append('circle')
@@ -197,7 +202,12 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .style('pointer-events', 'none')
       .text(d => d.name);
 
-  const countryLabels = g.selectAll(".industry-countries-label")
+  const countryLabels = g.append("g")
+    .attr("class", "industry-countries-label-group")
+    .style('pointer-events', 'none')
+    .style('display', 'none')
+
+  countryLabels.selectAll(".industry-countries-label")
     .data(data.clusters.countries)
     .enter().append("text")
       .attr("class", "industry-countries-label")
@@ -212,32 +222,36 @@ export default (rootEl, data, rootWidth, rootHeight) => {
       .style('font-size', "8px")
       .style('font-weight', "600")
       .style('text-transform', "uppercase")
-      .style('pointer-events', 'none')
-      .style('display', 'none')
       .text(d => d.name);
 
-  const nodeLabels = g.selectAll(".industry-nodes-label")
+  const nodeLabels = g.append("g")
+    .attr("class", "industry-nodes-label-group")
+    .style('pointer-events', 'none')
+    .style('display', 'none')
+
+  nodeLabels.selectAll(".industry-nodes-label")
     .data(data.nodes)
     .enter().append("text")
       .attr("class", "industry-nodes-label")
       .attr('x', d => xScale(d.x) + margin.left)
-      .attr('y', d => yScale(d.y) + margin.top - (d.radius * 1.25))
+      .attr('y', d => yScale(d.y) + margin.top + (d.radius * 1.3))
       .attr('fill', '#444')
       .attr('stroke', '#fff')
       .attr('stroke-width', '0.1px')
       .attr('paint-order', 'stroke')
       .attr('text-anchor', 'middle')
       .style('font-family', "monospace")
-      .style('font-size', "0.6px")
-      .style('pointer-events', 'none')
-      .style('display', 'none')
-      .text(d => ellipsisText(d.label, 20));
+      .style('font-size', "0.7px")
+      .text(d => ellipsisText(d.label, 60))
+      .call(wrap, 14, 10);
+
 
   function zoomToPoint(d) {
     if (state.active !== null && state.active.element.node() === this) {
       return reset();
     }
     svg.on(".zoom", null);
+    clearActiveLabels();
     if (state.active !== null) {
       state.active.element.classed("active", false);
     }
@@ -327,6 +341,42 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         .attr("cx", d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
         .attr("cy", d => d.adjustedCoords ? d.adjustedCoords.y : yScale(d.y) + margin.top)
 
+      g.selectAll(".industry-ring-label")
+        .data(data.nodes.filter(d => d.id === state.active.datum.id || edgeData.find(e => e.id === d.id)))
+        .each(d => {
+          const i = edgeData.findIndex(e => e.id === d.id);
+          if (i !== -1) {
+            const innerCircleLength = edgeData.length < 7 ? edgeData.length : 7;
+            const adjustedCoords = drawPoint(
+              i < 7 ? innerRingRadius : outerRingRadius,
+              i < 7 ? i : i - 7,
+              i < 7 ? innerCircleLength : edgeData.length - 7,
+              centerX,
+              centerY,
+            );
+            d.adjustedCoords = adjustedCoords;
+            console.log(d)
+          }
+        })
+        .enter().append("text")
+          .attr("class", "industry-ring-label")
+          .attr('x', d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
+          .attr('y', d => d.adjustedCoords ? d.adjustedCoords.y + d.radius * 1.75 : yScale(d.y) + margin.top + d.radius * 1.75)
+          .attr('fill', '#444')
+          .attr('stroke', '#fff')
+          .attr('stroke-width', '0.6px')
+          .attr('paint-order', 'stroke')
+          .attr('text-anchor', 'middle')
+          .style('font-family', "monospace")
+          .style('font-size', "1.5px")
+          .text(d => ellipsisText(d.label, 60))
+          .call(wrap, 20, 20)
+          .style('opacity', 0)
+          .transition()
+          .delay(500)
+          .duration(500)
+          .style('opacity', 1)
+
       continents
         .style('pointer-events', 'none')
         .style('opacity', 0)
@@ -391,7 +441,7 @@ export default (rootEl, data, rootWidth, rootHeight) => {
         .style('opacity', zoomScales.countries.label(state.zoom))
         .style("display", 'block')
 
-      if (state.zoom > 9) {
+      if (state.zoom > 7) {
         nodeLabels
           .style('opacity', zoomScales.nodes.label(state.zoom))
           .style("display", 'block')
