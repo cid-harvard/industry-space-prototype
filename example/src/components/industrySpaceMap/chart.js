@@ -1,6 +1,7 @@
 import * as d3 from 'd3';
 import {getAspectRation, drawPoint, getBounds, wrap} from './Utils';
 import {rgba, lighten} from 'polished';
+import {getStandardTooltip} from './rapidTooltip';
 
 const shape = 'custom'; // convex || custom || points
 
@@ -42,7 +43,7 @@ const zoomScales = {
   },
 }
 
-export default (rootEl, data, rootWidth, rootHeight, backButton) => {
+export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl) => {
   const {
     width, height, outerWidth, outerHeight, margin,
   } = getAspectRation({w: 4, h: 3}, {w: rootWidth, h: rootHeight}, 20);
@@ -107,7 +108,6 @@ export default (rootEl, data, rootWidth, rootHeight, backButton) => {
     );
 
     svg.call( zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
-    // svg.call(zoom.transform, d3.zoomIdentity);
     svg.call(zoom);
     updateChart();
   }
@@ -181,8 +181,23 @@ export default (rootEl, data, rootWidth, rootHeight, backButton) => {
       .attr('fill', d => d.color)
       .style('opacity', 0)
       .on("click", zoomToPoint)
+      .on('mousemove', d => {
+        tooltipEl.innerHTML = getStandardTooltip({
+          title: d.label,
+          color: rgba(d.color, 0.3),
+          rows: [
+            ['NAICS', d.id],
+          ],
+        });
+        tooltipEl.style.display = 'block';
+        tooltipEl.style.top = d3.event.pageY + 'px';
+        tooltipEl.style.left = d3.event.pageX + 'px';
+      })
       .on("mouseenter", d => setHoveredNode(d))
-      .on("mouseleave", () => setHoveredNode(null))
+      .on("mouseleave", () => {
+        tooltipEl.style.display = 'none';
+        setHoveredNode(null)
+      })
 
   const hoveredNode = g.append('circle')
     .attr('class', 'industry-node-hovered')
