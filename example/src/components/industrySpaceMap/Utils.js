@@ -50,7 +50,7 @@ export const getBounds = (xValues, yValues, innerWidth, innerHeight, outerWidth,
 }
 
 export const ellipsisText = (text, maxChar) => {
-  if (text.length < maxChar) {
+  if (text.trim().length < maxChar + 3) {
     return text;
   } else {
     return text.slice(0, maxChar) + '...';
