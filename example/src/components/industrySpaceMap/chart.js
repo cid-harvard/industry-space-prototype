@@ -11,7 +11,7 @@ import {
 import {rgba, lighten} from 'polished';
 import {getStandardTooltip} from './rapidTooltip';
 
-const shape = 'custom'; // convex || custom || points
+const defaultShape = 'custom'; // convex || custom || points
 const minExpectedScreenSize = 1020;
 
 const minZoom = 0.75;
@@ -53,6 +53,14 @@ const zoomScales = {
 }
 
 export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, legendEl) => {
+  let shape = defaultShape;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const shapeParam = urlParams.get('shape');
+  if (shapeParam) {
+    shape = shapeParam;
+  }
+
   const {
     width, height, outerWidth, outerHeight, margin,
   } = getAspectRation({w: 4, h: 3}, {w: rootWidth, h: rootHeight}, 20);
