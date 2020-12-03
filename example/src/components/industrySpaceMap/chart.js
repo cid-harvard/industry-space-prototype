@@ -6,6 +6,7 @@ import {
   wrap,
   intensityLegendClassName,
   sectorLegendClassName,
+  ellipsisText,
 } from './Utils';
 import {rgba, lighten} from 'polished';
 import {getStandardTooltip} from './rapidTooltip';
@@ -373,13 +374,17 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
         .enter().append("text")
           .attr("class", "industry-ring-label")
           .attr('x', d => d.adjustedCoords ? d.adjustedCoords.x : xScale(d.x) + margin.left)
-          .attr('y', d => d.adjustedCoords ? d.adjustedCoords.y + radius * 2 : yScale(d.y) + margin.top + radius * 2)
-          .style('font-size', radius * 0.85)
-          .text(d => d.label)
-          .call(wrap, radius * 12, radius * 9)
+          .attr('y', d => d.adjustedCoords ?
+            d.adjustedCoords.y + Math.max(radius * 2, 4)
+            : yScale(d.y) + margin.top + Math.max(radius * 2, 4)
+          )
+          .style('pointer-events', 'none')
+          .style('font-size', Math.max(radius * 0.8, 1.85))
+          .text(d => ellipsisText(d.label, 60))
+          .call(wrap, Math.max(radius * 14, 20), radius * 9)
           .style('opacity', 0)
           .transition()
-          .delay(600)
+          .delay(500)
           .duration(300)
           .style('opacity', 1)
 
@@ -422,9 +427,9 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
         .attr('fill', d => {
           if (state.zoom < 3) {
             return '#fff';
-          } else if (state.zoom < 3) {
+          } else if (state.zoom < 3.25) {
             return lighten(zoomScales.countries.fill(state.zoom) - 0.1, d.color);
-          } else if (state.zoom < 4) {
+          } else if (state.zoom < 3.85) {
             return lighten(zoomScales.countries.fill(state.zoom) - 0.3, d.color);
           } else {
             return d.color;
@@ -509,8 +514,8 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
           .attr("cy", yScale(state.hoveredNode.y) + margin.top )
           .attr("fill", state.hoveredNode.color)
           .attr("r", radius)
-          .attr("stroke", state.zoom > 5 ? '#333' : '#efefef')
-          .attr("stroke-width", 1)
+          .attr("stroke", state.zoom > 4 ? '#333' : '#efefef')
+          .attr("stroke-width", radius < 2 ? 0.6 : 1)
           .style('display', 'block')
       } else {
         hoveredNode
