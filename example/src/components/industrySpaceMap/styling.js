@@ -33,6 +33,8 @@ export const ChartContainer = styled.div`
     /* Node hover and active styling */
     .industry-node,
     .industry-edge-node {
+      content-visibility: auto;
+
       &:hover,
       &.active {
         cursor: pointer;
@@ -53,12 +55,12 @@ export const ChartContainer = styled.div`
       fill: none;
       stroke: #bfbfbf;
       stroke-width: 0.5;
-      r: ${outerRingRadius};
+      r: ${outerRingRadius}px;
       opacity: 0;
     }
 
     circle.inner-ring {
-      r: ${innerRingRadius};
+      r: ${innerRingRadius}px;
       fill: none;
       stroke: #bfbfbf;
       stroke-width: 0.5;
@@ -76,6 +78,7 @@ export const ChartContainer = styled.div`
     .industry-continents-label,
     .industry-countries-label-group {
       pointer-events: none;
+      will-change: transform, fill, opacity;
     }
 
     /* Label styling */
@@ -87,6 +90,7 @@ export const ChartContainer = styled.div`
       paint-order: stroke;
       text-anchor: middle;
       font-family: ${fontFamily};
+      will-change: transform, fill, opacity;
     }
 
     .industry-continents-label {

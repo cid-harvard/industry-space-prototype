@@ -236,7 +236,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("class", "industry-continents-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
-      .style('font-size', radius * 8)
+      .style('font-size', radius * 8 + 'px')
       .text(d => d.name);
 
   const countryLabels = g.append("g")
@@ -249,12 +249,11 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("class", "industry-countries-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
-      .style('font-size', radius * 5)
+      .style('font-size', radius * 5 + 'px')
       .text(d => d.name);
 
   const nodeLabels = g.append("g")
     .attr("class", "industry-nodes-label-group")
-    .style('display', 'none')
 
   nodeLabels.selectAll(".industry-nodes-label")
     .data(data.nodes)
@@ -262,10 +261,12 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("class", "industry-nodes-label")
       .attr('x', d => xScale(d.x) + margin.left)
       .attr('y', d => yScale(d.y) + margin.top + (radius * 1.45))
-      .style('font-size', radius * 0.5)
+      .style('font-size', radius * 0.5 + 'px')
       .text(d => d.label)
       .call(wrap, radius * 8, radius * 7);
 
+  nodeLabels
+    .style('display', 'none')
 
   function zoomToPoint(d) {
     if (state.active !== null && state.active.element.node() === this) {
@@ -387,7 +388,7 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
             : yScale(d.y) + margin.top + Math.max(radius * 2, 4)
           )
           .style('pointer-events', 'none')
-          .style('font-size', Math.max(radius * 0.8, 1.85))
+          .style('font-size', Math.max(radius * 0.8, 1.85) + 'px')
           .text(d => ellipsisText(d.label, 60))
           .call(wrap, Math.max(radius * 14, 20), radius * 9)
           .style('opacity', 0)
