@@ -1,5 +1,6 @@
 import raw from 'raw.macro';
 import hull from 'hull.js';
+const turf = require('turf');
 
 const {nodes} = JSON.parse(raw('../../data/umap-clusters-custom-2.json'));
 const naicsData = JSON.parse(raw('../../data/naics_2017.json'));
@@ -92,21 +93,21 @@ const clusterColorMap = {
 
 data.clusters = {continents: [], countries: []};
 
-clusterMap.forEach(({C1, C2, naics}) => {
+clusterMap.forEach(({C1, C3, naics}) => {
   let indexC1 = data.clusters.continents.findIndex(c => c.id === C1);
   if (indexC1 === -1) {
     indexC1 = data.clusters.continents.length;
     data.clusters.continents[indexC1] = {id: C1, points: [], color: clusterColorMap[C1]};
   }
-  let indexC2 = data.clusters.countries.findIndex(c => c.id === C2);
-  if (indexC2 === -1) {
-    indexC2 = data.clusters.countries.length;
-    data.clusters.countries[indexC2] = {id: C2, points: [], color: clusterColorMap[C1]};
+  let indexC3 = data.clusters.countries.findIndex(c => c.id === C3);
+  if (indexC3 === -1) {
+    indexC3 = data.clusters.countries.length;
+    data.clusters.countries[indexC3] = {id: C3, points: [], color: clusterColorMap[C1]};
   }
   const industry = data.nodes.find(n => n.id === naics);
   if (industry) {
     data.clusters.continents[indexC1].points.push([industry.x, industry.y]);
-    data.clusters.countries[indexC2].points.push([industry.x, industry.y]);
+    data.clusters.countries[indexC3].points.push([industry.x, industry.y]);
   }
 })
 
@@ -116,20 +117,21 @@ data.clusters.continents = data.clusters.continents.map(d => {
   return {
     ...d,
     name: `Cluster ${d.id}`,
-    convex: hull(d.points, 200),
+    convex: custom.points,
     custom: custom.points,
     center: custom.center,
   }
 })
 
 data.clusters.countries = data.clusters.countries.map(d => {
-  const custom = customClusterShapes.countries.find(c => c.id === d.id);
+  // const custom = customClusterShapes.countries.find(c => c.id === d.id);
+  const center = turf.center(turf.featureCollection(d.points.map(point => turf.point(point))));
   return {
     ...d,
     name: `Cluster ${d.id}`,
     convex: hull(d.points, 200),
-    custom: custom.points,
-    center: custom.center,
+    custom: [],
+    center: center.geometry.coordinates,
   }
 })
 

@@ -39,7 +39,7 @@ const zoomScales = {
       .domain([1.2, 2, 5, 12, maxZoom])
       .range([0, 0.5, 1, 0.75, 0.2]),
     label: d3.scaleLinear()
-      .domain([1.45, 1.75, 3.65, 4])
+      .domain([1.75, 2.25, 3.65, 4])
       .range([0, 1, 1, 0]),
   },
   nodes: {
@@ -249,21 +249,21 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
       .attr("class", "industry-countries-label")
       .attr('x', d => xScale(d.center[0]) + margin.left)
       .attr('y', d => yScale(d.center[1]) + margin.top)
-      .style('font-size', radius * 5 + 'px')
+      .style('font-size', radius * 4 + 'px')
       .text(d => d.name);
 
   const nodeLabels = g.append("g")
     .attr("class", "industry-nodes-label-group")
 
   nodeLabels.selectAll(".industry-nodes-label")
-    .data(data.nodes)
-    .enter().append("text")
-      .attr("class", "industry-nodes-label")
-      .attr('x', d => xScale(d.x) + margin.left)
-      .attr('y', d => yScale(d.y) + margin.top + (radius * 1.45))
-      .style('font-size', radius * 0.5 + 'px')
-      .text(d => d.label)
-      .call(wrap, radius * 8, radius * 7);
+    // .data(data.nodes)
+    // .enter().append("text")
+    //   .attr("class", "industry-nodes-label")
+    //   .attr('x', d => xScale(d.x) + margin.left)
+    //   .attr('y', d => yScale(d.y) + margin.top + (radius * 1.45))
+    //   .style('font-size', radius * 0.5 + 'px')
+    //   .text(d => d.label)
+    //   .call(wrap, radius * 8, radius * 7);
 
   nodeLabels
     .style('display', 'none')
