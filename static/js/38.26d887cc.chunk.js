@@ -1,2 +1,0 @@
-(this["webpackJsonpindustry-space-prototype-example"]=this["webpackJsonpindustry-space-prototype-example"]||[]).push([[38],{257:function(e,t,n){"use strict";n.r(t);var a=n(0),p=n.n(a),r=n(130);t.default=function(){return p.a.createElement("div",null,p.a.createElement(r.a,null))}}}]);
-//# sourceMappingURL=38.26d887cc.chunk.js.map
