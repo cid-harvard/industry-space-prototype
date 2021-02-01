@@ -1,5 +1,6 @@
 import raw from 'raw.macro';
 import hull from 'hull.js';
+import ClusterNamesFull from '../../data/cluster-names.json';
 const turf = require('turf');
 
 const {nodes} = JSON.parse(raw('../../data/umap-clusters-custom-2.json'));
@@ -114,9 +115,10 @@ clusterMap.forEach(({C1, C3, naics}) => {
 
 data.clusters.continents = data.clusters.continents.map(d => {
   const custom = customClusterShapes.continents.find(c => c.id === d.id);
+  const clusterNameFirst = ClusterNamesFull.C1.find(c => c.code === d.id);
   return {
     ...d,
-    name: `Cluster ${d.id}`,
+    name: clusterNameFirst.name,
     convex: custom.points,
     custom: custom.points,
     center: custom.center,
@@ -126,9 +128,10 @@ data.clusters.continents = data.clusters.continents.map(d => {
 data.clusters.countries = data.clusters.countries.map(d => {
   // const custom = customClusterShapes.countries.find(c => c.id === d.id);
   const center = turf.center(turf.featureCollection(d.points.map(point => turf.point(point))));
+  const clusterNameFirst = ClusterNamesFull.C3.find(c => c.code === d.id);
   return {
     ...d,
-    name: `Cluster ${d.id}`,
+    name: clusterNameFirst.name,
     convex: hull(d.points, 200),
     custom: [],
     center: center.geometry.coordinates,

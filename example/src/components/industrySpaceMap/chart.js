@@ -256,14 +256,13 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
     .attr("class", "industry-nodes-label-group")
 
   nodeLabels.selectAll(".industry-nodes-label")
-    // .data(data.nodes)
-    // .enter().append("text")
-    //   .attr("class", "industry-nodes-label")
-    //   .attr('x', d => xScale(d.x) + margin.left)
-    //   .attr('y', d => yScale(d.y) + margin.top + (radius * 1.45))
-    //   .style('font-size', radius * 0.5 + 'px')
-    //   .text(d => d.label)
-    //   .call(wrap, radius * 8, radius * 7);
+    .data(data.nodes)
+    .enter().append("text")
+      .attr('class', 'industry-nodes-label')
+      .attr('x', d => xScale(d.x) + margin.left)
+      .attr('y', d => yScale(d.y) + margin.top + (radius * 1.45))
+      .style('font-size', radius * 1.15 + 'px')
+      .text(d => ellipsisText(d.label, 20));
 
   nodeLabels
     .style('display', 'none')
@@ -477,9 +476,10 @@ export default (rootEl, data, rootWidth, rootHeight, backButton, tooltipEl, lege
         .style('opacity', zoomScales.countries.label(state.zoom))
         .style("display", 'block')
 
-      if (state.zoom > 8) {
+      if (state.zoom > 3.5) {
         nodeLabels
-          .style('opacity', zoomScales.nodes.label(state.zoom))
+          .style('opacity', 1)
+          // .style('opacity', zoomScales.nodes.label(state.zoom))
           .style("display", 'block')
       } else {
         nodeLabels
