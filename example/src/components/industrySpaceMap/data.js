@@ -7,6 +7,7 @@ const {nodes} = JSON.parse(raw('../../data/umap-clusters-custom-2.json'));
 const naicsData = JSON.parse(raw('../../data/naics_2017.json'));
 const proximityNodes = JSON.parse(raw('../../data/proximity-min-max.json'));
 const clusterMap = JSON.parse(raw('../../data/clusters-mapping-2.json'));
+// const gqlClusterData = JSON.parse(raw('../../data/gql-clusters-response-data.json'));
 
 const customClusterShapes = JSON.parse(raw('../../data/custom_cluster_shapes.json'));
 
@@ -126,17 +127,55 @@ data.clusters.continents = data.clusters.continents.map(d => {
 })
 
 data.clusters.countries = data.clusters.countries.map(d => {
-  // const custom = customClusterShapes.countries.find(c => c.id === d.id);
+  const custom = customClusterShapes.countries.find(c => c.id === d.id);
   const center = turf.center(turf.featureCollection(d.points.map(point => turf.point(point))));
   const clusterNameFirst = ClusterNamesFull.C3.find(c => c.code === d.id);
   return {
     ...d,
     name: clusterNameFirst.name,
     convex: hull(d.points, 200),
-    custom: [],
+    custom: custom.points,
     center: center.geometry.coordinates,
   }
 })
+
+// const countries = data.clusters.countries.map(d => {
+//   const cluster = clusterMap.find(c => c.C3 === d.id);
+//   const gqlCluster1 = gqlClusterData.data.classificationNaicsClusterList.find(c => c.level === 1 && c.name === cluster.C1.toString())
+//   const gqlCluster3 = gqlClusterData.data.classificationNaicsClusterList.find(c => c.level === 3 && c.name === d.id.toString())
+//   return {
+//     center: d.center,
+//     polygon: d.custom,
+//     name: d.name,
+//     color: '#cfcfcf',
+//     continent: gqlCluster1.clusterId,
+//     clusterId: gqlCluster3.clusterId,
+//     clusterCode: d.id,
+//   }
+// })
+
+// const nodesCompiled = data.nodes.map(d => {
+//   const industry6Digit = naicsData.find(({code}) => d.id.toString() === code);
+//   const cluster = clusterMap.find(c => c.naics === d.id);
+//   const gqlCluster1 = gqlClusterData.data.classificationNaicsClusterList.find(c => c.level === 1 && c.name === cluster.C1.toString())
+//   const gqlCluster3 = gqlClusterData.data.classificationNaicsClusterList.find(c => c.level === 3 && c.name === cluster.C3.toString())
+//   return {
+//     id: industry6Digit.naics_id.toString(),
+//     x: d.x,
+//     y: d.y,
+//     edges: d.edges.map(({trg, proximity}) => {
+//       const trgDigit = naicsData.find(({code}) => trg.toString() === code);
+//       return {trg: trgDigit.naics_id.toString(), proximity}
+//     }),
+//     continent: gqlCluster1.clusterId,
+//     country: gqlCluster3.clusterId,
+//     name: d.label,
+//     industryColor: d.color,
+//   }
+// })
+
+// console.log(countries)
+// console.log(nodesCompiled)
 
 data.customViewbox = customClusterShapes.dimension;
 

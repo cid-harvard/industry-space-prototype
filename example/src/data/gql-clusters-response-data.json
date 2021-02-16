@@ -1,0 +1,1030 @@
+{
+  "data": {
+    "classificationNaicsClusterList": [
+      {
+        "clusterId": "1",
+        "parentId": null,
+        "clusterIdTopParent": 1,
+        "level": 1,
+        "name": "4",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MQ=="
+      },
+      {
+        "clusterId": "2",
+        "parentId": null,
+        "clusterIdTopParent": 2,
+        "level": 1,
+        "name": "5",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mg=="
+      },
+      {
+        "clusterId": "3",
+        "parentId": null,
+        "clusterIdTopParent": 3,
+        "level": 1,
+        "name": "9",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mw=="
+      },
+      {
+        "clusterId": "4",
+        "parentId": null,
+        "clusterIdTopParent": 4,
+        "level": 1,
+        "name": "10",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6NA=="
+      },
+      {
+        "clusterId": "5",
+        "parentId": null,
+        "clusterIdTopParent": 5,
+        "level": 1,
+        "name": "12",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6NQ=="
+      },
+      {
+        "clusterId": "6",
+        "parentId": null,
+        "clusterIdTopParent": 6,
+        "level": 1,
+        "name": "13",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Ng=="
+      },
+      {
+        "clusterId": "7",
+        "parentId": null,
+        "clusterIdTopParent": 7,
+        "level": 1,
+        "name": "14",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Nw=="
+      },
+      {
+        "clusterId": "11",
+        "parentId": 3,
+        "clusterIdTopParent": 3,
+        "level": 2,
+        "name": "0",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE="
+      },
+      {
+        "clusterId": "25",
+        "parentId": 3,
+        "clusterIdTopParent": 3,
+        "level": 2,
+        "name": "20",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjU="
+      },
+      {
+        "clusterId": "28",
+        "parentId": 3,
+        "clusterIdTopParent": 3,
+        "level": 2,
+        "name": "23",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mjg="
+      },
+      {
+        "clusterId": "21",
+        "parentId": 1,
+        "clusterIdTopParent": 1,
+        "level": 2,
+        "name": "15",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjE="
+      },
+      {
+        "clusterId": "16",
+        "parentId": 1,
+        "clusterIdTopParent": 1,
+        "level": 2,
+        "name": "8",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY="
+      },
+      {
+        "clusterId": "12",
+        "parentId": 1,
+        "clusterIdTopParent": 1,
+        "level": 2,
+        "name": "3",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI="
+      },
+      {
+        "clusterId": "17",
+        "parentId": 1,
+        "clusterIdTopParent": 1,
+        "level": 2,
+        "name": "10",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc="
+      },
+      {
+        "clusterId": "13",
+        "parentId": 4,
+        "clusterIdTopParent": 4,
+        "level": 2,
+        "name": "5",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM="
+      },
+      {
+        "clusterId": "14",
+        "parentId": 4,
+        "clusterIdTopParent": 4,
+        "level": 2,
+        "name": "6",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ="
+      },
+      {
+        "clusterId": "26",
+        "parentId": 4,
+        "clusterIdTopParent": 4,
+        "level": 2,
+        "name": "21",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjY="
+      },
+      {
+        "clusterId": "27",
+        "parentId": 4,
+        "clusterIdTopParent": 4,
+        "level": 2,
+        "name": "22",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mjc="
+      },
+      {
+        "clusterId": "35",
+        "parentId": 5,
+        "clusterIdTopParent": 5,
+        "level": 2,
+        "name": "32",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzU="
+      },
+      {
+        "clusterId": "20",
+        "parentId": 5,
+        "clusterIdTopParent": 5,
+        "level": 2,
+        "name": "14",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjA="
+      },
+      {
+        "clusterId": "29",
+        "parentId": 5,
+        "clusterIdTopParent": 5,
+        "level": 2,
+        "name": "24",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mjk="
+      },
+      {
+        "clusterId": "24",
+        "parentId": 5,
+        "clusterIdTopParent": 5,
+        "level": 2,
+        "name": "19",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjQ="
+      },
+      {
+        "clusterId": "22",
+        "parentId": 5,
+        "clusterIdTopParent": 5,
+        "level": 2,
+        "name": "17",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjI="
+      },
+      {
+        "clusterId": "38",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "36",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mzg="
+      },
+      {
+        "clusterId": "30",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "26",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzA="
+      },
+      {
+        "clusterId": "33",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "29",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzM="
+      },
+      {
+        "clusterId": "37",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "35",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mzc="
+      },
+      {
+        "clusterId": "39",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "37",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6Mzk="
+      },
+      {
+        "clusterId": "34",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "30",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzQ="
+      },
+      {
+        "clusterId": "42",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "40",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6NDI="
+      },
+      {
+        "clusterId": "40",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "38",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6NDA="
+      },
+      {
+        "clusterId": "36",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "33",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzY="
+      },
+      {
+        "clusterId": "41",
+        "parentId": 6,
+        "clusterIdTopParent": 6,
+        "level": 2,
+        "name": "39",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6NDE="
+      },
+      {
+        "clusterId": "19",
+        "parentId": 2,
+        "clusterIdTopParent": 2,
+        "level": 2,
+        "name": "13",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTk="
+      },
+      {
+        "clusterId": "15",
+        "parentId": 2,
+        "clusterIdTopParent": 2,
+        "level": 2,
+        "name": "7",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU="
+      },
+      {
+        "clusterId": "18",
+        "parentId": 2,
+        "clusterIdTopParent": 2,
+        "level": 2,
+        "name": "12",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg="
+      },
+      {
+        "clusterId": "23",
+        "parentId": 2,
+        "clusterIdTopParent": 2,
+        "level": 2,
+        "name": "18",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MjM="
+      },
+      {
+        "clusterId": "31",
+        "parentId": 7,
+        "clusterIdTopParent": 7,
+        "level": 2,
+        "name": "27",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzE="
+      },
+      {
+        "clusterId": "32",
+        "parentId": 7,
+        "clusterIdTopParent": 7,
+        "level": 2,
+        "name": "28",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MzI="
+      },
+      {
+        "clusterId": "101",
+        "parentId": 11,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "0",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTAx"
+      },
+      {
+        "clusterId": "103",
+        "parentId": 11,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "2",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTAz"
+      },
+      {
+        "clusterId": "102",
+        "parentId": 11,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "1",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTAy"
+      },
+      {
+        "clusterId": "105",
+        "parentId": 11,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "4",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTA1"
+      },
+      {
+        "clusterId": "104",
+        "parentId": 11,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "3",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTA0"
+      },
+      {
+        "clusterId": "111",
+        "parentId": 25,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "10",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTEx"
+      },
+      {
+        "clusterId": "112",
+        "parentId": 25,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "11",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTEy"
+      },
+      {
+        "clusterId": "149",
+        "parentId": 25,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "48",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ5"
+      },
+      {
+        "clusterId": "113",
+        "parentId": 25,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "12",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTEz"
+      },
+      {
+        "clusterId": "146",
+        "parentId": 25,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "45",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ2"
+      },
+      {
+        "clusterId": "153",
+        "parentId": 28,
+        "clusterIdTopParent": 3,
+        "level": 3,
+        "name": "52",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTUz"
+      },
+      {
+        "clusterId": "139",
+        "parentId": 21,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "38",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM5"
+      },
+      {
+        "clusterId": "116",
+        "parentId": 21,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "15",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE2"
+      },
+      {
+        "clusterId": "106",
+        "parentId": 16,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "5",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTA2"
+      },
+      {
+        "clusterId": "117",
+        "parentId": 16,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "16",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE3"
+      },
+      {
+        "clusterId": "119",
+        "parentId": 16,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "18",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE5"
+      },
+      {
+        "clusterId": "121",
+        "parentId": 16,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "20",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTIx"
+      },
+      {
+        "clusterId": "120",
+        "parentId": 16,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "19",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTIw"
+      },
+      {
+        "clusterId": "122",
+        "parentId": 16,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "21",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTIy"
+      },
+      {
+        "clusterId": "107",
+        "parentId": 12,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "6",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTA3"
+      },
+      {
+        "clusterId": "123",
+        "parentId": 17,
+        "clusterIdTopParent": 1,
+        "level": 3,
+        "name": "22",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTIz"
+      },
+      {
+        "clusterId": "109",
+        "parentId": 13,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "8",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTA5"
+      },
+      {
+        "clusterId": "114",
+        "parentId": 14,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "13",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE0"
+      },
+      {
+        "clusterId": "115",
+        "parentId": 14,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "14",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE1"
+      },
+      {
+        "clusterId": "140",
+        "parentId": 26,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "39",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQw"
+      },
+      {
+        "clusterId": "145",
+        "parentId": 26,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "44",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ1"
+      },
+      {
+        "clusterId": "142",
+        "parentId": 26,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "41",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQy"
+      },
+      {
+        "clusterId": "148",
+        "parentId": 26,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "47",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ4"
+      },
+      {
+        "clusterId": "151",
+        "parentId": 26,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "50",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTUx"
+      },
+      {
+        "clusterId": "174",
+        "parentId": 26,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "73",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc0"
+      },
+      {
+        "clusterId": "152",
+        "parentId": 27,
+        "clusterIdTopParent": 4,
+        "level": 3,
+        "name": "51",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTUy"
+      },
+      {
+        "clusterId": "178",
+        "parentId": 35,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "77",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc4"
+      },
+      {
+        "clusterId": "138",
+        "parentId": 20,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "37",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM4"
+      },
+      {
+        "clusterId": "158",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "57",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU4"
+      },
+      {
+        "clusterId": "155",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "54",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU1"
+      },
+      {
+        "clusterId": "169",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "68",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY5"
+      },
+      {
+        "clusterId": "154",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "53",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU0"
+      },
+      {
+        "clusterId": "156",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "55",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU2"
+      },
+      {
+        "clusterId": "159",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "58",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU5"
+      },
+      {
+        "clusterId": "157",
+        "parentId": 29,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "56",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTU3"
+      },
+      {
+        "clusterId": "147",
+        "parentId": 24,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "46",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ3"
+      },
+      {
+        "clusterId": "141",
+        "parentId": 22,
+        "clusterIdTopParent": 5,
+        "level": 3,
+        "name": "40",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQx"
+      },
+      {
+        "clusterId": "182",
+        "parentId": 38,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "81",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTgy"
+      },
+      {
+        "clusterId": "184",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "83",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg0"
+      },
+      {
+        "clusterId": "165",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "64",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY1"
+      },
+      {
+        "clusterId": "163",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "62",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTYz"
+      },
+      {
+        "clusterId": "160",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "59",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTYw"
+      },
+      {
+        "clusterId": "162",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "61",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTYy"
+      },
+      {
+        "clusterId": "164",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "63",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY0"
+      },
+      {
+        "clusterId": "179",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "78",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc5"
+      },
+      {
+        "clusterId": "176",
+        "parentId": 30,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "75",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc2"
+      },
+      {
+        "clusterId": "144",
+        "parentId": 33,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "43",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQ0"
+      },
+      {
+        "clusterId": "172",
+        "parentId": 33,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "71",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTcy"
+      },
+      {
+        "clusterId": "170",
+        "parentId": 33,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "69",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTcw"
+      },
+      {
+        "clusterId": "181",
+        "parentId": 37,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "80",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTgx"
+      },
+      {
+        "clusterId": "150",
+        "parentId": 39,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "49",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTUw"
+      },
+      {
+        "clusterId": "186",
+        "parentId": 39,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "85",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg2"
+      },
+      {
+        "clusterId": "185",
+        "parentId": 39,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "84",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg1"
+      },
+      {
+        "clusterId": "161",
+        "parentId": 39,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "60",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTYx"
+      },
+      {
+        "clusterId": "183",
+        "parentId": 39,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "82",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTgz"
+      },
+      {
+        "clusterId": "173",
+        "parentId": 39,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "72",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTcz"
+      },
+      {
+        "clusterId": "175",
+        "parentId": 34,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "74",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc1"
+      },
+      {
+        "clusterId": "180",
+        "parentId": 42,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "79",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTgw"
+      },
+      {
+        "clusterId": "189",
+        "parentId": 42,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "88",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg5"
+      },
+      {
+        "clusterId": "187",
+        "parentId": 40,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "86",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg3"
+      },
+      {
+        "clusterId": "177",
+        "parentId": 36,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "76",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTc3"
+      },
+      {
+        "clusterId": "188",
+        "parentId": 41,
+        "clusterIdTopParent": 6,
+        "level": 3,
+        "name": "87",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTg4"
+      },
+      {
+        "clusterId": "108",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "7",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTA4"
+      },
+      {
+        "clusterId": "110",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "9",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTEw"
+      },
+      {
+        "clusterId": "127",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "26",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI3"
+      },
+      {
+        "clusterId": "128",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "27",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI4"
+      },
+      {
+        "clusterId": "125",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "24",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI1"
+      },
+      {
+        "clusterId": "129",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "28",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI5"
+      },
+      {
+        "clusterId": "131",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "30",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTMx"
+      },
+      {
+        "clusterId": "126",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "25",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI2"
+      },
+      {
+        "clusterId": "132",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "31",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTMy"
+      },
+      {
+        "clusterId": "130",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "29",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTMw"
+      },
+      {
+        "clusterId": "137",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "36",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM3"
+      },
+      {
+        "clusterId": "136",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "35",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM2"
+      },
+      {
+        "clusterId": "133",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "32",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTMz"
+      },
+      {
+        "clusterId": "134",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "33",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM0"
+      },
+      {
+        "clusterId": "135",
+        "parentId": 19,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "34",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTM1"
+      },
+      {
+        "clusterId": "118",
+        "parentId": 15,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "17",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTE4"
+      },
+      {
+        "clusterId": "124",
+        "parentId": 18,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "23",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTI0"
+      },
+      {
+        "clusterId": "143",
+        "parentId": 23,
+        "clusterIdTopParent": 2,
+        "level": 3,
+        "name": "42",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTQz"
+      },
+      {
+        "clusterId": "166",
+        "parentId": 31,
+        "clusterIdTopParent": 7,
+        "level": 3,
+        "name": "65",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY2"
+      },
+      {
+        "clusterId": "167",
+        "parentId": 32,
+        "clusterIdTopParent": 7,
+        "level": 3,
+        "name": "66",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY3"
+      },
+      {
+        "clusterId": "171",
+        "parentId": 32,
+        "clusterIdTopParent": 7,
+        "level": 3,
+        "name": "70",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTcx"
+      },
+      {
+        "clusterId": "168",
+        "parentId": 32,
+        "clusterIdTopParent": 7,
+        "level": 3,
+        "name": "67",
+        "id": "Q2xhc3NpZmljYXRpb25OYWljc0NsdXN0ZXI6MTY4"
+      }
+    ]
+  }
+}
