@@ -119,7 +119,7 @@ export default () => {
       <ModalContent>
         <CloseButton onClick={() => setModalOpen(false)}>×</CloseButton>
         <p>
-          Copy &amp; Paste a series of 6-Digit HS-Codes into the text area below. Each one should be on a seperate line. Leave blank to highlight everything.
+          Copy &amp; Paste a series of 4-Digit HS-Codes into the text area below. Each one should be on a seperate line. Leave blank to highlight everything.
         </p>
         <Textarea
           placeholder={
