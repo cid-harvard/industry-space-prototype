@@ -39,6 +39,7 @@ const IndustrySpaceClustersRingsClusterConvexLv1V2 = React.lazy(() => import('./
 const Landing = React.lazy(() => import('./pages/Landing'));
 const TestLanding = React.lazy(() => import('./pages/TestingLanding'));
 const IndustrySpaceMap = React.lazy(() => import('./pages/IndustrySpaceMap'));
+const IndustrySpaceCustomHighlighting = React.lazy(() => import('./pages/IndustrySpaceCustomHighlighting'));
 
 const App = () => {
 
@@ -68,6 +69,7 @@ const App = () => {
                 <Route exact path={'/product-space'} component={ProductSpace} />
                 <Route exact path={'/product-space-saudi'} component={ProductSpaceSaudi} />
                 <Route exact path={'/product-space-custom'} component={ProductSpaceCustom} />
+                <Route exact path={'/industry-space-custom'} component={IndustrySpaceCustomHighlighting} />
                 <Route exact path={'/chemical-space'} component={ChemicalSpace} />
                 <Route exact path={'/chemical-space-custom'} component={ChemicalSpaceCustomHighlighting} />
                 <Route exact path={'/u-map-clusters-rings-cluster-color'} component={IndustrySpaceClustersRingsClusterColoring} />
